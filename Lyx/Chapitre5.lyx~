@@ -119,21 +119,29 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In a workflowsim simulator, we have simulated the proposed approach.
  We compared the outcomes of five separate scientific workflows with our
  proposed algorithm.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In this chapter, the workflows used, simulation tool, parameters of experiments,
  performance metric, and outcomes of the measurement will be presented.
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Workflows 
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 We use four different types of benchmark workflows (Montage, Cybershake,
  LIGO, and Epigenomics, Sipht) available on the Pegasus website.
  These workflows typically involve complex data of various sizes and complicated
@@ -159,6 +167,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Each of these workflow types has four different workloads.
  For example, the Cybershake workflow has four workloads, including 30,
  50, 100, and 1000 tasks
@@ -186,6 +196,8 @@ literal "false"
 
 \begin_layout Standard
 \align center
+
+\color brown
 \begin_inset Float figure
 placement h
 wide false
@@ -193,6 +205,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+
+\color brown
 \begin_inset Graphics
 	filename images/workflows_compressed - Copie.jpg
 	width 15cm
@@ -203,6 +217,8 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -229,10 +245,14 @@ literal "false"
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Simulation tool: WorkflowSim
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Over the past few years, cloud computing has gained tremendous popularity
  since it presents a flexible and efficient solution for many services by
  Internet .
@@ -253,6 +273,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 As a result, the simulator can play an important role in reducing cost,
  efficiency,infrastructure complexity, and security risks before a solution
  can be deployed on real infrastructure.
@@ -270,10 +292,14 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Description and main features
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 WorkflowSim was introduced for modeling Scientific Workflows in cloud environmen
 t.
  Workflows in heterogeneous distributed systems show different levels of
@@ -282,6 +308,8 @@ s works.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Most of simulators such as CloudSim do not consider fine granularity simulations
  of workflows and task clustering.
  Task clustering reduces the number of jobs to be executed and so execution
@@ -289,10 +317,12 @@ Most of simulators such as CloudSim do not consider fine granularity simulations
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Generally, a job may have high risk for suffering from failures since it
  consists of several tasks.
  Researchers with WorkflowSim can study the impact of job failures runtime
- performance of workflows for different clustering methods.
+ performance of workflows for different clustering methods
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cloud_computing_simulators"
@@ -300,14 +330,18 @@ literal "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Architecture
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Figure
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -322,31 +356,45 @@ noprefix "false"
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Workflow Mapper that maps abstract workflows to concrete workflows.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Workflow Engine that controls the data dependencies.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Workflow Scheduler assigns jobs to resources.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Clustering Engine that groups small tasks into a large job.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Failure Generator that injects task failures for each execution site.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Failure Monitor that stores the failure information such as resource id
  and task id.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Float figure
 placement H
 wide false
@@ -355,6 +403,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\color brown
 \begin_inset Graphics
 	filename images/workflowSim_architecture.jpg
 
@@ -392,10 +442,14 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Downloading and Installing WorkflowSim with Eclipse without GitHub
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 To make the first WorkflowSim project, follow this steps
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -410,6 +464,7 @@ literal "false"
 \begin_layout Enumerate
 
 \series bold
+\color brown
 Download Source Files
 \series default
  directly from
@@ -428,6 +483,7 @@ literal "false"
 \begin_layout Enumerate
 
 \series bold
+\color brown
 Check out your source codes:
 \series default
  
@@ -435,11 +491,15 @@ Check out your source codes:
 
 \begin_deeper
 \begin_layout Enumerate
+
+\color brown
 create a new java project called 'WorkflowSim' (it doesn't have to be 'WorkflowS
 im').
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Right click your project, choose 'Import'.
  Click 'General'->'Projects from Folder or Archive'.(see Fig.
  
@@ -460,6 +520,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\color brown
 \begin_inset Graphics
 	filename images/worflowsim/Capture d’écran 2023-04-24 142112.png
 	scale 75
@@ -470,6 +532,8 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -494,6 +558,8 @@ name "fig:Import-a-project"
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Set the URL to be your extracted folder (wait until Finish button will be
  enabled as in Fig.
 \begin_inset CommandInset ref
@@ -513,6 +579,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\color brown
 \begin_inset Graphics
 	filename images/worflowsim/2.png
 	scale 50
@@ -523,6 +591,8 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -550,6 +620,7 @@ name "fig:Set-URL-to"
 \begin_layout Enumerate
 
 \series bold
+\color brown
 Run an Example:
 \series default
  Run an example i.e., org.workflowsim.examples.WorkflowSimBasicExample1.java.
@@ -557,25 +628,35 @@ Run an Example:
 
 \begin_deeper
 \begin_layout Enumerate
+
+\color brown
 Open WorkflowSimBasicExample1.java
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 replace the String daxPath = "/Users/chenweiwei/Work/WorkflowSim-1.0/config/dax/M
 ontage_100.xml"; with your real physical file path.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Right click on WorkflowSimBasicExample1.java and choose 'Run File'.
  You should be able to see some output.
 \end_layout
 
 \end_deeper
 \begin_layout Subsection
+
+\color brown
 Strengths
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 WorkflowSim has many advantages
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -588,32 +669,44 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 It supports a stack of workflow parser and workflow engine delay to workflow
  optimization techniques with better accuracy are implemented.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 It implements several workflow-scheduling methods such as HEFT, Min-Min,
  and Max-Min and so developers can compare their algorithms with them in
  a simple way.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 It considers task clustering and layered overhead to the workflow simulation.
  Therefore, developers can test various strategies based on a real trace
  of overheads.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 It models failures for two layers (i.e., task/job) by an interface and hence
  developers can design fault-tolerant techniques.
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Limitations
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 WorkflowSim has some limitations 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -626,12 +719,16 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 It includes limited types of failures.
  Therefore, developers cannot simulate the situation when a task is not
  successfully sent due to network problems or workflow scheduler issues.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 It does not consider the performance characteristic of file I/O.
  Therefore, developers cannot obtain suitable simulation for data-intensive
  applications since these applications involve reading or writing huge data
@@ -639,32 +736,46 @@ It does not consider the performance characteristic of file I/O.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 It supports only simple workflow techniques and so developers cannot use
  other important approaches like workflow partitioning in their implementations.
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Simulation parameter
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The inputs to the simulation environment are as follows:
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 the average bandwidth between resources is 20 MBps.
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 the processing matrix for each VM is measured in Million Instruction Per
  Second (MIPS).
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 the task lengths are set in Million Instruction (MI).
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In this work, we assumed that there are only three types of VMs (VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -681,6 +792,8 @@ In this work, we assumed that there are only three types of VMs (VM
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 We further assumed that there are only 3 types of VMs in the cloud data
  center, each with an infinite number of instances.
  The computational capacities and the prices per hour for each VM type are
@@ -700,6 +813,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Float table
 wide false
 sideways false
@@ -707,6 +822,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\color brown
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
 <features tabularvalignment="middle">
@@ -719,6 +836,8 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Virtual Machine
 \end_layout
 
@@ -728,6 +847,8 @@ Virtual Machine
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 type
 \end_layout
 
@@ -737,6 +858,8 @@ type
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Capability (CU)
 \end_layout
 
@@ -746,6 +869,8 @@ Capability (CU)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Price ($/h)
 \end_layout
 
@@ -757,6 +882,8 @@ Price ($/h)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 LEC
 \end_layout
 
@@ -766,6 +893,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 1
 \end_layout
 
@@ -775,6 +904,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 1.0
 \end_layout
 
@@ -784,6 +915,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 0.12
 \end_layout
 
@@ -795,6 +928,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 LEC
 \end_layout
 
@@ -804,6 +939,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 2
 \end_layout
 
@@ -813,6 +950,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 1.5
 \end_layout
 
@@ -822,6 +961,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 0.195
 \end_layout
 
@@ -833,6 +974,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 MEC
 \end_layout
 
@@ -842,6 +985,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 3
 \end_layout
 
@@ -851,6 +996,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 2.0
 \end_layout
 
@@ -860,6 +1007,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 0.28
 \end_layout
 
@@ -871,6 +1020,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 MEC
 \end_layout
 
@@ -880,6 +1031,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 4
 \end_layout
 
@@ -889,6 +1042,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 2.5
 \end_layout
 
@@ -898,6 +1053,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 0.375
 \end_layout
 
@@ -909,6 +1066,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 HEC
 \end_layout
 
@@ -918,6 +1077,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 5
 \end_layout
 
@@ -927,6 +1088,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 3.0
 \end_layout
 
@@ -936,6 +1099,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 0.48
 \end_layout
 
@@ -947,6 +1112,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 HEC
 \end_layout
 
@@ -956,6 +1123,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 6
 \end_layout
 
@@ -965,6 +1134,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 3.5
 \end_layout
 
@@ -974,6 +1145,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 0.595
 \end_layout
 
@@ -988,6 +1161,8 @@ HEC
 \end_layout
 
 \begin_layout Plain Layout
+
+\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout

@@ -116,13 +116,13 @@ addcontentsline{toc}{chapter}{Introduction Générale}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Paragraph
 
 \color brown
 Context
 \end_layout
 
-\begin_layout Section
+\begin_layout Paragraph
 
 \color brown
 Problematic
@@ -144,19 +144,19 @@ literal "false"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Paragraph
 
 \color brown
 Objectives
 \end_layout
 
-\begin_layout Section
+\begin_layout Paragraph
 
 \color brown
 Contribution
 \end_layout
 
-\begin_layout Section
+\begin_layout Paragraph
 
 \color brown
 Outline

@@ -16,7 +16,7 @@ tabs-within-sections
 eqs-within-sections
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding utf8
 \fontencoding global
@@ -80,7 +80,7 @@ eqs-within-sections
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style swiss
+\quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -119,20 +119,16 @@ addcontentsline{toc}{chapter}{Introduction Générale}
 \begin_layout Section
 
 \color brown
-\lang english
 Context
 \end_layout
 
 \begin_layout Section
 
 \color brown
-\lang english
 Problematic
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 The energy consumption of cloud data centers is an important challenge.
  Energy consumption is increasing day by day due to a non-energy aware strategy
  in resource management.
@@ -151,21 +147,18 @@ literal "false"
 \begin_layout Section
 
 \color brown
-\lang english
 Objectives
 \end_layout
 
 \begin_layout Section
 
 \color brown
-\lang english
 Contribution
 \end_layout
 
 \begin_layout Section
 
 \color brown
-\lang english
 Outline
 \end_layout
 

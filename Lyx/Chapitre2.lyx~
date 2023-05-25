@@ -113,10 +113,14 @@ newpage
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Introduction
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Nowadays, cloud computing is an emerging technology due to virtualization
  and providing low price services on pay-as per-use basis and it is the
  most popular computing system paradigm in the academic research and industry,
@@ -132,6 +136,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In the previous chapter, we have introduced the workflow technology.
  However the execution scientific workflows needs a huge amounts of data
  or allocate enormous computing resources and a big scalability, this is
@@ -140,21 +146,34 @@ In the previous chapter, we have introduced the workflow technology.
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Definition of Cloud Computing
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The modern literature provides several definitions of Cloud Computing.
- Some definitions of Cloud Computing refer to services provided by data
- centre, while others define it as a service provided by the Internet.Still,
- the most quoted definition of Cloud Computing is the NIST definition.
+ Some definitions of Cloud Computing refer to services provided by datacenter,
+ while others define it as a service provided by the Internet.
+ Still, the most quoted definition of Cloud Computing is the NIST definition.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The National Institute of Standards and Technology (NIST) which is an agency
  of the United States Department of Commerce whose mission is to promote
  American innovation and industrial competitiveness, define the cloud computing
- as following : 
+ as following :
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\color brown
 \begin_inset Quotes eld
 \end_inset
 
@@ -162,10 +181,12 @@ Cloud computing is a model for enabling ubiquitous, convenient, on-demand
  network access to a shared pool of configurable computing resources (e.g.,
  networks, servers, storage, applications, and services) that can be rapidly
  provisioned and released with minimal management effort or service provider
- interaction.
+ interaction
 \begin_inset Quotes erd
 \end_inset
 
+
+\shape default
 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -174,14 +195,18 @@ literal "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Characteristics of Cloud Computing
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The National Institute of Standards and Technology's definition
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -193,11 +218,15 @@ literal "false"
  of cloud computing identifies "five essential characteristics":
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
+
+\color brown
 On-demand self-service
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Consumers of cloud computing services, such as server time and network storage,
  as needed automatically nearly instant access to resources.
  To support this expectation, clouds must allow self-service access so that
@@ -205,21 +234,29 @@ Consumers of cloud computing services, such as server time and network storage,
  of human operators.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
+
+\color brown
 Broad network access
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Capabilities are available over the network and accessed through standard
  mechanisms that promote use by heterogeneous thin or thick client platforms
  (e.g., mobile phones, tablets, laptops, and workstations).
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
+
+\color brown
 Resource pooling
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The provider’s computing resources are pooled to serve multiple consumers
  using a multi-tenant model, with different physical and virtual resources
  dynamically assigned and reassigned according to consumer demand.
@@ -231,11 +268,15 @@ The provider’s computing resources are pooled to serve multiple consumers
  bandwidth.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
+
+\color brown
 Rapid elasticity
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Cloud computing gives the illusion of unlimited computing resources available
  on demand in any quantity at any time.
  Therefore, users expect clouds to rapidly provide resources in any quantity
@@ -245,12 +286,16 @@ Cloud computing gives the illusion of unlimited computing resources available
  and (b) released when load decreases (scale up and down).
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
+
+\color brown
 Measured service
 \end_layout
 
 \begin_layout Standard
-Services must be priced on a shortterm basis (e.g., by the hour), allowing
+
+\color brown
+Services must be priced on a short term basis (e.g., by the hour), allowing
  users to release (and not pay for) resources as soon as they are not needed.
  For these reasons, clouds must implement features to allow efficient trading
  of service such as pricing, accounting, and billing.
@@ -258,6 +303,8 @@ Services must be priced on a shortterm basis (e.g., by the hour), allowing
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Cloud systems automatically control and optimize resource use by leveraging
  a metering capability at some level of abstraction appropriate to the type
  of service (e.g., storage, processing, bandwidth, and active user accounts).
@@ -266,13 +313,8 @@ cy for both the provider and consumer of the utilized service.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+\color brown
 Cloud computing has a lot of another characteristics
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -285,34 +327,48 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Performances are being monitored by IT experts from the service provider
  end.
  
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Resources are abstracted or virtualized.
  
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Availability improves with the use of multiple redundant sites
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Customizable: resources rented from the cloud must be highly customizable.
 \end_layout
 
 \begin_layout Enumerate
+
+\color brown
 Device and location independence, which means no maintenance, required.
  
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Service Models
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The National Institute of Standards and Technology (NIST) has define 3 services
  models in their definition
 \begin_inset CommandInset citation
@@ -326,10 +382,14 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Software as a Service (SaaS)
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The capability provided to the consumer is to use the provider’s applications
  running on a cloud infrastructure2 .
  The applications are accessible from various client devices through either
@@ -337,15 +397,19 @@ The capability provided to the consumer is to use the provider’s applications
  a program interface.
  The consumer does not manage or control the underlying cloud infrastructure
  including network, servers, operating systems, storage, or even individual
- application capabilities, with the possible exception of limited userspecific
+ application capabilities, with the possible exception of limited user specific
  application configuration settings.
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Platform as a Service (PaaS)
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The capability provided to the consumer is to deploy onto the cloud infrastructu
 re consumer-created or acquired applications created using programming languages
 , libraries, services, and tools supported by the provider.3 The consumer
@@ -356,10 +420,14 @@ osting environment.
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Infrastructure as a Service (IaaS)
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The capability provided to the consumer is to provision processing, storage,
  networks, and other fundamental computing resources where the consumer
  is able to deploy and run arbitrary software, which can include operating
@@ -371,6 +439,8 @@ The capability provided to the consumer is to provision processing, storage,
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Float figure
 placement h
 wide false
@@ -379,6 +449,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\color brown
 \begin_inset Graphics
 	filename images/cloud_services_model_graph-1024x465.jpg
 	scale 50
@@ -390,6 +462,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -416,10 +490,14 @@ literal "false"
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Deployment Models
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 There are 5 deployment models of Cloud Computing, the first 4 was listed
  by The NIST definition 
 \begin_inset CommandInset citation
@@ -440,22 +518,30 @@ literal "false"
  has define the last one 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Private cloud
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The cloud infrastructure is provisioned for exclusive use by a single organizati
 on comprising multiple consumers (e.g., business units).
  It may be owned, managed, and operated by the organization, a third party,
  or some combination of them, and it may exist on or off premises.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Community cloud
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The cloud infrastructure is provisioned for exclusive use by a specific
  community of consumers from organizations that have shared concerns (e.g.,
  mission, security requirements, policy, and compliance considerations).
@@ -464,22 +550,30 @@ The cloud infrastructure is provisioned for exclusive use by a specific
  exist on or off premises.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Public cloud
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The cloud infrastructure is provisioned for open use by the general public.
  It may be owned, managed, and operated by a business, academic, or government
  organization, or some combination of them.
  It exists on the premises of the cloud provider.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Hybrid cloud
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The cloud infrastructure is a composition of two or more distinct cloud
  infrastructures (private, community, or public) that remain unique entities,
  but are bound together by standardized or proprietary technology that enables
@@ -488,15 +582,21 @@ The cloud infrastructure is a composition of two or more distinct cloud
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Multi-Cloud Computing
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Multi-Cloud = Any Combination of Native Public Clouds and Private Clouds
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Some companies can’t use a single public cloud.
  Their developers may like Google Cloud, while IT operates in Azure both
  on-premise and in the cloud.
@@ -505,6 +605,8 @@ Some companies can’t use a single public cloud.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 This is the multi-cloud model.
  It’s the ultimate in flexibility to choose the cloud that best fits the
  application or business need.
@@ -513,6 +615,8 @@ This is the multi-cloud model.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The main advantage of this model comparing to the public model is avoiding
  
 \series bold
@@ -522,13 +626,15 @@ vendor lock
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Benefits of cloud computing
 \end_layout
 
 \begin_layout Standard
-Cloud Computing are fueled in part by its perceived benefits
-\color brown
 
+\color brown
+Cloud Computing are fueled in part by its perceived benefits
 \begin_inset CommandInset citation
 LatexCommand cite
 key "3"
@@ -536,8 +642,6 @@ literal "false"
 
 \end_inset
 
-
-\color inherit
 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -554,6 +658,7 @@ literal "false"
 \begin_layout Itemize
 
 \series bold
+\color brown
 Reliability
 \series default
 : Backup and recovery of data are less expensive and extremely fast for
@@ -563,6 +668,7 @@ Reliability
 \begin_layout Itemize
 
 \series bold
+\color brown
 Scalability
 \series default
 : We can increase or decrease the requirement of resources according to
@@ -573,6 +679,7 @@ Scalability
 \begin_layout Itemize
 
 \series bold
+\color brown
 Cost
 \series default
 : Cloud Computing requires significantly lesser capital expenditures to
@@ -584,6 +691,7 @@ Cost
 \begin_layout Itemize
 
 \series bold
+\color brown
 Speed
 \series default
 : resources can be accessed in minutes, typically within a few clicks ,no
@@ -594,6 +702,7 @@ Speed
 \begin_layout Itemize
 
 \series bold
+\color brown
 Productivity
 \series default
 : Cloud computing technology allows on-the-fly, point-and-click customization
@@ -604,6 +713,7 @@ Productivity
 \begin_layout Itemize
 
 \series bold
+\color brown
 SLA-driven
 \series default
 : The system is dynamically managed by service-level agreements that define
@@ -613,6 +723,7 @@ SLA-driven
 \begin_layout Itemize
 
 \series bold
+\color brown
 Multi-tenancy
 \series default
 : The system is built in a way that allows several customers to share infrastruc
@@ -623,6 +734,7 @@ ture with mutual opacity and without compromising privacy and security.
 \begin_layout Itemize
 
 \series bold
+\color brown
 Service-oriented
 \series default
 : The system allows composing applications out of discrete, re-usable, loosely-c
@@ -633,6 +745,7 @@ oupled services.
 \begin_layout Itemize
 
 \series bold
+\color brown
 Virtualized
 \series default
 : Applications are decoupled from the underlying hardware.
@@ -643,6 +756,7 @@ Virtualized
 \begin_layout Itemize
 
 \series bold
+\color brown
 Data, Data, Data
 \series default
 : The key to many of the above desirable characteristics is management of
@@ -657,6 +771,7 @@ plemented Cloud Computing solution, a client should experience some or all
 \begin_layout Itemize
 
 \series bold
+\color brown
 Proven Web-services integration
 \series default
 : Cloud Computing technology is much easier and quicker to integrate with
@@ -667,6 +782,7 @@ Proven Web-services integration
 \begin_layout Itemize
 
 \series bold
+\color brown
 Support for deep customizations
 \series default
 : The Cloud Computing infrastructure not only allows deep customization
@@ -678,10 +794,11 @@ Support for deep customizations
 \begin_layout Itemize
 
 \series bold
+\color brown
 Pre-built, pre-integrated apps
 \series default
-: Hundreds of pre-built applications and application exchange capabilities
- are either pre-integrated into larger, off-the-shelf applications or available
+: Hundreds of prebuilt applications and application exchange capabilities
+ are either preintegrated into larger, off-the-shelf applications or available
  for quick integration to form new applications.
  
 \end_layout
@@ -689,24 +806,21 @@ Pre-built, pre-integrated apps
 \begin_layout Itemize
 
 \series bold
+\color brown
 Security
 \series default
  can improve due to centralization of data.
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Cloud Computing's obstacles
 \end_layout
 
 \begin_layout Standard
 
 \color brown
-
-\backslash
-todo statistics more recent
-\end_layout
-
-\begin_layout Standard
 There are many disadvantages of Cloud Computing.The document
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -718,11 +832,15 @@ literal "false"
 list many disadvantages:
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Cloud Vulnerability
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The primary challenge posed to data management in the cloud is content security.
  Due to the ease of access to content over the internet, concerns have been
  raised due to data vulnerability.
@@ -747,11 +865,15 @@ s aiming to improve cloud security are unlikely to remove all levels of
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Technical Issues
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Although Cloud Computing offers improved efficiency by means of “on demand”
  content access, the cloud can also be prone to technical malfunctions such
  as outages.
@@ -763,11 +885,15 @@ Although Cloud Computing offers improved efficiency by means of “on demand”
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Cost Creep 
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 At first glance migrating to a “pay-as-you-go” pricing model as employed
  by many cloud providers may seem financially attractive.
  However, it has been well documented that organizations that migrate to
@@ -777,11 +903,15 @@ At first glance migrating to a “pay-as-you-go” pricing model as employed
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Financial Risk in Disaster Scenarios
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Cloud users can incur significant costs in cases of cloud outage, security
  breach or vendor lock-in (see below).
  According to the Penomen Institute, for example, in 2016, the average distribut
@@ -793,34 +923,48 @@ ed cost incurred by a datacenter outage was almost $750, 000.
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
+
+\color brown
 Vendor Lock-In
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Vendor lock-in problem in cloud computing is characterized by expensive
  and time-consuming migration of application and data to alternative providers.
  Cloud software vendors lock in customers in several ways:
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 by designing a system incompatible with software developed by other vendors
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 by using proprietary standards or closed architectures that lack interoperabilit
 y with other applications
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 by licensing the software under exclusive conditions.
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Conclusion
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In this chapter we have presented the Cloud Computing,its characteristics
  which its distinguished from other computing model, then have listed the
  most common used services models IaaS, PaaS and SaaS.Also, we have presented
@@ -829,6 +973,8 @@ In this chapter we have presented the Cloud Computing,its characteristics
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Cloud computing provides virtualized cloud resources as a service, on-demand,
  and pay-per-use basis.
  The characteristics of cloud computing such as elasticity and flexibility

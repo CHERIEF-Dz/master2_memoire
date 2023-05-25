@@ -120,6 +120,8 @@ newpage
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Large-scale complex scientific applications/workflow are executed and analyzed
  in the multi-disciplinary area of research such as astronomy and physics.
  The workflow contains a large number of mutually dependent tasks which
@@ -141,6 +143,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In cloud environment, effective management of scientific workflows is the
  main challenge since there are numerous virtual machines and many user
  tasks that should be scheduled by considering dependencies and various
@@ -173,28 +177,26 @@ Workflow scheduling
 \begin_layout Subsection
 
 \color brown
-? Définition de l'ordonnanceur
-\end_layout
-
-\begin_layout Subsection
 Definition of Task scheduling of scientific workflows
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Task scheduling of scientific workflow is extremely important.
  Task scheduling algorithms is based on appropriate policies to deploy scientifi
 c workflow to the physical nodes in the cloud computing system.
- Because various physical nodes are heterogeneous, and their running status
+ Because various physical nodes are heterogeneous and their running status
  are dynamic changed over time, at the same time, the system resources required
  by users and the request types of users are different, so that the design
  of the scheduling algorithms of scientific workflow is complex in the cloud
  computing system.
  A bad scheduling policy can lead to a decline in system performance, a
- long time span of request feedback, a decrease in user satisfaction, and
+ long time span of request feedback, a decrease in user satisfaction and
  a decrease in system throughput.
  In general, the goal of tasks scheduling of scientific workflow in the
  cloud environment is to optimize the allocation of scientific workflow,
- maximize user satisfaction, and maximize the economic benefits of operators,
+ maximize user satisfaction and maximize the economic benefits of operators
  and minimize operating costs
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -207,10 +209,14 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Scientific workflow scheduling
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Workflow scheduling calls for high computation and communication costs,
  especially scientific workflows that have to do with areas as astronomy
  and biology are among the most commonly used cloud applications.
@@ -236,11 +242,15 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Task scheduling types
 \end_layout
 
 \begin_layout Standard
-Task scheduling can be categorized, as offline scheduling, and online scheduling
+
+\color brown
+Task scheduling can be categorized, as offline scheduling and online scheduling
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -252,11 +262,13 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Offline scheduling which means the execution time is calculated, and mapping
+
+\color brown
+Offline scheduling which means the execution time is calculated and mapping
  tasks shall be examined at pre-scheduled times.
  This scheduling approach is static.
  This strategy helps us prepare a supply plan for tasks, allocate resources
- to them, and then execute the tasks according to this supply plan
+ to them and then execute the tasks according to this supply plan
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -295,12 +307,12 @@ literal "false"
 
 \end_inset
 
-
-\color brown
 .
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 The second approach is online task scheduling, which means dynamic scheduling
  tasks, where one needs to use and consider available resources rather than
  operating time.
@@ -333,10 +345,14 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Scheduling objectives
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 There are many scheduling objectives
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -349,10 +365,14 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Cost
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The minimization of the execution cost or the respect of user-defined budget:
  for the user, reducing execution cost is of a capital importance.
  User sometimes have a cap on the amount of money spent on resources (i.e.
@@ -362,10 +382,14 @@ The minimization of the execution cost or the respect of user-defined budget:
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Makespan
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The minimization of the execution time or the respect of user-defined deadline
  as in the case of the execution cost, execution time and deadline are of
  a capital importance for cloud users.
@@ -375,19 +399,27 @@ The minimization of the execution time or the respect of user-defined deadline
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Workload Maximization
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The maximization of the workload aiming at maximizing the amount of work
  done, that is, the number of workflows executed.
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Maximization of VM utilization
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 idle time slots in provisioned VMs are deemed as a waste of money as they
  were paid for but not utilized and as a result, algorithms try to avoid
  them in their schedules.
@@ -397,11 +429,15 @@ idle time slots in provisioned VMs are deemed as a waste of money as they
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Energy Consumption
 \end_layout
 
 \begin_layout Standard
-The current industries, organizations, and governments are really concern
+
+\color brown
+The current industries, organizations and governments are really concern
  about the reduction of energy and to reduce the carbon footprint.
  For cloud computing providers, energy consumption reduction is a key to
  upgrade their return of investment (ROI).
@@ -411,10 +447,14 @@ on.
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Reliability Awareness
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Scheduling algorithms considering reliability as part of their objectives
  must put mechanisms in place to ensure that the workflow execution is completed
  within the users’ QoS constraints even if resource or task failures occur.
@@ -422,19 +462,9 @@ Scheduling algorithms considering reliability as part of their objectives
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Security Awareness
-\end_layout
-
-\begin_layout Subsection
-
-\color brown
-? Les techiniques de l'ordonnancement du workflow
-\end_layout
-
-\begin_layout Subsection
-
-\color brown
-? Catégories d'algorithmes d'ordonnancement existants
 \end_layout
 
 \begin_layout Section
@@ -444,10 +474,14 @@ Security Awareness
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Energy optimization problem
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Scientific workflows are the constitution of distinct tasks with complex
  dependency.
  Resource provisioning and the order in which workflow tasks are executed
@@ -469,8 +503,8 @@ Scientific workflows are the constitution of distinct tasks with complex
  algorithm are also challenging tasks.
  The energy-aware scheduling algorithm must be selected which can provision
  a proper resource from the offered resources which are efficient enough
- to complete the workflow tasks within their deadline constriction, and
- it can decrease the energy consumption
+ to complete the workflow tasks within their deadline constriction and it
+ can decrease the energy consumption
 \begin_inset CommandInset citation
 LatexCommand cite
 key "garg2022energy"
@@ -482,10 +516,14 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Hard optimization
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 A multi-objective optimization approach is suggested here for scientific
  workflow task-scheduling problems in cloud computing.
  More frequently, scientific workflow involves a large number of tasks.
@@ -518,10 +556,12 @@ Algorithmes d'optimisation approchées [7days]
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Workflow scheduling in the cloud environment is an NP-hard optimization
  problem with rich literature over the last decade.
- Previous works have presented many meta-heuristic, and heuristic-based
- methods to solve this problem
+ Previous works have presented many meta-heuristic and heuristic-based methods
+ to solve this problem
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -569,7 +609,7 @@ Plain GA, CA+GA
 
 \color brown
 plain genetic (Plain GA), (ii) cellular automata supported by genetic approach
- (CA + GA), and (iii) heuristic, giving preferences to high-efficiency machines
+ (CA + GA) and (iii) heuristic, giving preferences to high-efficiency machines
  in allocation (EAH), based on a typical FIFO algorithm The used fitness
  function is based on energy minimization only.
 \end_layout
@@ -673,7 +713,7 @@ NSGA-II (Non-dominated Sorting Genetic Algorithm II)
 \color brown
 uses a non-dominated sorting approach to assess the quality of population
  solutions.
- Solutions are ranked according to their dominance over other solutions,
+ Solutions are ranked according to their dominance over other solutions
  and non-dominated solutions are grouped into Pareto fronts.
  The Pareto fronts are then ranked in order of dominance to create a new
  population of parent solutions.
@@ -690,7 +730,7 @@ MOCell (Multi-Objective Cellular Genetic Algorithm)
 \begin_layout Standard
 
 \color brown
-uses a grid approach to divide the search space into cells, and each cell
+uses a grid approach to divide the search space into cells and each cell
  is treated as a separate optimization problem.
  The solutions are then evaluated locally and the best individuals are selected
  to reproduce within the cell.
@@ -718,7 +758,7 @@ uses quality indicators to assess the quality of solutions.
 \color brown
 These algorithms all use an evolutionary approach to optimize multiple goals
  at the same time.
- Candidate solutions are evaluated against several optimization criteria,
+ Candidate solutions are evaluated against several optimization criteria
  and the best solutions are selected for replication.
  The algorithms then use crossover and mutation operators to generate a
  new population of candidate solutions.
@@ -874,7 +914,7 @@ The Improved EASLA algorithm is an enhanced version of EASLA, which incorporates
 The basic idea behind EASLA is to simulate the hunting behavior of antlions,
  which use a combination of ambush and trap techniques to capture their
  prey.
- In EASLA, the antlion represents the best solution found so far, and the
+ In EASLA, the antlion represents the best solution found so far and the
  ants represent potential solutions in the search space.
 \end_layout
 
@@ -1013,18 +1053,18 @@ VHEST stands for Variable Hessian Estimation Search Technique.
  process in metallurgy.
  EASA starts with a high-temperature search process, during which the algorithm
  can accept worse solutions to escape from local optima.
- As the temperature is lowered, the algorithm becomes more selective, and
+ As the temperature is lowered, the algorithm becomes more selective and
  only accepts better solutions.
  EASA has been applied to various optimization problems, including parameter
- estimation, design optimization, and clustering.
+ estimation, design optimization and clustering.
 \end_layout
 
 \begin_layout Standard
 
 \color brown
 Both VHEST and EASA are known for their efficiency and accuracy in solving
- optimization problems, and they have been applied to various real-world
- problems in engineering, science, and other fields.
+ optimization problems and they have been applied to various real-world
+ problems in engineering, science and other fields.
  
 \end_layout
 
@@ -1040,7 +1080,7 @@ EDLS
 The Exponential Differencing Least Squares (EDLS) algorithm is a linear
  regression estimation algorithm that is used to model data that has exponential
  trends or time-varying growth rates.
- It is widely used in finance to model interest rates, exchange rates, and
+ It is widely used in finance to model interest rates, exchange rates and
  asset prices.
 \end_layout
 
@@ -1095,7 +1135,7 @@ EED, EEND
 algorithms, namely, Energy-Efficiency with Duplication (EED) and Energy-Efficien
 cy with Non Duplication (EEND) Both algorithms, in contrast to their counterpart
 s in the literature, strive to make a balance across the energy consumption,
- the schedule length, and the number of processors used.
+ the schedule length and the number of processors used.
  Synthetic benchmarks and real-world applications are used to evaluate the
  performance of our algorithms.
 \end_layout
@@ -1149,14 +1189,14 @@ ECS is a task scheduling algorithm that considers both the processing time
  consumption.
  The algorithm schedules tasks in a way that allows processors to enter
  idle mode as much as possible without violating the performance requirements.
- ECS+Idle uses a greedy approach to find an initial schedule, and then applies
+ ECS+Idle uses a greedy approach to find an initial schedule and then applies
  a genetic algorithm to optimize the schedule by exploiting the idle time
  of processors.
  Both ECS and ECS+Idle have been shown to be effective in reducing energy
  consumption in computing systems while maintaining performance requirements.
  These algorithms have been applied to various scheduling problems, including
  task scheduling on heterogeneous systems, scheduling in cloud computing
- environments, and scheduling in real-time systems.
+ environments and scheduling in real-time systems.
 \end_layout
 
 \begin_layout Standard
@@ -1364,7 +1404,7 @@ AVVMC
 
 \color brown
 the AVVMC VM consolidation scheme that focuses on balanced resource utilization
- of servers across different computing resources (CPU, memory, and network
+ of servers across different computing resources (CPU, memory and network
  I/O) with the goal of minimizing power consumption and resource wastage,
  adaptation and integration of the Ant Colony Optimization (ACO) metaheuristic
  with balanced usage of computing resources based on vector algebra.
@@ -4826,7 +4866,7 @@ Not considering instance acquisition and termination delay
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Workflow scheduling algorithms, systems, and optimization metrics used for
+Workflow scheduling algorithms, systems and optimization metrics used for
  them.
 \end_layout
 
@@ -4847,10 +4887,14 @@ Problem modeling
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Workflow modelisation
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In the workflow scheduling problem, applications are defined by the directed
  acyclic graphs (DAGs).
  A workflow includes a set of interdependent tasks that are bounded together
@@ -4866,6 +4910,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 We consider a workflow W as a graph G = (T, D) , where T = { T , T ,…, T
  } indicates n tasks and shows the data flow dependencies among them.
  The data-flow dependency ( T
@@ -4892,6 +4938,8 @@ We consider a workflow W as a graph G = (T, D) , where T = { T , T ,…, T
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 In some cases, there are several predecessors and successors and so Pr(T
 \begin_inset Formula $_{i}$
 \end_inset
@@ -4917,6 +4965,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Formula 
 \begin{equation}
 Pr(T_{i})=\left\{ Tj|\left(T_{j},T_{i}\right)\epsilon D\right\} 
@@ -4928,6 +4978,8 @@ Pr(T_{i})=\left\{ Tj|\left(T_{j},T_{i}\right)\epsilon D\right\}
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Formula 
 \begin{equation}
 Su(T_{i})=\left\{ Tj|\left(T_{i},T_{j}\right)\epsilon D\right\} 
@@ -4939,6 +4991,8 @@ Su(T_{i})=\left\{ Tj|\left(T_{i},T_{j}\right)\epsilon D\right\}
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 T
 \begin_inset Formula $_{entry}$
 \end_inset
@@ -4952,14 +5006,15 @@ ely.
 \end_layout
 
 \begin_layout Itemize
-The degree of dependency of workflow task on wti can be calculated using
+
 \color brown
- 
-\color inherit
-this equation.
+The degree of dependency of workflow task on wti can be calculated using
+ this equation.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Formula 
 \begin{equation}
 ddi=(\sum_{T_{p}𝜖Pr(T_{i})}𝑒(T_{p},T_{i})+\sum_{T_{c}𝜖Su(T_{i})}𝑒(T_{i},T_{c}))
@@ -4971,6 +5026,8 @@ ddi=(\sum_{T_{p}𝜖Pr(T_{i})}𝑒(T_{p},T_{i})+\sum_{T_{c}𝜖Su(T_{i})}𝑒(T_
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 where 
 \begin_inset Formula $\sum_{T_{p}𝜖Pr(T_{i})}𝑒(T_{p},T_{i})$
 \end_inset
@@ -4983,6 +5040,8 @@ where
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 and 
 \begin_inset Formula $\sum_{T_{c}𝜖Su(T_{i})}𝑒(T_{i},T_{c}))$
 \end_inset
@@ -4996,6 +5055,8 @@ and
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 Cloud datacenter model
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -5008,12 +5069,16 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Cloud data center is a network of computing resources that enables application
  and data sharing.
  
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 We assume that a data center has a set of 
 \series bold
 M
@@ -5028,6 +5093,8 @@ k
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Let 
 \series bold
 p
@@ -5050,11 +5117,13 @@ p
 
 ), denotes the different types of PMs available in a cloud data center.
  These PMs have different Processing capacity such as CPUs, memory, bandwidth,
- network I/O, and the size of the storage which are measured in million
- instructions per second (MIPS).
+ network I/O and the size of the storage which are measured in million instructi
+ons per second (MIPS).
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 VMs are deployed on PMs and each PM can host 
 \series bold
 k
@@ -5089,6 +5158,8 @@ k
 \end_layout
 
 \begin_layout Subsection
+
+\color brown
 VM allocation model
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -5101,16 +5172,20 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Reducing energy consumption in a cloud data center has recently become a
  major concern for many researchers.
  This is because the cloud environment has become a trusted platform that
- individuals, organizations, and the government rely on to conduct business.
+ individuals, organizations and the government rely on to conduct business.
  So, if the energy consumption in the cloud data center is not reduced,
  it will have a direct or indirect impact on all the stakeholders.
  
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 A VM allocation model has been proposed (see Fig.
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5136,6 +5211,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Float figure
 wide false
 sideways false
@@ -5143,6 +5220,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\color brown
 \begin_inset Graphics
 	filename images/VM_allocation_model.png
 	scale 50
@@ -5153,6 +5232,8 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -5177,6 +5258,8 @@ name "VM_allocation_model"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In the model, we assume that there are only three types of VMs (VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -5185,7 +5268,7 @@ In the model, we assume that there are only three types of VMs (VM
 \begin_inset Formula $_{MEC}$
 \end_inset
 
-, and VM
+ and VM
 \begin_inset Formula $_{LEC}$
 \end_inset
 
@@ -5193,11 +5276,15 @@ In the model, we assume that there are only three types of VMs (VM
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Definition 1.
  
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The VMs are deployed based on their energy consumption level.
  There are three (3) physical machines (PMs) hosting five VMs (three different
  types).
@@ -5211,6 +5298,8 @@ k
 
 \begin_layout Standard
 \align center
+
+\color brown
 𝑉𝑀 𝑇𝑦𝑝𝑒 =
 \begin_inset Formula $\begin{cases}
 𝑉𝑀_{𝐻𝐸𝐶} & (𝐻𝐸𝐶_{1}),(𝐻𝐸𝐶_{2}),(𝐻𝐸𝐶_{3})........𝐻𝐸𝐶_{𝑘}\\
@@ -5223,6 +5312,8 @@ k
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 • Where VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -5233,6 +5324,8 @@ k
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 • Where VM
 \begin_inset Formula $_{MEC}$
 \end_inset
@@ -5243,6 +5336,8 @@ k
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 • Where VM
 \begin_inset Formula $_{LEC}$
 \end_inset
@@ -5252,11 +5347,15 @@ k
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Definition 2.
  
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Each workflow contains several set of workflow tasks representing (Wt1,
  Wt2, Wt3, Wt4 .
  .
@@ -5282,6 +5381,7 @@ n
 \align center
 
 \shape italic
+\color brown
 Tasks grouping
 \shape default
  =
@@ -5296,6 +5396,8 @@ Tasks grouping
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 • Where HCT is a set of tasks in the tasks ready queue that is defined as
  highly critical tasks that are at risk of missing their deadlines if they
  are not migrated to a high-speed procession VM immediately.
@@ -5303,6 +5405,8 @@ Tasks grouping
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 • Where MCT represents a group of queued workflow tasks that are classified
  as medium critical.
  This group of tasks is less critical compared to HCT, but more critical
@@ -5311,6 +5415,8 @@ Tasks grouping
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 • Where LCT is a group of tasks in the ready queue defined as less critical
  tasks.
  This category of tasks does not need to be processed on high-speed VMs
@@ -5320,6 +5426,8 @@ Tasks grouping
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The EFT of workflow task
 \begin_inset Formula $_{i}$
 \end_inset
@@ -5332,6 +5440,8 @@ The EFT of workflow task
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Formula 
 \begin{equation}
 𝐸𝐹𝑇_{wt_{i},VM_{k}}=\frac{S(wti)}{EC(VM_{k})}⟺{𝐸𝑥𝑝𝑒𝑐𝑡𝑒𝑑𝑆𝑐ℎ𝑒𝑑𝑢𝑙𝑒}
@@ -5343,6 +5453,8 @@ The EFT of workflow task
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 Where S(wti) is the size of workflow task
 \begin_inset Formula $_{i}$
 \end_inset
@@ -5351,6 +5463,8 @@ Where S(wti) is the size of workflow task
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 EC (VM
 \begin_inset Formula $_{k}$
 \end_inset
@@ -5360,10 +5474,14 @@ EC (VM
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Definition 3.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Every workflow task has a deadline.
  A deadline is a time-based scheduling constraint that requires a workflow
  task to be scheduled within a specified time period.
@@ -5373,6 +5491,8 @@ Every workflow task has a deadline.
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 A shorter/earliest deadline task is a task that is close to its specified
  scheduling time.
  Such tasks are assigned the highest priorities.
@@ -5380,6 +5500,8 @@ A shorter/earliest deadline task is a task that is close to its specified
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 Tasks with long deadlines are tasks that do not require higher priority.
  This is because such tasks are not close to their predefined deadlines
  and therefore can be assigned to resources after the higher priority tasks
@@ -5387,6 +5509,8 @@ Tasks with long deadlines are tasks that do not require higher priority.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Thus, each task must be executed before the specified deadline.
  If the execution of a workflow task 𝑇 exceeds its deadline, it means that
  the deadline constraint set by the user has been violated.
@@ -5394,6 +5518,8 @@ Thus, each task must be executed before the specified deadline.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 As shown in Fig.
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5404,13 +5530,9 @@ noprefix "false"
 
 \end_inset
 
-
-\color brown
-,
-\color inherit
- we have four workflow tasks that have arrived and are queued to be mapped
+, we have four workflow tasks that have arrived and are queued to be mapped
  to VMs.
- The arrived tasks are 𝑤𝑡1, 𝑤𝑡2, 𝑤𝑡3, and 𝑤𝑡4.
+ The arrived tasks are 𝑤𝑡1, 𝑤𝑡2, 𝑤𝑡3 and 𝑤𝑡4.
  We also have three types of VMs (𝑉𝑀
 \begin_inset Formula $_{𝐻𝐸𝐶}$
 \end_inset
@@ -5419,15 +5541,15 @@ noprefix "false"
 \begin_inset Formula $_{𝑀𝐸𝐶}$
 \end_inset
 
-, and 𝑉𝑀
+ and 𝑉𝑀
 \begin_inset Formula $_{𝐿𝐸𝐶}$
 \end_inset
 
 ).
- These tasks have different deadlines, and we need to map them to VMs based
+ These tasks have different deadlines and we need to map them to VMs based
  on their deadlines.
  𝑤𝑡1 belongs to the HCT group because its deadline is 2 min, which is too
- tight, and if it is not allocated immediately, it might miss its deadline.
+ tight and if it is not allocated immediately, it might miss its deadline.
  To prevent 𝑤𝑡1 from missing its deadline, we quickly mapped it to VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -5438,7 +5560,7 @@ noprefix "false"
 \end_inset
 
  is a high-speed VM that can finish executing 𝑤𝑡1 before or on its deadline.
- The next task closer to its deadline is 𝑤𝑡4, and since VM
+ The next task closer to its deadline is 𝑤𝑡4 and since VM
 \begin_inset Formula $_{HEC}$
 \end_inset
 
@@ -5449,7 +5571,7 @@ noprefix "false"
 .
  The projections show that by the time 𝑤𝑡1 will meet its deadline, 𝑤𝑡3 will
  have 3 min left to also meet its deadline (5min-2 min).
- Therefore, 𝑤𝑡3 is classified as an HCT at that time, and if there is no
+ Therefore, 𝑤𝑡3 is classified as an HCT at that time and if there is no
  other HCT in the waiting queue at that time, then 𝑤𝑡3 is mapped to VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -5482,6 +5604,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The goal of workflow scheduling is to find the best optimal solution from
  various optimization methods that can give good results for the optimization
  problem.
@@ -5494,6 +5618,8 @@ n problem.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The problem of multi-objective optimization varies from user to user and
  must be managed accordingly.
  Some users may want a reduced execution makespan and execution cost while
@@ -5505,6 +5631,8 @@ The problem of multi-objective optimization varies from user to user and
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 We consider a workflow application as DAG.
  It is modeled with data dependencies representing precedence constraints
  between tasks.
@@ -5529,6 +5657,8 @@ We consider a workflow application as DAG.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Our goal is to reduce the energy consumption, makespan and execution cost
  of workflow tasks with dependency constraints.
 \end_layout
@@ -5541,14 +5671,12 @@ Definition 4.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Since we aims at improving resource management to reduce energy consumption
  in cloud data centers at lower cost without violating scheduling constraints,
- energy consumption can be derived from the next equation
-\color brown
-.
- 
-\color inherit
-Here, TE
+ energy consumption can be derived from the next equation.
+ Here, TE
 \begin_inset Formula $_{E}$
 \end_inset
 
@@ -5556,15 +5684,14 @@ Here, TE
 \begin_inset Formula $_{E}$
 \end_inset
 
-is the energy consumed for transferring all data, and the sum of 
-\color brown
-energy consumed for scheduling all tasks
-\color inherit
- on all VM.
+is the energy consumed for transferring all data and the sum of energy consumed
+ for scheduling all tasks on all VM.
  
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Formula 
 \begin{equation}
 TE_{E}=ED_{E}+\sum_{En}^{Ek}?
@@ -5576,17 +5703,22 @@ TE_{E}=ED_{E}+\sum_{En}^{Ek}?
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Definition 5.
  
 \end_layout
 
 \begin_layout Standard
-The metric for the execution cost is calculated using the following equation:
+
 \color brown
+The metric for the execution cost is calculated using the following equation:
  
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Formula 
 \begin{equation}
 𝑇𝐶=(𝑃_{𝑗}*𝑃𝐶+(\sum_{𝑓𝜖𝐹𝑖𝑛𝑗}𝑆𝑖𝑧𝑒(𝑓)+\sum_{𝑓𝜖𝐹𝑜𝑢𝑡𝑗}𝑆𝑖𝑧𝑒(𝑓)))*𝑇𝑟𝐶
@@ -5598,22 +5730,32 @@ The metric for the execution cost is calculated using the following equation:
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 where,
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 TC is the total cost.
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 Pj is the processing time of job j
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 PC is the processing cost
 \end_layout
 
 \begin_layout Itemize
+
+\color brown
 TrC is the cost of transferring the input files (F
 \begin_inset Formula $_{inj}$
 \end_inset
@@ -5626,6 +5768,8 @@ TrC is the cost of transferring the input files (F
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 \begin_inset Float table
 wide false
 sideways false
@@ -5633,6 +5777,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\color brown
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="3">
 <features tabularvalignment="middle">
@@ -5644,6 +5790,8 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Symbol
 \end_layout
 
@@ -5653,6 +5801,8 @@ Symbol
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Definition
 \end_layout
 
@@ -5662,6 +5812,8 @@ Definition
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Unity
 \end_layout
 
@@ -5673,6 +5825,8 @@ Unity
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 wt
 \begin_inset Formula $_{i}$
 \end_inset
@@ -5686,6 +5840,8 @@ wt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 workflow task
 \end_layout
 
@@ -5695,6 +5851,8 @@ workflow task
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 -
 \end_layout
 
@@ -5706,6 +5864,8 @@ workflow task
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 VM
 \begin_inset Formula $_{k}$
 \end_inset
@@ -5719,6 +5879,8 @@ VM
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Virtual Machine type k
 \end_layout
 
@@ -5728,6 +5890,8 @@ Virtual Machine type k
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 -
 \end_layout
 
@@ -5740,18 +5904,7 @@ Virtual Machine type k
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\color brown
 𝐸𝐹𝑇
 \begin_inset Formula $_{Wti,VM_{k}}$
 \end_inset
@@ -5765,6 +5918,8 @@ Virtual Machine type k
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Expected Finish Time of task Wti executed on VM
 \begin_inset Formula $_{k}$
 \end_inset
@@ -5778,6 +5933,8 @@ Expected Finish Time of task Wti executed on VM
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Second
 \end_layout
 
@@ -5789,6 +5946,8 @@ Second
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 S(wt
 \begin_inset Formula $_{i}$
 \end_inset
@@ -5802,6 +5961,8 @@ S(wt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Size of wt
 \begin_inset Formula $_{i}$
 \end_inset
@@ -5815,6 +5976,8 @@ Size of wt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 MI
 \end_layout
 
@@ -5826,6 +5989,8 @@ MI
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 EC (VM
 \begin_inset Formula $_{k}$
 \end_inset
@@ -5839,6 +6004,8 @@ EC (VM
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Execution Capacity of VM
 \begin_inset Formula $_{k}$
 \end_inset
@@ -5852,6 +6019,8 @@ Execution Capacity of VM
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 MIPS
 \end_layout
 
@@ -5863,6 +6032,8 @@ MIPS
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 TE
 \begin_inset Formula $_{E}$
 \end_inset
@@ -5876,6 +6047,8 @@ TE
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Total Energy consumed for executing workflows
 \end_layout
 
@@ -5885,6 +6058,8 @@ Total Energy consumed for executing workflows
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 kW/h
 \end_layout
 
@@ -5896,6 +6071,8 @@ kW/h
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 E
 \begin_inset Formula $_{DT}$
 \end_inset
@@ -5909,6 +6086,8 @@ E
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Energy consumed for Data Transferring
 \end_layout
 
@@ -5918,6 +6097,8 @@ Energy consumed for Data Transferring
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 kW/h
 \end_layout
 
@@ -5929,6 +6110,8 @@ kW/h
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 TC
 \end_layout
 
@@ -5938,6 +6121,8 @@ TC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Total Cost
 \end_layout
 
@@ -5947,6 +6132,8 @@ Total Cost
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 $
 \end_layout
 
@@ -5958,6 +6145,8 @@ $
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Pj
 \end_layout
 
@@ -5967,6 +6156,8 @@ Pj
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Processing time of job j
 \end_layout
 
@@ -5976,6 +6167,8 @@ Processing time of job j
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 $
 \end_layout
 
@@ -5987,6 +6180,8 @@ $
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 PC
 \end_layout
 
@@ -5996,6 +6191,8 @@ PC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Processing Cost
 \end_layout
 
@@ -6005,6 +6202,8 @@ Processing Cost
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 $
 \end_layout
 
@@ -6016,6 +6215,8 @@ $
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 TrC
 \end_layout
 
@@ -6025,6 +6226,8 @@ TrC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 Cost of Transferring the input files (F
 \begin_inset Formula $_{inj}$
 \end_inset
@@ -6042,6 +6245,8 @@ Cost of Transferring the input files (F
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color brown
 $
 \end_layout
 
@@ -6056,6 +6261,8 @@ $
 \end_layout
 
 \begin_layout Plain Layout
+
+\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -6079,6 +6286,8 @@ Symbols used in the formulas
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Cloud data centers generate massive energy consumption on a global scope.
  It needs to reduce the overall energy consumption of cloud data centers
  under the premise of satisfying QoS
@@ -6093,14 +6302,16 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In this chapter, we have do 
-\color brown
 
+\color brown
+In this chapter, we have do 
 \backslash
 todo...
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 In the next chapter we will suggest our proposed approach
 \end_layout
 

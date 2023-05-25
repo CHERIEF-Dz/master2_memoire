@@ -147,11 +147,11 @@ The WfMC is a consortium formed to define standards for the interoperability
 \begin_inset Quotes eld
 \end_inset
 
-Workflow is the sequence of tasks, steps, and decisions that need to be
- followed to complete a specific process.
+Workflow is the sequence of tasks, steps and decisions that need to be followed
+ to complete a specific process.
  It can be thought of as a set of instructions that describe how a process
  should be performed, including the order in which tasks are to be completed,
- who is responsible for performing each task, and what should happen next
+ who is responsible for performing each task and what should happen next
  based on the outcome of each task.
 \end_layout
 
@@ -160,9 +160,9 @@ Workflow is the sequence of tasks, steps, and decisions that need to be
 
 \shape italic
 Workflows can be used to automate a wide range of business processes, such
- as invoicing, order fulfillment, human resources, and project management.
+ as invoicing, order fulfillment, human resources and project management.
  The goal of a workflow is to make sure that tasks are completed in the
- correct order and by the right people, and to ensure that the process is
+ correct order and by the right people and to ensure that the process is
  efficient and accurate.
 \begin_inset Quotes erd
 \end_inset
@@ -222,10 +222,10 @@ literal "false"
 A software application that is designed to help organizations automate and
  manage their business processes.
  A WfMS allows an organization to define and implement a workflow – a series
- of tasks, steps, and decisions – that need to be followed to complete a
+ of tasks, steps and decisions – that need to be followed to complete a
  specific process.
  The system can then be used to track the progress of the workflow, manage
- the flow of information and documents, and ensure that tasks are completed
+ the flow of information and documents and ensure that tasks are completed
  in the correct order and by the right people.
 \end_layout
 
@@ -234,11 +234,11 @@ A software application that is designed to help organizations automate and
 
 \shape italic
 A WfMS can be used to automate a wide range of business processes, such
- as invoicing, order fulfillment, human resources, and project management.
- It can also be used to integrate different systems, such as email, calendar,
+ as invoicing, order fulfillment, human resources and project management.
+ It can also be used to integrate different systems, such as email, calendar
  and customer relationship management (CRM) software.
  WfMS allows you to streamline the process and make it more efficient, reduce
- errors and delays, and give you real-time visibility into the status of
+ errors and delays and give you real-time visibility into the status of
  your processes, also it’s common to have a built-in reporting and analytics
  tools to measure the performance of the process
 \begin_inset Quotes erd
@@ -260,7 +260,7 @@ Workflows are compositions of tasks (also referred to as activities) by
  Web services are the most prominent implementation of the service oriented
  architecture (SOA).
  The Web Service technology is an approach to provide and request services
- in distributed environments independent of programming languages, platforms,
+ in distributed environments independent of programming languages, platforms
  and operating systems.
  It is applied in a very wide range of applications where integration of
  heterogeneous systems is a must
@@ -437,7 +437,7 @@ literal "false"
 Scientific workflows are a specialized form of workflows that are designed
  for data-intensive or knowledge discovery applications in various scientific
  disciplines.
- Scientific workflows enable researchers to formulate, share, reuse, and
+ Scientific workflows enable researchers to formulate, share, reuse and
  validate complex methods that involve different data sources and computational
  platforms.
 \end_layout
@@ -544,7 +544,7 @@ noprefix "false"
 
 \begin_layout Standard
 Typically, there is only one user group, the scientists, playing the roles
- of a modeler, user, administrator, and analyst.
+ of a modeler, user, administrator and analyst.
  The focus of their work is usually on single workflow instances.
 \end_layout
 
@@ -675,8 +675,8 @@ Main Requirements on scientific WfMS
 \begin_layout Standard
 Workflows in the scientific area make use of a data-centric approach.
  Typically, huge amounts of data have to be processed, e.g.
- 5 GB data per day is transmitted by the Hubble telescope, and probably
- need to be processed by a workflow.
+ 5 GB data per day is transmitted by the Hubble telescope and probably need
+ to be processed by a workflow.
  The modeling language for scientific workflows is primarily data-driven,
  sometimes with support of a few control structures (e.g.
  in Taverna, Triana).
@@ -765,7 +765,7 @@ monitoring:
 \series default
 WfMS should support the ability to monitor the status of the workflow execution.
  For example, the scientist is interested in knowledge about running, finished
- or faulted activities, allocated resources, and the dynamical choice of
+ or faulted activities, allocated resources and the dynamical choice of
  a service implementation.
  Inspecting the produced data is also a need.
 \end_layout
@@ -780,7 +780,7 @@ reproducibility:
  be able to retrace the simulation, have to review the findings, or need
  to use the results.
  The operating scientist may want to repeat a workflow or parts of it to
- draw conclusions, and to prove statements and assumptions.
+ draw conclusions and to prove statements and assumptions.
  Additionally, the scientist may share the results with people he collaborates
  with.
  While following and reproducing workflow runs and their (intermediate)
@@ -801,8 +801,8 @@ robustness:
  the robustness of a system.
  But additional approaches are needed to protect the execution progress
  from being lost in case of unforeseeable failures, to reach a consistent
- system state even in thse presence of failures, and to proceed a simulation/exp
-eriment after a failure.
+ system state even in thse presence of failures and to proceed a simulation/expe
+riment after a failure.
 \end_layout
 
 \begin_layout Itemize
