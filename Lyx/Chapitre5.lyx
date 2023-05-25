@@ -122,7 +122,7 @@ Over the past few years, cloud computing has gained tremendous popularity
  Internet.
  Cloud is a large and complex system since it is composed of several users,
  service providers,physical machines, service broker, task scheduling algorithms
- , bandwidth, internet latency, and storage technology etc.
+ , bandwidth, internet latency and storage technology etc.
  On the other hands, all cloud-based implementations need various configurations.
  Therefore, it is very difficult for researchers to evaluate the performance
  of their policies in a real cloud environment
@@ -148,7 +148,7 @@ Simulation tool: WorkflowSim
 
 \begin_layout Standard
 the simulator can play an important role in reducing cost, efficiency,infrastruc
-ture complexity, and security risks before a solution can be deployed on
+ture complexity and security risks before a solution can be deployed on
  real infrastructure.
  By focusing on issues related to the quality of a particular component
  under various scenarios, cloud simulators enable performance analysts to
@@ -491,7 +491,7 @@ It supports a stack of workflow parser and workflow engine delay to workflow
 \end_layout
 
 \begin_layout Enumerate
-It implements several workflow-scheduling methods such as HEFT, Min-Min,
+It implements several workflow-scheduling methods such as HEFT, Min-Min
  and Max-Min and so developers can compare their algorithms with them in
  a simple way.
 \end_layout
@@ -542,17 +542,16 @@ It supports only simple workflow techniques and so developers cannot use
 \end_layout
 
 \begin_layout Section
-
-\color brown
 Workflows 
 \end_layout
 
 \begin_layout Standard
-
-\color brown
-We use four different types of benchmark workflows (Montage, Cybershake,
+We use five different types of benchmark workflows (Montage, Cybershake,
  LIGO, Epigenomics and Sipht) available on the Pegasus website.
- These workflows typically involve complex data of various sizes and complicated
+\end_layout
+
+\begin_layout Standard
+These workflows typically involve complex data of various sizes and complicated
  computer simulations.
  They need high computation power and the availability of large infrastructures
  that cloud computing environments provide with different quality of service
@@ -575,26 +574,12 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Each of these workflow types has four different workloads.
  For example, the Cybershake workflow has four workloads, including 30,
- 50, 100 and 1000 tasks
+ 50, 100 and 1000 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "konjaang2022energy"
-literal "false"
-
-\end_inset
-
-.Scheduling workflows are classified into two kinds of balanced and unbalanced
- .A balanced workflow has some pipelines that need similar services.
- Nevertheless, they process various types of services.
- The unbalanced workflow is more complicated and has many parallel tasks
- that involve many services
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hard_optimization_mohammadzadeh2021energy"
 literal "false"
 
 \end_inset
@@ -604,8 +589,6 @@ literal "false"
 
 \begin_layout Standard
 \align center
-
-\color brown
 \begin_inset Float figure
 placement h
 wide false
@@ -613,8 +596,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\color brown
 \begin_inset Graphics
 	filename images/workflows_compressed - Copie.jpg
 	width 15cm
@@ -625,8 +606,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -653,39 +632,27 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-
-\color brown
 Simulation parameter
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The inputs to the simulation environment are as follows:
 \end_layout
 
 \begin_layout Itemize
-
-\color brown
 the average bandwidth between resources is 20 MBps.
 \end_layout
 
 \begin_layout Itemize
-
-\color brown
 the processing matrix for each VM is measured in Million Instruction Per
  Second (MIPS).
 \end_layout
 
 \begin_layout Itemize
-
-\color brown
 the task lengths are set in Million Instruction (MI).
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 In this work, we assumed that there are only three types of VMs (VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -702,8 +669,6 @@ In this work, we assumed that there are only three types of VMs (VM
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 We further assumed that there are only 3 types of VMs in the cloud data
  center, each with an infinite number of instances.
  The computational capacities and the prices per hour for each VM type are
@@ -723,8 +688,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 \begin_inset Float table
 wide false
 sideways false
@@ -732,8 +695,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\color brown
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
 <features tabularvalignment="middle">
@@ -746,8 +707,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 Virtual Machine
 \end_layout
 
@@ -757,8 +716,6 @@ Virtual Machine
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 type
 \end_layout
 
@@ -768,8 +725,6 @@ type
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 Capability (CU)
 \end_layout
 
@@ -779,8 +734,6 @@ Capability (CU)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 Price ($/h)
 \end_layout
 
@@ -792,8 +745,6 @@ Price ($/h)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 LEC
 \end_layout
 
@@ -803,8 +754,6 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 1
 \end_layout
 
@@ -814,8 +763,6 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 1.0
 \end_layout
 
@@ -825,8 +772,6 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 0.12
 \end_layout
 
@@ -838,8 +783,6 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 LEC
 \end_layout
 
@@ -849,8 +792,6 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 2
 \end_layout
 
@@ -860,8 +801,6 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 1.5
 \end_layout
 
@@ -871,8 +810,6 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 0.195
 \end_layout
 
@@ -884,8 +821,6 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 MEC
 \end_layout
 
@@ -895,8 +830,6 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 3
 \end_layout
 
@@ -906,8 +839,6 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 2.0
 \end_layout
 
@@ -917,8 +848,6 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 0.28
 \end_layout
 
@@ -930,8 +859,6 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 MEC
 \end_layout
 
@@ -941,8 +868,6 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 4
 \end_layout
 
@@ -952,8 +877,6 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 2.5
 \end_layout
 
@@ -963,8 +886,6 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 0.375
 \end_layout
 
@@ -976,8 +897,6 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 HEC
 \end_layout
 
@@ -987,8 +906,6 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 5
 \end_layout
 
@@ -998,8 +915,6 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 3.0
 \end_layout
 
@@ -1009,8 +924,6 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 0.48
 \end_layout
 
@@ -1022,8 +935,6 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 HEC
 \end_layout
 
@@ -1033,8 +944,6 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 6
 \end_layout
 
@@ -1044,8 +953,6 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 3.5
 \end_layout
 
@@ -1055,8 +962,6 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color brown
 0.595
 \end_layout
 
@@ -1071,8 +976,6 @@ HEC
 \end_layout
 
 \begin_layout Plain Layout
-
-\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1115,9 +1018,7 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-
-\color brown
-In a workflowsim simulator, we have simulated the proposed approach.
+We have simulated the proposed approach using WorkflowSim simulator.
  We compared the outcomes of five separate scientific workflows with our
  proposed algorithm.
 \end_layout
