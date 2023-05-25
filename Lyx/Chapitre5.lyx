@@ -147,7 +147,7 @@ Simulation tool: WorkflowSim
 \end_layout
 
 \begin_layout Standard
-the simulator can play an important role in reducing cost, efficiency,infrastruc
+The simulator can play an important role in reducing cost, efficiency,infrastruc
 ture complexity and security risks before a solution can be deployed on
  real infrastructure.
  By focusing on issues related to the quality of a particular component
@@ -201,7 +201,7 @@ Architecture
 \end_layout
 
 \begin_layout Standard
-Figure
+Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:WorkflowSim's-Architecture"
@@ -673,8 +673,7 @@ We further assumed that there are only 3 types of VMs in the cloud data
  center, each with an infinite number of instances.
  The computational capacities and the prices per hour for each VM type are
  set as the work.The instant capacity selection and pricing model are based
- on Amazon EC2 (Table.
- 
+ on Amazon EC2 (see Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:VM-types-and"
@@ -684,7 +683,15 @@ noprefix "false"
 
 \end_inset
 
-).
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

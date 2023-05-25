@@ -147,7 +147,7 @@ Simulation tool: WorkflowSim
 \end_layout
 
 \begin_layout Standard
-the simulator can play an important role in reducing cost, efficiency,infrastruc
+The simulator can play an important role in reducing cost, efficiency,infrastruc
 ture complexity and security risks before a solution can be deployed on
  real infrastructure.
  By focusing on issues related to the quality of a particular component
@@ -201,7 +201,7 @@ Architecture
 \end_layout
 
 \begin_layout Standard
-Figure
+Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:WorkflowSim's-Architecture"
@@ -542,8 +542,6 @@ It supports only simple workflow techniques and so developers cannot use
 \end_layout
 
 \begin_layout Section
-
-\color brown
 Workflows 
 \end_layout
 
@@ -564,9 +562,7 @@ These workflows typically involve complex data of various sizes and complicated
  and the execution time estimates are presented in DAX format.
  DAX files include a single time estimate for each task.
  To simulate the case of different time constraints provided by users, start
- time and a deadline for each workflow are randomly assigned
-\color brown
- 
+ time and a deadline for each workflow are randomly assigned 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -574,8 +570,6 @@ literal "false"
 
 \end_inset
 
-
-\color inherit
 .
 \end_layout
 
@@ -583,8 +577,6 @@ literal "false"
 Each of these workflow types has four different workloads.
  For example, the Cybershake workflow has four workloads, including 30,
  50, 100 and 1000 
-\color brown
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "konjaang2022energy"
@@ -597,8 +589,6 @@ literal "false"
 
 \begin_layout Standard
 \align center
-
-\color brown
 \begin_inset Float figure
 placement h
 wide false
@@ -606,8 +596,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\color brown
 \begin_inset Graphics
 	filename images/workflows_compressed - Copie.jpg
 	width 15cm
@@ -618,8 +606,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -698,7 +684,15 @@ noprefix "false"
 
 \end_inset
 
-).
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
