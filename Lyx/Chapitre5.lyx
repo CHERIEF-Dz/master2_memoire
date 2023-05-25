@@ -639,16 +639,16 @@ The inputs to the simulation environment are as follows:
 \end_layout
 
 \begin_layout Itemize
-the average bandwidth between resources is 20 MBps.
+The average bandwidth between resources is 20 MBps.
 \end_layout
 
 \begin_layout Itemize
-the processing matrix for each VM is measured in Million Instruction Per
+The processing matrix for each VM is measured in Million Instruction Per
  Second (MIPS).
 \end_layout
 
 \begin_layout Itemize
-the task lengths are set in Million Instruction (MI).
+The task lengths are set in Million Instruction (MI).
 \end_layout
 
 \begin_layout Standard
@@ -671,8 +671,9 @@ In this work, we assumed that there are only three types of VMs (VM
 We further assumed that there are only 3 types of VMs in the cloud data
  center, each with an infinite number of instances.
  The computational capacities and the prices per hour for each VM type are
- set as the work.The instant capacity selection and pricing model are based
- on Amazon EC2 (see Table 
+ set as the work.
+ The instant capacity selection and pricing model are based on Amazon EC2
+ (see Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:VM-types-and"

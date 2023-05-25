@@ -4769,7 +4769,7 @@ Thus, each task must be executed before the specified deadline.
 \end_layout
 
 \begin_layout Standard
-As shown in Fig.
+As shown in Figure
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "VM_allocation_model"

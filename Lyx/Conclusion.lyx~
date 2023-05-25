@@ -16,7 +16,7 @@ tabs-within-sections
 eqs-within-sections
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding utf8
 \fontencoding global
@@ -78,7 +78,7 @@ eqs-within-sections
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style swiss
+\quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -95,7 +95,6 @@ eqs-within-sections
 \begin_layout Chapter*
 
 \color brown
-\lang english
 General conclusion
 \end_layout
 
@@ -118,21 +117,18 @@ addcontentsline{toc}{chapter}{Conclusion Générale}
 \begin_layout Section
 
 \color brown
-\lang english
 Discussion
 \end_layout
 
 \begin_layout Section
 
 \color brown
-\lang english
 Limits
 \end_layout
 
 \begin_layout Section
 
 \color brown
-\lang english
 Perspectives
 \end_layout
 

@@ -338,8 +338,7 @@ im').
 
 \begin_layout Enumerate
 Right click your project, choose 'Import'.
- Click 'General'->'Projects from Folder or Archive'.(see Fig.
- 
+ Click 'General'->'Projects from Folder or Archive'.(see Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Import-a-project"
@@ -392,7 +391,7 @@ name "fig:Import-a-project"
 
 \begin_layout Enumerate
 Set the URL to be your extracted folder (wait until Finish button will be
- enabled as in Fig.
+ enabled as in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Set-URL-to"
@@ -640,16 +639,16 @@ The inputs to the simulation environment are as follows:
 \end_layout
 
 \begin_layout Itemize
-the average bandwidth between resources is 20 MBps.
+The average bandwidth between resources is 20 MBps.
 \end_layout
 
 \begin_layout Itemize
-the processing matrix for each VM is measured in Million Instruction Per
+The processing matrix for each VM is measured in Million Instruction Per
  Second (MIPS).
 \end_layout
 
 \begin_layout Itemize
-the task lengths are set in Million Instruction (MI).
+The task lengths are set in Million Instruction (MI).
 \end_layout
 
 \begin_layout Standard

@@ -841,9 +841,10 @@ Conclusion
 \begin_layout Standard
 In this chapter, we have presented workflow and scientific workflows, their
  lifecycle, their benefits and the differences between them and business
- workflows.We have also presented workflow management system (WfMS) and it
- its architecture explained how the foreseen system meets general requirements
- of scientists and scientific workflows.
+ workflows.
+ We have also presented workflow management system (WfMS) and it its architectur
+e explained how the foreseen system meets general requirements of scientists
+ and scientific workflows.
 \end_layout
 
 \begin_layout Standard
