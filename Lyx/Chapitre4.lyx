@@ -1102,8 +1102,7 @@ Median Adaptive Thresholding: it depends on the median.
 \end_deeper
 \begin_layout Itemize
 Boxplot: It is one of the most frequently used graphical techniques for
- analyzing data sets, see Fig.
- 
+ analyzing data sets, see Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "box_plot_description"

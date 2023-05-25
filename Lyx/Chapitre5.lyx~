@@ -673,8 +673,7 @@ We further assumed that there are only 3 types of VMs in the cloud data
  center, each with an infinite number of instances.
  The computational capacities and the prices per hour for each VM type are
  set as the work.The instant capacity selection and pricing model are based
- on Amazon EC2 (Table.
- 
+ on Amazon EC2 (see Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:VM-types-and"

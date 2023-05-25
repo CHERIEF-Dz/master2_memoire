@@ -338,8 +338,7 @@ im').
 
 \begin_layout Enumerate
 Right click your project, choose 'Import'.
- Click 'General'->'Projects from Folder or Archive'.(see Fig.
- 
+ Click 'General'->'Projects from Folder or Archive'.(see Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Import-a-project"
@@ -392,7 +391,7 @@ name "fig:Import-a-project"
 
 \begin_layout Enumerate
 Set the URL to be your extracted folder (wait until Finish button will be
- enabled as in Fig.
+ enabled as in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Set-URL-to"
