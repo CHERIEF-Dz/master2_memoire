@@ -186,17 +186,17 @@ Definition of Task scheduling of scientific workflows
 Task scheduling of scientific workflow is extremely important.
  Task scheduling algorithms is based on appropriate policies to deploy scientifi
 c workflow to the physical nodes in the cloud computing system.
- Because various physical nodes are heterogeneous, and their running status
+ Because various physical nodes are heterogeneous and their running status
  are dynamic changed over time, at the same time, the system resources required
  by users and the request types of users are different, so that the design
  of the scheduling algorithms of scientific workflow is complex in the cloud
  computing system.
  A bad scheduling policy can lead to a decline in system performance, a
- long time span of request feedback, a decrease in user satisfaction, and
+ long time span of request feedback, a decrease in user satisfaction and
  a decrease in system throughput.
  In general, the goal of tasks scheduling of scientific workflow in the
  cloud environment is to optimize the allocation of scientific workflow,
- maximize user satisfaction, and maximize the economic benefits of operators,
+ maximize user satisfaction and maximize the economic benefits of operators
  and minimize operating costs
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -250,7 +250,7 @@ Task scheduling types
 \begin_layout Standard
 
 \color brown
-Task scheduling can be categorized, as offline scheduling, and online scheduling
+Task scheduling can be categorized, as offline scheduling and online scheduling
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -264,11 +264,11 @@ literal "false"
 \begin_layout Itemize
 
 \color brown
-Offline scheduling which means the execution time is calculated, and mapping
+Offline scheduling which means the execution time is calculated and mapping
  tasks shall be examined at pre-scheduled times.
  This scheduling approach is static.
  This strategy helps us prepare a supply plan for tasks, allocate resources
- to them, and then execute the tasks according to this supply plan
+ to them and then execute the tasks according to this supply plan
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -437,7 +437,7 @@ Energy Consumption
 \begin_layout Standard
 
 \color brown
-The current industries, organizations, and governments are really concern
+The current industries, organizations and governments are really concern
  about the reduction of energy and to reduce the carbon footprint.
  For cloud computing providers, energy consumption reduction is a key to
  upgrade their return of investment (ROI).
@@ -503,8 +503,8 @@ Scientific workflows are the constitution of distinct tasks with complex
  algorithm are also challenging tasks.
  The energy-aware scheduling algorithm must be selected which can provision
  a proper resource from the offered resources which are efficient enough
- to complete the workflow tasks within their deadline constriction, and
- it can decrease the energy consumption
+ to complete the workflow tasks within their deadline constriction and it
+ can decrease the energy consumption
 \begin_inset CommandInset citation
 LatexCommand cite
 key "garg2022energy"
@@ -560,8 +560,8 @@ Algorithmes d'optimisation approchées [7days]
 \color brown
 Workflow scheduling in the cloud environment is an NP-hard optimization
  problem with rich literature over the last decade.
- Previous works have presented many meta-heuristic, and heuristic-based
- methods to solve this problem
+ Previous works have presented many meta-heuristic and heuristic-based methods
+ to solve this problem
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -609,7 +609,7 @@ Plain GA, CA+GA
 
 \color brown
 plain genetic (Plain GA), (ii) cellular automata supported by genetic approach
- (CA + GA), and (iii) heuristic, giving preferences to high-efficiency machines
+ (CA + GA) and (iii) heuristic, giving preferences to high-efficiency machines
  in allocation (EAH), based on a typical FIFO algorithm The used fitness
  function is based on energy minimization only.
 \end_layout
@@ -713,7 +713,7 @@ NSGA-II (Non-dominated Sorting Genetic Algorithm II)
 \color brown
 uses a non-dominated sorting approach to assess the quality of population
  solutions.
- Solutions are ranked according to their dominance over other solutions,
+ Solutions are ranked according to their dominance over other solutions
  and non-dominated solutions are grouped into Pareto fronts.
  The Pareto fronts are then ranked in order of dominance to create a new
  population of parent solutions.
@@ -730,7 +730,7 @@ MOCell (Multi-Objective Cellular Genetic Algorithm)
 \begin_layout Standard
 
 \color brown
-uses a grid approach to divide the search space into cells, and each cell
+uses a grid approach to divide the search space into cells and each cell
  is treated as a separate optimization problem.
  The solutions are then evaluated locally and the best individuals are selected
  to reproduce within the cell.
@@ -758,7 +758,7 @@ uses quality indicators to assess the quality of solutions.
 \color brown
 These algorithms all use an evolutionary approach to optimize multiple goals
  at the same time.
- Candidate solutions are evaluated against several optimization criteria,
+ Candidate solutions are evaluated against several optimization criteria
  and the best solutions are selected for replication.
  The algorithms then use crossover and mutation operators to generate a
  new population of candidate solutions.
@@ -914,7 +914,7 @@ The Improved EASLA algorithm is an enhanced version of EASLA, which incorporates
 The basic idea behind EASLA is to simulate the hunting behavior of antlions,
  which use a combination of ambush and trap techniques to capture their
  prey.
- In EASLA, the antlion represents the best solution found so far, and the
+ In EASLA, the antlion represents the best solution found so far and the
  ants represent potential solutions in the search space.
 \end_layout
 
@@ -1053,18 +1053,18 @@ VHEST stands for Variable Hessian Estimation Search Technique.
  process in metallurgy.
  EASA starts with a high-temperature search process, during which the algorithm
  can accept worse solutions to escape from local optima.
- As the temperature is lowered, the algorithm becomes more selective, and
+ As the temperature is lowered, the algorithm becomes more selective and
  only accepts better solutions.
  EASA has been applied to various optimization problems, including parameter
- estimation, design optimization, and clustering.
+ estimation, design optimization and clustering.
 \end_layout
 
 \begin_layout Standard
 
 \color brown
 Both VHEST and EASA are known for their efficiency and accuracy in solving
- optimization problems, and they have been applied to various real-world
- problems in engineering, science, and other fields.
+ optimization problems and they have been applied to various real-world
+ problems in engineering, science and other fields.
  
 \end_layout
 
@@ -1080,7 +1080,7 @@ EDLS
 The Exponential Differencing Least Squares (EDLS) algorithm is a linear
  regression estimation algorithm that is used to model data that has exponential
  trends or time-varying growth rates.
- It is widely used in finance to model interest rates, exchange rates, and
+ It is widely used in finance to model interest rates, exchange rates and
  asset prices.
 \end_layout
 
@@ -1135,7 +1135,7 @@ EED, EEND
 algorithms, namely, Energy-Efficiency with Duplication (EED) and Energy-Efficien
 cy with Non Duplication (EEND) Both algorithms, in contrast to their counterpart
 s in the literature, strive to make a balance across the energy consumption,
- the schedule length, and the number of processors used.
+ the schedule length and the number of processors used.
  Synthetic benchmarks and real-world applications are used to evaluate the
  performance of our algorithms.
 \end_layout
@@ -1189,14 +1189,14 @@ ECS is a task scheduling algorithm that considers both the processing time
  consumption.
  The algorithm schedules tasks in a way that allows processors to enter
  idle mode as much as possible without violating the performance requirements.
- ECS+Idle uses a greedy approach to find an initial schedule, and then applies
+ ECS+Idle uses a greedy approach to find an initial schedule and then applies
  a genetic algorithm to optimize the schedule by exploiting the idle time
  of processors.
  Both ECS and ECS+Idle have been shown to be effective in reducing energy
  consumption in computing systems while maintaining performance requirements.
  These algorithms have been applied to various scheduling problems, including
  task scheduling on heterogeneous systems, scheduling in cloud computing
- environments, and scheduling in real-time systems.
+ environments and scheduling in real-time systems.
 \end_layout
 
 \begin_layout Standard
@@ -1404,7 +1404,7 @@ AVVMC
 
 \color brown
 the AVVMC VM consolidation scheme that focuses on balanced resource utilization
- of servers across different computing resources (CPU, memory, and network
+ of servers across different computing resources (CPU, memory and network
  I/O) with the goal of minimizing power consumption and resource wastage,
  adaptation and integration of the Ant Colony Optimization (ACO) metaheuristic
  with balanced usage of computing resources based on vector algebra.
@@ -4866,7 +4866,7 @@ Not considering instance acquisition and termination delay
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Workflow scheduling algorithms, systems, and optimization metrics used for
+Workflow scheduling algorithms, systems and optimization metrics used for
  them.
 \end_layout
 
@@ -5117,8 +5117,8 @@ p
 
 ), denotes the different types of PMs available in a cloud data center.
  These PMs have different Processing capacity such as CPUs, memory, bandwidth,
- network I/O, and the size of the storage which are measured in million
- instructions per second (MIPS).
+ network I/O and the size of the storage which are measured in million instructi
+ons per second (MIPS).
 \end_layout
 
 \begin_layout Standard
@@ -5177,7 +5177,7 @@ literal "false"
 Reducing energy consumption in a cloud data center has recently become a
  major concern for many researchers.
  This is because the cloud environment has become a trusted platform that
- individuals, organizations, and the government rely on to conduct business.
+ individuals, organizations and the government rely on to conduct business.
  So, if the energy consumption in the cloud data center is not reduced,
  it will have a direct or indirect impact on all the stakeholders.
  
@@ -5268,7 +5268,7 @@ In the model, we assume that there are only three types of VMs (VM
 \begin_inset Formula $_{MEC}$
 \end_inset
 
-, and VM
+ and VM
 \begin_inset Formula $_{LEC}$
 \end_inset
 
@@ -5532,7 +5532,7 @@ noprefix "false"
 
 , we have four workflow tasks that have arrived and are queued to be mapped
  to VMs.
- The arrived tasks are 𝑤𝑡1, 𝑤𝑡2, 𝑤𝑡3, and 𝑤𝑡4.
+ The arrived tasks are 𝑤𝑡1, 𝑤𝑡2, 𝑤𝑡3 and 𝑤𝑡4.
  We also have three types of VMs (𝑉𝑀
 \begin_inset Formula $_{𝐻𝐸𝐶}$
 \end_inset
@@ -5541,15 +5541,15 @@ noprefix "false"
 \begin_inset Formula $_{𝑀𝐸𝐶}$
 \end_inset
 
-, and 𝑉𝑀
+ and 𝑉𝑀
 \begin_inset Formula $_{𝐿𝐸𝐶}$
 \end_inset
 
 ).
- These tasks have different deadlines, and we need to map them to VMs based
+ These tasks have different deadlines and we need to map them to VMs based
  on their deadlines.
  𝑤𝑡1 belongs to the HCT group because its deadline is 2 min, which is too
- tight, and if it is not allocated immediately, it might miss its deadline.
+ tight and if it is not allocated immediately, it might miss its deadline.
  To prevent 𝑤𝑡1 from missing its deadline, we quickly mapped it to VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -5560,7 +5560,7 @@ noprefix "false"
 \end_inset
 
  is a high-speed VM that can finish executing 𝑤𝑡1 before or on its deadline.
- The next task closer to its deadline is 𝑤𝑡4, and since VM
+ The next task closer to its deadline is 𝑤𝑡4 and since VM
 \begin_inset Formula $_{HEC}$
 \end_inset
 
@@ -5571,7 +5571,7 @@ noprefix "false"
 .
  The projections show that by the time 𝑤𝑡1 will meet its deadline, 𝑤𝑡3 will
  have 3 min left to also meet its deadline (5min-2 min).
- Therefore, 𝑤𝑡3 is classified as an HCT at that time, and if there is no
+ Therefore, 𝑤𝑡3 is classified as an HCT at that time and if there is no
  other HCT in the waiting queue at that time, then 𝑤𝑡3 is mapped to VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -5684,8 +5684,8 @@ Since we aims at improving resource management to reduce energy consumption
 \begin_inset Formula $_{E}$
 \end_inset
 
-is the energy consumed for transferring all data, and the sum of energy
- consumed for scheduling all tasks on all VM.
+is the energy consumed for transferring all data and the sum of energy consumed
+ for scheduling all tasks on all VM.
  
 \end_layout
 

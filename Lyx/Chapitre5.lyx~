@@ -113,24 +113,442 @@ newpage
 \end_layout
 
 \begin_layout Section
-
-\color brown
 Introduction
 \end_layout
 
 \begin_layout Standard
+Over the past few years, cloud computing has gained tremendous popularity
+ since it presents a flexible and efficient solution for many services by
+ Internet.
+ Cloud is a large and complex system since it is composed of several users,
+ service providers,physical machines, service broker, task scheduling algorithms
+ , bandwidth, internet latency, and storage technology etc.
+ On the other hands, all cloud-based implementations need various configurations.
+ Therefore, it is very difficult for researchers to evaluate the performance
+ of their policies in a real cloud environment
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In this chapter we will present the simulation tool, workflows used, experiments
+ parameters, performance metric and outcomes of the measurement will be
+ presented.
+\end_layout
+
+\begin_layout Section
+Simulation tool: WorkflowSim
+\end_layout
+
+\begin_layout Standard
+the simulator can play an important role in reducing cost, efficiency,infrastruc
+ture complexity, and security risks before a solution can be deployed on
+ real infrastructure.
+ By focusing on issues related to the quality of a particular component
+ under various scenarios, cloud simulators enable performance analysts to
+ monitor the behaviors of the system
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Description and main features
+\end_layout
+
+\begin_layout Standard
+WorkflowSim was introduced for modeling Scientific Workflows in cloud environmen
+t.
+ Workflows in heterogeneous distributed systems show different levels of
+ overheads that are explained based on computational operations and miscellaneou
+s works.
+\end_layout
+
+\begin_layout Standard
+Most of simulators such as CloudSim do not consider fine granularity simulations
+ of workflows and task clustering .Task clustering reduces the number of
+ jobs to be executed and so execution overhead is decreased.
+\end_layout
+
+\begin_layout Standard
+Generally, a job may have high risk for suffering from failures since it
+ consists of several tasks.
+ Researchers with WorkflowSim can study the impact of job failures runtime
+ performance of workflows for different clustering methods
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Architecture
+\end_layout
+
+\begin_layout Standard
+Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:WorkflowSim's-Architecture"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the structure of WorkflowSim that is composed of several components:
+\end_layout
+
+\begin_layout Enumerate
+Workflow Mapper that maps abstract workflows to concrete workflows.
+\end_layout
+
+\begin_layout Enumerate
+Workflow Engine that controls the data dependencies.
+\end_layout
+
+\begin_layout Enumerate
+Workflow Scheduler assigns jobs to resources.
+\end_layout
+
+\begin_layout Enumerate
+Clustering Engine that groups small tasks into a large job.
+\end_layout
+
+\begin_layout Enumerate
+Failure Generator that injects task failures for each execution site.
+\end_layout
+
+\begin_layout Enumerate
+Failure Monitor that stores the failure information such as resource id
+ and task id.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/workflowSim_architecture.jpg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:WorkflowSim's-Architecture"
+
+\end_inset
+
+WorkflowSim's Architecture 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Downloading and Installing WorkflowSim with Eclipse without GitHub
+\end_layout
+
+\begin_layout Standard
+To make the first WorkflowSim project, follow this steps
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GitHub_WorkflowSim_repo"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Download Source Files
+\series default
+ directly from
+\begin_inset CommandInset href
+LatexCommand href
+name " https://github.com/WorkflowSim/WorkflowSim-1.0/archive/master.zip"
+target "this link"
+literal "false"
+
+\end_inset
+
+ and unzip it to 
+\shape italic
+your_repo_root
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Check out your source codes:
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+create a new java project called 'WorkflowSim' (it doesn't have to be 'WorkflowS
+im').
+\end_layout
+
+\begin_layout Enumerate
+Right click your project, choose 'Import'.
+ Click 'General'->'Projects from Folder or Archive'.(see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Import-a-project"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/worflowsim/Capture d’écran 2023-04-24 142112.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Import a project
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Import-a-project"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Set the URL to be your extracted folder (wait until Finish button will be
+ enabled as in Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Set-URL-to"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) .
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/worflowsim/2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Set URL to be the extracted folder
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Set-URL-to"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Run an Example:
+\series default
+ Run an example i.e.
+ org.workflowsim.examples.WorkflowSimBasicExample1.java.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Open WorkflowSimBasicExample1.java
+\end_layout
+
+\begin_layout Enumerate
+replace the String daxPath = "/Users/chenweiwei/Work/WorkflowSim-1.0/config/dax/M
+ontage_100.xml"; with your real physical file path.
+\end_layout
+
+\begin_layout Enumerate
+Right click on WorkflowSimBasicExample1.java and choose 'Run File'.
+ You should be able to see some output.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Strengths
+\end_layout
+
+\begin_layout Standard
+WorkflowSim has many advantages
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+ which are:
+\end_layout
+
+\begin_layout Enumerate
+It supports a stack of workflow parser and workflow engine delay to workflow
+ optimization techniques with better accuracy are implemented.
+\end_layout
+
+\begin_layout Enumerate
+It implements several workflow-scheduling methods such as HEFT, Min-Min,
+ and Max-Min and so developers can compare their algorithms with them in
+ a simple way.
+\end_layout
+
+\begin_layout Enumerate
+It considers task clustering and layered overhead to the workflow simulation.
+ Therefore, developer scan test various strategies based on a real trace
+ of overheads.
+\end_layout
+
+\begin_layout Enumerate
+It models failures for two layers (i.e., task/job) by an interface and hence
+ developers can design fault-tolerant techniques.
+\end_layout
+
+\begin_layout Subsection
 
 \color brown
-In a workflowsim simulator, we have simulated the proposed approach.
- We compared the outcomes of five separate scientific workflows with our
- proposed algorithm.
+Limitations
 \end_layout
 
 \begin_layout Standard
 
 \color brown
-In this chapter, the workflows used, simulation tool, parameters of experiments,
- performance metric, and outcomes of the measurement will be presented.
+WorkflowSim has some limitations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+ such as:
+\end_layout
+
+\begin_layout Enumerate
+
+\color brown
+It includes limited types of failures.
+ Therefore, developers cannot simulate the situation when a task is not
+ successfully sent due to network problems or workflow scheduler issues.
+\end_layout
+
+\begin_layout Enumerate
+
+\color brown
+It does not consider the performance characteristic of file I/O.
+ Therefore, developers cannot obtain suitable simulation for data-intensive
+ applications since these applications involve reading or writing huge data
+ files.
+\end_layout
+
+\begin_layout Enumerate
+
+\color brown
+It supports only simple workflow techniques and so developers cannot use
+ other important approaches like workflow partitioning in their implementations.
 \end_layout
 
 \begin_layout Section
@@ -143,19 +561,19 @@ Workflows
 
 \color brown
 We use four different types of benchmark workflows (Montage, Cybershake,
- LIGO, and Epigenomics, Sipht) available on the Pegasus website.
+ LIGO, Epigenomics and Sipht) available on the Pegasus website.
  These workflows typically involve complex data of various sizes and complicated
  computer simulations.
- They need high computation power, and the availability of large infrastructures
+ They need high computation power and the availability of large infrastructures
  that cloud computing environments provide with different quality of service
  levels.
  The quality of schedules obtained by various algorithms is also compared
  using these workflows.
- Information about the task dependencies, the amount of data transmitted,
+ Information about the task dependencies, the amount of data transmitted
  and the execution time estimates are presented in DAX format.
  DAX files include a single time estimate for each task.
  To simulate the case of different time constraints provided by users, start
- time, and a deadline for each workflow are randomly assigned 
+ time and a deadline for each workflow are randomly assigned 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -171,7 +589,7 @@ literal "false"
 \color brown
 Each of these workflow types has four different workloads.
  For example, the Cybershake workflow has four workloads, including 30,
- 50, 100, and 1000 tasks
+ 50, 100 and 1000 tasks
 \begin_inset CommandInset citation
 LatexCommand cite
 key "konjaang2022energy"
@@ -247,504 +665,6 @@ literal "false"
 \begin_layout Section
 
 \color brown
-Simulation tool: WorkflowSim
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-Over the past few years, cloud computing has gained tremendous popularity
- since it presents a flexible and efficient solution for many services by
- Internet .
- Cloud is a large and complex system since it is composed of several users,
- service providers,physical machines, service broker, task scheduling algorithms
- , bandwidth, internet latency, and storage technology etc.
- On the other hands, all cloud-based implementations need various configurations.
- Therefore, it is very difficult for researchers to evaluate the performance
- of their policies in a real cloud environment
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cloud_computing_simulators"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-As a result, the simulator can play an important role in reducing cost,
- efficiency,infrastructure complexity, and security risks before a solution
- can be deployed on real infrastructure.
- By focusing on issues related to the quality of a particular component
- under various scenarios, cloud simulators enable performance analysts to
- monitor the behaviors of the system
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cloud_computing_simulators"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-
-\color brown
-Description and main features
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-WorkflowSim was introduced for modeling Scientific Workflows in cloud environmen
-t.
- Workflows in heterogeneous distributed systems show different levels of
- overheads that are explained based on computational operations and miscellaneou
-s works.
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-Most of simulators such as CloudSim do not consider fine granularity simulations
- of workflows and task clustering.
- Task clustering reduces the number of jobs to be executed and so execution
- overhead is decreased.
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-Generally, a job may have high risk for suffering from failures since it
- consists of several tasks.
- Researchers with WorkflowSim can study the impact of job failures runtime
- performance of workflows for different clustering methods
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cloud_computing_simulators"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-
-\color brown
-Architecture
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-Figure
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:WorkflowSim's-Architecture"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows the structure of WorkflowSim that is composed of several components:
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Workflow Mapper that maps abstract workflows to concrete workflows.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Workflow Engine that controls the data dependencies.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Workflow Scheduler assigns jobs to resources.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Clustering Engine that groups small tasks into a large job.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Failure Generator that injects task failures for each execution site.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Failure Monitor that stores the failure information such as resource id
- and task id.
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\color brown
-\begin_inset Graphics
-	filename images/workflowSim_architecture.jpg
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:WorkflowSim's-Architecture"
-
-\end_inset
-
-WorkflowSim's Architecture 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cloud_computing_simulators"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-
-\color brown
-Downloading and Installing WorkflowSim with Eclipse without GitHub
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-To make the first WorkflowSim project, follow this steps
-\begin_inset CommandInset citation
-LatexCommand cite
-key "GitHub_WorkflowSim_repo"
-literal "false"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-\color brown
-Download Source Files
-\series default
- directly from
-\begin_inset CommandInset href
-LatexCommand href
-name " https://github.com/WorkflowSim/WorkflowSim-1.0/archive/master.zip"
-target "this link"
-literal "false"
-
-\end_inset
-
- and unzip it to your_repo_root.
- 
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-\color brown
-Check out your source codes:
-\series default
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-
-\color brown
-create a new java project called 'WorkflowSim' (it doesn't have to be 'WorkflowS
-im').
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Right click your project, choose 'Import'.
- Click 'General'->'Projects from Folder or Archive'.(see Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Import-a-project"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-)
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\color brown
-\begin_inset Graphics
-	filename images/worflowsim/Capture d’écran 2023-04-24 142112.png
-	scale 75
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\color brown
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Import a project
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Import-a-project"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Set the URL to be your extracted folder (wait until Finish button will be
- enabled as in Fig.
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Set-URL-to"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-) .
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\color brown
-\begin_inset Graphics
-	filename images/worflowsim/2.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\color brown
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Set URL to be the extracted folder
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Set-URL-to"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-\color brown
-Run an Example:
-\series default
- Run an example i.e., org.workflowsim.examples.WorkflowSimBasicExample1.java.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-
-\color brown
-Open WorkflowSimBasicExample1.java
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-replace the String daxPath = "/Users/chenweiwei/Work/WorkflowSim-1.0/config/dax/M
-ontage_100.xml"; with your real physical file path.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-Right click on WorkflowSimBasicExample1.java and choose 'Run File'.
- You should be able to see some output.
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-
-\color brown
-Strengths
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-WorkflowSim has many advantages
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cloud_computing_simulators"
-literal "false"
-
-\end_inset
-
- which are:
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-It supports a stack of workflow parser and workflow engine delay to workflow
- optimization techniques with better accuracy are implemented.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-It implements several workflow-scheduling methods such as HEFT, Min-Min,
- and Max-Min and so developers can compare their algorithms with them in
- a simple way.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-It considers task clustering and layered overhead to the workflow simulation.
- Therefore, developers can test various strategies based on a real trace
- of overheads.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-It models failures for two layers (i.e., task/job) by an interface and hence
- developers can design fault-tolerant techniques.
-\end_layout
-
-\begin_layout Subsection
-
-\color brown
-Limitations
-\end_layout
-
-\begin_layout Standard
-
-\color brown
-WorkflowSim has some limitations 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cloud_computing_simulators"
-literal "false"
-
-\end_inset
-
- such as:
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-It includes limited types of failures.
- Therefore, developers cannot simulate the situation when a task is not
- successfully sent due to network problems or workflow scheduler issues.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-It does not consider the performance characteristic of file I/O.
- Therefore, developers cannot obtain suitable simulation for data-intensive
- applications since these applications involve reading or writing huge data
- files.
-\end_layout
-
-\begin_layout Enumerate
-
-\color brown
-It supports only simple workflow techniques and so developers cannot use
- other important approaches like workflow partitioning in their implementations.
-\end_layout
-
-\begin_layout Section
-
-\color brown
 Simulation parameter
 \end_layout
 
@@ -784,7 +704,7 @@ In this work, we assumed that there are only three types of VMs (VM
 \begin_inset Formula $_{MEC}$
 \end_inset
 
-, and VM
+ and VM
 \begin_inset Formula $_{LEC}$
 \end_inset
 
@@ -1202,6 +1122,14 @@ Comparison and discussion of the solution
 
 \color brown
 Conclusion
+\end_layout
+
+\begin_layout Standard
+
+\color brown
+In a workflowsim simulator, we have simulated the proposed approach.
+ We compared the outcomes of five separate scientific workflows with our
+ proposed algorithm.
 \end_layout
 
 \end_body

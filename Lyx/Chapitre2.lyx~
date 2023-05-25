@@ -123,7 +123,7 @@ Introduction
 \color brown
 Nowadays, cloud computing is an emerging technology due to virtualization
  and providing low price services on pay-as per-use basis and it is the
- most popular computing system paradigm in the academic research and industry,
+ most popular computing system paradigm in the academic research and industry
  and it provides cloud services on-demand anywhere and anytime
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -179,7 +179,7 @@ The National Institute of Standards and Technology (NIST) which is an agency
 
 Cloud computing is a model for enabling ubiquitous, convenient, on-demand
  network access to a shared pool of configurable computing resources (e.g.,
- networks, servers, storage, applications, and services) that can be rapidly
+ networks, servers, storage, applications and services) that can be rapidly
  provisioned and released with minimal management effort or service provider
  interaction
 \begin_inset Quotes erd
@@ -230,7 +230,7 @@ On-demand self-service
 Consumers of cloud computing services, such as server time and network storage,
  as needed automatically nearly instant access to resources.
  To support this expectation, clouds must allow self-service access so that
- customers can request, customize, pay, and use services without intervention
+ customers can request, customize, pay and use services without intervention
  of human operators.
 \end_layout
 
@@ -245,7 +245,7 @@ Broad network access
 \color brown
 Capabilities are available over the network and accessed through standard
  mechanisms that promote use by heterogeneous thin or thick client platforms
- (e.g., mobile phones, tablets, laptops, and workstations).
+ (e.g., mobile phones, tablets, laptops and workstations).
 \end_layout
 
 \begin_layout Paragraph
@@ -264,8 +264,7 @@ The provider’s computing resources are pooled to serve multiple consumers
  has no control or knowledge over the exact location of the provided resources
  but may be able to specify location at a higher level of abstraction (e.g.,
  country, state, or datacenter).
- Examples of resources include storage, processing, memory, and network
- bandwidth.
+ Examples of resources include storage, processing, memory and network bandwidth.
 \end_layout
 
 \begin_layout Paragraph
@@ -298,7 +297,7 @@ Measured service
 Services must be priced on a short term basis (e.g., by the hour), allowing
  users to release (and not pay for) resources as soon as they are not needed.
  For these reasons, clouds must implement features to allow efficient trading
- of service such as pricing, accounting, and billing.
+ of service such as pricing, accounting and billing.
  
 \end_layout
 
@@ -307,9 +306,9 @@ Services must be priced on a short term basis (e.g., by the hour), allowing
 \color brown
 Cloud systems automatically control and optimize resource use by leveraging
  a metering capability at some level of abstraction appropriate to the type
- of service (e.g., storage, processing, bandwidth, and active user accounts).
- Resource usage can be monitored, controlled, and reported, providing transparen
-cy for both the provider and consumer of the utilized service.
+ of service (e.g., storage, processing, bandwidth and active user accounts).
+ Resource usage can be monitored, controlled and reported, providing transparenc
+y for both the provider and consumer of the utilized service.
 \end_layout
 
 \begin_layout Standard
@@ -412,7 +411,7 @@ Platform as a Service (PaaS)
 \color brown
 The capability provided to the consumer is to deploy onto the cloud infrastructu
 re consumer-created or acquired applications created using programming languages
-, libraries, services, and tools supported by the provider.3 The consumer
+, libraries, services and tools supported by the provider.3 The consumer
  does not manage or control the underlying cloud infrastructure including
  network, servers, operating systems, or storage, but has control over the
  deployed applications and possibly configuration settings for the application-h
@@ -429,11 +428,11 @@ Infrastructure as a Service (IaaS)
 
 \color brown
 The capability provided to the consumer is to provision processing, storage,
- networks, and other fundamental computing resources where the consumer
- is able to deploy and run arbitrary software, which can include operating
+ networks and other fundamental computing resources where the consumer is
+ able to deploy and run arbitrary software, which can include operating
  systems and applications.
  The consumer does not manage or control the underlying cloud infrastructure
- but has control over operating systems, storage, and deployed applications;
+ but has control over operating systems, storage and deployed applications;
  and possibly limited control of select networking components (e.g., host
  firewalls).
 \end_layout
@@ -529,8 +528,8 @@ Private cloud
 \color brown
 The cloud infrastructure is provisioned for exclusive use by a single organizati
 on comprising multiple consumers (e.g., business units).
- It may be owned, managed, and operated by the organization, a third party,
- or some combination of them, and it may exist on or off premises.
+ It may be owned, managed and operated by the organization, a third party,
+ or some combination of them and it may exist on or off premises.
 \end_layout
 
 \begin_layout Subsection
@@ -544,9 +543,9 @@ Community cloud
 \color brown
 The cloud infrastructure is provisioned for exclusive use by a specific
  community of consumers from organizations that have shared concerns (e.g.,
- mission, security requirements, policy, and compliance considerations).
- It may be owned, managed, and operated by one or more of the organizations
- in the community, a third party, or some combination of them, and it may
+ mission, security requirements, policy and compliance considerations).
+ It may be owned, managed and operated by one or more of the organizations
+ in the community, a third party, or some combination of them and it may
  exist on or off premises.
 \end_layout
 
@@ -560,7 +559,7 @@ Public cloud
 
 \color brown
 The cloud infrastructure is provisioned for open use by the general public.
- It may be owned, managed, and operated by a business, academic, or government
+ It may be owned, managed and operated by a business, academic, or government
  organization, or some combination of them.
  It exists on the premises of the cloud provider.
 \end_layout
@@ -850,7 +849,7 @@ The primary challenge posed to data management in the cloud is content security.
  cloud content, malicious hacking, failure of vendor security and shared
  technology vulnerabilities.
  While improve cloud security is an area currently undergoing considerable
- research , and it was observed that the security of cloud content is vulnerable
+ research  and it was observed that the security of cloud content is vulnerable
  on several levels.
  On a "communications level" risk arises from the sharing of sensitive informati
 on (e.g.
@@ -975,7 +974,7 @@ In this chapter we have presented the Cloud Computing,its characteristics
 \begin_layout Standard
 
 \color brown
-Cloud computing provides virtualized cloud resources as a service, on-demand,
+Cloud computing provides virtualized cloud resources as a service, on-demand
  and pay-per-use basis.
  The characteristics of cloud computing such as elasticity and flexibility
  make this environment a major trend for computation and storage services.

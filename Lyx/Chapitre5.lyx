@@ -113,20 +113,16 @@ newpage
 \end_layout
 
 \begin_layout Section
-
-\color brown
 Introduction
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Over the past few years, cloud computing has gained tremendous popularity
  since it presents a flexible and efficient solution for many services by
- Internet .
+ Internet.
  Cloud is a large and complex system since it is composed of several users,
  service providers,physical machines, service broker, task scheduling algorithms
- , bandwidth, internet latency and storage technology etc.
+ , bandwidth, internet latency, and storage technology etc.
  On the other hands, all cloud-based implementations need various configurations.
  Therefore, it is very difficult for researchers to evaluate the performance
  of their policies in a real cloud environment
@@ -141,23 +137,18 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\color brown
-In this chapter, the workflows used, simulation tool, parameters of experiments,
- performance metric and outcomes of the measurement will be presented.
+In this chapter we will present the simulation tool, workflows used, experiments
+ parameters, performance metric and outcomes of the measurement will be
+ presented.
 \end_layout
 
 \begin_layout Section
-
-\color brown
 Simulation tool: WorkflowSim
 \end_layout
 
 \begin_layout Standard
-
-\color brown
-The simulator can play an important role in reducing cost, efficiency, infrastru
-cture complexity and security risks before a solution can be deployed on
+the simulator can play an important role in reducing cost, efficiency,infrastruc
+ture complexity, and security risks before a solution can be deployed on
  real infrastructure.
  By focusing on issues related to the quality of a particular component
  under various scenarios, cloud simulators enable performance analysts to
@@ -173,14 +164,10 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-
-\color brown
 Description and main features
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 WorkflowSim was introduced for modeling Scientific Workflows in cloud environmen
 t.
  Workflows in heterogeneous distributed systems show different levels of
@@ -189,17 +176,12 @@ s works.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Most of simulators such as CloudSim do not consider fine granularity simulations
- of workflows and task clustering.
- Task clustering reduces the number of jobs to be executed and so execution
- overhead is decreased.
+ of workflows and task clustering .Task clustering reduces the number of
+ jobs to be executed and so execution overhead is decreased.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Generally, a job may have high risk for suffering from failures since it
  consists of several tasks.
  Researchers with WorkflowSim can study the impact of job failures runtime
@@ -215,14 +197,10 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-
-\color brown
 Architecture
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Figure
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -237,45 +215,31 @@ noprefix "false"
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Workflow Mapper that maps abstract workflows to concrete workflows.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Workflow Engine that controls the data dependencies.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Workflow Scheduler assigns jobs to resources.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Clustering Engine that groups small tasks into a large job.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Failure Generator that injects task failures for each execution site.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Failure Monitor that stores the failure information such as resource id
  and task id.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 \begin_inset Float figure
 placement H
 wide false
@@ -284,8 +248,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\color brown
 \begin_inset Graphics
 	filename images/workflowSim_architecture.jpg
 
@@ -323,14 +285,10 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-
-\color brown
 Downloading and Installing WorkflowSim with Eclipse without GitHub
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 To make the first WorkflowSim project, follow this steps
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -345,7 +303,6 @@ literal "false"
 \begin_layout Enumerate
 
 \series bold
-\color brown
 Download Source Files
 \series default
  directly from
@@ -357,14 +314,17 @@ literal "false"
 
 \end_inset
 
- and unzip it to your_repo_root.
+ and unzip it to 
+\shape italic
+your_repo_root
+\shape default
+.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-\color brown
 Check out your source codes:
 \series default
  
@@ -372,15 +332,11 @@ Check out your source codes:
 
 \begin_deeper
 \begin_layout Enumerate
-
-\color brown
 create a new java project called 'WorkflowSim' (it doesn't have to be 'WorkflowS
 im').
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Right click your project, choose 'Import'.
  Click 'General'->'Projects from Folder or Archive'.(see Fig.
  
@@ -401,8 +357,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\color brown
 \begin_inset Graphics
 	filename images/worflowsim/Capture d’écran 2023-04-24 142112.png
 	scale 75
@@ -413,8 +367,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -439,8 +391,6 @@ name "fig:Import-a-project"
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Set the URL to be your extracted folder (wait until Finish button will be
  enabled as in Fig.
 \begin_inset CommandInset ref
@@ -460,8 +410,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\color brown
 \begin_inset Graphics
 	filename images/worflowsim/2.png
 	scale 50
@@ -472,8 +420,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\color brown
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -501,43 +447,33 @@ name "fig:Set-URL-to"
 \begin_layout Enumerate
 
 \series bold
-\color brown
 Run an Example:
 \series default
- Run an example i.e., org.workflowsim.examples.WorkflowSimBasicExample1.java.
+ Run an example i.e.
+ org.workflowsim.examples.WorkflowSimBasicExample1.java.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-
-\color brown
 Open WorkflowSimBasicExample1.java
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 replace the String daxPath = "/Users/chenweiwei/Work/WorkflowSim-1.0/config/dax/M
 ontage_100.xml"; with your real physical file path.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 Right click on WorkflowSimBasicExample1.java and choose 'Run File'.
  You should be able to see some output.
 \end_layout
 
 \end_deeper
 \begin_layout Subsection
-
-\color brown
 Strengths
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 WorkflowSim has many advantages
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -546,48 +482,36 @@ literal "false"
 
 \end_inset
 
- which are:
+:
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 It supports a stack of workflow parser and workflow engine delay to workflow
  optimization techniques with better accuracy are implemented.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
-It implements several workflow-scheduling methods such as HEFT, Min-Min
+It implements several workflow-scheduling methods such as HEFT, Min-Min,
  and Max-Min and so developers can compare their algorithms with them in
  a simple way.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 It considers task clustering and layered overhead to the workflow simulation.
- Therefore, developers can test various strategies based on a real trace
+ Therefore, developer scan test various strategies based on a real trace
  of overheads.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 It models failures for two layers (i.e., task/job) by an interface and hence
  developers can design fault-tolerant techniques.
 \end_layout
 
 \begin_layout Subsection
-
-\color brown
 Limitations
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 WorkflowSim has some limitations 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -596,20 +520,16 @@ literal "false"
 
 \end_inset
 
- such as:
+:
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 It includes limited types of failures.
  Therefore, developers cannot simulate the situation when a task is not
  successfully sent due to network problems or workflow scheduler issues.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 It does not consider the performance characteristic of file I/O.
  Therefore, developers cannot obtain suitable simulation for data-intensive
  applications since these applications involve reading or writing huge data
@@ -617,8 +537,6 @@ It does not consider the performance characteristic of file I/O.
 \end_layout
 
 \begin_layout Enumerate
-
-\color brown
 It supports only simple workflow techniques and so developers cannot use
  other important approaches like workflow partitioning in their implementations.
 \end_layout

@@ -153,7 +153,7 @@ In this chapter, will present EViMA algorithm which is used for improving
  problem and its 4 sub-problems and for each sub problem some of the most
  used methods to find the solutions.
  And finally we will present the objectives, the concept of our approach
- and also its description, and explication.
+ and also its description and explication.
 \end_layout
 
 \begin_layout Section
@@ -232,7 +232,7 @@ The algorithm takes as input a set of workflow tasks represented by wt =
 \begin_inset Formula $_{MEC}$
 \end_inset
 
-, and VM
+ and VM
 \begin_inset Formula $_{LEC}$
 \end_inset
 
@@ -254,7 +254,7 @@ The algorithm starts by identifying the arrived tasks and computing their
 
 \color brown
 Then, a task priority queue is created in which the tasks are arranged in
- three execution orders based on their critical times (HCT, MCT, and LCT).
+ three execution orders based on their critical times (HCT, MCT and LCT).
  To determine the execution order of the tasks, their expected finishing
  times are calculated using Eq.(4).
  The tasks that are close to their deadline and need to be mapped to VMs
@@ -643,7 +643,7 @@ HiCTSA works at both the VM and task levels to ensure that tasks are selected
  and assigned to resources for execution to avoid delays.
  We consider a set of workflow tasks WT = (wt1, tw2, tw3..........wtn) in a workflow
  application.
- These tasks have different deadlines, and therefore users expect them to
+ These tasks have different deadlines and therefore users expect them to
  be executed before their deadlines.
  Also, these tasks require some resources to start the scheduling process.
 \end_layout
@@ -757,7 +757,7 @@ The first phase is the task identification and grouping phase, in which
  In the first phase, the algorithm compares the expected finishing time
  of each workflow task with its deadline.
  If a task’s EFT is greater than its deadline, the task is moved to a new
- queue called the LCT queue (lines 1, 2, and 3).
+ queue called the LCT queue (lines 1, 2 and 3).
  This is done to avoid mapping less critical tasks to HEC VM.
 \end_layout
 
@@ -848,7 +848,7 @@ The method starts by defining the status of all VMs that are used for workflow
  Idle VMs, on the other hand, are VMs that have not yet been assigned any
  job or have completed the execution process and are waiting for more jobs
  to be executed.
- The algorithm checks, if there are some idle VMs, and if so, it switches
+ The algorithm checks, if there are some idle VMs and if so, it switches
  all idle VMs to the memory state.
  For example, when VM
 \begin_inset Formula $_{HEC}$
@@ -868,7 +868,7 @@ is idle, the VM-PRA algorithm quickly switches VM
 
  into power saving mode to save some energy.
  In reality, VMs do not consume power, but when the VM is powered off or
- put into power saving mode, it reduces the power consumption of its PM,
+ put into power saving mode, it reduces the power consumption of its PM
  and hence a reduction in data center power consumption.
 \end_layout
 
@@ -1062,10 +1062,10 @@ Information and communications technology equipment (ICT) and cooling equipment
  consume most of the energy in the data centers.
  The server is the most critical ICT equipment.
  In most cases, the average CPU utilization rate of the server is only 15%
- to 20%, and there are a large number of servers in an idle state which
- consumes much energy.Therefore, VMs can be relocated into as few physical
- machines (PM) as possible through VM consolidation technology, and the
- low-load PM can be switched off.
+ to 20% and there are a large number of servers in an idle state which consumes
+ much energy.Therefore, VMs can be relocated into as few physical machines
+ (PM) as possible through VM consolidation technology and the low-load PM
+ can be switched off.
  No-load PM can be switched to a sleep state to reduce the number of PMs
  during activities and avoid energy waste
 \begin_inset CommandInset citation
@@ -1162,7 +1162,7 @@ literal "false"
 Host under-load detection:
 \series default
  Determining if a host is considered to be under-loaded, so that all VMs
- should be migrated, and the host should be switched to a low-power mode.There
+ should be migrated and the host should be switched to a low-power mode.There
  are 2 methods:
 \end_layout
 
@@ -1170,15 +1170,15 @@ Host under-load detection:
 \begin_layout Itemize
 
 \color brown
-Static Thresholding: fixed value is set to a utilization threshold, and
- below this value, the PM is considered under-loaded.
+Static Thresholding: fixed value is set to a utilization threshold and below
+ this value, the PM is considered under-loaded.
 \end_layout
 
 \begin_layout Itemize
 
 \color brown
 Dynamic Thresholding: Static Thresholding are unsuitable for a cloud computing
- environment which has dynamic, and unpredictable workloads.
+ environment which has dynamic and unpredictable workloads.
  The system should be able to automatically adjust its behavior depending
  on the workload patterns, there are 2 patterns:
 \end_layout
@@ -1200,7 +1200,7 @@ Adaptive Thresholding (AT): This study proposes an Adaptive Thresholding
 Mean Adaptive Thresholding: depending on the mean of the values of the minimum
  PMs utilization in the data center, an adaptive value is set to a utilization
  threshold.
- This value is changed frequently due to the dynamic, and the unpredictable
+ This value is changed frequently due to the dynamic and the unpredictable
  workloads of the cloud environment.
 \end_layout
 
@@ -1803,7 +1803,7 @@ First, we apply EViMA approach which focuses on improving resource management
 \begin_layout Standard
 
 \color brown
-Then, we initialize VM candidate list to an empty set, and we add add all
+Then, we initialize VM candidate list to an empty set and we add add all
  VMs that are in under/over-loaded physical machines.Physical machines are
  considered as under-loaded if they are 1
 \begin_inset Formula $^{st}$
@@ -1819,7 +1819,7 @@ noprefix "false"
 
 \end_inset
 
-), and are overloaded if they are great than 4
+) and are overloaded if they are great than 4
 \begin_inset Formula $^{th}$
 \end_inset
 
