@@ -1,0 +1,181 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extreport
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+figs-within-sections
+tabs-within-sections
+eqs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbph
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\branch BiblioInEachChapter
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+
+\color black
+Introduction Générale
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Introduction Générale}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'introduction général doit aussi suivre une structure.
+ Commencer par la définition très générale de la thématique, préciser ensuite
+ au maximum le sujet traité pour finir avec la manière dont il sera traité
+ (l’annonce du plan).
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L’introduction doit obligatoirement comporter les éléments-clés suivants
+ : 
+\end_layout
+
+\begin_layout Description
+– une accroche : destinée à retenir l’attention du lecteur, elle lui permet
+ d’entrer rapidement au contact du mémoire ; 
+\end_layout
+
+\begin_layout Description
+– l’objet de l’étude : par cet exposé, plutôt général, le lecteur doit comprendr
+e le sujet qu’il a été choisi de traiter ; 
+\end_layout
+
+\begin_layout Description
+– l’intérêt de l’étude : le lecteur doit comprendre l’intérêt à traiter
+ un tel sujet ; 
+\end_layout
+
+\begin_layout Description
+– l’annonce de la problématique, c’est-à-dire des questions précises que
+ l’étudiant se pose dans le mémoire et auxquelles il répondra ; 
+\end_layout
+
+\begin_layout Description
+– l’annonce du plan, qui montre quel type de plan a été choisi par l’étudiant
+ pour répondre au mieux au problème posé.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1"
+
+\end_inset
+
+Comme:
+\end_layout
+
+\begin_layout Standard
+Ce rapport est divisé en ........
+ chapitres, le 
+\series bold
+premier
+\series default
+ est ........................................., nous définissons .............................
+ Le 
+\series bold
+deuxième chapitre
+\series default
+ .................................................
+ Enfin dans le 
+\series bold
+................
+ chapitre
+\series default
+, nous .......................................
+\end_layout
+
+\end_body
+\end_document

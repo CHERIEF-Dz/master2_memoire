@@ -1,0 +1,304 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extreport
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+figs-within-sections
+tabs-within-sections
+eqs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbph
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\branch BiblioInEachChapter
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+\noindent
+Rédiger un mémoir avec succés
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\noindent
+Introduction
+\end_layout
+
+\begin_layout Standard
+Adopter le plan « scientifique » permet à l'étudiant de réaliser un mémoire
+ opérationnel reflétant le travail réalisé pour son projet de fin d'études
+ (PFE).
+ Ce plan offre la possibilité de définir avec exactitude la problématique
+ choisie et de déterminer les différentes solutions proposées.
+\end_layout
+
+\begin_layout Section
+Nombre de pages 
+\end_layout
+
+\begin_layout Standard
+Il s’agit bien sûr d’une question qui hante souvent les étudiants.
+ Il ne faut pas croire que cela soit uniquement par fainéantise, et que
+ les étudiants cherchent à effectuer le moins de travail possible.
+ Même si cela peut être le cas, c’est surtout la peur de l’exercice qui
+ fait demander aux étudiants quel sera le nombre de pages à réaliser.
+ Tout enseignant vous dira qu’il est impossible de prédire un nombre précis
+ de pages à concevoir.
+ Cependant, il est vrai que si un nombre de pages trop restreint ne permet
+ pas de véritablement développer l’intégralité d’une pensée, un mémoire
+ trop volumineux dilue le raisonnement et donne l’impression d’un travail
+ diffus.
+\end_layout
+
+\begin_layout Standard
+Conformez-vous à ce que demande l’institution à laquelle vous appartenez.
+ En règle générale, il vous faudra construire le travail demandé en environ
+ 60 pages.
+ C’est pourquoi nous retiendrons ce format
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Structure d'un mémoire 
+\end_layout
+
+\begin_layout Standard
+Même si le mémoire pour un PFE doit être avant tout un mémoire pratique,
+ il ne peut se départir d’une phase théorique.
+ Cette dernière permet de poser les fondamentaux de la problématique abordée.
+ Les parties théoriques et pratiques doivent donc être équilibrées
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Squelette 
+\end_layout
+
+\begin_layout Standard
+Commencer par un format préétabli est très utile.
+ Une fois la structure globale est définie, il faut préciser le contenu
+ de chaque partie.
+ Un mémoire est composé de: 
+\end_layout
+
+\begin_layout Itemize
+une introduction générale; 
+\end_layout
+
+\begin_layout Itemize
+différents chapitres: en moyenne, quatre chapitres répartis en deux parties
+ (théorique et pratique); 
+\end_layout
+
+\begin_layout Itemize
+une conclusion générale.
+\end_layout
+
+\begin_layout Subsubsection
+Contenu des chapitres
+\end_layout
+
+\begin_layout Description
+– La première chapitre définit les concepts du travail: identifié avec précision
+ les termes relatifs à la problématique.
+ 
+\end_layout
+
+\begin_layout Description
+– Le deuxième chapitre énumére les travaux (académiques et/ou professionnels)
+ réalisés relatifs à la problématique retenue.
+ Il faut les définir et les classer en fonction de leurs différents clivages.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Remarque:
+\end_layout
+
+\begin_layout Standard
+Certaines problématiques sont composées de deux principaux concepts.
+ Ainsi, il est préférable d'étudier chaque concept dans un chapitre à part.
+ Sachant que ce dernier décrit à la fois le concept et ses travaux relatifs
+ à la problématique.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+- Le troisième chapitre doit se conformer à une méthode d’enquête stricte
+ qui passe idéalement par la mise en place d’une approche qualitative et
+ quantitative.
+ 
+\end_layout
+
+\begin_layout Description
+- Le quatrième chapitre est consacré à l’analyse des résultats obtenus.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+faire attention aux fautes de grammaires et orthographes 
+\end_layout
+
+\begin_layout Plain Layout
+chaque titre ou sous titre doit être numéroté : N°chapitre.N°titre N°chapitre.N°ti
+tre.N°sous titre 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Remarque
+\end_layout
+
+\begin_layout Standard
+Un chapitre doit contenir aux minimums 4 pages.
+\end_layout
+
+\begin_layout Subsection
+Changer le sujet et/ou le plan 
+\end_layout
+
+\begin_layout Standard
+Bien entendu que le mémoire évoluera au fur à mesure que l'étudiant avance
+ dans son travail.
+ Cependant, il est important de toujours respecter le format général préétabli.
+ Cela garantira à l'étudiant de ne jamais sortir du contexte de son travail.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Style de rédaction
+\end_layout
+
+\begin_layout Standard
+Une bonne problématique doit en effet être simple à comprendre, précise
+ et cohérente.
+ Il n’est donc pas nécessaire de choisir des phrases « à rallonge » ou des
+ termes trop compliqués pour l’exprimer.
+\end_layout
+
+\begin_layout Section
+Conclusion 
+\end_layout
+
+\begin_layout Standard
+Chaque chapitre doit contenir une introduction et une conclusion.
+ L'introduction présente brièvement ce que la chapitre traite et la conclusion
+ rappel l'objectif du chapitre et fait le lien avec le chapitre suivant.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1033 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extreport
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+figs-within-sections
+tabs-within-sections
+eqs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbph
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch BiblioInEachChapter
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Implementation, simulation and discussion of results
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\color brown
+Introduction
+\end_layout
+
+\begin_layout Standard
+In a workflowsim simulator, we have simulated the proposed approach.
+ We compared the outcomes of five separate scientific workflows with our
+ proposed algorithm.
+\end_layout
+
+\begin_layout Standard
+In this chapter, the workflows used, simulation tool, parameters of experiments,
+ performance metric, and outcomes of the measurement will be presented.
+\end_layout
+
+\begin_layout Section
+Workflows 
+\end_layout
+
+\begin_layout Standard
+We use four different types of benchmark workflows (Montage, Cybershake,
+ LIGO, and Epigenomics, Sipht) available on the Pegasus website.
+ These workflows typically involve complex data of various sizes and complicated
+ computer simulations.
+ They need high computation power, and the availability of large infrastructures
+ that cloud computing environments provide with different quality of service
+ levels.
+ The quality of schedules obtained by various algorithms is also compared
+ using these workflows.
+ Information about the task dependencies, the amount of data transmitted,
+ and the execution time estimates are presented in DAX format.
+ DAX files include a single time estimate for each task.
+ To simulate the case of different time constraints provided by users, start
+ time, and a deadline for each workflow are randomly assigned 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hard_optimization_mohammadzadeh2021energy"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Each of these workflow types has four different workloads.
+ For example, the Cybershake workflow has four workloads, including 30,
+ 50, 100, and 1000 tasks
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+.Scheduling workflows are classified into two kinds of balanced and unbalanced
+ .A balanced workflow has some pipelines that need similar services.
+ Nevertheless, they process various types of services.
+ The unbalanced workflow is more complicated and has many parallel tasks
+ that involve many services
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hard_optimization_mohammadzadeh2021energy"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/workflows_compressed - Copie.jpg
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Structure of Scientific Workflows used 
+\begin_inset CommandInset href
+LatexCommand href
+name "confluence.pegasus.isi.edu"
+target "https://confluence.pegasus.isi.edu/display/pegasus/Deprecated%20Workflow%20Generator"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Simulation tool: WorkflowSim
+\end_layout
+
+\begin_layout Standard
+Over the past few years, cloud computing has gained tremendous popularity
+ since it presents a flexible and efficient solution for many services by
+ Internet .
+ Cloud is a large and complex system since it is composed of several users,
+ service providers,physical machines, service broker, task scheduling algorithms
+ , bandwidth, internet latency, and storage technology etc.
+ On the other hands, all cloud-based implementations need various configurations.
+ Therefore, it is very difficult for researchers to evaluate the performance
+ of their policies in a real cloud environment
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As a result, the simulator can play an important role in reducing cost,
+ efficiency,infrastructure complexity, and security risks before a solution
+ can be deployed on real infrastructure.
+ By focusing on issues related to the quality of a particular component
+ under various scenarios, cloud simulators enable performance analysts to
+ monitor the behaviors of the system
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Description and main features
+\end_layout
+
+\begin_layout Standard
+WorkflowSim was introduced for modeling Scientific Workflows in cloud environmen
+t.
+ Workflows in heterogeneous distributed systems show different levels of
+ overheads that are explained based on computational operations and miscellaneou
+s works.
+\end_layout
+
+\begin_layout Standard
+Most of simulators such as CloudSim do not consider fine granularity simulations
+ of workflows and task clustering.
+ Task clustering reduces the number of jobs to be executed and so execution
+ overhead is decreased.
+\end_layout
+
+\begin_layout Standard
+Generally, a job may have high risk for suffering from failures since it
+ consists of several tasks.
+ Researchers with WorkflowSim can study the impact of job failures runtime
+ performance of workflows for different clustering methods.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Architecture
+\end_layout
+
+\begin_layout Standard
+Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:WorkflowSim's-Architecture"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the structure of WorkflowSim that is composed of several components:
+\end_layout
+
+\begin_layout Enumerate
+Workflow Mapper that maps abstract workflows to concrete workflows.
+\end_layout
+
+\begin_layout Enumerate
+Workflow Engine that controls the data dependencies.
+\end_layout
+
+\begin_layout Enumerate
+Workflow Scheduler assigns jobs to resources.
+\end_layout
+
+\begin_layout Enumerate
+Clustering Engine that groups small tasks into a large job.
+\end_layout
+
+\begin_layout Enumerate
+Failure Generator that injects task failures for each execution site.
+\end_layout
+
+\begin_layout Enumerate
+Failure Monitor that stores the failure information such as resource id
+ and task id.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/workflowSim_architecture.jpg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:WorkflowSim's-Architecture"
+
+\end_inset
+
+WorkflowSim's Architecture 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Downloading and Installing WorkflowSim with Eclipse without GitHub
+\end_layout
+
+\begin_layout Standard
+To make the first WorkflowSim project, follow this steps
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GitHub_WorkflowSim_repo"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Download Source Files
+\series default
+ directly from
+\begin_inset CommandInset href
+LatexCommand href
+name " https://github.com/WorkflowSim/WorkflowSim-1.0/archive/master.zip"
+target "this link"
+literal "false"
+
+\end_inset
+
+ and unzip it to your_repo_root.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Check out your source codes:
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+create a new java project called 'WorkflowSim' (it doesn't have to be 'WorkflowS
+im').
+\end_layout
+
+\begin_layout Enumerate
+Right click your project, choose 'Import'.
+ Click 'General'->'Projects from Folder or Archive'.(see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Import-a-project"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/worflowsim/Capture d’écran 2023-04-24 142112.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Import a project
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Import-a-project"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Set the URL to be your extracted folder (wait until Finish button will be
+ enabled as in Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Set-URL-to"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) .
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/worflowsim/2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Set URL to be the extracted folder
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Set-URL-to"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Run an Example:
+\series default
+ Run an example i.e., org.workflowsim.examples.WorkflowSimBasicExample1.java.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Open WorkflowSimBasicExample1.java
+\end_layout
+
+\begin_layout Enumerate
+replace the String daxPath = "/Users/chenweiwei/Work/WorkflowSim-1.0/config/dax/M
+ontage_100.xml"; with your real physical file path.
+\end_layout
+
+\begin_layout Enumerate
+Right click on WorkflowSimBasicExample1.java and choose 'Run File'.
+ You should be able to see some output.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Strengths
+\end_layout
+
+\begin_layout Standard
+WorkflowSim has many advantages
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+ which are:
+\end_layout
+
+\begin_layout Enumerate
+It supports a stack of workflow parser and workflow engine delay to workflow
+ optimization techniques with better accuracy are implemented.
+\end_layout
+
+\begin_layout Enumerate
+It implements several workflow-scheduling methods such as HEFT, Min-Min,
+ and Max-Min and so developers can compare their algorithms with them in
+ a simple way.
+\end_layout
+
+\begin_layout Enumerate
+It considers task clustering and layered overhead to the workflow simulation.
+ Therefore, developers can test various strategies based on a real trace
+ of overheads.
+\end_layout
+
+\begin_layout Enumerate
+It models failures for two layers (i.e., task/job) by an interface and hence
+ developers can design fault-tolerant techniques.
+\end_layout
+
+\begin_layout Subsection
+Limitations
+\end_layout
+
+\begin_layout Standard
+WorkflowSim has some limitations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+ such as:
+\end_layout
+
+\begin_layout Enumerate
+It includes limited types of failures.
+ Therefore, developers cannot simulate the situation when a task is not
+ successfully sent due to network problems or workflow scheduler issues.
+\end_layout
+
+\begin_layout Enumerate
+It does not consider the performance characteristic of file I/O.
+ Therefore, developers cannot obtain suitable simulation for data-intensive
+ applications since these applications involve reading or writing huge data
+ files.
+\end_layout
+
+\begin_layout Enumerate
+It supports only simple workflow techniques and so developers cannot use
+ other important approaches like workflow partitioning in their implementations.
+\end_layout
+
+\begin_layout Section
+Simulation parameter
+\end_layout
+
+\begin_layout Standard
+The inputs to the simulation environment are as follows:
+\end_layout
+
+\begin_layout Itemize
+the average bandwidth between resources is 20 MBps.
+\end_layout
+
+\begin_layout Itemize
+the processing matrix for each VM is measured in Million Instruction Per
+ Second (MIPS).
+\end_layout
+
+\begin_layout Itemize
+the task lengths are set in Million Instruction (MI).
+\end_layout
+
+\begin_layout Standard
+In this work, we assumed that there are only three types of VMs (VM
+\begin_inset Formula $_{HEC}$
+\end_inset
+
+, VM
+\begin_inset Formula $_{MEC}$
+\end_inset
+
+, and VM
+\begin_inset Formula $_{LEC}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+We further assumed that there are only 3 types of VMs in the cloud data
+ center, each with an infinite number of instances.
+ The computational capacities and the prices per hour for each VM type are
+ set as the work.The instant capacity selection and pricing model are based
+ on Amazon EC2 (Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:VM-types-and"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Virtual Machine
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capability (CU)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Price ($/h)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LEC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LEC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.195
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MEC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MEC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.375
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HEC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.48
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HEC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.595
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+VM types and pricing model
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:VM-types-and"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\color brown
+Experimentation
+\end_layout
+
+\begin_layout Section
+
+\color brown
+Comparison and discussion of the solution
+\end_layout
+
+\begin_layout Section
+
+\color brown
+Conclusion
+\end_layout
+
+\end_body
+\end_document
