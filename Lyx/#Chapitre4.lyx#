@@ -1220,8 +1220,8 @@ Boxplot (we will use this method in our approach).
 \series bold
 VM selection:
 \series default
- Selecting VMs that would be migrated from under/ overloaded hosts.
- There are many policies:
+ Selecting VMs that would be migrated from an under/ overloaded hosts.There
+ are many policies:
 \end_layout
 
 \begin_deeper
@@ -1300,11 +1300,11 @@ name "Algorithm_MECM"
 \series bold
 VM placement:
 \series default
- Placing VMs selected for migration to other active, or reactivated hosts.
- To enhance the energy efficiency in virtualized cloud data centers, it
- could be noted that the approaches with conditional VM placement are much
- better compared with random VM placement approaches.
- The conditional VM placement approaches result in better energy efficiency
+ Placing VMs selected for migration to other active, or reactivated hosts.To
+ enhance the energy efficiency in virtualized cloud data centers, it could
+ be noted that the approaches with conditional VM placement are much better
+ compared with random VM placement approaches.
+ The conditional VM placement approaches results in better energy efficiency
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Al_Dulaimy2018type"
@@ -1312,8 +1312,7 @@ literal "false"
 
 \end_inset
 
-.
- We will use VM algorithm placement based on KP(see Algorithm 
+.We will use VM algorithm placement based on KP (see Algorithm 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:VM-placement-KP"
@@ -1383,7 +1382,7 @@ The objective of our project is to provide a workflow scheduling mechanism
 \end_layout
 
 \begin_layout Standard
-So, this approach considers the following metrics and constraint:
+So, this approach consider the following metrics and constraint:
 \end_layout
 
 \begin_layout Itemize
@@ -1408,7 +1407,7 @@ Our proposed approach is a version of the EViMA algorithm with the addition
 \end_layout
 
 \begin_layout Itemize
-We suggest doing workflow partitioning and grouping tasks in the same partition
+We suggest doing workflow partitioning and grouping tasks in same partition
  as just one task, this can reduce the scheduling time.
 \end_layout
 
@@ -1419,9 +1418,8 @@ We suggest starting the EViMA algorithm first for scheduling scientific
 
 \begin_layout Itemize
 We think that when the PM is under-loaded or overloaded, it will consume
- more energy this is why we think that if we apply during the execution
- some of the virtual machine migration strategies and policies as in this
- article
+ more energy this why we think that if we apply during execution some of
+ virtual machine migration strategies and plicies as in this article 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Al_Dulaimy2018type"
@@ -1429,8 +1427,8 @@ literal "false"
 
 \end_inset
 
-, may be we will avoid this problem and so reducing energy consumed by PM.
- After seeing the results of experiments and test performance
+,may be we will avoid this problem and so reducing energy consumed by PM.
+ After seeing the results of experiments and test performance 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Al_Dulaimy2018type"
@@ -1438,7 +1436,7 @@ literal "false"
 
 \end_inset
 
-, so we decide to apply the best policies which are:
+, so we decide to apply the best pilicies which are:
 \end_layout
 
 \begin_deeper
@@ -1452,12 +1450,10 @@ host overload and under-load detection
 MECM for 
 \series bold
 VM selection
-\series default
-W
 \end_layout
 
 \begin_layout Itemize
-We will use the classical Knapsack Problem (KP) for 
+We will use classical Knapsack Problem (KP) for 
 \series bold
 VM placement
 \end_layout
@@ -1609,20 +1605,20 @@ end{algorithmic}
 \end_layout
 
 \begin_layout Standard
-First, we apply the EViMA approach which focuses on improving resource managemen
-t in the cloud data center to obtain the best task schedules that reduces
+First, we apply EViMA approach which focuses on improving resource management
+ in the cloud data center to obtain the best task schedules that reduces
  energy consumption, execution makespan and execution cost without violating
  deadline constraints.
 \end_layout
 
 \begin_layout Standard
-Then, we initialize the VM candidate list to an empty set and we add all
- VMs that are in under/over-loaded physical machines.
- Physical machines are considered under-loaded if they are 1
+Then, we initialize VM candidate list to an empty set and we add add all
+ VMs that are in under/over-loaded physical machines.Physical machines are
+ considered as under-loaded if they are 1
 \begin_inset Formula $^{st}$
 \end_inset
 
-quarter(Q1) using the boxplot method (see 
+quarter(Q1) using boxplot method (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "box_plot_description"
@@ -1640,8 +1636,8 @@ quarter(Q4).
 \end_layout
 
 \begin_layout Standard
-After that, using algorithm MECM calculate for each VM the expected migration
- energy and sort them in ascending order.
+After that, using algorithm MECM which calculate for each VM the expected
+ migration energy and sort them in ascending order.
 \end_layout
 
 \begin_layout Standard
@@ -1655,12 +1651,11 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-This chapter was devoted to presenting our approach, based on the EViMA
- algorithm and VM placement and consolidation, to scheduling workflow tasks
- in a cloud computing environment.
- So in the next chapter, we will present our experiment and simulation in
- order to evaluate the performance of the solutions generated by the proposed
- algorithm.
+This chapter was devoted to presenting our approach, based on EViMA algorithm
+ and VM placement and consolidation,to scheduling workflow tasks in a cloud
+ computing environment.So in the next chapter, we will present our experiment
+ and simulation in order to evaluate the performance of the solutions generated
+ by the proposed algorithm.
 \end_layout
 
 \end_body

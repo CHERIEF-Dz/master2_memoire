@@ -140,13 +140,14 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In this chapter, will present EViMA algorithm which is used for improving
+We will present in this chapter the EViMA algorithm which is used for improving
  resource management in the cloud data center to obtain the best task schedules
- that reduces energy consumption, execution makespan and cost without violating
- deadline constraints.Then will introduce VM placement and VM consolidation
- problem and its 4 sub-problems and for each sub problem some of the most
- used methods to find the solutions.
- And finally we will present the objectives, the concept of our approach
+ that reduce energy consumption, execution makespan and cost without violating
+ deadline constraints.
+ Then will introduce the VM placement and VM consolidation problem and its
+ 4 sub-problems and for each subproblem some of the most used methods to
+ find the solutions.
+ And finally, we will present the objectives, the concept of our approach
  and also its description and explication.
 \end_layout
 
@@ -169,8 +170,8 @@ literal "false"
 \begin_layout Standard
 Energy-efficient virtual-machine mapping algorithm (EViMA) focuses on improving
  resource management in the cloud data center to obtain the best task schedules
- that reduces energy consumption, execution makespan and execution cost
- without violating deadline constraints.
+ that reduce energy consumption, execution makespan and execution cost without
+ violating deadline constraints.
  
 \end_layout
 
@@ -605,9 +606,9 @@ HiCTSA works at both the VM and task levels to ensure that tasks are selected
 \end_layout
 
 \begin_layout Standard
-Algorithm 2 starts by checking the criticality of the tasks as in line 1.Then
- compares the expected finishing time of each workflow task in the ready
- queue (line 2).
+Algorithm 2 starts by checking the criticality of the tasks as in line 1.
+ Then compares the expected finishing time of each workflow task in the
+ ready queue (line 2).
  If the expected finishing time of workflow task wt1 approaches its deadline,
  this task is marked as an HCT task (line 4).
  A mapping is then created for all HCT (line 5).
@@ -684,7 +685,7 @@ noprefix "false"
 
 \end_inset
 
-,reduce the execution cost and consists of two phases
+, reduces the execution cost and consists of two phases
 \begin_inset CommandInset citation
 LatexCommand cite
 key "konjaang2022energy"
@@ -710,7 +711,7 @@ The second phase is the VM allocation phase.
  In the second phase, the quality of the solution is improved by ensuring
  that all less critical tasks are assigned to VMs with lower processing
  speed (VMs with lower cost and lower energy consumption) instead of assigning
- them to VMs with higher execution cost.
+ them to VMs with higher execution costs.
  This is done to reduce the cost of running workflow tasks.
 \begin_inset Float algorithm
 wide false
@@ -763,17 +764,17 @@ VM power regulating algorithm (VM-PRA)
 \end_layout
 
 \begin_layout Standard
-VM-PRA (see Algorithm 4) check the status of all VMs used to execute workflow
+VM-PRA (see Algorithm 4) checks the status of all VMs used to execute workflow
  tasks.
- Sometimes,underutilized VMs are not shut down, which can increase the power
- consumption of a data center.VM-PRA overcomes this drawback by introducing
+ Sometimes, underutilized VMs are not shut down, which can increase the
+ power consumption of a data center.VM-PRA overcomes this drawback by introducing
  Idle ‘‘off’’ Busy ‘‘on’’ techniques that identify the status of all VMs.
  
 \end_layout
 
 \begin_layout Standard
 The method starts by defining the status of all VMs that are used for workflow
- tasks execution.
+ task execution.
  The VMs are divided into two stages, namely a busy stage and an idle stage.
  A VM is said to be busy when it is currently executing or processing a
  workflow task.
@@ -800,7 +801,7 @@ is idle, the VM-PRA algorithm quickly switches VM
 
  into power saving mode to save some energy.
  In reality, VMs do not consume power, but when the VM is powered off or
- put into power saving mode, it reduces the power consumption of its PM
+ put into power-saving mode, it reduces the power consumption of its PM
  and hence a reduction in data center power consumption.
 \end_layout
 
@@ -907,7 +908,7 @@ noprefix "false"
 \end_inset
 
  using the obtained slack time, the cost of provisioning a new VM to schedule
- the tasks is saved
+ the tasks is saved.
 \end_layout
 
 \begin_layout Standard
@@ -963,7 +964,7 @@ name "algorithm5_STiHaM"
 VM placement & VM consolidation
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Problem
 \end_layout
 
@@ -973,9 +974,10 @@ Information and communications technology equipment (ICT) and cooling equipment
  The server is the most critical ICT equipment.
  In most cases, the average CPU utilization rate of the server is only 15%
  to 20% and there are a large number of servers in an idle state which consumes
- much energy.Therefore, VMs can be relocated into as few physical machines
- (PM) as possible through VM consolidation technology and the low-load PM
- can be switched off.
+ much energy.
+ Therefore, VMs can be relocated into as few physical machines (PM) as possible
+ through VM consolidation technology and the low-load PM can be switched
+ off.
  No-load PM can be switched to a sleep state to reduce the number of PMs
  during activities and avoid energy waste
 \begin_inset CommandInset citation
@@ -989,9 +991,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In addition, the problem of low server utilization is appearing by narrow
- dynamic power ranges of servers: even completely idle servers still consume
- about 70% of their peak power.
+In addition, the problem of low server utilization is appearing to narrow
+ the dynamic power ranges of servers: even completely idle servers still
+ consume about 70% of their peak power.
  Therefore, keeping servers underutilized is highly inefficient from the
  energy consumption perspective
 \begin_inset CommandInset citation
@@ -1004,7 +1006,7 @@ literal "false"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 VM Placement 
 \end_layout
 
@@ -1013,7 +1015,7 @@ It is the process of mapping VMs to PMs.
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 VM Consolidation
 \end_layout
 
@@ -1027,9 +1029,10 @@ literal "false"
 
 \end_inset
 
-.Most of the existing methods are committed to consolidating VMs to a small
+.
+ Most of the existing methods are committed to consolidating VMs to a small
  number of servers to improve the utilization of server resources and reduce
- the total energy consumption while preventing hot-spots
+ total energy consumption while preventing hot-spots
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CHEN2023"
@@ -1058,9 +1061,9 @@ literal "false"
 \series bold
 Host under-load detection:
 \series default
- Determining if a host is considered to be under-loaded, so that all VMs
- should be migrated and the host should be switched to a low-power mode.There
- are 2 methods:
+ Determining if a host is considered to be under-loaded so that all VMs
+ should be migrated and the host should be switched to a low-power mode.
+ There are 2 methods:
 \end_layout
 
 \begin_deeper
@@ -1070,8 +1073,8 @@ Static Thresholding: fixed value is set to a utilization threshold and below
 \end_layout
 
 \begin_layout Itemize
-Dynamic Thresholding: Static Thresholding are unsuitable for a cloud computing
- environment which has dynamic and unpredictable workloads.
+Dynamic Thresholding: Static Thresholding is unsuitable for a cloud computing
+ environment that has dynamic and unpredictable workloads.
  The system should be able to automatically adjust its behavior depending
  on the workload patterns, there are 2 patterns:
 \end_layout
@@ -1089,8 +1092,8 @@ Adaptive Thresholding (AT): This study proposes an Adaptive Thresholding
 Mean Adaptive Thresholding: depending on the mean of the values of the minimum
  PMs utilization in the data center, an adaptive value is set to a utilization
  threshold.
- This value is changed frequently due to the dynamic and the unpredictable
- workloads of the cloud environment.
+ This value is changed frequently due to the dynamic and unpredictable workloads
+ of the cloud environment.
 \end_layout
 
 \begin_layout Itemize
@@ -1175,7 +1178,8 @@ Host overload detection:
 \series default
  Determining if a host is considered to be overloaded, so that some VMs
  should be migrated to other active, or reactivated hosts, to meet the QoS
- requirements.There are 2 methods which was explicated before:
+ requirements.
+ There are 2 methods which were explicated before:
 \end_layout
 
 \begin_deeper
@@ -1216,8 +1220,8 @@ Boxplot (we will use this method in our approach).
 \series bold
 VM selection:
 \series default
- Selecting VMs that would be migrated from an under/ overloaded hosts.There
- are many policies:
+ Selecting VMs that would be migrated from under/ overloaded hosts.
+ There are many policies:
 \end_layout
 
 \begin_deeper
@@ -1296,11 +1300,11 @@ name "Algorithm_MECM"
 \series bold
 VM placement:
 \series default
- Placing VMs selected for migration to other active, or reactivated hosts.To
- enhance the energy efficiency in virtualized cloud data centers, it could
- be noted that the approaches with conditional VM placement are much better
- compared with random VM placement approaches.
- The conditional VM placement approaches results in better energy efficiency
+ Placing VMs selected for migration to other active, or reactivated hosts.
+ To enhance the energy efficiency in virtualized cloud data centers, it
+ could be noted that the approaches with conditional VM placement are much
+ better compared with random VM placement approaches.
+ The conditional VM placement approaches result in better energy efficiency
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Al_Dulaimy2018type"
@@ -1308,7 +1312,8 @@ literal "false"
 
 \end_inset
 
-.We will use VM algorithm placement based on KP (see Algorithm 
+.
+ We will use VM algorithm placement based on KP(see Algorithm 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:VM-placement-KP"
@@ -1378,7 +1383,7 @@ The objective of our project is to provide a workflow scheduling mechanism
 \end_layout
 
 \begin_layout Standard
-So, this approach consider the following metrics and constraint:
+So, this approach considers the following metrics and constraint:
 \end_layout
 
 \begin_layout Itemize
@@ -1403,7 +1408,7 @@ Our proposed approach is a version of the EViMA algorithm with the addition
 \end_layout
 
 \begin_layout Itemize
-We suggest doing workflow partitioning and grouping tasks in same partition
+We suggest doing workflow partitioning and grouping tasks in the same partition
  as just one task, this can reduce the scheduling time.
 \end_layout
 
@@ -1414,8 +1419,9 @@ We suggest starting the EViMA algorithm first for scheduling scientific
 
 \begin_layout Itemize
 We think that when the PM is under-loaded or overloaded, it will consume
- more energy this why we think that if we apply during execution some of
- virtual machine migration strategies and plicies as in this article 
+ more energy this is why we think that if we apply during the execution
+ some of the virtual machine migration strategies and policies as in this
+ article
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Al_Dulaimy2018type"
@@ -1423,8 +1429,8 @@ literal "false"
 
 \end_inset
 
-,may be we will avoid this problem and so reducing energy consumed by PM.
- After seeing the results of experiments and test performance 
+, may be we will avoid this problem and so reducing energy consumed by PM.
+ After seeing the results of experiments and test performance
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Al_Dulaimy2018type"
@@ -1432,7 +1438,7 @@ literal "false"
 
 \end_inset
 
-, so we decide to apply the best pilicies which are:
+, so we decide to apply the best policies which are:
 \end_layout
 
 \begin_deeper
@@ -1446,10 +1452,12 @@ host overload and under-load detection
 MECM for 
 \series bold
 VM selection
+\series default
+W
 \end_layout
 
 \begin_layout Itemize
-We will use classical Knapsack Problem (KP) for 
+We will use the classical Knapsack Problem (KP) for 
 \series bold
 VM placement
 \end_layout
@@ -1601,20 +1609,20 @@ end{algorithmic}
 \end_layout
 
 \begin_layout Standard
-First, we apply EViMA approach which focuses on improving resource management
- in the cloud data center to obtain the best task schedules that reduces
+First, we apply the EViMA approach which focuses on improving resource managemen
+t in the cloud data center to obtain the best task schedules that reduces
  energy consumption, execution makespan and execution cost without violating
  deadline constraints.
 \end_layout
 
 \begin_layout Standard
-Then, we initialize VM candidate list to an empty set and we add add all
- VMs that are in under/over-loaded physical machines.Physical machines are
- considered as under-loaded if they are 1
+Then, we initialize the VM candidate list to an empty set and we add all
+ VMs that are in under/over-loaded physical machines.
+ Physical machines are considered under-loaded if they are 1
 \begin_inset Formula $^{st}$
 \end_inset
 
-quarter(Q1) using boxplot method (see 
+quarter(Q1) using the boxplot method (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "box_plot_description"
@@ -1632,8 +1640,8 @@ quarter(Q4).
 \end_layout
 
 \begin_layout Standard
-After that, using algorithm MECM which calculate for each VM the expected
- migration energy and sort them in ascending order.
+After that, using algorithm MECM calculate for each VM the expected migration
+ energy and sort them in ascending order.
 \end_layout
 
 \begin_layout Standard
@@ -1647,11 +1655,15 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-This chapter was devoted to presenting our approach, based on EViMA algorithm
- and VM placement and consolidation,to scheduling workflow tasks in a cloud
- computing environment.So in the next chapter, we will present our experiment
- and simulation in order to evaluate the performance of the solutions generated
- by the proposed algorithm.
+This chapter was devoted to presenting our approach, based on the EViMA
+ algorithm and VM placement and consolidation, to scheduling workflow tasks
+ in a cloud computing environment.
+\end_layout
+
+\begin_layout Standard
+So in the next chapter, we will present our experiment and simulation in
+ order to evaluate the performance of the solutions generated by the proposed
+ algorithm.
 \end_layout
 
 \end_body

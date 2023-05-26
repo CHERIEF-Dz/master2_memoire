@@ -114,20 +114,20 @@ newpage
 \end_layout
 
 \begin_layout Section
-?Introduction
+Introduction
 \end_layout
 
 \begin_layout Standard
 Large-scale complex scientific applications/workflow are executed and analyzed
- in the multi-disciplinary area of research such as astronomy and physics.
+ in multi-disciplinary areas of research such as astronomy and physics.
  The workflow contains a large number of mutually dependent tasks which
  are executed according to their dependency constraint.
- Due to dependency constraint, the child task can start its execution only
- when parent task finishes its execution.
+ Due to dependency constraints, the child task can start its execution only
+ when the parent task finishes its execution.
  A directed acyclic graph (DAG) is used to represent workflows.
  These workflows often have disparate requirements (such as storage and
- CPU) and constraints (dependency) that need to be accounted during their
- execution
+ CPU) and constraints (dependency) that need to be accounted for during
+ their execution
 \begin_inset CommandInset citation
 LatexCommand cite
 key "garg2022energy"
@@ -139,8 +139,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In cloud environment, effective management of scientific workflows is the
- main challenge since there are numerous virtual machines and many user
+In the cloud environment, effective management of scientific workflows is
+ the main challenge since there are numerous virtual machines and many user
  tasks that should be scheduled by considering dependencies and various
  objectives
 \begin_inset CommandInset citation
@@ -155,13 +155,18 @@ literal "false"
 
 \begin_layout Standard
 In this chapter, we will introduce the scientific workflow scheduling problem,
- firstly, we modeling it, then we list some related works that optimize
- the energy consumption and we finish this chapter with comparative table.
- [this is my formulation]
+ firstly, we model it, then we list some related works that optimize the
+ energy consumption and we finish this chapter with a comparative table.
 \end_layout
 
 \begin_layout Section
 Workflow scheduling
+\end_layout
+
+\begin_layout Standard
+
+\color brown
+we need somthing here
 \end_layout
 
 \begin_layout Subsection
@@ -170,13 +175,13 @@ Definition of Task scheduling of scientific workflows
 
 \begin_layout Standard
 Task scheduling of scientific workflow is extremely important.
- Task scheduling algorithms is based on appropriate policies to deploy scientifi
-c workflow to the physical nodes in the cloud computing system.
+ Task scheduling algorithms are based on appropriate policies to deploy
+ scientific workflow to the physical nodes in the cloud computing system.
  Because various physical nodes are heterogeneous and their running status
- are dynamic changed over time, at the same time, the system resources required
- by users and the request types of users are different, so that the design
- of the scheduling algorithms of scientific workflow is complex in the cloud
- computing system.
+ is dynamically changed over time, at the same time, the system resources
+ required by users and the request types of users are different, so the
+ design of the scheduling algorithms of scientific workflow is complex in
+ the cloud computing system.
  A bad scheduling policy can lead to a decline in system performance, a
  long time span of request feedback, a decrease in user satisfaction and
  a decrease in system throughput.
@@ -200,7 +205,7 @@ Scientific workflow scheduling
 
 \begin_layout Standard
 Workflow scheduling calls for high computation and communication costs,
- especially scientific workflows that have to do with areas as astronomy
+ especially scientific workflows that have to do with areas such as astronomy
  and biology are among the most commonly used cloud applications.
  In cloud computing, a service provider provides users with various capacities
  at various costs.
@@ -252,8 +257,9 @@ literal "false"
 
 \end_inset
 
-.Static scheduling generates a scheduling plan (SP) that allocates all executable
- tasks to compute nodes before execution and the WMS strictly adheres to
+.
+ Static scheduling generates a scheduling plan (SP) that allocates all executabl
+e tasks to compute nodes before execution and the WMS strictly adheres to
  the scheduling plan throughout the duration of the scientific workflow
  execution.
  Since it is prior to execution, static scheduling generates little overhead
@@ -298,7 +304,8 @@ literal "false"
 
 \end_inset
 
-.Dynamic scheduling produces scheduling plans that distribute and allocate
+.
+ Dynamic scheduling produces scheduling plans that distribute and allocate
  executable tasks to compute nodes during workflow execution.
  This type of scheduling is suitable for scientific workflows, in which
  the workload of tasks is difficult to estimate, or for environments where
@@ -340,11 +347,11 @@ Cost
 
 \begin_layout Standard
 The minimization of the execution cost or the respect of user-defined budget:
- for the user, reducing execution cost is of a capital importance.
- User sometimes have a cap on the amount of money spent on resources (i.e.
+ for the user, reducing execution cost is of capital importance.
+ Users sometimes have a cap on the amount of money spent on resources (i.e.
  budget).
- Minimizing execution cost and taking into account user-defined budget in
- a scheduling strategy is crucial.
+ Minimizing execution costs and taking into account user-defined budgets
+ in a scheduling strategy is crucial.
 \end_layout
 
 \begin_layout Subsubsection
@@ -354,9 +361,9 @@ Makespan
 \begin_layout Standard
 The minimization of the execution time or the respect of user-defined deadline
  as in the case of the execution cost, execution time and deadline are of
- a capital importance for cloud users.
- Therefore, scheduling strategies must strive to reducing the makespan while
- mapping workflow tasks on cloud resources and be aware of user-defined
+ capital importance for cloud users.
+ Therefore, scheduling strategies must strive to reduce the makespan while
+ mapping workflow tasks on cloud resources and be aware of the user-defined
  deadline.
 \end_layout
 
@@ -365,8 +372,8 @@ Workload Maximization
 \end_layout
 
 \begin_layout Standard
-The maximization of the workload aiming at maximizing the amount of work
- done, that is, the number of workflows executed.
+The maximization of the workload aims at maximizing the amount of work done,
+ that is, the number of workflows executed.
 \end_layout
 
 \begin_layout Subsubsection
@@ -374,12 +381,12 @@ Maximization of VM utilization
 \end_layout
 
 \begin_layout Standard
-idle time slots in provisioned VMs are deemed as a waste of money as they
+Idle time slots in provisioned VMs are deemed as a waste of money as they
  were paid for but not utilized and as a result, algorithms try to avoid
  them in their schedules.
  Minimizing idle time slots and maximizing the utilization of resources
- helps reducing execution cost as well as energy consumption, engraving
- profit to providers.
+ helps reduce execution costs as well as energy consumption, engraving profit
+ to providers.
 \end_layout
 
 \begin_layout Subsubsection
@@ -387,12 +394,12 @@ Energy Consumption
 \end_layout
 
 \begin_layout Standard
-The current industries, organizations and governments are really concern
+The current industries, organizations and governments are really concerned
  about the reduction of energy and to reduce the carbon footprint.
- For cloud computing providers, energy consumption reduction is a key to
- upgrade their return of investment (ROI).
- Energy efficient scheduling on the servers is one of the challenging problems
- in a dynamic environment such as cloud domain for reducing the energy consumpti
+ For cloud computing providers, energy consumption reduction is key to upgrading
+ their return on investment (ROI).
+ Energy-efficient scheduling on the servers is one of the challenging problems
+ in a dynamic environment such as the cloud domain for reducing energy consumpti
 on.
 \end_layout
 
@@ -412,7 +419,7 @@ Security Awareness
 \end_layout
 
 \begin_layout Section
-?Related works[8days]
+?Related works[2days]
 \end_layout
 
 \begin_layout Subsection
@@ -421,7 +428,7 @@ Energy optimization problem
 
 \begin_layout Standard
 Scientific workflows are the constitution of distinct tasks with complex
- dependency.
+ dependencies.
  Resource provisioning and the order in which workflow tasks are executed
  are challenging problems.
  The inefficient utilization of resources while executing the workflows
@@ -430,8 +437,8 @@ Scientific workflows are the constitution of distinct tasks with complex
  provisioned resources.
  These unused resources increase energy consumption without performing any
  useful operation.
- The resource utilization can be increased by efficient resource provisioning.
- An energy efficient scheduling algorithm can be used to manage the resources
+ Resource utilization can be increased by efficient resource provisioning.
+ An energy-efficient scheduling algorithm can be used to manage the resources
  that are required by the task while executing these scientific workflow
  tasks.
  In the literature, numerous workflow scheduling algorithms have been proposed.
@@ -439,7 +446,7 @@ Scientific workflows are the constitution of distinct tasks with complex
  inadequate resources.
  The selection and designing of a competent and operative workflow scheduling
  algorithm are also challenging tasks.
- The energy-aware scheduling algorithm must be selected which can provision
+ The energy-aware scheduling algorithm must be selected which can provide
  a proper resource from the offered resources which are efficient enough
  to complete the workflow tasks within their deadline constriction and it
  can decrease the energy consumption
@@ -471,8 +478,8 @@ cture.
  The hardness of this problem increases even more with several contradictory
  goals.
  Most of the existing research does not consider the essential characteristic
- of cloud and significant issues, such as energy variation and throughput
- besides makespan and cost.
+ of the cloud and significant issues, such as energy variation and throughput
+ besides makespan and cost
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -480,11 +487,11 @@ literal "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
-Algorithmes d'optimisation approchées [7days]
+Approximate optimization algorithms
 \end_layout
 
 \begin_layout Standard
@@ -499,14 +506,19 @@ literal "false"
 
 \end_inset
 
-.We list here some of related works which optimize energy consumption
+.
+ We list here some of the related works which optimize energy consumption.
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Accelerated Search (AS)
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Accelerated Search (AS) algorithm based on Dynamic Programming (DP) to obtain
  a combination of various task schemes which can be completed in a given
  time with the minimum possible energy by introducing the guaranteed probability
@@ -514,18 +526,26 @@ Accelerated Search (AS) algorithm based on Dynamic Programming (DP) to obtain
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://www.sciencedirect.com/science/article/abs/pii/S0743731516301745?via%3Dihub
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 ? Plain GA
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Plain GA, CA+GA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 plain genetic (Plain GA), (ii) cellular automata supported by genetic approach
  (CA + GA) and (iii) heuristic, giving preferences to high-efficiency machines
  in allocation (EAH), based on a typical FIFO algorithm The used fitness
@@ -533,10 +553,14 @@ plain genetic (Plain GA), (ii) cellular automata supported by genetic approach
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 PBHGA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Parallel bi-objective hybrid genetic algorithm (PBHGA) is a parallel
  evolutionary algorithm for solving multi-objective optimization problems.
  It combines several optimization techniques including genetic algorithm
@@ -544,6 +568,8 @@ The Parallel bi-objective hybrid genetic algorithm (PBHGA) is a parallel
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The algorithm works by using an initial population of random solutions.
  Individuals in this population are rated based on their goals and their
  fitness is assessed using a fitness function.
@@ -552,6 +578,8 @@ The algorithm works by using an initial population of random solutions.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Reproduction is done using genetic operators such as mutation and crossover.
  Mutation involves modifying a single gene of the individual while crossbreeding
  involves creating new individuals by combining the characteristics of two
@@ -559,6 +587,8 @@ Reproduction is done using genetic operators such as mutation and crossover.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The process of selection and reproduction is repeated for several generations
  until an optimal solution is found.
  During the whole optimization process, PBHGA maintains a population of
@@ -566,6 +596,8 @@ The process of selection and reproduction is repeated for several generations
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The parallel approach of the algorithm helps to speed up the optimization
  process by running multiple search tasks simultaneously on different processors.
  It also makes it possible to efficiently explore regions of the search
@@ -573,6 +605,8 @@ The parallel approach of the algorithm helps to speed up the optimization
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Finally, the hybrid genetic algorithm uses local search techniques to improve
  the quality of solutions by applying perturbation operations to existing
  solutions.
@@ -581,6 +615,8 @@ Finally, the hybrid genetic algorithm uses local search techniques to improve
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://d1wqtxts1xzle7.cloudfront.net/30720910/meta20100_submission_167-libre.pdf?1
 391833479=&response-content-disposition=inline%3B+filename%3DA_Parallel_Bi_objec
 tive_Hybrid_Genetic_A.pdf&Expires=1680289419&Signature=NvSZ74YMq238Mge6yJo3lCmUXT
@@ -592,19 +628,27 @@ ey-Pair-Id=APKAJLOHF5GGSLRBV4ZA
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 NSGA-II, MOCell, IBEA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 NSGA-II, MOCell and IBEA are popular multi-objective evolutionary algorithms
  for solving multi-objective optimization problems.
 \end_layout
 
 \begin_layout Paragraph
+
+\color brown
 NSGA-II (Non-dominated Sorting Genetic Algorithm II) 
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 uses a non-dominated sorting approach to assess the quality of population
  solutions.
  Solutions are ranked according to their dominance over other solutions
@@ -616,10 +660,14 @@ uses a non-dominated sorting approach to assess the quality of population
 \end_layout
 
 \begin_layout Paragraph
+
+\color brown
 MOCell (Multi-Objective Cellular Genetic Algorithm) 
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 uses a grid approach to divide the search space into cells and each cell
  is treated as a separate optimization problem.
  The solutions are then evaluated locally and the best individuals are selected
@@ -628,10 +676,14 @@ uses a grid approach to divide the search space into cells and each cell
 \end_layout
 
 \begin_layout Paragraph
+
+\color brown
 IBEA (Indicator-Based Evolutionary Algorithm) 
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 uses quality indicators to assess the quality of solutions.
  It uses an indicator function that measures the distance of each solution
  to an approximation of the true Pareto front.
@@ -640,6 +692,8 @@ uses quality indicators to assess the quality of solutions.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 These algorithms all use an evolutionary approach to optimize multiple goals
  at the same time.
  Candidate solutions are evaluated against several optimization criteria
@@ -650,6 +704,8 @@ These algorithms all use an evolutionary approach to optimize multiple goals
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 One of the advantages of these algorithms is that they allow to find several
  optimal solutions which are equivalent in terms of quality for different
  criteria.
@@ -658,14 +714,20 @@ One of the advantages of these algorithms is that they allow to find several
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/6606595
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 HCFS
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Heuristics with Continuous Frequency Scaling (HCFS) algorithm is an
  optimization technique that solves scheduling problems using a heuristic
  approach.
@@ -674,14 +736,20 @@ The Heuristics with Continuous Frequency Scaling (HCFS) algorithm is an
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.5396
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EAMD
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 new energy-aware scheduling algorithm called Energy Aware Scheduling by
  Minimizing Duplication(EAMD) which considers the energy consumption as
  well as the makespan of applications.
@@ -695,14 +763,20 @@ new energy-aware scheduling algorithm called Energy Aware Scheduling by
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/document/6319162
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 MMF-DVFS
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The MMF-DVFS (Multi-Objective Multi-Frequency Dynamic Voltage and Frequency
  Scaling) algorithm is an optimization algorithm for power management in
  embedded systems.
@@ -712,6 +786,8 @@ The MMF-DVFS (Multi-Objective Multi-Frequency Dynamic Voltage and Frequency
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The MMF-DVFS algorithm uses an approach based on multi-objective optimization
  which seeks to find a compromise between the objectives of minimizing energy
  consumption and execution time.
@@ -721,6 +797,8 @@ y adjusted according to performance and power consumption requirements.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The MMF-DVFS algorithm is also able to take into account QoS constraints
  using a decomposition approach into several sub-problems.
  The algorithm decomposes the global problem into several sub-problems for
@@ -729,6 +807,8 @@ The MMF-DVFS algorithm is also able to take into account QoS constraints
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The MMF-DVFS algorithm uses local and global search methods to find the
  best possible solution.
  Local search methods are used to improve local solutions while global search
@@ -736,14 +816,20 @@ The MMF-DVFS algorithm uses local and global search methods to find the
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/5493460
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EASLA, Improved EASLA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 EASLA (Efficient Antlion Optimizer with a Small Local Attraction) is a metaheuri
 stic optimization algorithm inspired by the hunting behavior of antlions.
  The algorithm is used for solving various optimization problems, including
@@ -751,6 +837,8 @@ stic optimization algorithm inspired by the hunting behavior of antlions.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Improved EASLA algorithm is an enhanced version of EASLA, which incorporates
  some modifications to improve its performance.
  The key modifications include the incorporation of a mutation operator
@@ -759,6 +847,8 @@ The Improved EASLA algorithm is an enhanced version of EASLA, which incorporates
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The basic idea behind EASLA is to simulate the hunting behavior of antlions,
  which use a combination of ambush and trap techniques to capture their
  prey.
@@ -767,6 +857,8 @@ The basic idea behind EASLA is to simulate the hunting behavior of antlions,
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The algorithm starts by randomly generating a population of ants and placing
  them in the search space.
  The ants move toward the antlion based on a probability function that takes
@@ -776,6 +868,8 @@ The algorithm starts by randomly generating a population of ants and placing
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Improved EASLA algorithm extends this basic framework by introducing
  a mutation operator that randomly modifies the position of some ants, which
  can help to explore new regions of the search space.
@@ -784,6 +878,8 @@ The Improved EASLA algorithm extends this basic framework by introducing
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Overall, EASLA and its improved variant aim to balance exploration and exploitat
 ion in the search space, using a combination of local and global search
  strategies to find good solutions to optimization problems.
@@ -791,6 +887,8 @@ ion in the search space, using a combination of local and global search
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Seyedali Mirjalili and Seyed Mohammad Mirjalili, "Efficient ant optimizer
  with small local attraction", Advances in Engineering Software, vol.
  102, p.
@@ -803,10 +901,14 @@ Seyedali Mirjalili and Seyed Mohammad Mirjalili, "Efficient ant optimizer
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 QHA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Quantum-Inspired Harmony Search Algorithm (QHA) is a quantum-inspired
  optimization method for solving optimization problems.
  The algorithm starts by initializing a set of candidate solutions for the
@@ -815,14 +917,20 @@ The Quantum-Inspired Harmony Search Algorithm (QHA) is a quantum-inspired
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/document/7173041
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EADAGS
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Scheduling (EADAGS) on heterogeneous processors that can run on discrete
  operating voltages Such processors can scale down their voltages and slow
  down to reduce energy whenever they idle due to task dependencies.
@@ -831,14 +939,20 @@ Scheduling (EADAGS) on heterogeneous processors that can run on discrete
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://link.springer.com/article/10.1007/s10586-009-0119-6
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 eFLS
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The eFLS (enhanced fuzzy logic system) algorithm is a modeling method based
  on fuzzy logic for decision making in uncertain environments.
  The goal of the eFLS algorithm is to create a robust decision system that
@@ -846,6 +960,8 @@ The eFLS (enhanced fuzzy logic system) algorithm is a modeling method based
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Roeder, J.; Rouxel, B.; Altmeyer, S.; Grelck, C.
  Energy-aware scheduling of multi-version tasks on heterogeneous real-time
  systems.
@@ -855,10 +971,14 @@ Roeder, J.; Rouxel, B.; Altmeyer, S.; Grelck, C.
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 VHEST, EASA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 VHEST stands for Variable Hessian Estimation Search Technique.
  It is a type of derivative-based optimization algorithm that uses the Hessian
  matrix of the objective function to find the optimal solution.
@@ -878,6 +998,8 @@ VHEST stands for Variable Hessian Estimation Search Technique.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 Both VHEST and EASA are known for their efficiency and accuracy in solving
  optimization problems and they have been applied to various real-world
  problems in engineering, science and other fields.
@@ -885,10 +1007,14 @@ Both VHEST and EASA are known for their efficiency and accuracy in solving
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EDLS
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Exponential Differencing Least Squares (EDLS) algorithm is a linear
  regression estimation algorithm that is used to model data that has exponential
  trends or time-varying growth rates.
@@ -897,6 +1023,8 @@ The Exponential Differencing Least Squares (EDLS) algorithm is a linear
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The EDLS algorithm works by minimizing the sum of the squares of the deviations
  between the observed values and the values predicted by the model.
  Unlike classical linear regression methods which assume that errors have
@@ -907,29 +1035,41 @@ al distribution.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 article intitulé "A Two-Step Estimation Procedure for Dynamic Panels with
  Non-Stationary Common Factors", publié dans le Journal of Econometrics
  en 2005.
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 LESA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 GACSM: (GACSM), to address task scheduling on heterogeneous multiprocessor
  systems using Dynamic Voltage and Frequency Scaling (DVFS).
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/document/8974273
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EED, EEND
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 algorithms, namely, Energy-Efficiency with Duplication (EED) and Energy-Efficien
 cy with Non Duplication (EEND) Both algorithms, in contrast to their counterpart
 s in the literature, strive to make a balance across the energy consumption,
@@ -939,14 +1079,20 @@ s in the literature, strive to make a balance across the energy consumption,
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/document/7300601
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 RSMECC
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The RSMECC (Reed-Solomon-MDPC Code-based Encryption and Compression) algorithm
  is a data encryption and compression algorithm that uses Reed-Solomon codes
  and MDPC (Moderate Density Parity-Check) codes.
@@ -957,14 +1103,20 @@ The RSMECC (Reed-Solomon-MDPC Code-based Encryption and Compression) algorithm
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://link.springer.com/article/10.1007/s00521-019-04415-2
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 ECS, ECS + idle 
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 ECS is a task scheduling algorithm that considers both the processing time
  and energy consumption of tasks when scheduling them on processors.
  The algorithm aims to find an optimal schedule that minimizes the energy
@@ -986,14 +1138,20 @@ ECS is a task scheduling algorithm that considers both the processing time
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://www.hindawi.com/journals/sp/2016/5612039/ 
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 ESPA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 ESPA (Enhanced Scheduling Priority Algorithm) is a scheduling algorithm
  used in real-time systems that aims to improve the scheduling performance
  compared to traditional priority-based scheduling algorithms such as Earliest
@@ -1012,10 +1170,14 @@ ESPA (Enhanced Scheduling Priority Algorithm) is a scheduling algorithm
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 GACSM
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 GACSM stands for "Genetic Algorithm-based Clustering for Service Composition
  Management".
  It is an algorithm that aims to optimize the service composition process
@@ -1024,14 +1186,20 @@ GACSM stands for "Genetic Algorithm-based Clustering for Service Composition
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/8974273 
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EAD, PEBD
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 algorithms-Energy-Aware Duplication (EAD) scheduling and Performance-Energy
  Balanced Duplication (PEBD) scheduling.
  Existing duplication-based scheduling algorithms replicate all possible
@@ -1045,14 +1213,20 @@ algorithms-Energy-Aware Duplication (EAD) scheduling and Performance-Energy
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/document/5611491
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 WPEP
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Workflow performance evaluation platforms (WPEP) algorithm is not an
  optimization algorithm, but rather a method for evaluating the performance
  of workflows, i.e.
@@ -1063,14 +1237,20 @@ The Workflow performance evaluation platforms (WPEP) algorithm is not an
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/9393895
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 RMREC
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The "Reducing energy consumption using remapping of critical tasks" algorithm
  is an optimization method to minimize the power consumption of computing
  applications by remapping critical tasks to the most energy-efficient cores.
@@ -1079,14 +1259,20 @@ The "Reducing energy consumption using remapping of critical tasks" algorithm
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/9253551
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 MW-HBDCS
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 is a scheduling method that makes it possible to efficiently plan the execution
  of several workflows on a set of heterogeneous resources while respecting
  budget and deadline constraints.
@@ -1095,14 +1281,20 @@ is a scheduling method that makes it possible to efficiently plan the execution
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://link.springer.com/article/10.1007/s00500-018-3229-3
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 MinD + ED
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The "Minimum Dependencies Energy-efficient DAG (MinD+ED)" algorithm is a
  scheduling method for workflows represented in the form of a DAG (Directed
  Acyclic Graph) which aims to minimize energy consumption while guaranteeing
@@ -1112,14 +1304,20 @@ The "Minimum Dependencies Energy-efficient DAG (MinD+ED)" algorithm is a
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/8109158
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EnReal Method
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The EnReal Method (Energy and Reliability aware Method) algorithm is a schedulin
 g method for scientific workflows that aims to minimize energy consumption
  while ensuring high reliability of results.
@@ -1129,14 +1327,20 @@ g method for scientific workflows that aims to minimize energy consumption
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/7276993
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 AVVMC
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 the AVVMC VM consolidation scheme that focuses on balanced resource utilization
  of servers across different computing resources (CPU, memory and network
  I/O) with the goal of minimizing power consumption and resource wastage,
@@ -1145,19 +1349,27 @@ the AVVMC VM consolidation scheme that focuses on balanced resource utilization
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=63826b7681bb1ff81956
 12ef75428812b6126a77
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 ?FFO-EVMM
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Adaptive GA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Adaptive GA (Genetic Algorithm) algorithm is an optimization method
  inspired by Darwin's theory of evolution The Adaptive GA algorithm begins
  by initializing a population of candidate solutions, which are sets of
@@ -1170,14 +1382,20 @@ The Adaptive GA (Genetic Algorithm) algorithm is an optimization method
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://www.tandfonline.com/doi/abs/10.1080/00221680209499862
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Hybrid Cultural and ACO
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Hybrid Cultural and ACO algorithm combines two powerful optimization
  techniques: Cultural Algorithms (CA) and Ant Colony Optimization (ACO)
  to solve complex optimization problems.
@@ -1189,16 +1407,22 @@ The Hybrid Cultural and ACO algorithm combines two powerful optimization
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://www.igi-global.com/article/an-energy-aware-task-scheduling-in-the-cloud-co
 mputing-using-a-hybrid-cultural-and-ant-colony-optimization-algorithm/188661
  
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 MPSO-FGA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The MPSO-FGA (Multi-Parent Particle Swarm Optimization with Fitness Gradient
  Adaptation) algorithm is a hybrid optimization method combining Particle
  Swarm Optimization (PSO) and Evolutionary Optimization (EA).
@@ -1213,14 +1437,20 @@ The MPSO-FGA (Multi-Parent Particle Swarm Optimization with Fitness Gradient
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/8015589
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 FOA-SA- LB
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The FOA-SA-LB (Fruit Fly Optimization Algorithm with Simulated Annealing
  and Levy Flight Backtracking) algorithm is a hybrid optimization method
  that combines the Fruit Fly Swarm Optimization (FOA) algorithm, the simulated
@@ -1231,14 +1461,20 @@ The FOA-SA-LB (Fruit Fly Optimization Algorithm with Simulated Annealing
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://www.sciencedirect.com/science/article/pii/S2352914817300187
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 REEWS
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The Real-coded Estimation of Distribution Algorithm with Re-Evaluation and
  Windowing Strategy (REEWS) algorithm is an optimization method that uses
  a distribution-based approach to find the optimal solution to a given optimizat
@@ -1246,14 +1482,20 @@ ion problem.
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 University of Technology of Belfort-Montbéliard in France
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 HUA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 he HUA (Hybridization of Harmony Search Algorithm and Univariate Marginal
  Distribution Algorithm) is an evolutionary hybrid algorithm that combines
  the advantages of two popular algorithms, namely the Harmony Search Algorithm
@@ -1264,6 +1506,8 @@ he HUA (Hybridization of Harmony Search Algorithm and Univariate Marginal
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The HUA algorithm (Hybridization of Harmony Search Algorithm and Univariate
  Marginal Distribution Algorithm) was proposed by researchers S.
  B.
@@ -1276,10 +1520,14 @@ The HUA algorithm (Hybridization of Harmony Search Algorithm and Univariate
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 MHRA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 he MHRA algorithm (Multi-Objective Harmony Search Algorithm with Reference-Point
 -Based Nondominated Sorting Approach) is an evolutionary algorithm used
  to solve multi-objective optimization problems.
@@ -1291,14 +1539,20 @@ he MHRA algorithm (Multi-Objective Harmony Search Algorithm with Reference-Point
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/abstract/document/4289081
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EARES-D
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The EARES-D (Enhanced Adaptive Range Extended Search with Diversity) algorithm
  is a global optimization algorithm that has been proposed to solve complex
  optimization problems The algorithm starts by generating a population of
@@ -1306,14 +1560,20 @@ The EARES-D (Enhanced Adaptive Range Extended Search with Diversity) algorithm
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://www.sciencedirect.com/science/article/pii/S1084804522000595
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EViMA
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 L'algorithme EViMA (Elastic Virtual Machine Allocation) est un algorithme
  de gestion de la charge de travail pour les applications basées sur le
  Cloud Computing.
@@ -1345,10 +1605,14 @@ s.
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 EAH
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 The EAH (Exploratory Adaptation Hyper-heuristics) algorithm is a hyper-heuristic
  optimization method for solving combinatorial optimization problems.
  The goal of the EAH algorithm is to solve combinatorial optimization problems
@@ -1357,11 +1621,15 @@ The EAH (Exploratory Adaptation Hyper-heuristics) algorithm is a hyper-heuristic
 \end_layout
 
 \begin_layout Standard
+
+\color brown
 https://ieeexplore.ieee.org/document/6778110
 \end_layout
 
 \begin_layout Subsection
-Comparaison entre les approches d'ordonnancement des workflows [1day]
+
+\color brown
+Comparaison entre les approches d'ordonnancement des workflows
 \end_layout
 
 \begin_layout Standard
@@ -4244,8 +4512,19 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-We consider a workflow W as a graph G = (T, D) , where T = { T , T ,…, T
- } indicates n tasks and shows the data flow dependencies among them.
+We consider workflow W as a graph G = (T, D) , where T = { T
+\begin_inset Formula $_{0}$
+\end_inset
+
+ , T
+\begin_inset Formula $_{1}$
+\end_inset
+
+ ,…, T
+\begin_inset Formula $_{n}$
+\end_inset
+
+} indicates n tasks and shows the data flow dependencies among them.
  The data-flow dependency ( T
 \begin_inset Formula $_{i}$
 \end_inset
@@ -4262,7 +4541,11 @@ We consider a workflow W as a graph G = (T, D) , where T = { T , T ,…, T
 \begin_inset Formula $_{j}$
 \end_inset
 
- and task Tj is an immediate successor of task T
+ and task T
+\begin_inset Formula $_{j}$
+\end_inset
+
+ is an immediate successor of task T
 \begin_inset Formula $_{i}$
 \end_inset
 
@@ -4325,8 +4608,8 @@ T
 \begin_inset Formula $_{exit}$
 \end_inset
 
- are a task without any predecessors and a task without any successors,respectiv
-ely.
+ are tasks without any predecessors and a task without any successors,respective
+ly.
 \end_layout
 
 \begin_layout Itemize
@@ -4370,6 +4653,11 @@ and
  
 \end_layout
 
+\begin_layout Standard
+T_{entry} and T_{exit} is a task without any predecessors and a task without
+ any successors, respectively.
+\end_layout
+
 \begin_layout Subsection
 Cloud datacenter model
 \begin_inset CommandInset citation
@@ -4383,22 +4671,21 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Cloud data center is a network of computing resources that enables application
- and data sharing.
- 
+The cloud datacenter is a network of computing resources that enables applicatio
+n and data sharing.
 \end_layout
 
 \begin_layout Standard
-We assume that a data center has a set of 
+We assume that a data center has a set of
 \series bold
-M
+ M
 \series default
  heterogeneous physical machines (PM) that are used to configure a set of
  
 \series bold
 k
 \series default
- VMs for workflow tasks scheduling.
+ VMs for workflow task scheduling.
  
 \end_layout
 
@@ -4424,15 +4711,15 @@ p
 \end_inset
 
 ), denotes the different types of PMs available in a cloud data center.
- These PMs have different Processing capacity such as CPUs, memory, bandwidth,
+ These PMs have different Processing capacities such as CPUs, memory, bandwidth,
  network I/O and the size of the storage which are measured in million instructi
 ons per second (MIPS).
 \end_layout
 
 \begin_layout Standard
-VMs are deployed on PMs and each PM can host 
+VMs are deployed on PMs and each PM can host
 \series bold
-k
+ k
 \series default
  VMs.
  Let 
@@ -4455,10 +4742,10 @@ k
 \begin_inset Formula $_{k}$
 \end_inset
 
-) provided to users at an hourly based pricing model.
- We assume that the VMs are infinite and each VM type
+) provided to users at an hourly-based pricing model.
+ We assume that the VMs are infinite and each VM type 
 \series bold
- k
+k
 \series default
  is capable of providing an infinite number of VMs for workflow tasks execution.
 \end_layout
@@ -4632,7 +4919,7 @@ Definition 2.
 \end_layout
 
 \begin_layout Standard
-Each workflow contains several set of workflow tasks representing (Wt1,
+Each workflow contains several sets of workflow tasks representing (Wt1,
  Wt2, Wt3, Wt4 .
  .
  .
@@ -4682,7 +4969,7 @@ Tasks grouping
  as medium critical.
  This group of tasks is less critical compared to HCT, but more critical
  than LCT.
- These tasks can be migrated to medium speed VMs for execution.
+ These tasks can be migrated to medium-speed VMs for execution.
 \end_layout
 
 \begin_layout Standard
@@ -4854,8 +5141,8 @@ literal "false"
 The goal of workflow scheduling is to find the best optimal solution from
  various optimization methods that can give good results for the optimization
  problem.
- The optimization problem can be single objective or multi objective optimizatio
-n problem.
+ The optimization problem can be a single-objective or multi-objective optimizat
+ion problem.
  Single-objective optimization involves optimizing only one scheduling objective
 , such as execution makespan or cost.
  Multi-objective optimization, on the other hand, focuses on optimizing
@@ -4903,13 +5190,15 @@ Our goal is to reduce the energy consumption, makespan and execution cost
 \end_layout
 
 \begin_layout Subsubsection
+
+\color brown
 Definition 4.
  
 \end_layout
 
 \begin_layout Standard
-Since we aims at improving resource management to reduce energy consumption
- in cloud data centers at lower cost without violating scheduling constraints,
+Since we aim at improving resource management to reduce energy consumption
+ in cloud data centers at a lower cost without violating scheduling constraints,
  energy consumption can be derived from the next equation.
  Here, TE
 \begin_inset Formula $_{E}$
@@ -5419,7 +5708,17 @@ Symbols used in the formulas
 \end_layout
 
 \begin_layout Section
+
+\color brown
 ?Conclusion
+\end_layout
+
+\begin_layout Standard
+
+\color brown
+In this chapter, we have do 
+\backslash
+todo...
 \end_layout
 
 \begin_layout Standard
@@ -5437,13 +5736,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In this chapter, we have do 
-\backslash
-todo...
-\end_layout
-
-\begin_layout Standard
-In the next chapter we will suggest our proposed approach
+In the next chapter we will suggest our proposed approach.
 \end_layout
 
 \end_body

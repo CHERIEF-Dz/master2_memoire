@@ -118,12 +118,12 @@ Introduction
 
 \begin_layout Standard
 Over the past few years, cloud computing has gained tremendous popularity
- since it presents a flexible and efficient solution for many services by
- Internet.
+ since it presents a flexible and efficient solution for many services on
+ the Internet.
  Cloud is a large and complex system since it is composed of several users,
- service providers,physical machines, service broker, task scheduling algorithms
- , bandwidth, internet latency and storage technology etc.
- On the other hands, all cloud-based implementations need various configurations.
+ service providers, physical machines, service brokers, task scheduling
+ algorithms, bandwidth, internet latency and storage technology, etc.
+ On the other hand, all cloud-based implementations need various configurations.
  Therefore, it is very difficult for researchers to evaluate the performance
  of their policies in a real cloud environment
 \begin_inset CommandInset citation
@@ -138,7 +138,7 @@ literal "false"
 
 \begin_layout Standard
 In this chapter we will present the simulation tool, workflows used, experiments
- parameters, performance metric and outcomes of the measurement will be
+ parameters, performance metrics and outcomes of the measurement will be
  presented.
 \end_layout
 
@@ -147,9 +147,9 @@ Simulation tool: WorkflowSim
 \end_layout
 
 \begin_layout Standard
-The simulator can play an important role in reducing cost, efficiency,infrastruc
-ture complexity and security risks before a solution can be deployed on
- real infrastructure.
+The simulator can play an important role in reducing cost, efficiency, infrastru
+cture complexity and security risks before a solution can be deployed on
+ a real infrastructure.
  By focusing on issues related to the quality of a particular component
  under various scenarios, cloud simulators enable performance analysts to
  monitor the behaviors of the system
@@ -168,21 +168,22 @@ Description and main features
 \end_layout
 
 \begin_layout Standard
-WorkflowSim was introduced for modeling Scientific Workflows in cloud environmen
-t.
+WorkflowSim was introduced for modeling Scientific Workflows in a cloud
+ environment.
  Workflows in heterogeneous distributed systems show different levels of
  overheads that are explained based on computational operations and miscellaneou
 s works.
 \end_layout
 
 \begin_layout Standard
-Most of simulators such as CloudSim do not consider fine granularity simulations
- of workflows and task clustering .Task clustering reduces the number of
- jobs to be executed and so execution overhead is decreased.
+Most simulators such as CloudSim do not consider fine granularity simulations
+ of workflows and task clustering.
+ Task clustering reduces the number of jobs to be executed and so execution
+ overhead is decreased.
 \end_layout
 
 \begin_layout Standard
-Generally, a job may have high risk for suffering from failures since it
+Generally, a job may have a high risk of suffering from failures since it
  consists of several tasks.
  Researchers with WorkflowSim can study the impact of job failures runtime
  performance of workflows for different clustering methods
@@ -211,7 +212,7 @@ noprefix "false"
 
 \end_inset
 
- shows the structure of WorkflowSim that is composed of several components:
+ shows the structure of WorkflowSim which is composed of several components:
 \end_layout
 
 \begin_layout Enumerate
@@ -227,7 +228,7 @@ Workflow Scheduler assigns jobs to resources.
 \end_layout
 
 \begin_layout Enumerate
-Clustering Engine that groups small tasks into a large job.
+Clustering Engine that groups small tasks into a large jobs.
 \end_layout
 
 \begin_layout Enumerate
@@ -332,13 +333,13 @@ Check out your source codes:
 
 \begin_deeper
 \begin_layout Enumerate
-create a new java project called 'WorkflowSim' (it doesn't have to be 'WorkflowS
+create a new Java project called 'WorkflowSim' (it doesn't have to be 'WorkflowS
 im').
 \end_layout
 
 \begin_layout Enumerate
-Right click your project, choose 'Import'.
- Click 'General'->'Projects from Folder or Archive'.(see Figure 
+Right-click your project and choose 'Import'.
+ Click 'General'->' Projects from Folder or Archive'.(see Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Import-a-project"
@@ -463,7 +464,7 @@ ontage_100.xml"; with your real physical file path.
 \end_layout
 
 \begin_layout Enumerate
-Right click on WorkflowSimBasicExample1.java and choose 'Run File'.
+Right-click on WorkflowSimBasicExample1.java and choose 'Run File'.
  You should be able to see some output.
 \end_layout
 
@@ -496,8 +497,8 @@ It implements several workflow-scheduling methods such as HEFT, Min-Min
 \end_layout
 
 \begin_layout Enumerate
-It considers task clustering and layered overhead to the workflow simulation.
- Therefore, developer scan test various strategies based on a real trace
+It considers task clustering and layered overhead in the workflow simulation.
+ Therefore, developer scan and test various strategies based on a real trace
  of overheads.
 \end_layout
 
@@ -530,7 +531,7 @@ It includes limited types of failures.
 
 \begin_layout Enumerate
 It does not consider the performance characteristic of file I/O.
- Therefore, developers cannot obtain suitable simulation for data-intensive
+ Therefore, developers cannot obtain suitable simulations for data-intensive
  applications since these applications involve reading or writing huge data
  files.
 \end_layout
@@ -560,8 +561,8 @@ These workflows typically involve complex data of various sizes and complicated
  Information about the task dependencies, the amount of data transmitted
  and the execution time estimates are presented in DAX format.
  DAX files include a single time estimate for each task.
- To simulate the case of different time constraints provided by users, start
- time and a deadline for each workflow are randomly assigned 
+ To simulate the case of different time constraints provided by users, the
+ start time and a deadline for each workflow are randomly assigned 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -1025,7 +1026,7 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-We have simulated the proposed approach using WorkflowSim simulator.
+We have simulated the proposed approach using the WorkflowSim simulator.
  We compared the outcomes of five separate scientific workflows with our
  proposed algorithm.
 \end_layout
