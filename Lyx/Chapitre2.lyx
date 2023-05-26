@@ -118,9 +118,9 @@ Introduction
 
 \begin_layout Standard
 Nowadays, cloud computing is an emerging technology due to virtualization
- and providing low price services on pay-as per-use basis and it is the
- most popular computing system paradigm in the academic research and industry
- and it provides cloud services on-demand anywhere and anytime
+ and providing low price services on pay-as per-use basis and also it is
+ the most popular computing system paradigm in the academic research and
+ industry and it provides cloud services on-demand anywhere and anytime
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cloud_computing_simulators"
@@ -132,9 +132,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In the previous chapter, we have introduced the workflow technology.
- However the execution scientific workflows needs a huge amounts of data
- or allocate enormous computing resources and a big scalability, this is
+In the previous chapter, we introduced workflow technology.
+ However the execution of scientific workflows needs a huge amount of data
+ or allocates enormous computing resources and big scalability, this is
  why we will present in this chapter the most convivial execution infrastructure
  which is the cloud computing model.
 \end_layout
@@ -153,8 +153,8 @@ The modern literature provides several definitions of Cloud Computing.
 \begin_layout Standard
 The National Institute of Standards and Technology (NIST) which is an agency
  of the United States Department of Commerce whose mission is to promote
- American innovation and industrial competitiveness, define the cloud computing
- as following :
+ American innovation and industrial competitiveness, defines cloud computing
+ as follows:
 \end_layout
 
 \begin_layout Standard
@@ -273,7 +273,7 @@ y for both the provider and consumer of the utilized service.
 \end_layout
 
 \begin_layout Standard
-Cloud computing has a lot of another characteristics
+Cloud computing has a lot of other characteristics
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DIGITAL_NOTES_ON_CLOUD"
@@ -304,7 +304,7 @@ Customizable: resources rented from the cloud must be highly customizable.
 \end_layout
 
 \begin_layout Enumerate
-Device and location independence, which means no maintenance, required.
+Device and location independence which means no maintenance is required.
  
 \end_layout
 
@@ -313,8 +313,8 @@ Service Models
 \end_layout
 
 \begin_layout Standard
-The National Institute of Standards and Technology (NIST) has define 3 services
- models in their definition
+The National Institute of Standards and Technology (NIST) has defined 3
+ services models in their definition
 \begin_inset CommandInset citation
 LatexCommand cite
 key "NIST_definition"
@@ -322,7 +322,7 @@ literal "false"
 
 \end_inset
 
-, which are
+:
 \end_layout
 
 \begin_layout Subsection
@@ -331,13 +331,13 @@ Software as a Service (SaaS)
 
 \begin_layout Standard
 The capability provided to the consumer is to use the provider’s applications
- running on a cloud infrastructure2 .
+ running on a cloud infrastructure.
  The applications are accessible from various client devices through either
  a thin client interface, such as a web browser (e.g., web-based email), or
  a program interface.
  The consumer does not manage or control the underlying cloud infrastructure
  including network, servers, operating systems, storage, or even individual
- application capabilities, with the possible exception of limited user specific
+ application capabilities, with the possible exception of limited user-specific
  application configuration settings.
 \end_layout
 
@@ -348,11 +348,11 @@ Platform as a Service (PaaS)
 \begin_layout Standard
 The capability provided to the consumer is to deploy onto the cloud infrastructu
 re consumer-created or acquired applications created using programming languages
-, libraries, services and tools supported by the provider.3 The consumer
- does not manage or control the underlying cloud infrastructure including
- network, servers, operating systems, or storage, but has control over the
- deployed applications and possibly configuration settings for the application-h
-osting environment.
+, libraries, services and tools supported by the provider.
+ The consumer does not manage or control the underlying cloud infrastructure
+ including network, servers, operating systems, or storage, but has control
+ over the deployed applications and possibly configuration settings for
+ the application-hosting environment.
 \end_layout
 
 \begin_layout Subsection
@@ -420,8 +420,7 @@ Deployment Models
 \end_layout
 
 \begin_layout Standard
-There are 5 deployment models of Cloud Computing, the first 4 was listed
- by The NIST definition 
+There are 5 deployment models of Cloud Computing
 \begin_inset CommandInset citation
 LatexCommand cite
 key "NIST_definition"
@@ -429,7 +428,7 @@ literal "false"
 
 \end_inset
 
- and 
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "vmware"
@@ -437,7 +436,7 @@ literal "false"
 
 \end_inset
 
- has define the last one 
+:
 \end_layout
 
 \begin_layout Subsection
@@ -506,19 +505,15 @@ Some companies can’t use a single public cloud.
 
 \begin_layout Standard
 This is the multi-cloud model.
- It’s the ultimate in flexibility to choose the cloud that best fits the
- application or business need.
+ It’s the ultimate flexibility to choose the cloud that best fits the applicatio
+n or business need.
  It’s no wonder organizations overwhelming go the multi-cloud route, often
- with the inclusion of hybrid cloud.
+ with the inclusion of a hybrid cloud.
 \end_layout
 
 \begin_layout Standard
-The main advantage of this model comparing to the public model is avoiding
- 
-\series bold
-vendor lock
-\series default
--in which will be defined later.
+The main advantage of this model compared to the public model is avoiding
+ vendor lock-in which will be defined later.
 \end_layout
 
 \begin_layout Section
@@ -526,7 +521,7 @@ Benefits of cloud computing
 \end_layout
 
 \begin_layout Standard
-Cloud Computing are fueled in part by its perceived benefits
+Cloud Computing is fueled in part by its perceived benefits
 \begin_inset CommandInset citation
 LatexCommand cite
 key "3"
@@ -582,9 +577,9 @@ Cost
 \series bold
 Speed
 \series default
-: resources can be accessed in minutes, typically within a few clicks ,no
- more waiting months or years and spending millions of dollars before anyone
- gets to log into your new solution.
+: resources can be accessed in minutes, typically within a few clicks, so
+ no more waiting months or years and spending millions of dollars before
+ anyone gets to log into your new solution.
 \end_layout
 
 \begin_layout Itemize
@@ -619,10 +614,10 @@ ture with mutual opacity and without compromising privacy and security.
 \begin_layout Itemize
 
 \series bold
-Service-oriented
+Service-oriented: 
 \series default
-: The system allows composing applications out of discrete, re-usable, loosely-c
-oupled services.
+The system allows composing applications out of discrete, re-usable, loosely-cou
+pled services.
  Changes to, or failure of, a service will not disrupt other services.
 \end_layout
 
@@ -641,8 +636,8 @@ Virtualized
 \series bold
 Data, Data, Data
 \series default
-: The key to many of the above desirable characteristics is management of
- data: its distribution, partitioning, security and synchronization using
+: The key to many of the above desirable characteristics is the management
+ of data: its distribution, partitioning, security and synchronization using
  technologies like Amazon’s SimpleDB (large-scale relational databases)
  and in-memory data grids.
  According to premier Cloud Computing vendor, Salesforce.com, given a properly-im
@@ -657,7 +652,6 @@ Proven Web-services integration
 \series default
 : Cloud Computing technology is much easier and quicker to integrate with
  other enterprise applications.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -666,8 +660,8 @@ Proven Web-services integration
 Support for deep customizations
 \series default
 : The Cloud Computing infrastructure not only allows deep customization
- and application configuration, it preserves all those customizations even
- during upgrades and with evolving needs, thus freeing up organizational
+ and application configuration, but it also preserves all those customizations
+ even during upgrades and with evolving needs, thus freeing up organizational
  IT resources.
 \end_layout
 
@@ -687,7 +681,7 @@ Pre-built, pre-integrated apps
 \series bold
 Security
 \series default
- can improve due to centralization of data.
+ can improve due to the centralization of data.
 \end_layout
 
 \begin_layout Section
@@ -716,11 +710,11 @@ The primary challenge posed to data management in the cloud is content security.
  raised due to data vulnerability.
  In a review of cloud security issues, funded by IBM, 382 organizations
  disclosed cloud security issues in 2016 across 16 different industries.
- The security issues faced by cloud environments include; the miss-use of
+ The security issues faced by cloud environments include; the misuse of
  cloud content, malicious hacking, failure of vendor security and shared
  technology vulnerabilities.
  While improve cloud security is an area currently undergoing considerable
- research  and it was observed that the security of cloud content is vulnerable
+ research and it was observed that the security of cloud content is vulnerable
  on several levels.
  On a "communications level" risk arises from the sharing of sensitive informati
 on (e.g.
@@ -740,15 +734,15 @@ Technical Issues
 \end_layout
 
 \begin_layout Standard
-Although Cloud Computing offers improved efficiency by means of “on demand”
+Although Cloud Computing offers improved efficiency by means of “on-demand”
  content access, the cloud can also be prone to technical malfunctions such
  as outages.
  Even the most established cloud vendors do encounter unexpected technical
- problems despite generally having high standards of maintenance.It is estimated
- that cloud services are unavailable for 7.5 hours per year (99.9% reliability).
+ problems despite generally having high standards of maintenance.
+ It is estimated that cloud services are unavailable for 7.5 hours per year
+ (99.9% reliability).
  While, at a glance, this figure may seem impressive, it does not reach
  the expected reliability quotient of 99.999% for sensitive data management.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -760,9 +754,8 @@ At first glance migrating to a “pay-as-you-go” pricing model as employed
  by many cloud providers may seem financially attractive.
  However, it has been well documented that organizations that migrate to
  a cloud environment are often charged with additional hidden usage charges.
- Additional usage charge can accumulate to be a deterrent to cloud adoption,
+ Additional usage charges can accumulate to be a deterrent to cloud adoption,
  particularly for smaller enterprises.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -770,7 +763,7 @@ Financial Risk in Disaster Scenarios
 \end_layout
 
 \begin_layout Standard
-Cloud users can incur significant costs in cases of cloud outage, security
+Cloud users can incur significant costs in cases of a cloud outage, security
  breach or vendor lock-in (see below).
  According to the Penomen Institute, for example, in 2016, the average distribut
 ed cost incurred by a datacenter outage was almost $750, 000.
@@ -778,7 +771,6 @@ ed cost incurred by a datacenter outage was almost $750, 000.
  to have cost between around 130$ and 170$ to resolve per record.
  The cost in these scenarios may fall on either the cloud utilize or the
  cloud vendor, depending on the predefined contract between the two parties.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -787,7 +779,7 @@ Vendor Lock-In
 
 \begin_layout Standard
 Vendor lock-in problem in cloud computing is characterized by expensive
- and time-consuming migration of application and data to alternative providers.
+ and time-consuming migration of applications and data to alternative providers.
  Cloud software vendors lock in customers in several ways:
 \end_layout
 
@@ -809,16 +801,16 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-In this chapter we have presented the Cloud Computing,its characteristics
- which its distinguished from other computing model, then have listed the
- most common used services models IaaS, PaaS and SaaS.Also, we have presented
- several deployment models.
- Finally, benefits and obstacles of this computing model was listed.
+In this chapter, we have presented Cloud Computing and its characteristics,
+ then we have listed the most commonly used services models IaaS, PaaS and
+ SaaS.
+ Also, we have presented several deployment models.
+ Finally, the benefits and obstacles of this computing model were listed.
 \end_layout
 
 \begin_layout Standard
-Cloud computing provides virtualized cloud resources as a service, on-demand
- and pay-per-use basis.
+Cloud computing provides virtualized cloud resources as a service, on demand
+ and a pay-per-use basis.
  The characteristics of cloud computing such as elasticity and flexibility
  make this environment a major trend for computation and storage services.
  These characteristics motivate to execution of scientific applications
@@ -830,7 +822,8 @@ literal "false"
 
 \end_inset
 
-.This is why we will present in the next chapter scheduling scientific workflow.
+.
+ This is why we will present in the next chapter scheduling scientific workflow.
 \end_layout
 
 \end_body
