@@ -126,8 +126,9 @@ Workflows are a systematic way for describing and executing a series of
 
 \begin_layout Standard
 In this chapter, we present workflow and the Workflow Management System
- (WfMS) with its architecture.We will also talk about scientific workflows,
- their life cycle and their types.
+ (WfMS) with its architecture.
+ We will also talk about scientific workflows, their life cycle and their
+ types.
 \end_layout
 
 \begin_layout Section
@@ -259,8 +260,8 @@ Workflows are compositions of tasks (also referred to as activities) by
  is usually called service composition.
  Web services are the most prominent implementation of the service oriented
  architecture (SOA).
- The Web Service technology is an approach to provide and request services
- in distributed environments independent of programming languages, platforms
+ Web Service technology is an approach to provide and request services in
+ distributed environments independent of programming languages, platforms
  and operating systems.
  It is applied in a very wide range of applications where integration of
  heterogeneous systems is a must
@@ -383,8 +384,12 @@ Interface 3 (invoked applications)
 \begin_layout Standard
 When some tasks of a process need to invoke an application outside of the
  workflow engine, they directly activate the workflow enactment service
- through the 3rd interface service and open interactive applications the
- current work item of the work list handler.
+ through the 3
+\begin_inset Formula $^{rd}$
+\end_inset
+
+ interface service and open interactive applications with the current work
+ item of the work list handler.
 \end_layout
 
 \begin_layout Paragraph
@@ -434,8 +439,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Scientific workflows are a specialized form of workflows that are designed
- for data-intensive or knowledge discovery applications in various scientific
+Scientific workflows are specialized forms of workflows that are designed
+ for data-intensive or knowledge-discovery applications in various scientific
  disciplines.
  Scientific workflows enable researchers to formulate, share, reuse and
  validate complex methods that involve different data sources and computational
@@ -527,7 +532,7 @@ name "fig:lifecycle"
 
 \begin_layout Standard
 The life cycle of scientific workflows heavily distinguishes from its business
- counterpart (see Fig.
+ counterpart (see Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:lifecycle"
@@ -537,7 +542,8 @@ noprefix "false"
 
 \end_inset
 
-).We inferred the life cycle from observations about the way scientists create
+).
+ We inferred the life cycle from observations about the way scientists create
  and conduct experiments and from known properties of scientific simulations
  and computations.
 \end_layout
@@ -550,7 +556,7 @@ Typically, there is only one user group, the scientists, playing the roles
 
 \begin_layout Standard
 To be precise, scientists do not distinguish between workflow models and
- instances or are not aware of a difference between models and instances,
+ instances or are not aware of the difference between models and instances,
  respectively.
  They set up a simulation and execute it once at a time.
  Because scientists typically develop their workflow in a trial-and-error
@@ -558,10 +564,10 @@ To be precise, scientists do not distinguish between workflow models and
 \end_layout
 
 \begin_layout Standard
-In fact, they can be carried out alternated.
- An additional cycle therefore leads from execution back to modeling phase
- with the help of a “suspend” operation on the workflow instance, which
- remains hidden from the scientists.
+In fact, they can be carried out alternately.
+ An additional cycle, therefore, leads from execution back to the modeling
+ phase with the help of a “suspend” operation on the workflow instance,
+ which remains hidden from the scientists.
  Technical details are transparent for scientists altogether.
 \end_layout
 
@@ -600,7 +606,7 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-they contribute for sharing knowledge by being available as services for
+they contribute to sharing knowledge by being available as services for
  collaborating scientists.
 \end_layout
 
@@ -649,7 +655,7 @@ literal "false"
 
 \begin_layout Itemize
 Business workflows aim at automating organizational processes that are mainly
- executed by humans, while scientific workflows aim at validating hypotheses
+ executed by humans, while scientific workflows aim at validating the hypotheses
  of a researcher based on available data.
 \end_layout
 
@@ -665,7 +671,7 @@ Business workflows are executed under human control, while scientific workflows
 
 \begin_layout Itemize
 Business workflows depend on certain resources including application programs,
- while scientific workflows depend more strongly on proper parameter settings
+ while scientific workflows depend more strongly on proper parameter settings.
 \end_layout
 
 \begin_layout Section
@@ -710,7 +716,7 @@ literal "false"
 \series bold
 usability
 \series default
-: since the majority of users of WfMS are no computer scientists.
+: since the majority of users of WfMS are not computer scientists.
  A scientist needs the support of easy-to-use tools, automation as far as
  possible and maximal flexibility in the usage of the WfMS.This means that
  scientists want to:
@@ -734,10 +740,10 @@ same support for services used in traditional workflows.
 \begin_layout Itemize
 
 \series bold
-flexible: 
+flexible
 \series default
-it means the ability of a system to react to changes in its environment.
- Approaches to flexibility of workflows can be divided into two groups:
+: it means the ability of a system to react to changes in its environment.
+ Approaches to the flexibility of workflows can be divided into two groups:
  
 \end_layout
 
@@ -746,10 +752,8 @@ it means the ability of a system to react to changes in its environment.
 workflow can be modified according to the changed situation (known as adaptation
 ).
  Such modifications can address different workflow dimensions (logical,
- functional, organizational dimension and may be applied to workflow models
- or single workflow instance
-\color brown
-.
+ functional and organizational dimension and may be applied to workflow
+ models or single workflow instances.
 \end_layout
 
 \begin_layout Enumerate
@@ -761,9 +765,10 @@ workflow can be modeled in a way that avoids its modification even in the
 \begin_layout Itemize
 
 \series bold
-monitoring: 
+monitoring
 \series default
-WfMS should support the ability to monitor the status of the workflow execution.
+: WfMS should support the ability to monitor the status of the workflow
+ execution.
  For example, the scientist is interested in knowledge about running, finished
  or faulted activities, allocated resources and the dynamical choice of
  a service implementation.
@@ -773,9 +778,9 @@ WfMS should support the ability to monitor the status of the workflow execution.
 \begin_layout Itemize
 
 \series bold
-reproducibility:
+reproducibility
 \series default
- is of utmost importance for different reasons.
+: is of utmost importance for different reasons.
  Scientists who are not involved in the execution of the workflow need to
  be able to retrace the simulation, have to review the findings, or need
  to use the results.
@@ -793,25 +798,25 @@ reproducibility:
 \begin_layout Itemize
 
 \series bold
-robustness:
+robustness
 \series default
- is an important issue since scientific workflows are long-running.
- The term robustness denotes the ability of being error- resistant.
+: this is an important issue since scientific workflows are long-running.
+ The term robustness denotes the ability to be error-resistant.
  The needed flexibility mechanisms mentioned above are a way to improve
  the robustness of a system.
  But additional approaches are needed to protect the execution progress
  from being lost in case of unforeseeable failures, to reach a consistent
- system state even in thse presence of failures and to proceed a simulation/expe
-riment after a failure.
+ system state even in the presence of failures and to proceed with a simulation/
+experiment after a failure.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-scalability:
+scalability
 \series default
- scientific workflows should scale with the number of users, number of utilized
- services, data or calculation resources and involved participants.
+: scientific workflows should scale with the number of users, number of
+ utilized services, data or calculation resources and involved participants.
  Today, typical scientific workflows are mostly executed in a central manner
  on a single machine.
  A decentralized workflow enactment can help to scale via distributed process
@@ -823,14 +828,14 @@ scalability:
 \begin_layout Itemize
 
 \series bold
-specific requirements:
+specific requirements
 \series default
- there are specific requirements for each specific scientific domain, e.g.
+: there are specific requirements for each specific scientific domain, e.g.
  life science, medical science, chemistry or mechanical engineering.
- Specific domain related requirements and the fact that it is hard to cover
- all scientific domains in one WfMS create the need to extend sWfMSs and
- the workflow models and possibly adapt these models and their instances.
- This includes, for example, domain specific services, result displays or
+ Specific domain-related requirements and the fact that it is hard to cover
+ all scientific domains in one WfMS create the need to extend WfMS and the
+ workflow models and possibly adapt these models and their instances.
+ This includes, for example, domain-specific services, result displays or
  meta-models for semantic annotations.
 \end_layout
 
@@ -841,9 +846,10 @@ Conclusion
 \begin_layout Standard
 In this chapter, we have presented workflow and scientific workflows, their
  lifecycle, their benefits and the differences between them and business
- workflows.We have also presented workflow management system (WfMS) and it
- its architecture explained how the foreseen system meets general requirements
- of scientists and scientific workflows.
+ workflows.
+ We have also presented workflow management system (WfMS) and it its architectur
+e explained how the foreseen system meets general requirements of scientists
+ and scientific workflows.
 \end_layout
 
 \begin_layout Standard
