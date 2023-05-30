@@ -5,9 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass extreport
-\begin_preamble
-
-\end_preamble
 \use_default_options true
 \begin_modules
 enumitem
@@ -16,15 +13,15 @@ tabs-within-sections
 eqs-within-sections
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language french
 \language_package default
 \inputencoding utf8
 \fontencoding global
-\font_roman "default" "default"
+\font_roman "times" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
-\font_default_family default
+\font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
@@ -38,7 +35,7 @@ eqs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement tbph
-\paperfontsize default
+\paperfontsize 12
 \spacing single
 \use_hyperref false
 \papersize default
@@ -78,7 +75,7 @@ eqs-within-sections
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style swiss
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -94,42 +91,37 @@ eqs-within-sections
 
 \begin_layout Chapter*
 
-\color brown
-General conclusion
+\lang english
+Acknowledgment
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-addcontentsline{toc}{chapter}{General conculsion} 
+\lang english
+We would like to express our deep gratitude to our dissertation supervisor,
+ Madame.
+ BENDOUKHA Hayet, for her guidance, advice and support throughout this work.
+ Her insightful comments and constructive criticism helped us improve the
+ quality of my dissertation.
 \end_layout
 
-\end_inset
+\begin_layout Standard
 
-
+\lang english
+I also thank Mrs.
+ Y, my co-supervisor, for her availability, listening and expertise.
+ I am grateful to her for her encouragement and trust.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 
-\color brown
-Discussion
-\end_layout
-
-\begin_layout Paragraph
-
-\color brown
-Limits
-\end_layout
-
-\begin_layout Paragraph
-
-\color brown
-Perspectives
+\lang english
+I would like to thank the members of the jury, Mr.
+ GUERID Hicham and Mrs.
+ W, for their careful reading of my dissertation and for their relevant
+ questions and remarks during the defense.
+ I appreciate their interest in my research topic and their constructive
+ feedback.
 \end_layout
 
 \end_body
