@@ -95,8 +95,6 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter*
-
-\color black
 General introduction
 \end_layout
 
@@ -120,12 +118,12 @@ addcontentsline{toc}{chapter}{General introduction}
 Cloud computing is a distributed heterogeneous computing model providing
  many services through the Internet without the violation of Service level
  agreement (SLA).
- The cloud services are provided as Infrastructure as a Service (IaaS),
+ The Cloud services are provided as Infrastructure as a Service (IaaS),
  Platform as a Service (PaaS) and Software as a Service (SaaS).
- The cloud computing power is supplied by a collection of data centers (DCs)
+ Cloud computing power is supplied by a collection of data centers (DCs)
  that are typically installed with massive hosts (physical servers).
  These hosts are transparently managed by the virtualization services that
- allow sharing their capacities among virtual instances of servers (VMS)
+ allow sharing of their capacities among virtual instances of servers (VMS)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "zeedan2023enhanced"
@@ -137,7 +135,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In addition, the advent of cloud computing has another advantage over the
+In addition, the advent of Cloud computing has another advantage over the
  massive spread of scientific work.
  Scientific workflow refers to a series of computations that enable data
  analysis in a distributed and systematic way; because this workflow has
@@ -150,15 +148,15 @@ literal "false"
 \end_inset
 
 .
- However the execution of scientific workflows needs a huge amount of data
+ However, the execution of scientific workflows needs a huge amount of data
  or allocates enormous computing resources and big scalability.
 \end_layout
 
 \begin_layout Standard
-The energy consumption of cloud data centers is an important challenge.
- Energy consumption is increasing day by day due to a non-energy aware strategy
+The energy consumption of Cloud data centers is an important challenge.
+ Energy consumption is increasing day by day due to a non-energy-aware strategy
  in resource management.
- About 0.5% of energy consumption in worldwide is related to cloud data centers,
+ About 0.5% of energy consumption worldwide is related to Cloud data centers,
  while this is envisaged to fourfold in 2020
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -171,14 +169,12 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In general, workflow application oriented energy-aware scheduling in clouds
- involves mapping tasks to resources, arranging tasks’ execution order,
- and assigning appropriate task execution time, such optimizing energy consumpti
-on and satisfying complex constraints.
- It is a NP-complete problem, and has been researched extensively in the
+In general, workflow application-oriented energy-aware scheduling in Clouds
+ involves mapping tasks to resources, arranging tasks’ execution order and
+ assigning appropriate task execution time, such as optimizing energy consumptio
+n and satisfying complex constraints.
+ It is a NP-complete problem and has been researched extensively in the
  literature
-\color brown
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cao2023energy"
@@ -186,8 +182,6 @@ literal "false"
 
 \end_inset
 
-
-\color inherit
 .
 \end_layout
 
@@ -200,7 +194,7 @@ Our objective consists of developing a tool for scheduling workflows on
 
 \begin_layout Standard
 The structure of this thesis is as follows: In Chapter 1, we provide an
- overview of the cloud computing infrastructure that we use for our project.
+ overview of the Cloud computing infrastructure that we use for our project.
  In Chapter 2, we describe the workflow technology and the scientific workflow.
  In Chapter 3, we formulate the problem of scheduling the scientific workflows
  with energy optimization as our main criterion.
