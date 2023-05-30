@@ -132,11 +132,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In the previous chapter, we introduced workflow technology.
- However the execution of scientific workflows needs a huge amount of data
- or allocates enormous computing resources and big scalability, this is
- why we will present in this chapter the most convivial execution infrastructure
- which is the cloud computing model.
+In this chapter, we will present the most convivial execution infrastructure
+ which is the cloud computing model, its characteristics, its service and
+ deployment models and finally its advantages and obstacles.
 \end_layout
 
 \begin_layout Section
@@ -823,7 +821,26 @@ literal "false"
 \end_inset
 
 .
- This is why we will present in the next chapter scheduling scientific workflow.
+\end_layout
+
+\begin_layout Standard
+However, processing large scientific applications in the cloud computing
+ environment generates a huge amount of data and hence is very expensive
+ and energy-consuming.
+ Since such complexity in processing these applications can affect the quality
+ of service delivery, scientists have designed a step-by-step sequence (workflow
+) through which large-scale applications can be executed.
+ A workflow is a sequence of scientific activities that are performed or
+ should be performed to achieve a scientific goal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+.
+ In the next chapter, we will present workflow and scientific workflows.
 \end_layout
 
 \end_body

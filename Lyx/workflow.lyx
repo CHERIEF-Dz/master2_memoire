@@ -847,15 +847,28 @@ Conclusion
 In this chapter, we have presented workflow and scientific workflows, their
  lifecycle, their benefits and the differences between them and business
  workflows.
- We have also presented workflow management system (WfMS) and it its architectur
-e explained how the foreseen system meets general requirements of scientists
- and scientific workflows.
+ We have also presented a workflow management system (WfMS) and its architecture
+ and explained how the foreseen system meets the general requirements of
+ scientists and scientific workflows.
 \end_layout
 
 \begin_layout Standard
-In the next chapter we will present the cloud computing on which scientific
- workflows can be executed, since they require a scalable and costless infrastru
-cture.
+Reducing the energy consumption and execution makespan of scientific workflows
+ while keeping the execution cost of workflow tasks within budget is an
+ effective way to address the workflow scheduling problem
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the next chapter, we will introduce the problem of scheduling the scientific
+ workflow on a cloud platform with energy optimization.
 \end_layout
 
 \end_body

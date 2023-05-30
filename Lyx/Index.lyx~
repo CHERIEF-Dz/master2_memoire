@@ -83,7 +83,7 @@ eqs-within-sections
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks false
 \pdf_pdfborder true
-\pdf_colorlinks true
+\pdf_colorlinks false
 \pdf_backref false
 \pdf_pdfusetitle true
 \papersize default
@@ -198,7 +198,7 @@ filename "Introduction.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapitre1.lyx"
+filename "Chapitre2.lyx"
 
 \end_inset
 
@@ -208,7 +208,7 @@ filename "Chapitre1.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapitre2.lyx"
+filename "Chapitre1.lyx"
 
 \end_inset
 

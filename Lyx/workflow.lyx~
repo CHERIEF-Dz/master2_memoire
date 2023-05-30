@@ -840,6 +840,8 @@ specific requirements
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Conclusion
 \end_layout
 
@@ -853,9 +855,14 @@ In this chapter, we have presented workflow and scientific workflows, their
 \end_layout
 
 \begin_layout Standard
-In the next chapter, we will present cloud computing on which scientific
- workflows can be executed since they require a scalable and costless infrastruc
-ture.
+However the execution of scientific workflows needs a huge amount of data
+ or allocates enormous computing resources and big scalability.
+ This is why scheduling workflows is a big challenge.
+\end_layout
+
+\begin_layout Standard
+In the next chapter, we will introduce the problem of scheduling the scientific
+ workflow on a cloud platform with energy optimization.
 \end_layout
 
 \end_body

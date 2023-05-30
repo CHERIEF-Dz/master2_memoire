@@ -198,7 +198,7 @@ filename "Introduction.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapitre1.lyx"
+filename "cloud.lyx"
 
 \end_inset
 
@@ -208,7 +208,7 @@ filename "Chapitre1.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapitre2.lyx"
+filename "workflow.lyx"
 
 \end_inset
 

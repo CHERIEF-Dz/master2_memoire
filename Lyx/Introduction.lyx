@@ -108,7 +108,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{chapter}{Introduction Générale}
+addcontentsline{toc}{chapter}{General introduction}
 \end_layout
 
 \end_inset
@@ -122,6 +122,36 @@ addcontentsline{toc}{chapter}{Introduction Générale}
 Context
 \end_layout
 
+\begin_layout Standard
+Cloud computing is a distributed heterogeneous computing model providing
+ many services through the Internet without the violation of Service level
+ agreement (SLA).
+ The cloud services are provided as Infrastructure as a Service (IaaS),
+ Platform as a Service (PaaS) and Software as a Service (SaaS).
+ The cloud computing power is supplied by a collection of data centers (DCs)
+ that are typically installed with massive hosts (physical servers).
+ These hosts are transparently managed by the virtualization services that
+ allow sharing their capacities among virtual instances of servers (VMS)
+\color brown
+ [Enhanced hybrid multi-objective workflow scheduling approach based artificial
+ bee colony in cloud computing]
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+In addition, the advent of cloud computing has another advantage over the
+ massive spread of scientific work.
+ Scientific workflow refers to a series of computations that enable data
+ analysis in a distributed and systematic way; because this workflow has
+ a large number of works, energy consumption is a major problem[
+\color brown
+Energy and cost optimization mechanism for workflow scheduling in the cloud
+\color inherit
+].However the execution of scientific workflows needs a huge amount of data
+ or allocates enormous computing resources and big scalability.
+\end_layout
+
 \begin_layout Paragraph
 
 \color brown
@@ -133,7 +163,7 @@ The energy consumption of cloud data centers is an important challenge.
  Energy consumption is increasing day by day due to a non-energy aware strategy
  in resource management.
  About 0.5% of energy consumption in worldwide is related to cloud data centers,
- while this is envisaged to fourfold in 2020.
+ while this is envisaged to fourfold in 2020
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cloud_computing_simulators"
@@ -141,7 +171,21 @@ literal "false"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+In general, workflow application oriented energy-aware scheduling in clouds
+ involves mapping tasks to resources, arranging tasks’ execution order,
+ and assigning appropriate task execution time, such optimizing energy consumpti
+on and satisfying complex constraints.
+ It is a NP-complete problem, and has been researched extensively in the
+ literature
+\color brown
+[Energy-aware intelligent scheduling for deadline-constrained workflows
+ in sustainable cloud computing
+\color inherit
+].
 \end_layout
 
 \begin_layout Paragraph
