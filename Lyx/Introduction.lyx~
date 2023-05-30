@@ -116,12 +116,6 @@ addcontentsline{toc}{chapter}{General introduction}
 
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Context
-\end_layout
-
 \begin_layout Standard
 Cloud computing is a distributed heterogeneous computing model providing
  many services through the Internet without the violation of Service level
@@ -132,10 +126,13 @@ Cloud computing is a distributed heterogeneous computing model providing
  that are typically installed with massive hosts (physical servers).
  These hosts are transparently managed by the virtualization services that
  allow sharing their capacities among virtual instances of servers (VMS)
-\color brown
- [Enhanced hybrid multi-objective workflow scheduling approach based artificial
- bee colony in cloud computing]
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zeedan2023enhanced"
+literal "false"
+
+\end_inset
+
 .
 \end_layout
 
@@ -144,17 +141,17 @@ In addition, the advent of cloud computing has another advantage over the
  massive spread of scientific work.
  Scientific workflow refers to a series of computations that enable data
  analysis in a distributed and systematic way; because this workflow has
- a large number of works, energy consumption is a major problem[
-\color brown
-Energy and cost optimization mechanism for workflow scheduling in the cloud
-\color inherit
-].
-\end_layout
+ a large number of works, energy consumption is a major problem
+\begin_inset CommandInset citation
+LatexCommand cite
+key "danthuluri2023energy"
+literal "false"
 
-\begin_layout Paragraph
+\end_inset
 
-\color brown
-Problematic
+.
+ However the execution of scientific workflows needs a huge amount of data
+ or allocates enormous computing resources and big scalability.
 \end_layout
 
 \begin_layout Standard
@@ -181,28 +178,36 @@ on and satisfying complex constraints.
  It is a NP-complete problem, and has been researched extensively in the
  literature
 \color brown
-[Energy-aware intelligent scheduling for deadline-constrained workflows
- in sustainable cloud computing
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cao2023energy"
+literal "false"
+
+\end_inset
+
+
 \color inherit
-].
+.
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Objectives
+\begin_layout Standard
+Our objective consists of developing a tool for scheduling workflows on
+ the Cloud using the technique of multiple partitioning of scientific workflows
+ for multi-criteria optimization of planning execution while reducing the
+ energy consumption of this solution.
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Contribution
-\end_layout
-
-\begin_layout Paragraph
-
-\color brown
-Outline
+\begin_layout Standard
+The structure of this thesis is as follows: In Chapter 1, we provide an
+ overview of the cloud computing infrastructure that we use for our project.
+ In Chapter 2, we describe the workflow technology and the scientific workflow.
+ In Chapter 3, we formulate the problem of scheduling the scientific workflows
+ with energy optimization as our main criterion.
+ In Chapter 4, we propose and design our novel approach for solving the
+ problem.
+ In Chapter 5, we implement, simulate and evaluate our approach and discuss
+ the results and findings.
 \end_layout
 
 \end_body

@@ -116,12 +116,6 @@ addcontentsline{toc}{chapter}{General introduction}
 
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Context
-\end_layout
-
 \begin_layout Standard
 Cloud computing is a distributed heterogeneous computing model providing
  many services through the Internet without the violation of Service level
@@ -132,10 +126,13 @@ Cloud computing is a distributed heterogeneous computing model providing
  that are typically installed with massive hosts (physical servers).
  These hosts are transparently managed by the virtualization services that
  allow sharing their capacities among virtual instances of servers (VMS)
-\color brown
- [Enhanced hybrid multi-objective workflow scheduling approach based artificial
- bee colony in cloud computing]
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zeedan2023enhanced"
+literal "false"
+
+\end_inset
+
 .
 \end_layout
 
@@ -144,17 +141,17 @@ In addition, the advent of cloud computing has another advantage over the
  massive spread of scientific work.
  Scientific workflow refers to a series of computations that enable data
  analysis in a distributed and systematic way; because this workflow has
- a large number of works, energy consumption is a major problem[
-\color brown
-Energy and cost optimization mechanism for workflow scheduling in the cloud
-\color inherit
-].
-\end_layout
+ a large number of works, energy consumption is a major problem
+\begin_inset CommandInset citation
+LatexCommand cite
+key "danthuluri2023energy"
+literal "false"
 
-\begin_layout Paragraph
+\end_inset
 
-\color brown
-Problematic
+.
+ However the execution of scientific workflows needs a huge amount of data
+ or allocates enormous computing resources and big scalability.
 \end_layout
 
 \begin_layout Standard
@@ -162,7 +159,7 @@ The energy consumption of cloud data centers is an important challenge.
  Energy consumption is increasing day by day due to a non-energy aware strategy
  in resource management.
  About 0.5% of energy consumption in worldwide is related to cloud data centers,
- while this is envisaged to fourfold in 2020.
+ while this is envisaged to fourfold in 2020
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cloud_computing_simulators"
@@ -170,25 +167,44 @@ literal "false"
 
 \end_inset
 
-
+.
 \end_layout
 
-\begin_layout Paragraph
-
+\begin_layout Standard
+In general, workflow application oriented energy-aware scheduling in clouds
+ involves mapping tasks to resources, arranging tasks’ execution order,
+ and assigning appropriate task execution time, such optimizing energy consumpti
+on and satisfying complex constraints.
+ It is a NP-complete problem, and has been researched extensively in the
+ literature
 \color brown
-Objectives
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cao2023energy"
+literal "false"
+
+\end_inset
+
+
+\color inherit
+.
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Contribution
+\begin_layout Standard
+Our objective consists of developing a tool for scheduling workflows on
+ the Cloud using the technique of multiple partitioning of scientific workflows
+ for multi-criteria optimization of planning execution while reducing the
+ energy consumption of this solution.
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Outline
+\begin_layout Standard
+This thesis is as follows: Chapter 1 introduces Cloud computing infrastructure,
+ Chapter 2 we present workflow technology and scientific workflow, then
+ in Chapter 3 we speak about the problem of scheduling the scientific workflows
+ with optimization of energy, and in chapter 4 we develop our proposed approach
+ and in Chapter 5 we make our implementation , simulation and discussion
+ of results.
 \end_layout
 
 \end_body
