@@ -961,6 +961,8 @@ name "algorithm5_STiHaM"
 \end_layout
 
 \begin_layout Section
+
+\color brown
 VM placement & VM consolidation
 \end_layout
 
@@ -1365,6 +1367,8 @@ name "alg:VM-placement-KP"
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Proposed approach
 \end_layout
 

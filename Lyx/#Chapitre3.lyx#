@@ -412,6 +412,8 @@ Security Awareness
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Problem modeling
 \end_layout
 
@@ -778,8 +780,7 @@ In the model, we assume that there are only three types of VMs (VM
 \end_layout
 
 \begin_layout Subsubsection
-Definition 1.
- 
+Definition 1: VM deployment
 \end_layout
 
 \begin_layout Standard
@@ -837,8 +838,7 @@ k
 \end_layout
 
 \begin_layout Subsubsection
-Definition 2.
- 
+Definition 2: Task representation
 \end_layout
 
 \begin_layout Standard
@@ -945,7 +945,7 @@ EC (VM
 \end_layout
 
 \begin_layout Subsubsection
-Definition 3.
+Definition 3: task's deadline
 \end_layout
 
 \begin_layout Standard
@@ -1113,10 +1113,7 @@ Our goal is to reduce the energy consumption, makespan and execution cost
 \end_layout
 
 \begin_layout Subsubsection
-
-\color brown
-Definition 4.
- 
+Definition 4: total energy consumed
 \end_layout
 
 \begin_layout Standard
@@ -1139,7 +1136,7 @@ is the energy consumed for transferring all data and the sum of energy consumed
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-TE_{E}=ED_{E}+\sum_{En}^{Ek}?
+TE_{E}=ED_{E}+\sum_{En}^{Ek}
 \end{equation}
 
 \end_inset
@@ -1148,8 +1145,7 @@ TE_{E}=ED_{E}+\sum_{En}^{Ek}?
 \end_layout
 
 \begin_layout Subsubsection
-Definition 5.
- 
+Definition 5: cost calculation
 \end_layout
 
 \begin_layout Standard
@@ -1198,6 +1194,7 @@ TrC is the cost of transferring the input files (F
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -1631,6 +1628,8 @@ Symbols used in the formulas
 \end_layout
 
 \begin_layout Section
+
+\color brown
 Related works
 \end_layout
 
@@ -1734,13 +1733,15 @@ Accelerated Search (AS)
 Accelerated Search (AS) algorithm based on Dynamic Programming (DP) to obtain
  a combination of various task schemes which can be completed in a given
  time with the minimum possible energy by introducing the guaranteed probability
- and data migration energy.
-\end_layout
+ and data migration energy
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Li2017"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://www.sciencedirect.com/science/article/abs/pii/S0743731516301745?via%3Dihub
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -1758,7 +1759,7 @@ Plain GA, CA+GA
 \begin_layout Standard
 
 \color brown
-plain genetic (Plain GA), (ii) cellular automata supported by genetic approach
+Plain genetic (Plain GA), (ii) cellular automata supported by genetic approach
  (CA + GA) and (iii) heuristic, giving preferences to high-efficiency machines
  in allocation (EAH), based on a typical FIFO algorithm The used fitness
  function is based on energy minimization only.
@@ -1840,27 +1841,27 @@ ey-Pair-Id=APKAJLOHF5GGSLRBV4ZA
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 NSGA-II, MOCell, IBEA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 NSGA-II, MOCell and IBEA are popular multi-objective evolutionary algorithms
- for solving multi-objective optimization problems.
+ for solving multi-objective optimization problems
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sayyad2013"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subparagraph
-
-\color brown
 NSGA-II (Non-dominated Sorting Genetic Algorithm II) 
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 uses a non-dominated sorting approach to assess the quality of population
  solutions.
  Solutions are ranked according to their dominance over other solutions
@@ -1872,14 +1873,10 @@ uses a non-dominated sorting approach to assess the quality of population
 \end_layout
 
 \begin_layout Subparagraph
-
-\color brown
 MOCell (Multi-Objective Cellular Genetic Algorithm) 
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 uses a grid approach to divide the search space into cells and each cell
  is treated as a separate optimization problem.
  The solutions are then evaluated locally and the best individuals are selected
@@ -1888,14 +1885,10 @@ uses a grid approach to divide the search space into cells and each cell
 \end_layout
 
 \begin_layout Subparagraph
-
-\color brown
 IBEA (Indicator-Based Evolutionary Algorithm) 
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 uses quality indicators to assess the quality of solutions.
  It uses an indicator function that measures the distance of each solution
  to an approximation of the true Pareto front.
@@ -1904,8 +1897,6 @@ uses quality indicators to assess the quality of solutions.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 These algorithms all use an evolutionary approach to optimize multiple goals
  at the same time.
  Candidate solutions are evaluated against several optimization criteria
@@ -1916,8 +1907,6 @@ These algorithms all use an evolutionary approach to optimize multiple goals
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 One of the advantages of these algorithms is that they allow to find several
  optimal solutions which are equivalent in terms of quality for different
  criteria.
@@ -1925,43 +1914,31 @@ One of the advantages of these algorithms is that they allow to find several
  informed decisions.
 \end_layout
 
-\begin_layout Standard
-
-\color brown
-https://ieeexplore.ieee.org/abstract/document/6606595
-\end_layout
-
 \begin_layout Paragraph
-
-\color brown
 HCFS
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Heuristics with Continuous Frequency Scaling (HCFS) algorithm is an
  optimization technique that solves scheduling problems using a heuristic
  approach.
  It is particularly suitable for solving task scheduling problems that have
- complex time dependencies and resource constraints.
-\end_layout
+ complex time dependencies and resource constraints
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eitschberger2019"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.5396
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EAMD
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 new energy-aware scheduling algorithm called Energy Aware Scheduling by
  Minimizing Duplication(EAMD) which considers the energy consumption as
  well as the makespan of applications.
@@ -1971,24 +1948,22 @@ new energy-aware scheduling algorithm called Energy Aware Scheduling by
  consumption.
  This algorithm can reduce large amount of energy consumption while having
  the same makespan compared with duplication-based algorithms without energy
- awareness.
-\end_layout
+ awareness
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mei2012"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/document/6319162
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 MMF-DVFS
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The MMF-DVFS (Multi-Objective Multi-Frequency Dynamic Voltage and Frequency
  Scaling) algorithm is an optimization algorithm for power management in
  embedded systems.
@@ -1998,8 +1973,6 @@ The MMF-DVFS (Multi-Objective Multi-Frequency Dynamic Voltage and Frequency
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The MMF-DVFS algorithm uses an approach based on multi-objective optimization
  which seeks to find a compromise between the objectives of minimizing energy
  consumption and execution time.
@@ -2009,8 +1982,6 @@ y adjusted according to performance and power consumption requirements.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The MMF-DVFS algorithm is also able to take into account QoS constraints
  using a decomposition approach into several sub-problems.
  The algorithm decomposes the global problem into several sub-problems for
@@ -2019,18 +1990,18 @@ The MMF-DVFS algorithm is also able to take into account QoS constraints
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The MMF-DVFS algorithm uses local and global search methods to find the
  best possible solution.
  Local search methods are used to improve local solutions while global search
- methods are used to explore new regions of the search space.
-\end_layout
+ methods are used to explore new regions of the search space
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rizvandi2010"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/abstract/document/5493460
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2113,47 +2084,43 @@ Seyedali Mirjalili and Seyed Mohammad Mirjalili, "Efficient ant optimizer
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 QHA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Quantum-Inspired Harmony Search Algorithm (QHA) is a quantum-inspired
  optimization method for solving optimization problems.
  The algorithm starts by initializing a set of candidate solutions for the
  optimization problem.
- Each candidate solution is represented by a vector of parameter values.
-\end_layout
+ Each candidate solution is represented by a vector of parameter values
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chen2016"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/document/7173041
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EADAGS
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Scheduling (EADAGS) on heterogeneous processors that can run on discrete
  operating voltages Such processors can scale down their voltages and slow
  down to reduce energy whenever they idle due to task dependencies.
  EADAGS combines dynamic voltage scaling (DVS) with Decisive Path Scheduling
- (DPS) to achieve the twin objectives 
-\end_layout
+ (DPS) to achieve the twin objectives
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Baskiyar2010"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://link.springer.com/article/10.1007/s10586-009-0119-6
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2183,14 +2150,10 @@ Roeder, J.; Rouxel, B.; Altmeyer, S.; Grelck, C.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 VHEST, EASA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 VHEST stands for Variable Hessian Estimation Search Technique.
  It is a type of derivative-based optimization algorithm that uses the Hessian
  matrix of the objective function to find the optimal solution.
@@ -2210,12 +2173,17 @@ VHEST stands for Variable Hessian Estimation Search Technique.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Both VHEST and EASA are known for their efficiency and accuracy in solving
  optimization problems and they have been applied to various real-world
- problems in engineering, science and other fields.
- 
+ problems in engineering, science and other fields
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ebrahimirad2015"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2274,61 +2242,53 @@ https://ieeexplore.ieee.org/document/8974273
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EED, EEND
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 algorithms, namely, Energy-Efficiency with Duplication (EED) and Energy-Efficien
 cy with Non Duplication (EEND) Both algorithms, in contrast to their counterpart
 s in the literature, strive to make a balance across the energy consumption,
  the schedule length and the number of processors used.
  Synthetic benchmarks and real-world applications are used to evaluate the
- performance of our algorithms.
-\end_layout
+ performance of our algorithms
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ebaid2014"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/document/7300601
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 RSMECC
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The RSMECC (Reed-Solomon-MDPC Code-based Encryption and Compression) algorithm
  is a data encryption and compression algorithm that uses Reed-Solomon codes
  and MDPC (Moderate Density Parity-Check) codes.
  The algorithm begins by generating a public key and a private key for data
  encryption.
  The public key is shared with the sender of the data while the private
- key is kept by the receiver.
-\end_layout
+ key is kept by the receiver
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hu2019"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://link.springer.com/article/10.1007/s00521-019-04415-2
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 ECS, ECS + idle 
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 ECS is a task scheduling algorithm that considers both the processing time
  and energy consumption of tasks when scheduling them on processors.
  The algorithm aims to find an optimal schedule that minimizes the energy
@@ -2346,13 +2306,15 @@ ECS is a task scheduling algorithm that considers both the processing time
  consumption in computing systems while maintaining performance requirements.
  These algorithms have been applied to various scheduling problems, including
  task scheduling on heterogeneous systems, scheduling in cloud computing
- environments and scheduling in real-time systems.
-\end_layout
+ environments and scheduling in real-time systems
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhou2016"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://www.hindawi.com/journals/sp/2016/5612039/ 
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2382,36 +2344,30 @@ ESPA (Enhanced Scheduling Priority Algorithm) is a scheduling algorithm
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 GACSM
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 GACSM stands for "Genetic Algorithm-based Clustering for Service Composition
  Management".
  It is an algorithm that aims to optimize the service composition process
  in a service-oriented architecture by clustering together services that
- are frequently used together.
-\end_layout
+ are frequently used together
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng2020"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/abstract/document/8974273 
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EAD, PEBD
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 algorithms-Energy-Aware Duplication (EAD) scheduling and Performance-Energy
  Balanced Duplication (PEBD) scheduling.
  Existing duplication-based scheduling algorithms replicate all possible
@@ -2421,13 +2377,15 @@ algorithms-Energy-Aware Duplication (EAD) scheduling and Performance-Energy
  Our algorithms, in contrast, strive to balance schedule lengths and energy
  savings by judiciously replicating predecessors of a task if the duplication
  can aid in performance without degrading energy efficiency.
- To illustrate the effectiveness of EAD and PEBD.
-\end_layout
+ To illustrate the effectiveness of EAD and PEBD
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zong2011"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/document/5611491
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2477,71 +2435,65 @@ https://ieeexplore.ieee.org/abstract/document/9253551
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 MW-HBDCS
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 is a scheduling method that makes it possible to efficiently plan the execution
  of several workflows on a set of heterogeneous resources while respecting
  budget and deadline constraints.
  The problem is modeled using a formal representation of workflows and resources
-, as well as budget and time constraints.
-\end_layout
+, as well as budget and time constraints
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhou2018"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://link.springer.com/article/10.1007/s00500-018-3229-3
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 MinD + ED
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The "Minimum Dependencies Energy-efficient DAG (MinD+ED)" algorithm is a
  scheduling method for workflows represented in the form of a DAG (Directed
  Acyclic Graph) which aims to minimize energy consumption while guaranteeing
  the completion of the workflow on time.
  The workflow is represented as a DAG, where nodes represent tasks and arcs
- represent dependencies between tasks.
-\end_layout
+ represent dependencies between tasks
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shu2017"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/abstract/document/8109158
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EnReal Method
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The EnReal Method (Energy and Reliability aware Method) algorithm is a schedulin
 g method for scientific workflows that aims to minimize energy consumption
  while ensuring high reliability of results.
  The workflow is represented as a DAG (Directed Acyclic Graph), where the
  nodes represent the tasks and the arcs represent the dependencies between
- the tasks.
-\end_layout
+ the tasks
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Xu2016"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/abstract/document/7276993
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2568,14 +2520,10 @@ https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=63826b7681bb1ff81
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 Adaptive GA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Adaptive GA (Genetic Algorithm) algorithm is an optimization method
  inspired by Darwin's theory of evolution The Adaptive GA algorithm begins
  by initializing a population of candidate solutions, which are sets of
@@ -2584,24 +2532,22 @@ The Adaptive GA (Genetic Algorithm) algorithm is an optimization method
  solution in the population, the algorithm evaluates the quality of the
  solution using an objective function, also called a fitness function.
  This function assigns a numerical value to each solution based on the quality
- of that solution.
-\end_layout
+ of that solution
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wu2002"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://www.tandfonline.com/doi/abs/10.1080/00221680209499862
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 Hybrid Cultural and ACO
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Hybrid Cultural and ACO algorithm combines two powerful optimization
  techniques: Cultural Algorithms (CA) and Ant Colony Optimization (ACO)
  to solve complex optimization problems.
@@ -2609,26 +2555,22 @@ The Hybrid Cultural and ACO algorithm combines two powerful optimization
  space efficiently and effectively.
  The ACO approach is used to construct high-quality solutions, while the
  CA approach is used to improve the diversity of the population and prevent
- premature convergence.
-\end_layout
+ premature convergence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Azad2017"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://www.igi-global.com/article/an-energy-aware-task-scheduling-in-the-cloud-co
-mputing-using-a-hybrid-cultural-and-ant-colony-optimization-algorithm/188661
- 
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 MPSO-FGA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The MPSO-FGA (Multi-Parent Particle Swarm Optimization with Fitness Gradient
  Adaptation) algorithm is a hybrid optimization method combining Particle
  Swarm Optimization (PSO) and Evolutionary Optimization (EA).
@@ -2640,36 +2582,36 @@ The MPSO-FGA (Multi-Parent Particle Swarm Optimization with Fitness Gradient
  fitness function.
  This function assigns a numeric value to each solution based on the quality
  of that solution
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gabaldon2017"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/abstract/document/8015589
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 FOA-SA- LB
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The FOA-SA-LB (Fruit Fly Optimization Algorithm with Simulated Annealing
  and Levy Flight Backtracking) algorithm is a hybrid optimization method
  that combines the Fruit Fly Swarm Optimization (FOA) algorithm, the simulated
  annealing algorithm (SA) and Lévy's jump algorithm with backtracking (LB)
  The FOA-SA-LB algorithm begins by initializing a population of candidate
  solutions, which are sets of values representing the parameters to be optimized.
- These candidate solutions are often randomly generated.
-\end_layout
+ These candidate solutions are often randomly generated
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lawanyashri2017"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://www.sciencedirect.com/science/article/pii/S2352914817300187
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2702,7 +2644,7 @@ HUA
 \begin_layout Standard
 
 \color brown
-he HUA (Hybridization of Harmony Search Algorithm and Univariate Marginal
+The HUA (Hybridization of Harmony Search Algorithm and Univariate Marginal
  Distribution Algorithm) is an evolutionary hybrid algorithm that combines
  the advantages of two popular algorithms, namely the Harmony Search Algorithm
  and the Distribution Algorithm.
@@ -2726,28 +2668,26 @@ The HUA algorithm (Hybridization of Harmony Search Algorithm and Univariate
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 MHRA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
-he MHRA algorithm (Multi-Objective Harmony Search Algorithm with Reference-Point
--Based Nondominated Sorting Approach) is an evolutionary algorithm used
+The MHRA algorithm (Multi-Objective Harmony Search Algorithm with Reference-Poin
+t-Based Nondominated Sorting Approach) is an evolutionary algorithm used
  to solve multi-objective optimization problems.
  The algorithm starts by generating a population of candidate solutions
  randomly.
  Each candidate solution is evaluated using an objective function that measures
  its quality.
  This function assigns a vector of values
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sarkar2007"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/abstract/document/4289081
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2775,6 +2715,14 @@ https://www.sciencedirect.com/science/article/pii/S1084804522000595
 
 \color brown
 EViMA
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2807,29 +2755,27 @@ s.
  l'allocation des ressources de VM et minimiser le coût total d'exploitation
  pour les charges de travail basées sur le Cloud.
  And so on It is composed by Par quatre sous algorithme (HiCTSA) And LoCTSA
- and VM-PRA and STiHaM 
+ and VM-PRA and STiHaM.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EAH
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The EAH (Exploratory Adaptation Hyper-heuristics) algorithm is a hyper-heuristic
  optimization method for solving combinatorial optimization problems.
  The goal of the EAH algorithm is to solve combinatorial optimization problems
  using a heuristic approach that can adapt its behavior depending on the
- characteristics of the problem.
-\end_layout
+ characteristics of the problem
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal2014"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://ieeexplore.ieee.org/document/6778110
+.
 \end_layout
 
 \begin_layout Subsection
@@ -2840,7 +2786,6 @@ Comparison between workflow scheduling approaches
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
 wide false
 sideways true
 status open
@@ -2848,7 +2793,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="37" columns="8">
+<lyxtabular version="3" rows="38" columns="7">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2857,17 +2802,7 @@ status open
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Algorithm type
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2908,7 +2843,7 @@ System
 \begin_inset Text
 
 \begin_layout Plain Layout
-Energy aware mechanism
+Mechanism
 \end_layout
 
 \end_inset
@@ -2933,15 +2868,6 @@ Limitations
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Dynamic programming
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -3011,15 +2937,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-Evolutionary algorithms
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 Plain GA
 \end_layout
 
@@ -3081,15 +2998,6 @@ Heterogeneous cluster
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Evolutionary algorithms
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -3159,15 +3067,6 @@ Heterogeneous cluster
 \begin_inset Text
 
 \begin_layout Plain Layout
-Evolutionary algorithms
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 PBHGA
 \end_layout
 
@@ -3233,15 +3132,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-Evolutionary algorithms
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 NSGA-II, MOCell, IBEA
 \end_layout
 
@@ -3251,7 +3141,7 @@ NSGA-II, MOCell, IBEA
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2013
 \end_layout
 
 \end_inset
@@ -3307,15 +3197,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 HCFS
 \end_layout
 
@@ -3325,7 +3206,7 @@ HCFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2019
 \end_layout
 
 \end_inset
@@ -3381,15 +3262,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 EAMD
 \end_layout
 
@@ -3399,7 +3271,7 @@ EAMD
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2012
 \end_layout
 
 \end_inset
@@ -3455,15 +3327,6 @@ Heterogeneous cluster
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 MMF-DVFS
 \end_layout
 
@@ -3473,7 +3336,7 @@ MMF-DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2010
 \end_layout
 
 \end_inset
@@ -3529,15 +3392,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 EASLA, Improved EASLA
 \end_layout
 
@@ -3547,7 +3401,7 @@ EASLA, Improved EASLA
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2016
 \end_layout
 
 \end_inset
@@ -3603,15 +3457,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 QHA
 \end_layout
 
@@ -3621,7 +3466,7 @@ QHA
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2015
 \end_layout
 
 \end_inset
@@ -3677,15 +3522,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 EADAGS
 \end_layout
 
@@ -3695,7 +3531,7 @@ EADAGS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2010
 \end_layout
 
 \end_inset
@@ -3747,15 +3583,6 @@ DVFS
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -3825,15 +3652,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 VHEST, EASA
 \end_layout
 
@@ -3895,15 +3713,6 @@ Homogeneous virtualized cluster
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -3973,15 +3782,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 LESA
 \end_layout
 
@@ -4043,15 +3843,6 @@ DVFS
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -4121,15 +3912,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 RSMECC
 \end_layout
 
@@ -4191,15 +3973,6 @@ DVFS
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -4269,15 +4042,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 ESPA
 \end_layout
 
@@ -4339,15 +4103,6 @@ DVFS, DPM
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -4417,15 +4172,6 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 EAD, PEBD
 \end_layout
 
@@ -4487,15 +4233,6 @@ Homogeneous cluster
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -4565,15 +4302,6 @@ Resource scheduling, fault-tolerant, energy efficient approaches
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 RMREC
 \end_layout
 
@@ -4635,15 +4363,6 @@ Lower energy consumption without compromising budget constraint
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -4713,15 +4432,6 @@ reliability and energy
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 MinD + ED
 \end_layout
 
@@ -4787,15 +4497,6 @@ MinD + ED
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 EnReal Method
 \end_layout
 
@@ -4857,15 +4558,6 @@ Workflow and user heterogeneity is ignored
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -4936,15 +4628,6 @@ limited search space.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 Adaptive GA
 \end_layout
 
@@ -5006,15 +4689,6 @@ Stuck in local optimal solution
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -5084,15 +4758,6 @@ Limited search space
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 MPSO-FGA
 \end_layout
 
@@ -5154,15 +4819,6 @@ Less scalable
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -5232,15 +4888,6 @@ Less efficient with large search space
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 REEWS
 \end_layout
 
@@ -5302,15 +4949,6 @@ Limited parameters
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -5380,15 +5018,6 @@ It requires more time to execute workflows
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 MHRA
 \end_layout
 
@@ -5454,15 +5083,6 @@ Less efficient in scheduling deadline contains tasks
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 EARES-D
 \end_layout
 
@@ -5524,16 +5144,7 @@ It requires more time to compute
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5542,7 +5153,7 @@ EViMA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5551,7 +5162,7 @@ EViMA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5560,7 +5171,7 @@ Energy consumption, Makespan and Cost
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5569,7 +5180,7 @@ Energy consumption, Makespan and Cost
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5578,7 +5189,7 @@ Energy consumption, Makespan and Cost
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5588,11 +5199,76 @@ Efficient in managing cloud resources and generates faster solutions in
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Not considering instance acquisition and termination delay
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+EAH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -5620,18 +5296,15 @@ Workflow scheduling algorithms, systems and optimization metrics used for
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
 
-\color brown
-Conclusion
+
 \end_layout
 
-\begin_layout Standard
-
-\color brown
-In this chapter, we have do 
-\backslash
-todo...
+\begin_layout Section
+Conclusion
 \end_layout
 
 \begin_layout Standard

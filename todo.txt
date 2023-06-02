@@ -1,6 +1,21 @@
-Il reste:
--	Chapitre2
--	Chapitre3
--	Chapitre4
+Totale:		12
+Mémoire:
+	- Envoyer la 1ère version le dimanche.
+	- MàJ de de l'algorithme du chapitre4.
+	- Vérifier le chapitre3.
+	- Compléter le chapitre5 de la simulation.
+	- Faire la conculsion générale.
 
-beamer
+Simulation:
+	- Métrique
+		. Cost					x1
+		. Nombre migrations			x1
+	- EViMA
+		. Deploy Vm.				x1
+		. Put VM on save mood.			x2
+	- Our EViMA
+		. Put all unused PM in save mood.	x1
+
+Présentation:
+	- Faire un plan de présentation.(beamer)
+	- Faire la présentation.

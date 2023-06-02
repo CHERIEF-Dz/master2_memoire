@@ -1,0 +1,30 @@
+Totale:		16
+
+Vendredi	 6
+	- Chapitre3:
+		- Il faut citer tous les algorithmes.		Il reste 10
+		- Il ne faut pas qu'il y a un espaces entre les titres.
+		- Régler les paramètres pour le tableau
+		- Faire une petite lecture sur le tableau 
+	- Chapitre4:
+		- Il ne faut pas donner une grande importance au EViMA.
+		- MàJ de notre algorithme et supprimer les autres algorithmes.
+
+Samedi		 6
+	Simulation:
+		- Métrique
+			. Cost					x1
+			. Nombre migrations			x1
+		- EViMA
+			. Deploy Vm.				x1
+			. Put VM on save mood.			x2
+		- Our EViMA
+			. Put all unused PM in save mood.	x1
+	- Compléter le chapitre5 de la simulation.
+
+Dimanche	 4
+	- Envoyer la 1ère version le dimanche.
+	- Faire la conculsion générale.
+	Présentation:
+		- Faire un plan de présentation.(beamer)
+		- Faire la présentation.

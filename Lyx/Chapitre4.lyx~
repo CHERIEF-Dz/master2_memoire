@@ -93,7 +93,7 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter
-State of art and our proposed approach
+Approach and solution design
 \end_layout
 
 \begin_layout Standard
@@ -961,6 +961,8 @@ name "algorithm5_STiHaM"
 \end_layout
 
 \begin_layout Section
+
+\color brown
 VM placement & VM consolidation
 \end_layout
 
