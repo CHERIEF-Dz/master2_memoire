@@ -1,10 +1,12 @@
-Totale:		16
+Totale:		3/16
 
-Vendredi	 6
+Vendredi	 3/8
 	- Chapitre3:
+		- Ajouter l'année à tous les algorithmes							OK
+		- Régler les paramètres pour le tableau								OK
+		- Il ne faut pas qu'il y a un espaces entre les titres.		Il reste 1 dans chapitre3	OK
 		- Il faut citer tous les algorithmes.		Il reste 10
-		- Régler les paramètres pour le tableau
-		- Faire une petite lecture sur le tableau 
+		- Faire une petite lecture sur le tableau
 	- Chapitre4:
 		- Il ne faut pas donner une grande importance au EViMA.
 		- MàJ de notre algorithme et supprimer les autres algorithmes.
