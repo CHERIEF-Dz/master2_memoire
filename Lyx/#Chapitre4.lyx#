@@ -145,9 +145,10 @@ We will present in this chapter the EViMA algorithm which is used for improving
  that reduce energy consumption, execution makespan and cost without violating
  deadline constraints.
  Then will introduce the VM placement and VM consolidation problem and its
- 4 sub-problems.
- Finally, we will present the objectives, the concept of our approach and
- also its description and explication.
+ 4 sub-problems and for each subproblem some of the most used methods to
+ find the solutions.
+ And finally, we will present the objectives, the concept of our approach
+ and also its description and explication.
 \end_layout
 
 \begin_layout Section
@@ -928,6 +929,8 @@ status open
 
 \begin_layout Plain Layout
 STiHaM
+\color brown
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "konjaang2022energy"
@@ -1430,7 +1433,7 @@ literal "false"
 
 \end_inset
 
-, may be we will avoid this problem and so reducing energy consumed by hosts.
+, may be we will avoid this problem and so reducing energy consumed by PM.
  After seeing the results of experiments and test performance
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1465,8 +1468,6 @@ VM placement
 
 \end_deeper
 \begin_layout Subsection
-
-\color brown
 Steps of our approach
 \end_layout
 

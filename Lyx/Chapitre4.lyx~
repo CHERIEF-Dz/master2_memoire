@@ -145,14 +145,18 @@ We will present in this chapter the EViMA algorithm which is used for improving
  that reduce energy consumption, execution makespan and cost without violating
  deadline constraints.
  Then will introduce the VM placement and VM consolidation problem and its
- 4 sub-problems and for each subproblem some of the most used methods to
- find the solutions.
- And finally, we will present the objectives, the concept of our approach
- and also its description and explication.
+ 4 sub-problems.
+ Finally, we will present the objectives, the concept of our approach and
+ also its description and explication.
 \end_layout
 
 \begin_layout Section
-Studied algorithm EViMA
+Based algorithm EViMA
+\end_layout
+
+\begin_layout Standard
+After comparing all the algorithms in Chapter 3, we have choose the EViMA
+ algorithm because it is a promoter in itself.
 \end_layout
 
 \begin_layout Subsection
@@ -746,6 +750,7 @@ name "algorithm3_LoCTSA"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename images/Algorithm/EViMA_LoCTSA.png
 
@@ -839,6 +844,7 @@ name "algorithm4_VM_PRA"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename images/Algorithm/EViMA_VM_PRA.png
 
@@ -947,6 +953,7 @@ name "algorithm5_STiHaM"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename images/Algorithm/EViMA_STiHaM.png
 
@@ -961,8 +968,6 @@ name "algorithm5_STiHaM"
 \end_layout
 
 \begin_layout Section
-
-\color brown
 VM placement & VM consolidation
 \end_layout
 
@@ -1363,13 +1368,7 @@ name "alg:VM-placement-KP"
 \end_layout
 
 \begin_layout Section
-
-\color brown
 Proposed approach
-\end_layout
-
-\begin_layout Subsection
-Objectives
 \end_layout
 
 \begin_layout Standard
@@ -1378,12 +1377,17 @@ The objective of our project is to provide a workflow scheduling mechanism
  We propose an approach that consists of managing the available resources
  within a Cloud Computing system in the most efficient way possible and
  properly assigning tasks to virtual machines in order to minimize cost,
- makespan and energy without violating the deadline constraints established
- for each task by the user, in order to satisfy QoS.
+ makespan and doing VM placement and consolidation for optimizing energy
+ without violating the deadline constraints established for each task by
+ the user, in order to satisfy QoS.
+\end_layout
+
+\begin_layout Subsection
+Objectives
 \end_layout
 
 \begin_layout Standard
-So, this approach considers the following metrics and constraint:
+Our approach considers the following metrics and constraint:
 \end_layout
 
 \begin_layout Itemize
@@ -1403,18 +1407,17 @@ Principle and description
 \end_layout
 
 \begin_layout Standard
-Our proposed approach is a version of the EViMA algorithm with the addition
- of a VM placement algorithm.
+Our proposed approach is as follows:
 \end_layout
 
 \begin_layout Itemize
-We suggest doing workflow partitioning and grouping tasks in the same partition
+We suggest partitioning workflow and grouping tasks in the same partition
  as just one task, this can reduce the scheduling time.
 \end_layout
 
 \begin_layout Itemize
-We suggest starting the EViMA algorithm first for scheduling scientific
- workflows.
+We suggest starting the EViMA algorithm first to assign properly tasks to
+ virtual machines.
 \end_layout
 
 \begin_layout Itemize
@@ -1429,7 +1432,7 @@ literal "false"
 
 \end_inset
 
-, may be we will avoid this problem and so reducing energy consumed by PM.
+, may be we will avoid this problem and so reducing energy consumed by hosts.
  After seeing the results of experiments and test performance
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1464,6 +1467,8 @@ VM placement
 
 \end_deeper
 \begin_layout Subsection
+
+\color brown
 Steps of our approach
 \end_layout
 
