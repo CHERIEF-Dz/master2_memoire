@@ -961,13 +961,7 @@ name "algorithm5_STiHaM"
 \end_layout
 
 \begin_layout Section
-
-\color brown
 VM placement & VM consolidation
-\end_layout
-
-\begin_layout Subsection
-Problem
 \end_layout
 
 \begin_layout Standard
@@ -1008,7 +1002,7 @@ literal "false"
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Paragraph
 VM Placement 
 \end_layout
 
@@ -1017,7 +1011,7 @@ It is the process of mapping VMs to PMs.
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Paragraph
 VM Consolidation
 \end_layout
 
