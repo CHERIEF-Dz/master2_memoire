@@ -2753,6 +2753,7 @@ Comparison between workflow scheduling approaches
 
 \begin_layout Standard
 \begin_inset Float table
+placement p
 wide false
 sideways true
 status open
@@ -4229,7 +4230,7 @@ GACSM
 \begin_inset Text
 
 \begin_layout Plain Layout
-2020
+2019
 \end_layout
 
 \end_inset
@@ -4294,7 +4295,7 @@ EAD, PEBD
 \begin_inset Text
 
 \begin_layout Plain Layout
-2010
+2011
 \end_layout
 
 \end_inset
@@ -5342,6 +5343,14 @@ Workflow scheduling algorithms, systems and optimization metrics used for
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+We conclude that there is a variety of problem formulations and corresponding
+ algorithm types that tackle the problem of energy-aware scheduling for
+ HPC systems, including machine learning (with reinforcement and supervised
+ learning), dynamic programming, fuzzy logic, integer programming, randomized
+ algorithms, evolutionary algorithms, constraint programming, and others.
 \end_layout
 
 \begin_layout Standard
