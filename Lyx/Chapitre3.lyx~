@@ -1748,29 +1748,29 @@ literal "false"
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 Plain GA, CA+GA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Plain genetic (Plain GA), (ii) cellular automata supported by genetic approach
  (CA + GA) and (iii) heuristic, giving preferences to high-efficiency machines
  in allocation (EAH), based on a typical FIFO algorithm The used fitness
- function is based on energy minimization only.
+ function is based on energy minimization only
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal2014"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 PBHGA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Parallel bi-objective hybrid genetic algorithm (PBHGA) is a parallel
  evolutionary algorithm for solving multi-objective optimization problems.
  It combines several optimization techniques including genetic algorithm
@@ -1778,8 +1778,6 @@ The Parallel bi-objective hybrid genetic algorithm (PBHGA) is a parallel
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The algorithm works by using an initial population of random solutions.
  Individuals in this population are rated based on their goals and their
  fitness is assessed using a fitness function.
@@ -1788,8 +1786,6 @@ The algorithm works by using an initial population of random solutions.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Reproduction is done using genetic operators such as mutation and crossover.
  Mutation involves modifying a single gene of the individual while crossbreeding
  involves creating new individuals by combining the characteristics of two
@@ -1797,8 +1793,6 @@ Reproduction is done using genetic operators such as mutation and crossover.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The process of selection and reproduction is repeated for several generations
  until an optimal solution is found.
  During the whole optimization process, PBHGA maintains a population of
@@ -1806,8 +1800,6 @@ The process of selection and reproduction is repeated for several generations
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The parallel approach of the algorithm helps to speed up the optimization
  process by running multiple search tasks simultaneously on different processors.
  It also makes it possible to efficiently explore regions of the search
@@ -1815,26 +1807,19 @@ The parallel approach of the algorithm helps to speed up the optimization
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Finally, the hybrid genetic algorithm uses local search techniques to improve
  the quality of solutions by applying perturbation operations to existing
  solutions.
  These perturbation operations are designed to slightly perturb existing
- solutions to bring them closer to an optimal solution.
-\end_layout
+ solutions to bring them closer to an optimal solution
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mezmazparallel"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-https://d1wqtxts1xzle7.cloudfront.net/30720910/meta20100_submission_167-libre.pdf?1
-391833479=&response-content-disposition=inline%3B+filename%3DA_Parallel_Bi_objec
-tive_Hybrid_Genetic_A.pdf&Expires=1680289419&Signature=NvSZ74YMq238Mge6yJo3lCmUXT
-NExrHFua9fkF8I7LUvQmzmHo1Pn9S4MH-53B8bU-gDc9JpCPoP0vTk-q5bnriImBXuoaevMakjOKmkzl
-TFQMaHtsQQfstc0tckuqSSdJnflS~bNJcUgVDvBzH0zTgjyiDODbcr-5HnJ3kFM8a1MViJwGUSVrTwUA
-tH5zLaZn17D9nE~BCB92y5IEAQQY40IXQdffofKusk-c6TgUitAlVd6rGIlRZemuBI4536iEc0s70ys5
-IvfR-vqJGKhu4T84ZHLSOlW4rml2WBbZGdqH7ZZVQbtA6veFpLOT9IcKuc5A-D3ppGZr-pagXt-A__&K
-ey-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2002,14 +1987,10 @@ literal "false"
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EASLA, Improved EASLA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 EASLA (Efficient Antlion Optimizer with a Small Local Attraction) is a metaheuri
 stic optimization algorithm inspired by the hunting behavior of antlions.
  The algorithm is used for solving various optimization problems, including
@@ -2017,8 +1998,6 @@ stic optimization algorithm inspired by the hunting behavior of antlions.
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Improved EASLA algorithm is an enhanced version of EASLA, which incorporates
  some modifications to improve its performance.
  The key modifications include the incorporation of a mutation operator
@@ -2027,8 +2006,6 @@ The Improved EASLA algorithm is an enhanced version of EASLA, which incorporates
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The basic idea behind EASLA is to simulate the hunting behavior of antlions,
  which use a combination of ambush and trap techniques to capture their
  prey.
@@ -2037,8 +2014,6 @@ The basic idea behind EASLA is to simulate the hunting behavior of antlions,
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The algorithm starts by randomly generating a population of ants and placing
  them in the search space.
  The ants move toward the antlion based on a probability function that takes
@@ -2048,8 +2023,6 @@ The algorithm starts by randomly generating a population of ants and placing
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Improved EASLA algorithm extends this basic framework by introducing
  a mutation operator that randomly modifies the position of some ants, which
  can help to explore new regions of the search space.
@@ -2058,26 +2031,17 @@ The Improved EASLA algorithm extends this basic framework by introducing
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 Overall, EASLA and its improved variant aim to balance exploration and exploitat
 ion in the search space, using a combination of local and global search
- strategies to find good solutions to optimization problems.
- 
-\end_layout
+ strategies to find good solutions to optimization problems
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Srbinovski2016"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-Seyedali Mirjalili and Seyed Mohammad Mirjalili, "Efficient ant optimizer
- with small local attraction", Advances in Engineering Software, vol.
- 102, p.
- 24-45, 2016.
- Seyedali Mirjalili and Seyed Mohammad Mirjalili, "Improved Ant Optimizer:
- A New Metaheuristic Algorithm for Solving Optimization Problems", Applied
- Soft Computing, vol.
- 41, p.
- 407-423, 2016.
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2306,28 +2270,25 @@ literal "false"
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 ESPA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 ESPA (Enhanced Scheduling Priority Algorithm) is a scheduling algorithm
  used in real-time systems that aims to improve the scheduling performance
  compared to traditional priority-based scheduling algorithms such as Earliest
  Deadline First (EDF) or Rate Monotonic (RM) scheduling.
  The ESPA algorithm works by assigning a scheduling priority to each task
  based on its execution history and the current system state.
- The algorithm uses a set of rules to determine the priority of a task Miyake,
- M., & Shimizu, T.
- (1996).
- A new task scheduling method for real-time systems: enhanced scheduling
- priority algorithm (ESPA).
- In Proceedings of the 3rd International Workshop on Real-Time Ada Issues,
- Volume II: Ada in Real-Time, Real-Time Systems (pp.
- 169-176).
+ The algorithm uses a set of rules to determine the priority of a task
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tyagi2012enhanced"
+literal "false"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -2596,56 +2557,43 @@ literal "false"
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 REEWS
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Real-coded Estimation of Distribution Algorithm with Re-Evaluation and
  Windowing Strategy (REEWS) algorithm is an optimization method that uses
  a distribution-based approach to find the optimal solution to a given optimizat
-ion problem.
-\end_layout
+ion problem
+\begin_inset CommandInset citation
+LatexCommand cite
+key "paul2003optimization"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-University of Technology of Belfort-Montbéliard in France
+.
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 HUA
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The HUA (Hybridization of Harmony Search Algorithm and Univariate Marginal
  Distribution Algorithm) is an evolutionary hybrid algorithm that combines
  the advantages of two popular algorithms, namely the Harmony Search Algorithm
  and the Distribution Algorithm.
  Univariate Marginal Distribution Algorithm The algorithm starts by generating
- a population of candidate solutions randomly.
- 
-\end_layout
+ a population of candidate solutions randomly
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BrambilaHernndez2023"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-The HUA algorithm (Hybridization of Harmony Search Algorithm and Univariate
- Marginal Distribution Algorithm) was proposed by researchers S.
- B.
- Park and S.
- M.
- Lee in their article entitled "A hybridization of harmony search algorithm
- and univariate marginal distribution algorithm for optimization problems"
- published in the scientific journal "Expert Systems with Applications"
- in 2010.
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2672,18 +2620,22 @@ literal "false"
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EARES-D
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The EARES-D (Enhanced Adaptive Range Extended Search with Diversity) algorithm
  is a global optimization algorithm that has been proposed to solve complex
  optimization problems The algorithm starts by generating a population of
- candidate solutions randomly in a given search space.
+ candidate solutions randomly in a given search space
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Geetha2021"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2753,6 +2705,7 @@ Comparison between workflow scheduling approaches
 
 \begin_layout Standard
 \begin_inset Float table
+placement p
 wide false
 sideways true
 status open
@@ -5332,7 +5285,9 @@ Not considering instance acquisition and termination delay
 \begin_layout Plain Layout
 Workflow scheduling algorithms, systems and optimization metrics used for
  them.
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:comparaison"
 
 \end_inset
 
@@ -5342,6 +5297,52 @@ Workflow scheduling algorithms, systems and optimization metrics used for
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After comparison of all of these approaches (see Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:comparaison"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), we can conclude:
+\end_layout
+
+\begin_layout Itemize
+
+\color brown
+There is a variety of problem formulations and corresponding algorithm types
+ that tackle the problem of workflow energy-aware scheduling for Cloud computing
+ envirenment, including machine learning (with reinforcement and supervised
+ learning), dynamic programming, fuzzy logic, integer programming, randomized
+ algorithms, evolutionary algorithms, constraint programming, and others.
+\end_layout
+
+\begin_layout Itemize
+Most optimization goals involve metrics such as execution time/makespan,
+ energy.
+ A limited number of works specifically consider costs, performance, reliability
+ and folt-tolerance.
+\end_layout
+
+\begin_layout Itemize
+Most works use DFVS as a mechanism for controlling the power/energy of compute
+ devices, just one combine DVFS and DPM (including turning off machines),
+ a
+\color brown
+nd a limited number of works use explicit power capping
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
