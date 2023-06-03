@@ -1,21 +1,25 @@
-Totale:		12
-Mémoire:
-	- Envoyer la 1ère version le dimanche.
-	- MàJ de de l'algorithme du chapitre4.
-	- Vérifier le chapitre3.
+Totale:		13
+
+Vendredi	 1
+	- Chapitre 3:
+		- Ajouter les définitions des equations que j'ai utilisé
+Samedi		 6
+	Simulation:
+		- Métrique
+			. Nombre migrations			x1
+		- EViMA
+			. Deploy Vm.				x1
+			. Put VM on save mood.			x2
+		- Our EViMA
+			. Put all unused PM in save mood.	x1
+	- Choosing another algorithm to compare with.
 	- Compléter le chapitre5 de la simulation.
+
+Dimanche	 6
 	- Faire la conculsion générale.
-
-Simulation:
-	- Métrique
-		. Cost					x1
-		. Nombre migrations			x1
-	- EViMA
-		. Deploy Vm.				x1
-		. Put VM on save mood.			x2
-	- Our EViMA
-		. Put all unused PM in save mood.	x1
-
-Présentation:
-	- Faire un plan de présentation.(beamer)
-	- Faire la présentation.
+	Présentation:
+		- Faire un plan de présentation.(beamer)
+		- Faire la présentation.
+	- Vérifier le plagiat.
+	- Verify chapter 3,4 and 5 using Grammerly.
+	- Envoyer la 1ère version le dimanche.

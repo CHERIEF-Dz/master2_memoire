@@ -5338,9 +5338,9 @@ Most optimization goals involve metrics such as execution time/makespan,
 \begin_layout Itemize
 Most works use DFVS as a mechanism for controlling the power/energy of compute
  devices, just one combine DVFS and DPM (including turning off machines),
- a
+ 
 \color brown
-nd a limited number of works use explicit power capping
+and a limited number of works use explicit power capping
 \color inherit
 .
 \end_layout

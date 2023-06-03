@@ -2141,14 +2141,10 @@ literal "false"
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EDLS
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Exponential Differencing Least Squares (EDLS) algorithm is a linear
  regression estimation algorithm that is used to model data that has exponential
  trends or time-varying growth rates.
@@ -2157,23 +2153,21 @@ The Exponential Differencing Least Squares (EDLS) algorithm is a linear
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The EDLS algorithm works by minimizing the sum of the squares of the deviations
  between the observed values and the values predicted by the model.
  Unlike classical linear regression methods which assume that errors have
  a normal distribution, the EDLS algorithm assumes that errors have an exponenti
 al distribution.
  This approach makes it possible to take into account exponential trends
- in the data and to better model variations in growth rates.
-\end_layout
+ in the data and to better model variations in growth rates
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hou2009"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-article intitulé "A Two-Step Estimation Procedure for Dynamic Panels with
- Non-Stationary Common Factors", publié dans le Journal of Econometrics
- en 2005.
+.
 \end_layout
 
 \begin_layout Paragraph
