@@ -1,0 +1,3 @@
+MOCS: 		Multi-Objective Cloud Scheduler for Scientific Workflows
+MOCC: 		Multi-Objective Cloud Consolidator for Scientific Workflows
+MOCS-OViC:	Multi-Objective Cloud Scheduler with Optimized Virtual Machies Consolidaton  for Scientific Workflows

@@ -928,8 +928,6 @@ status open
 
 \begin_layout Plain Layout
 STiHaM
-\color brown
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "konjaang2022energy"
@@ -1327,44 +1325,6 @@ noprefix "false"
 \end_inset
 
 ).
-\begin_inset Float algorithm
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-VM placement based on KP
-\begin_inset CommandInset label
-LatexCommand label
-name "alg:VM-placement-KP"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/Algorithm/VM_placement_KP.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1448,7 +1408,7 @@ literal "false"
 \begin_layout Itemize
 Boxplot: for both 
 \series bold
-host overload and under-load detection
+host overload and under-load detection.
 \end_layout
 
 \begin_layout Itemize
@@ -1456,19 +1416,22 @@ MECM for
 \series bold
 VM selection
 \series default
-W
+W.
 \end_layout
 
 \begin_layout Itemize
-We will use the classical Knapsack Problem (KP) for 
+For 
 \series bold
 VM placement
+\series default
+ our algorithm is based on the greedy algorithm concept, which sort the
+ containers in decreasing order based on their capacity before performing
+ the packing process.
+ Then, it pick one by one PM to pack the VMs on it based on KP.
 \end_layout
 
 \end_deeper
 \begin_layout Subsection
-
-\color brown
 Steps of our approach
 \end_layout
 
@@ -1538,11 +1501,14 @@ State $wt_{ReadyPool} = clustered(wt_{1}, wt_{2}, wt_{3},...wt_{n})$
 
 
 \backslash
-State apply algorithm EViMA
+State Apply algorithm EViMA
 \end_layout
 
 \begin_layout Plain Layout
 
+
+\backslash
+State Sort PMs based on PM utilisation
 \end_layout
 
 \begin_layout Plain Layout
@@ -1558,42 +1524,156 @@ phi$
 
 
 \backslash
-State add all VMs that are in under-loaded PMs to $VM_{candidateList}$
+State Add all VMs that are in under-loaded PMs to $VM_{candidateList}$
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State add all VMs that are in over-loaded PMs to $VM_{candidateList}$
+State Add all VMs that are in over-loaded PMs to $VM_{candidateList}$
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State While $VM_{candidateList}$ is not empty
+State Sort $PMs$ based on capacity /availibility in descending order
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State apply algorithm 6 to selecte one VM from $VM_{candidateList}$
+State j=0
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State apply algorithm 7 to determine emplacement of this VM
+While{$VM_{candidateList} 
+\backslash
+neq 
+\backslash
+phi$ and j < size(PMs)}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State pick $PM_{j}$
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $VM_{selected}$ which results minimum energy is selected
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+If{ requirements($VM_{selected}$)<= availibleCapacity($PM_{j}$) }
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State place $VM_{selected}$ on $PM_{j}$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State Update $VM_{candidateList}$
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Else
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State j= j+1
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndIf
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State End while
+EndWhile Until no more VM or no more PM
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Migrate all VMs
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Foreach {$pm$ in $PMs$}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+If{$pm$ is not used}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State put $pm$ on power save mode
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndForeach
 \end_layout
 
 \begin_layout Plain Layout
@@ -1645,13 +1725,28 @@ quarter(Q4).
 \end_layout
 
 \begin_layout Standard
-After that, using algorithm MECM calculate for each VM the expected migration
- energy and sort them in ascending order.
+Repeat for all VMs in VM candidate list until no more VM or no more availible
+ host:
+\end_layout
+
+\begin_layout Itemize
+Select VM with the minimum expected migration energy.
+\end_layout
+
+\begin_layout Itemize
+If the selected VM requirements are satisfied in the selected PM the place
+ VM in PMj.
+\end_layout
+
+\begin_layout Itemize
+If the requirenments of VM are not satisfied the pass to the next PM (line
+ 16) because this PM will never satisfied the requirenements of others VMs
+ because the selected VM is the minimum.
 \end_layout
 
 \begin_layout Standard
-And finally, we map the selected VMs to suitable physical machines to do
- a VM consolidation, which will allow us to switch off the PMs which are
+Finally, we map the selected VMs to suitable physical machines to do a VM
+ consolidation, which will allow us then to switch off the PMs which are
  not used.
 \end_layout
 

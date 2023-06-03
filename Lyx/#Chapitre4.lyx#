@@ -145,10 +145,9 @@ We will present in this chapter the EViMA algorithm which is used for improving
  that reduce energy consumption, execution makespan and cost without violating
  deadline constraints.
  Then will introduce the VM placement and VM consolidation problem and its
- 4 sub-problems and for each subproblem some of the most used methods to
- find the solutions.
- And finally, we will present the objectives, the concept of our approach
- and also its description and explication.
+ 4 sub-problems.
+ Finally, we will present the objectives, the concept of our approach and
+ also its description and explication.
 \end_layout
 
 \begin_layout Section
@@ -929,8 +928,6 @@ status open
 
 \begin_layout Plain Layout
 STiHaM
-\color brown
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "konjaang2022energy"
@@ -1433,7 +1430,7 @@ literal "false"
 
 \end_inset
 
-, may be we will avoid this problem and so reducing energy consumed by PM.
+, may be we will avoid this problem and so reducing energy consumed by hosts.
  After seeing the results of experiments and test performance
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1468,6 +1465,8 @@ VM placement
 
 \end_deeper
 \begin_layout Subsection
+
+\color brown
 Steps of our approach
 \end_layout
 
@@ -1537,11 +1536,14 @@ State $wt_{ReadyPool} = clustered(wt_{1}, wt_{2}, wt_{3},...wt_{n})$
 
 
 \backslash
-State apply algorithm EViMA
+State Apply algorithm EViMA
 \end_layout
 
 \begin_layout Plain Layout
 
+
+\backslash
+State Sort PMs based on PM utilisation
 \end_layout
 
 \begin_layout Plain Layout
@@ -1557,42 +1559,144 @@ phi$
 
 
 \backslash
-State add all VMs that are in under-loaded PMs to $VM_{candidateList}$
+State Add all VMs that are in under-loaded PMs to $VM_{candidateList}$
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State add all VMs that are in over-loaded PMs to $VM_{candidateList}$
+State Add all VMs that are in over-loaded PMs to $VM_{candidateList}$
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State While $VM_{candidateList}$ is not empty
+State Sort $PMs$ based on capacity /availibility in descending order
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State apply algorithm 6 to selecte one VM from $VM_{candidateList}$
+State j=0
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State apply algorithm 7 to determine emplacement of this VM
+While{$VM_{candidateList} 
+\backslash
+neq 
+\backslash
+phi and j < size(PMs)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State pick $PM_{j}$
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $VM_{selected}$ which results minimum energy is selected $
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+If{ requirements($VM_{selected}$)<= availibleCapacity($PM_{j}$) }
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State place $VM_{selected}$ on $PM_{j}$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State Update $VM_{candidateList}$
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Else
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State j= j+1
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndIf
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-State End while
+EndWhile Until no more VM or no more PM
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Migrate all VMs
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Foreach {$pm$ in $PMs$}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+If{$pm$ is not used}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State put $pm$ on power save mode
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndForeach
 \end_layout
 
 \begin_layout Plain Layout
@@ -1644,14 +1748,24 @@ quarter(Q4).
 \end_layout
 
 \begin_layout Standard
-After that, using algorithm MECM calculate for each VM the expected migration
- energy and sort them in ascending order.
+Repeat for all VMs in VM candidate list until no more VM or no more availible
+ host:
+\end_layout
+
+\begin_layout Itemize
+Select 
+\color brown
+VM with the minimum expected migration energy.
+\end_layout
+
+\begin_layout Itemize
+If the selected PM
 \end_layout
 
 \begin_layout Standard
 And finally, we map the selected VMs to suitable physical machines to do
- a VM consolidation, which will allow us to switch off the PMs which are
- not used.
+ a VM consolidation, which will allow us then to switch off the PMs which
+ are not used.
 \end_layout
 
 \begin_layout Section
