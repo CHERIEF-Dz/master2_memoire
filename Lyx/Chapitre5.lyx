@@ -1024,9 +1024,12 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-We have simulated the proposed approach using the WorkflowSim simulator.
- We compared the outcomes of five separate scientific workflows with our
- proposed algorithm.
+Using the WorkflowSim simulator, we have tested our novel workflow scheduling
+ algorithm.
+ We have conducted many experiments and compared the results to evaluate
+ the proposed approach.
+ We have simulated five real-world scientific workflows with different task
+ sizes: small, medium, large and extra-large.
 \end_layout
 
 \end_body

@@ -1,6 +1,6 @@
 # master2_memoire
 
-Totale:		15/26
+Totale:		 5/10
 
 Samedi		 3/5
 	Simulation:
