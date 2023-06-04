@@ -43,10 +43,6 @@
 \ChNameVar{\fontsize{20}{0}\usefont{OT1}{phv}{m}{n}\bfseries}
 \ChNumVar{\fontsize{40}{62}\selectfont}
 \ChTitleVar{\Huge\bfseries}
-
-
-%%%%% pour avoir plusieurs lignes dans les tableaux
-\usepackage{multirow}
 \end_preamble
 \use_default_options true
 \begin_modules
