@@ -173,7 +173,7 @@ In general, workflow application-oriented energy-aware scheduling in Clouds
  involves mapping tasks to resources, arranging tasks’ execution order and
  assigning appropriate task execution time, such as optimizing energy consumptio
 n and satisfying complex constraints.
- It is a NP-complete problem and has been researched extensively in the
+ It is an NP-complete problem and has been researched extensively in the
  literature
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -198,8 +198,7 @@ The structure of this thesis is as follows: In Chapter 1, we provide an
  In Chapter 2, we describe the workflow technology and the scientific workflow.
  In Chapter 3, we formulate the problem of scheduling the scientific workflows
  with energy optimization as our main criterion.
- In Chapter 4, we propose and design our novel approach for solving the
- problem.
+ In Chapter 4, we propose and design our novel approach to solving the problem.
  In Chapter 5, we implement, simulate and evaluate our approach and discuss
  the results and findings.
 \end_layout

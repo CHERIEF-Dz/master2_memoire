@@ -1239,60 +1239,7 @@ Minimum Time Cost Migration (MTCM) Policy
 \end_layout
 
 \begin_layout Itemize
-Minimum Energy Cost Migration (MECM) Policy (we will use this method in
- our approach, see Algorithm.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Algorithm_MECM"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float algorithm
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Algorithm of MECM
-\begin_inset CommandInset label
-LatexCommand label
-name "Algorithm_MECM"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/Algorithm/MECM.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Minimum Energy Cost Migration (MECM) Policy.
 \end_layout
 
 \end_deeper
@@ -1314,17 +1261,6 @@ literal "false"
 \end_inset
 
 .
- We will use VM algorithm placement based on KP(see Algorithm 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "alg:VM-placement-KP"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
 \end_layout
 
 \begin_layout Section
@@ -1408,7 +1344,19 @@ literal "false"
 \begin_layout Itemize
 Boxplot: for both 
 \series bold
-host overload and under-load detection.
+host overload and under-load detection 
+\series default
+where PM utilization is calculated as in Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:PM_utilization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1416,7 +1364,17 @@ MECM for
 \series bold
 VM selection
 \series default
-W.
+ where migration energy is calculated in Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:migration_energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ .
 \end_layout
 
 \begin_layout Itemize
@@ -1725,7 +1683,7 @@ quarter(Q4).
 \end_layout
 
 \begin_layout Standard
-Repeat for all VMs in VM candidate list until no more VM or no more availible
+Repeat for all VMs in VM candidate list until no more VM or no more available
  host:
 \end_layout
 
@@ -1739,8 +1697,8 @@ If the selected VM requirements are satisfied in the selected PM the place
 \end_layout
 
 \begin_layout Itemize
-If the requirenments of VM are not satisfied the pass to the next PM (line
- 16) because this PM will never satisfied the requirenements of others VMs
+If the requirements of VM are not satisfied the pass to the next PM (line
+ 16) because this PM will never satisfied the requirements of others VMs
  because the selected VM is the minimum.
 \end_layout
 
@@ -1755,9 +1713,9 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-This chapter was devoted to presenting our approach, based on the EViMA
- algorithm and VM placement and consolidation, to scheduling workflow tasks
- in a cloud computing environment.
+This chapter was devoted to presenting our approach MOCS-OViC(Multi-Objective
+ Cloud Scheduler with Optimized Virtual Machines Consolidation for Scientific
+ Workflows).
 \end_layout
 
 \begin_layout Standard

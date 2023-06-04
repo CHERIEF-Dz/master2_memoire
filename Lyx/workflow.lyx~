@@ -840,8 +840,6 @@ specific requirements
 \end_layout
 
 \begin_layout Section
-
-\color brown
 Conclusion
 \end_layout
 
@@ -855,9 +853,17 @@ In this chapter, we have presented workflow and scientific workflows, their
 \end_layout
 
 \begin_layout Standard
-However the execution of scientific workflows needs a huge amount of data
- or allocates enormous computing resources and big scalability.
- This is why scheduling workflows is a big challenge.
+Reducing the energy consumption and execution makespan of scientific workflows
+ while keeping the execution cost of workflow tasks within budget is an
+ effective way to address the workflow scheduling problem
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

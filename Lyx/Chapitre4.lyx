@@ -1344,7 +1344,19 @@ literal "false"
 \begin_layout Itemize
 Boxplot: for both 
 \series bold
-host overload and under-load detection.
+host overload and under-load detection 
+\series default
+where PM utilization is calculated as in Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:PM_utilization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1352,7 +1364,17 @@ MECM for
 \series bold
 VM selection
 \series default
-W.
+ where migration energy is calculated in Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:migration_energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ .
 \end_layout
 
 \begin_layout Itemize
@@ -1661,7 +1683,7 @@ quarter(Q4).
 \end_layout
 
 \begin_layout Standard
-Repeat for all VMs in VM candidate list until no more VM or no more availible
+Repeat for all VMs in VM candidate list until no more VM or no more available
  host:
 \end_layout
 
@@ -1675,8 +1697,8 @@ If the selected VM requirements are satisfied in the selected PM the place
 \end_layout
 
 \begin_layout Itemize
-If the requirenments of VM are not satisfied the pass to the next PM (line
- 16) because this PM will never satisfied the requirenements of others VMs
+If the requirements of VM are not satisfied the pass to the next PM (line
+ 16) because this PM will never satisfied the requirements of others VMs
  because the selected VM is the minimum.
 \end_layout
 
@@ -1691,9 +1713,9 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-This chapter was devoted to presenting our approach, based on the EViMA
- algorithm and VM placement and consolidation, to scheduling workflow tasks
- in a cloud computing environment.
+This chapter was devoted to presenting our approach MOCS-OViC(Multi-Objective
+ Cloud Scheduler with Optimized Virtual Machines Consolidation for Scientific
+ Workflows).
 \end_layout
 
 \begin_layout Standard

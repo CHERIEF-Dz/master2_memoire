@@ -93,7 +93,7 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter
-scheduling the scientific workflow on a cloud platform
+Scheduling the scientific workflow on a cloud platform
 \end_layout
 
 \begin_layout Standard
@@ -1487,6 +1487,94 @@ noprefix "false"
  The idle VM is turned off or put into safe mode to save power.
 \end_layout
 
+\begin_layout Subsubsection
+Definition 4: VM migration time
+\end_layout
+
+\begin_layout Standard
+The time cost of migrating of a single VM can be expressed in terms of the
+ statistics of the CPU content size and RAM size of this VM as well as the
+ available bandwidth at the time of migration.
+ It is important to stress that the RAM size is the main parameter that
+ affects the VM migration time (and consequently RAM size affects the energy
+ since energy is propositional with time).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+VM_{vm}^{Migtime}=(C_{vm}+R_{vm})/BW
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where
+\end_layout
+
+\begin_layout Itemize
+VM
+\begin_inset Formula $_{vm}$
+\end_inset
+
+
+\begin_inset Formula $^{Migtime}$
+\end_inset
+
+is the time duration of VM
+\begin_inset Formula $_{i}$
+\end_inset
+
+migration
+\end_layout
+
+\begin_layout Itemize
+C
+\begin_inset Formula $_{vm}$
+\end_inset
+
+is the CPU content size in Bytes.
+\end_layout
+
+\begin_layout Itemize
+R
+\begin_inset Formula $_{vm}$
+\end_inset
+
+ is the RAM content size of this VM in Bytes.
+\end_layout
+
+\begin_layout Itemize
+BW is the available bandwidth, in Bytes/Seconds, between the source and
+ destination PMs.
+\end_layout
+
+\begin_layout Standard
+The total migration time (TotalVM
+\begin_inset Formula $_{vm}$
+\end_inset
+
+
+\begin_inset Formula $^{Migtime}$
+\end_inset
+
+) for n VMs is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+TotaleVM_{vm}^{Migtime}=\sum_{vm=1}^{n}VM_{vm}^{Migtime}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Multi-objective optimization problem formulation
 \begin_inset CommandInset citation
@@ -1552,7 +1640,97 @@ Our goal is to reduce the energy consumption, makespan and execution cost
 \end_layout
 
 \begin_layout Subsubsection
-Definition 4: total energy consumed
+Definition 5: energy consumed by VM migration
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:migration_energy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The consumed energy is estimated as a function of memory content size as
+ energy is proportional to 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+R
+\begin_inset Formula $_{vm}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(VM memory content size).
+ So, the energy consumed during the process of VM migration can be expressed
+ as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+VM_{vm}^{Migenergy}=(C_{vm}+R_{vm})*VM_{vm}^{Migtime}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The value of C
+\begin_inset Formula $_{vm}$
+\end_inset
+
+ (VM CPU context size) is negligible, so it may not be considered.
+\end_layout
+
+\begin_layout Standard
+The total migration energy (TotalVM
+\begin_inset Formula $_{vm}$
+\end_inset
+
+
+\begin_inset Formula $^{Migenergy}$
+\end_inset
+
+) for n VMs is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+TotaleVM_{vm}^{Migenergy}=\sum_{vm=1}^{n}VM_{vm}^{Migenergy}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Definition 6: total energy consumed
 \end_layout
 
 \begin_layout Standard
@@ -1575,7 +1753,7 @@ is the energy consumed for transferring all data and the sum of energy consumed
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-TE_{E}=ED_{E}+\sum_{En}^{Ek}
+TE_{E}=ED_{E}+TotaleVM_{vm}^{Migenergy}+\sum_{En}^{Ek}
 \end{equation}
 
 \end_inset
@@ -1584,7 +1762,73 @@ TE_{E}=ED_{E}+\sum_{En}^{Ek}
 \end_layout
 
 \begin_layout Subsubsection
-Definition 5: cost calculation
+Definition 7: PM utilization
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:PM_utilization"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is worthy to transfer the hosted VMs and switch the PM to off mode.
+ Such case can be result if the job prediction is not precise, or after
+ finishing the execution of some VMs.
+ To detect the under-load/over-load utilization, this study depends on the
+ resources utilization of the node to select a threshold that specifies
+ the under-load/over-load in that PM.
+ Utilization of the host can be measured as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{pm}(t)=(\sum_{i=1}^{No\ of\ Resources\ in\ PM}\frac{actual\ use\ of\ Resource_{i}}{total\ capacity\ of\ Resource_{i}})*100
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where:
+\end_layout
+
+\begin_layout Itemize
+U
+\begin_inset Formula $_{PM}$
+\end_inset
+
+(t): utilization of the PM at time t.
+\end_layout
+
+\begin_layout Itemize
+The ressources are:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Number of cores.
+\end_layout
+
+\begin_layout Itemize
+RAM.
+\end_layout
+
+\begin_layout Itemize
+Storage.
+\end_layout
+
+\begin_layout Itemize
+bandwidth.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Definition 8: cost calculation
 \end_layout
 
 \begin_layout Standard
@@ -1636,8 +1880,8 @@ Related works
 \end_layout
 
 \begin_layout Standard
-In the literature, there are many works that address the problem of Worklow
- Sceduling Problem using different methods.
+In the literature, there are many works that address the problem of Workflow
+ Scheduling Problem using different methods.
 \end_layout
 
 \begin_layout Subsection
@@ -1897,6 +2141,26 @@ One of the advantages of these algorithms is that they allow to find several
 \end_layout
 
 \begin_layout Paragraph
+EAH
+\end_layout
+
+\begin_layout Standard
+The EAH (Exploratory Adaptation Hyper-heuristics) algorithm is a hyper-heuristic
+ optimization method for solving combinatorial optimization problems.
+ The goal of the EAH algorithm is to solve combinatorial optimization problems
+ using a heuristic approach that can adapt its behavior depending on the
+ characteristics of the problem
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal2014"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
 HCFS
 \end_layout
 
@@ -2141,14 +2405,10 @@ literal "false"
 \end_layout
 
 \begin_layout Paragraph
-
-\color brown
 EDLS
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The Exponential Differencing Least Squares (EDLS) algorithm is a linear
  regression estimation algorithm that is used to model data that has exponential
  trends or time-varying growth rates.
@@ -2157,23 +2417,21 @@ The Exponential Differencing Least Squares (EDLS) algorithm is a linear
 \end_layout
 
 \begin_layout Standard
-
-\color brown
 The EDLS algorithm works by minimizing the sum of the squares of the deviations
  between the observed values and the values predicted by the model.
  Unlike classical linear regression methods which assume that errors have
  a normal distribution, the EDLS algorithm assumes that errors have an exponenti
 al distribution.
  This approach makes it possible to take into account exponential trends
- in the data and to better model variations in growth rates.
-\end_layout
+ in the data and to better model variations in growth rates
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hou2009"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\color brown
-article intitulé "A Two-Step Estimation Procedure for Dynamic Panels with
- Non-Stationary Common Factors", publié dans le Journal of Econometrics
- en 2005.
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2317,7 +2575,7 @@ EAD, PEBD
 \end_layout
 
 \begin_layout Standard
-algorithms-Energy-Aware Duplication (EAD) scheduling and Performance-Energy
+Algorithms-Energy-Aware Duplication (EAD) scheduling and Performance-Energy
  Balanced Duplication (PEBD) scheduling.
  Existing duplication-based scheduling algorithms replicate all possible
  tasks to shorten schedule length without reducing energy consumption caused
@@ -2449,7 +2707,7 @@ AVVMC
 the AVVMC VM consolidation scheme that focuses on balanced Performance of
  servers across different computing resources (CPU, memory and network I/O)
  with the goal of minimizing power consumption and resource wastage, adaptation
- and integration of the Ant Colony Optimization (ACO) metaheuristic with
+ and integration of the Ant Colony Optimization (ACO) meta-heuristic with
  balanced usage of computing resources based on vector algebra
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2677,26 +2935,6 @@ on
 We will study this algorithm in more detail in the next chapter.
 \end_layout
 
-\begin_layout Paragraph
-EAH
-\end_layout
-
-\begin_layout Standard
-The EAH (Exploratory Adaptation Hyper-heuristics) algorithm is a hyper-heuristic
- optimization method for solving combinatorial optimization problems.
- The goal of the EAH algorithm is to solve combinatorial optimization problems
- using a heuristic approach that can adapt its behavior depending on the
- characteristics of the problem
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Agrawal2014"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Subsection
 
 \color brown
@@ -2704,26 +2942,19 @@ Comparison between workflow scheduling approaches
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-placement p
-wide false
-sideways true
-status open
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="39" columns="7">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<lyxtabular version="3" rows="37" columns="7">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="top" width="0.9cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.7cm">
+<column alignment="center" valignment="top" width="1.9cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="2.6cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2810,7 +3041,7 @@ Accelerated Search
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, Probability of execution, ExecT
+Probability of execution, EC, ExecT
 \end_layout
 
 \end_inset
@@ -3089,152 +3320,6 @@ Heterogeneous cluster
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color brown
-S-PSM, DPM
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color brown
-EC, ExecT
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color brown
-Heterogeneous cluster
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color brown
-DVFS
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color brown
-ETF
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color brown
-EC, ExecT
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color brown
-Heterogeneous cluster
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color brown
-DVFS
 \end_layout
 
 \end_inset
@@ -3606,7 +3691,7 @@ EADAGS
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT 
+EC, ExecT
 \end_layout
 
 \end_inset
@@ -3671,7 +3756,7 @@ eFLS
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT 
+EC, ExecT
 \end_layout
 
 \end_inset
@@ -3736,7 +3821,7 @@ VHEST, EASA
 \begin_inset Text
 
 \begin_layout Plain Layout
-Performance, ExecT 
+Performance, ExecT
 \end_layout
 
 \end_inset
@@ -3801,7 +3886,7 @@ EDLS
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT 
+EC, ExecT
 \end_layout
 
 \end_inset
@@ -3866,7 +3951,7 @@ LESA
 \begin_inset Text
 
 \begin_layout Plain Layout
-ExecT, EC 
+ExecT, EC
 \end_layout
 
 \end_inset
@@ -3931,7 +4016,7 @@ EED, EEND
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT 
+EC, ExecT
 \end_layout
 
 \end_inset
@@ -3996,7 +4081,7 @@ RSMECC
 \begin_inset Text
 
 \begin_layout Plain Layout
-SartT, FinishT, ExecT, EC 
+SartT, FinishT, ExecT, EC
 \end_layout
 
 \end_inset
@@ -4052,7 +4137,7 @@ ECS, ECS + idle
 \begin_inset Text
 
 \begin_layout Plain Layout
-2009,2011
+2009, 2011
 \end_layout
 
 \end_inset
@@ -4061,7 +4146,7 @@ ECS, ECS + idle
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT 
+EC, ExecT
 \end_layout
 
 \end_inset
@@ -4126,7 +4211,7 @@ ESPA
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT 
+EC, ExecT
 \end_layout
 
 \end_inset
@@ -4191,7 +4276,7 @@ GACSM
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT 
+EC, ExecT
 \end_layout
 
 \end_inset
@@ -4256,7 +4341,7 @@ EAD, PEBD
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT 
+EC, ExecT
 \end_layout
 
 \end_inset
@@ -5232,7 +5317,7 @@ EViMA
 \begin_inset Text
 
 \begin_layout Plain Layout
-EC, ExecT and Cost
+EC, ExecT, Cost
 \end_layout
 
 \end_inset
@@ -5241,7 +5326,7 @@ EC, ExecT and Cost
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cloud
 \end_layout
 
 \end_inset
@@ -5280,28 +5365,6 @@ Not considering instance acquisition and termination delay
 \end_inset
 
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Workflow scheduling algorithms, systems and optimization metrics used for
- them.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:comparaison"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5319,11 +5382,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-
-\color brown
 There is a variety of problem formulations and corresponding algorithm types
  that tackle the problem of workflow energy-aware scheduling for Cloud computing
- envirenment, including machine learning (with reinforcement and supervised
+ environment, including machine learning (with reinforcement and supervised
  learning), dynamic programming, fuzzy logic, integer programming, randomized
  algorithms, evolutionary algorithms, constraint programming, and others.
 \end_layout
@@ -5332,24 +5393,12 @@ There is a variety of problem formulations and corresponding algorithm types
 Most optimization goals involve metrics such as execution time/makespan,
  energy.
  A limited number of works specifically consider costs, performance, reliability
- and folt-tolerance.
+ and fault tolerance.
 \end_layout
 
 \begin_layout Itemize
-Most works use DFVS as a mechanism for controlling the power/energy of compute
- devices, just one combine DVFS and DPM (including turning off machines),
- 
-\color brown
-and a limited number of works use explicit power capping
-\color inherit
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
+Most works use DVFS as a mechanism for controlling the power/energy of compute
+ devices, just one combine DVFS and DPM (including turning off machines).
 \end_layout
 
 \begin_layout Section

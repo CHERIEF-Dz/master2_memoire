@@ -43,6 +43,10 @@
 \ChNameVar{\fontsize{20}{0}\usefont{OT1}{phv}{m}{n}\bfseries}
 \ChNumVar{\fontsize{40}{62}\selectfont}
 \ChTitleVar{\Huge\bfseries}
+
+
+%%%%% pour avoir plusieurs lignes dans les tableaux
+\usepackage{multirow}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -198,7 +202,7 @@ filename "Introduction.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapitre2.lyx"
+filename "cloud.lyx"
 
 \end_inset
 
@@ -208,7 +212,7 @@ filename "Chapitre2.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapitre1.lyx"
+filename "workflow.lyx"
 
 \end_inset
 
