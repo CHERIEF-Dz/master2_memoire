@@ -93,8 +93,6 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter*
-
-\color brown
 General conclusion
 \end_layout
 
@@ -114,22 +112,30 @@ addcontentsline{toc}{chapter}{General conculsion}
 
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Discussion
+\begin_layout Standard
+We propose our novel workflow scheduling algorithm that is aimed at managing
+ cloud resources to achieve this goal and meet the user’s needs and the
+ cloud provider’s QoS.
+ We evaluate our algorithm by running three experiments and comparing the
+ results.
+ We use five real-world scientific workflows with different sizes of tasks:
+ small, medium, large and extra-large in the simulation process.
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Limits
+\begin_layout Standard
+Our algorithm is not considering instance acquisition and termination delay
+ which is essential for simulating realistic scenarios and optimizing the
+ scheduling and scaling of cloud applications.
 \end_layout
 
-\begin_layout Paragraph
-
-\color brown
-Perspectives
+\begin_layout Standard
+Furthermore, we intend to apply this work in a Fog computing environment
+ to reduce energy consumption which can lower the operational costs and
+ environmental impact of fog computing.
+ Also reducing makespan can improve the quality of service and user experience
+ of fog applications.
+ This can enhance the reliability and scalability of fog computing by avoiding
+ network congestion.
 \end_layout
 
 \end_body

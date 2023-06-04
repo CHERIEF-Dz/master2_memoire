@@ -417,7 +417,7 @@ Problem modeling
 
 \begin_layout Standard
 This section consists of workflow model, cloud datacenter model, the VM
- allocation model, and the formulation of the multi-objective optimization
+ allocation model and the formulation of the multi-objective optimization
  problem.
  Table 1 provides a list of the terms and definitions used.
 \end_layout
@@ -2927,7 +2927,7 @@ on
 \end_inset
 
  techniques that identify the status of all VMs.
- A slack time harvesting method is introduce, and finally task selection
+ A slack time harvesting method is introduce and finally task selection
  method that ensures the right task is allocated to the right VM.
 \end_layout
 
@@ -2942,7 +2942,6 @@ Comparison between workflow scheduling approaches
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="37" columns="7">
 <features islongtable="true" longtabularalignment="center">
@@ -2952,7 +2951,7 @@ Comparison between workflow scheduling approaches
 <column alignment="center" valignment="top" width="2.7cm">
 <column alignment="center" valignment="top" width="1.9cm">
 <column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2.6cm">
+<column alignment="center" valignment="top" width="2.5cm">
 <row>
 <cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -4889,7 +4888,7 @@ EC, ExecT
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hybrid Cultural and ACO
+
 \end_layout
 
 \end_inset
@@ -5368,17 +5367,7 @@ Not considering instance acquisition and termination delay
 \end_layout
 
 \begin_layout Standard
-After comparison of all of these approaches (see Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:comparaison"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-), we can conclude:
+After comparison of all of these approaches, we can conclude:
 \end_layout
 
 \begin_layout Itemize
@@ -5386,7 +5375,7 @@ There is a variety of problem formulations and corresponding algorithm types
  that tackle the problem of workflow energy-aware scheduling for Cloud computing
  environment, including machine learning (with reinforcement and supervised
  learning), dynamic programming, fuzzy logic, integer programming, randomized
- algorithms, evolutionary algorithms, constraint programming, and others.
+ algorithms, evolutionary algorithms, constraint programming and others.
 \end_layout
 
 \begin_layout Itemize

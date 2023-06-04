@@ -531,7 +531,7 @@ It includes limited types of failures.
 
 \begin_layout Enumerate
 It does not consider the performance characteristic of file I/O.
- Therefore, developers cannot obtain suitable simulation for data-intensive
+ Therefore, developers cannot obtain suitable simulations for data-intensive
  applications since these applications involve reading or writing huge data
  files.
 \end_layout
@@ -561,8 +561,8 @@ These workflows typically involve complex data of various sizes and complicated
  Information about the task dependencies, the amount of data transmitted
  and the execution time estimates are presented in DAX format.
  DAX files include a single time estimate for each task.
- To simulate the case of different time constraints provided by users, start
- time and a deadline for each workflow are randomly assigned 
+ To simulate the case of different time constraints provided by users, the
+ start time and a deadline for each workflow are randomly assigned 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hard_optimization_mohammadzadeh2021energy"
@@ -1026,7 +1026,7 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-We have simulated the proposed approach using WorkflowSim simulator.
+We have simulated the proposed approach using the WorkflowSim simulator.
  We compared the outcomes of five separate scientific workflows with our
  proposed algorithm.
 \end_layout
