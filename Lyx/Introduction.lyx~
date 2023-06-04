@@ -198,7 +198,9 @@ The structure of this thesis is as follows: In Chapter 1, we provide an
  In Chapter 2, we describe the workflow technology and the scientific workflow.
  In Chapter 3, we formulate the problem of scheduling the scientific workflows
  with energy optimization as our main criterion.
- In Chapter 4, we propose and design our novel approach to solving the problem.
+ In Chapter 4, we propose and design our novel approach to solving the problem:
+ MOCS-OViC(Multi-Objective Cloud Scheduler with Optimized Virtual Machines
+ Consolidation for Scientific Workflows).
  In Chapter 5, we implement, simulate and evaluate our approach and discuss
  the results and findings.
 \end_layout

@@ -207,7 +207,7 @@ On-demand self-service
 Consumers of cloud computing services, such as server time and network storage,
  as needed automatically nearly instant access to resources.
  To support this expectation, clouds must allow self-service access so that
- customers can request, customize, pay and use services without intervention
+ customers can request, customize, pay and use services without the intervention
  of human operators.
 \end_layout
 
@@ -247,7 +247,7 @@ Cloud computing gives the illusion of unlimited computing resources available
  at any time.
  In particular, it is expected that the additional resources can be (a)
  provisioned, possibly automatically, when an application load increases
- and (b) released when load decreases (scale up and down).
+ and (b) released when the load decreases (scale up and down).
 \end_layout
 
 \begin_layout Paragraph
@@ -258,7 +258,7 @@ Measured service
 Services must be priced on a short term basis (e.g., by the hour), allowing
  users to release (and not pay for) resources as soon as they are not needed.
  For these reasons, clouds must implement features to allow efficient trading
- of service such as pricing, accounting and billing.
+ of services such as pricing, accounting and billing.
  
 \end_layout
 

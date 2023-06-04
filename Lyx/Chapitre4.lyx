@@ -155,7 +155,7 @@ Based algorithm EViMA
 \end_layout
 
 \begin_layout Standard
-After comparing all the algorithms in Chapter 3, we have choose the EViMA
+After comparing all the algorithms in Chapter 3, we have chosen the EViMA
  algorithm because it is a promoter in itself.
 \end_layout
 
@@ -202,9 +202,7 @@ Slack Time Harvesting Algorithm (STiHA).
 
 \begin_layout Standard
 The algorithm takes as input a set of workflow tasks represented by wt =
- (wt1, wt2, wt3, .
- .
- .
+ (wt1, wt2, wt3,...
  wtn) and a set of instances (VMs) represented by (VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -242,10 +240,10 @@ Then, a task priority queue is created in which the tasks are arranged in
 \begin_layout Enumerate
 To generate cost-efficient and energy-optimized schedules, a VM assignment
  order is also introduced (Line 5).
- Once both the tasks execution order and VM assignment order is established,
- we employ EViMA to explore through the various workflow tasks to find the
- overall critical tasks (HCTs), (tasks that are approaching their deadline)
- from the ready queue and immediately assign them to a high speed procession
+ Once both the tasks execution order and VM assignment order are established,
+ we employ EViMA to explore the various workflow tasks to find the overall
+ critical tasks (HCTs), (tasks that are approaching their deadline) from
+ the ready queue and immediately assign them to a high-speed procession
  VM (VM
 \begin_inset Formula $_{HEC}$
 \end_inset
@@ -617,7 +615,7 @@ Algorithm 2 starts by checking the criticality of the tasks as in line 1.
  this task is marked as an HCT task (line 4).
  A mapping is then created for all HCT (line 5).
  However, if two or more tasks have the same deadline, another high speed
- VM is deployed to map those tasks (line 7 and 8)
+ VM is deployed to map those tasks (lines 7 and 8)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "konjaang2022energy"
@@ -1283,7 +1281,7 @@ Objectives
 \end_layout
 
 \begin_layout Standard
-Our approach considers the following metrics and constraint:
+Our approach considers the following metrics and constraints:
 \end_layout
 
 \begin_layout Itemize
@@ -1312,7 +1310,7 @@ We suggest partitioning workflow and grouping tasks in the same partition
 \end_layout
 
 \begin_layout Itemize
-We suggest starting the EViMA algorithm first to assign properly tasks to
+We suggest starting the EViMA algorithm first to assign proper tasks to
  virtual machines.
 \end_layout
 
@@ -1374,7 +1372,7 @@ noprefix "false"
 
 \end_inset
 
- .
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1382,10 +1380,10 @@ For
 \series bold
 VM placement
 \series default
- our algorithm is based on the greedy algorithm concept, which sort the
+ our algorithm is based on the greedy algorithm concept which sorts the
  containers in decreasing order based on their capacity before performing
  the packing process.
- Then, it pick one by one PM to pack the VMs on it based on KP.
+ Then, it picks one by one PM to pack the VMs on it based on KP.
 \end_layout
 
 \end_deeper
@@ -1560,21 +1558,14 @@ State Update $VM_{candidateList}$
 
 	
 \backslash
-Else
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-State j= j+1
+EndIf
 \end_layout
 
 \begin_layout Plain Layout
 
 	
 \backslash
-EndIf
+State j= j+1
 \end_layout
 
 \begin_layout Plain Layout
@@ -1684,7 +1675,7 @@ quarter(Q4).
 
 \begin_layout Standard
 Repeat for all VMs in VM candidate list until no more VM or no more available
- host:
+ hosts:
 \end_layout
 
 \begin_layout Itemize
@@ -1692,14 +1683,12 @@ Select VM with the minimum expected migration energy.
 \end_layout
 
 \begin_layout Itemize
-If the selected VM requirements are satisfied in the selected PM the place
+If the selected VM requirements are satisfied in the selected PM then place
  VM in PMj.
 \end_layout
 
 \begin_layout Itemize
-If the requirements of VM are not satisfied the pass to the next PM (line
- 16) because this PM will never satisfied the requirements of others VMs
- because the selected VM is the minimum.
+Pass to the next PM.
 \end_layout
 
 \begin_layout Standard

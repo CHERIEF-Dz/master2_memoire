@@ -157,7 +157,7 @@ The energy consumption of Cloud data centers is an important challenge.
  Energy consumption is increasing day by day due to a non-energy-aware strategy
  in resource management.
  About 0.5% of energy consumption worldwide is related to Cloud data centers,
- while this is envisaged to fourfold in 2020
+ while this is envisaged to be fourfold in 2020
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cloud_computing_simulators"
@@ -199,8 +199,8 @@ The structure of this thesis is as follows: In Chapter 1, we provide an
  In Chapter 3, we formulate the problem of scheduling the scientific workflows
  with energy optimization as our main criterion.
  In Chapter 4, we propose and design our novel approach to solving the problem:
- MOCS-OViC(Multi-Objective Cloud Scheduler with Optimized Virtual Machies
- Consolidaton for Scientific Workflows).
+ MOCS-OViC(Multi-Objective Cloud Scheduler with Optimized Virtual Machines
+ Consolidation for Scientific Workflows).
  In Chapter 5, we implement, simulate and evaluate our approach and discuss
  the results and findings.
 \end_layout

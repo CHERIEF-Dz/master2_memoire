@@ -178,10 +178,10 @@ Task scheduling of scientific workflow is extremely important.
  A bad scheduling policy can lead to a decline in system performance, a
  long time span of request feedback, a decrease in user satisfaction and
  a decrease in system throughput.
- In general, the goal of tasks scheduling of scientific workflow in the
- cloud environment is to optimize the allocation of scientific workflow,
- maximize user satisfaction and maximize the economic benefits of operators
- and minimize operating costs
+ In general, the goal of task scheduling of scientific workflow in the cloud
+ environment is to optimize the allocation of scientific workflow, maximize
+ user satisfaction and maximize the economic benefits of operators and minimize
+ operating costs
 \begin_inset CommandInset citation
 LatexCommand cite
 key "geng2019improved"
@@ -416,10 +416,20 @@ Problem modeling
 \end_layout
 
 \begin_layout Standard
-This section consists of workflow model, cloud datacenter model, the VM
- allocation model and the formulation of the multi-objective optimization
+This section consists of the workflow model, the cloud datacenter model,
+ the VM allocation model and the formulation of the multi-objective optimization
  problem.
- Table 1 provides a list of the terms and definitions used.
+ Table
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Symbols-used-in"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ provides a list of the terms and definitions used.
 \end_layout
 
 \begin_layout Standard
@@ -845,6 +855,13 @@ $
 
 \begin_layout Plain Layout
 Symbols used in the formulas
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Symbols-used-in"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -858,7 +875,7 @@ Symbols used in the formulas
 \end_layout
 
 \begin_layout Subsection
-Workflow modelisation
+Workflow modelization
 \end_layout
 
 \begin_layout Standard
@@ -885,7 +902,7 @@ We consider workflow W as a graph G = (T, D), where T = { T
 \begin_inset Formula $_{1}$
 \end_inset
 
-,…, T
+, …, T
 \begin_inset Formula $_{n}$
 \end_inset
 
@@ -973,12 +990,12 @@ T
 \begin_inset Formula $_{exit}$
 \end_inset
 
- are tasks without any predecessors and a task without any successors,respective
-ly.
+ are tasks without any predecessors and a task without any successors, respectiv
+ely.
 \end_layout
 
 \begin_layout Itemize
-The degree of dependency of workflow task on wti can be calculated using
+The degree of dependency of workflow tasks on wti can be calculated using
  this equation.
 \end_layout
 
@@ -1371,7 +1388,7 @@ Where S(wti) is the size of workflow task
 \begin_inset Formula $_{i}$
 \end_inset
 
-,
+, 
 \end_layout
 
 \begin_layout Itemize
@@ -1492,7 +1509,7 @@ Definition 4: VM migration time
 \end_layout
 
 \begin_layout Standard
-The time cost of migrating of a single VM can be expressed in terms of the
+The time cost of migrating a single VM can be expressed in terms of the
  statistics of the CPU content size and RAM size of this VM as well as the
  available bandwidth at the time of migration.
  It is important to stress that the RAM size is the main parameter that
@@ -1773,12 +1790,12 @@ name "subsec:PM_utilization"
 \end_layout
 
 \begin_layout Standard
-It is worthy to transfer the hosted VMs and switch the PM to off mode.
- Such case can be result if the job prediction is not precise, or after
- finishing the execution of some VMs.
+It is worth transferring the hosted VMs and switching the PM to off mode.
+ Such a case can result if the job prediction is not precise, or after finishing
+ the execution of some VMs.
  To detect the under-load/over-load utilization, this study depends on the
- resources utilization of the node to select a threshold that specifies
- the under-load/over-load in that PM.
+ resource utilization of the node to select a threshold that specifies the
+ under-load/over-load in that PM.
  Utilization of the host can be measured as follows:
 \end_layout
 
@@ -1806,7 +1823,7 @@ U
 \end_layout
 
 \begin_layout Itemize
-The ressources are:
+The resources are:
 \end_layout
 
 \begin_deeper
@@ -1848,7 +1865,7 @@ The metric for the execution cost is calculated using the following equation:
 \end_layout
 
 \begin_layout Standard
-where,
+where, 
 \end_layout
 
 \begin_layout Itemize
@@ -2132,14 +2149,6 @@ These algorithms all use an evolutionary approach to optimize multiple goals
  The process is repeated until solutions of sufficient quality are found.
 \end_layout
 
-\begin_layout Standard
-One of the advantages of these algorithms is that they allow to find several
- optimal solutions which are equivalent in terms of quality for different
- criteria.
- These solutions can then be used to explore the search space and help make
- informed decisions.
-\end_layout
-
 \begin_layout Paragraph
 EAH
 \end_layout
@@ -2192,7 +2201,7 @@ new energy-aware scheduling algorithm called Energy Aware Scheduling by
  task copies in the schedules generated by duplication-based algorithms,
  which is easier to operate than DVFS and produces no extra time and energy
  consumption.
- This algorithm can reduce large amount of energy consumption while having
+ This algorithm can reduce a large amount of energy consumption while having
  the same makespan compared with duplication-based algorithms without energy
  awareness
 \begin_inset CommandInset citation
@@ -2265,8 +2274,8 @@ stic optimization algorithm inspired by the hunting behavior of antlions.
 The Improved EASLA algorithm is an enhanced version of EASLA, which incorporates
  some modifications to improve its performance.
  The key modifications include the incorporation of a mutation operator
- to explore the search space and the use of a dynamic population size to
- adapt to the search problem.
+ to explore the search space and the use of dynamic population size to adapt
+ to the search problem.
 \end_layout
 
 \begin_layout Standard
@@ -2354,7 +2363,7 @@ eFLS
 
 \begin_layout Standard
 The eFLS (enhanced fuzzy logic system) algorithm is a modeling method based
- on fuzzy logic for decision making in uncertain environments.
+ on fuzzy logic for decision-making in uncertain environments.
  The goal of the eFLS algorithm is to create a robust decision system that
  can adapt to changing situations using fuzzy decision rules
 \begin_inset CommandInset citation
@@ -2580,7 +2589,6 @@ Algorithms-Energy-Aware Duplication (EAD) scheduling and Performance-Energy
  Existing duplication-based scheduling algorithms replicate all possible
  tasks to shorten schedule length without reducing energy consumption caused
  by duplication.
- .
  Our algorithms, in contrast, strive to balance schedule lengths and energy
  savings by judiciously replicating predecessors of a task if the duplication
  can aid in performance without degrading energy efficiency.
@@ -2704,11 +2712,11 @@ AVVMC
 \end_layout
 
 \begin_layout Standard
-the AVVMC VM consolidation scheme that focuses on balanced Performance of
- servers across different computing resources (CPU, memory and network I/O)
- with the goal of minimizing power consumption and resource wastage, adaptation
- and integration of the Ant Colony Optimization (ACO) meta-heuristic with
- balanced usage of computing resources based on vector algebra
+the AVVMC VM consolidation scheme that focuses on the balanced Performance
+ of servers across different computing resources (CPU, memory and network
+ I/O) with the goal of minimizing power consumption and resource wastage,
+ adaptation and integration of the Ant Colony Optimization (ACO) meta-heuristic
+ with balanced usage of computing resources based on vector algebra
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AVVMC"
@@ -2774,7 +2782,7 @@ MPSO-FGA
 The MPSO-FGA (Multi-Parent Particle Swarm Optimization with Fitness Gradient
  Adaptation) algorithm is a hybrid optimization method combining Particle
  Swarm Optimization (PSO) and Evolutionary Optimization (EA).
- he MPSO-FGA algorithm begins by initializing a population of candidate
+ The MPSO-FGA algorithm begins by initializing a population of candidate
  solutions, which are sets of values representing the parameters to be optimized.
  These candidate solutions are often randomly generated.
  For each candidate solution in the population, the algorithm evaluates
@@ -2910,25 +2918,9 @@ literal "false"
 
 \begin_layout Standard
 The authors proposed resource management and VM allocation model and incorporate
-d Idle 
-\begin_inset Quotes eld
-\end_inset
-
-off
-\begin_inset Quotes erd
-\end_inset
-
- Busy 
-\begin_inset Quotes eld
-\end_inset
-
-on
-\begin_inset Quotes erd
-\end_inset
-
- techniques that identify the status of all VMs.
- A slack time harvesting method is introduce and finally task selection
- method that ensures the right task is allocated to the right VM.
+d Idle “off” Busy “on” techniques that identify the status of all VMs.
+ A slack time harvesting method is introduced and task selection method
+ ensures the right task is allocated to the right VM.
 \end_layout
 
 \begin_layout Standard
@@ -3262,7 +3254,9 @@ DVFS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Find several optimal solutions which are equivalent in terms of quality
+ for different criteria.
+ Explore the search space and help make informed decisions.
 \end_layout
 
 \end_inset
@@ -4423,7 +4417,7 @@ Cloud
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+DVFS
 \end_layout
 
 \end_inset
@@ -4488,7 +4482,7 @@ Cloud
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+DVFS
 \end_layout
 
 \end_inset
@@ -4618,7 +4612,7 @@ Cloud
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+DVFS
 \end_layout
 
 \end_inset
@@ -4739,7 +4733,7 @@ EC, Performance
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cloud
 \end_layout
 
 \end_inset
@@ -4805,7 +4799,7 @@ EC, ExecT
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Homogeneous cluster
 \end_layout
 
 \end_inset
@@ -4870,7 +4864,7 @@ EC, ExecT
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cloud
 \end_layout
 
 \end_inset
@@ -4935,7 +4929,7 @@ EC, ExecT
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Homogeneous cluster
 \end_layout
 
 \end_inset
@@ -5000,7 +4994,7 @@ Makespan, EC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Homogeneous cluster
 \end_layout
 
 \end_inset
@@ -5065,7 +5059,7 @@ Reliability, EC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cloud
 \end_layout
 
 \end_inset
@@ -5130,7 +5124,7 @@ EC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cloud
 \end_layout
 
 \end_inset
@@ -5195,7 +5189,7 @@ EC, ExecT
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cloud
 \end_layout
 
 \end_inset
@@ -5204,7 +5198,7 @@ EC, ExecT
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+DVFS
 \end_layout
 
 \end_inset
@@ -5260,7 +5254,7 @@ EC, completing time, Performance
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cloud
 \end_layout
 
 \end_inset
@@ -5269,7 +5263,7 @@ EC, completing time, Performance
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+DVFS
 \end_layout
 
 \end_inset
@@ -5380,14 +5374,14 @@ There is a variety of problem formulations and corresponding algorithm types
 
 \begin_layout Itemize
 Most optimization goals involve metrics such as execution time/makespan,
- energy.
+ and energy.
  A limited number of works specifically consider costs, performance, reliability
  and fault tolerance.
 \end_layout
 
 \begin_layout Itemize
-Most works use DVFS as a mechanism for controlling the power/energy of compute
- devices, just one combine DVFS and DPM (including turning off machines).
+Most works use DVFS as a mechanism for controlling the power/energy of computing
+ devices, just one combines DVFS and DPM (including turning off machines).
 \end_layout
 
 \begin_layout Section
