@@ -1,0 +1,1173 @@
+#LyX 1.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 221
+\textclass beamer
+\begin_preamble
+\usepackage{xcolor}
+\usepackage{multicol}
+%\usetheme{Antibes}
+\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%usetheme{Frankfurt}
+%\usetheme{Darmstadt}
+%\usetheme{Copenhagen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usepackage{pstcol,pst-node,pst-tree}
+% or ...
+\hypersetup{
+pdfpagemode=FullScreen
+}
+\usecolortheme{albatross}
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\usepackage{multimedia}
+\usefonttheme[onlylarge]{structuresmallcapsserif}
+\end_preamble
+\language english
+\inputencoding auto
+\fontscheme palatino
+\graphics default
+\paperfontsize 10
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 1
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Title
+
+Part C - Adolescent Reproductive Health
+\layout Subtitle
+
+Reducing Infant and Maternal Mortality
+\layout Author
+
+AEIPL
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+setbeamercolor{background canvas}{bg=}
+\layout Standard
+
+\backslash 
+setbeamertemplate{background}{
+\backslash 
+includegraphics[width=1.0
+\backslash 
+paperwidth,height=1.0
+\backslash 
+paperheight]{bkgrnd.jpg}}
+\layout Standard
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+AtBeginSection[]{
+\layout Standard
+  
+\backslash 
+frame<beamer>{ 
+\layout Standard
+    
+\backslash 
+frametitle{Outline}   
+\layout Standard
+    
+\backslash 
+tableofcontents[currentsection,currentsubsection] 
+\layout Standard
+  }
+\layout Standard
+}
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+beamerdefaultoverlayspecification{<+->}
+\end_inset 
+
+
+\layout BeginFrame
+
+Outline
+\layout Standard
+
+
+\begin_inset LatexCommand \tableofcontents{}
+
+\end_inset 
+
+
+\layout Section
+
+Project Objectives
+\layout BeginFrame
+
+Specific Objectives
+\layout FrameSubtitle
+
+Creating Awareness
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0pt"
+width "30col%"
+collapsed false
+
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@1>
+\layout Standard
+
+\end_inset 
+
+Child Awareness
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@2>
+\layout Standard
+
+\end_inset 
+
+Community Awareness
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@3>
+\layout Standard
+
+\end_inset 
+
+Resource Awareness
+\end_inset 
+
+
+\hfill 
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0pt"
+width "50col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{overprint}
+\layout Standard
+
+\backslash 
+begin{example}{What it means}
+\layout Standard
+
+\backslash 
+only<1>{
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item Targeting both sexes
+\layout Standard
+
+\backslash 
+item Children between 12 and 18
+\layout Standard
+
+\backslash 
+item Focus: Reproductive Health
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<2>{
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item Publicize risk factors
+\layout Standard
+
+\backslash 
+item Publicize reduction measures
+\layout Standard
+
+\backslash 
+item Focus: Reduce IMR and MMR
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<3>{
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item Explain role of public services 
+\layout Standard
+
+\backslash 
+item Explain powerful composite effect
+\layout Standard
+
+\backslash 
+item Focus: Access
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+end{example}
+\layout Standard
+
+\backslash 
+end{overprint}
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Section
+
+Challenges and Strategies
+\layout BeginFrame
+
+Meeting Challenges with Strategies
+\layout Standard
+
+
+\begin_inset Minipage
+position 0
+inner_position 0
+height "0pt"
+width "45col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+begin{block}<1->{Challenge}
+\layout Standard
+Role of Traditional Practitioners (TPs) in low literacy environments
+\layout Standard
+
+\backslash 
+end{block}
+\end_inset 
+
+
+\end_inset 
+
+
+\hfill 
+
+\begin_inset Minipage
+position 0
+inner_position 0
+height "0pt"
+width "45col%"
+collapsed true
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{block}<1->{Strategy}
+\layout Standard
+1. Internship at MHU for TPs
+\layout Standard
+2. Increasing functional literacy
+\layout Standard
+
+\backslash 
+end{block}
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Minipage
+position 2
+inner_position 0
+height "0pt"
+width "45col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+begin{block}<2->{Challenge}
+\layout Standard
+Creating behavioural change
+\layout Standard
+
+\backslash 
+end{block}
+\end_inset 
+
+
+\end_inset 
+
+
+\hfill 
+
+\begin_inset Minipage
+position 2
+inner_position 0
+height "0pt"
+width "45col%"
+collapsed true
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{block}<2->{Strategy}
+\layout Standard
+1. Work with broad spectrum of activists
+\layout Standard
+2. Work with Core Committee of stakeholders
+\layout Standard
+
+\backslash 
+end{block}
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Section
+
+Implementing Strategy
+\layout BeginFrame
+
+Strategy in Practice
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0pt"
+width "30col%"
+collapsed false
+
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@1>
+\layout Standard
+
+\end_inset 
+
+Validate
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@2>
+\layout Standard
+
+\end_inset 
+
+Workshop
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@3>
+\layout Standard
+
+\end_inset 
+
+Field Test
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@4>
+\layout Standard
+
+\end_inset 
+
+Analyze
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@5>
+\layout Standard
+
+\end_inset 
+
+Disseminate
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@6>
+\layout Standard
+
+\end_inset 
+
+Rollout
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@7>
+\layout Standard
+
+\end_inset 
+
+Review
+\layout Itemize
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+<alert@8>
+\layout Standard
+
+\end_inset 
+
+Motivate
+\end_inset 
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0pt"
+width "65col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{overprint}
+\layout Standard
+
+\backslash 
+begin{alertblock}{How it's done}
+\layout Standard
+
+\backslash 
+only<1>{%Validate
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item Core Committee feedback on Design Report
+\layout Standard
+
+\backslash 
+item Identify volunteers for workshop
+\layout Standard
+
+\backslash 
+item Focus: Fine tune Design Report
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<2>{%Workshop
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item 3 wk residential workshop
+\layout Standard
+
+\backslash 
+item Conduct Needs Analysis
+\layout Standard
+
+\backslash 
+item Focus: 2 animated films on Rep. Health
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<3>{%Field Test
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item After RIMMP developed
+\layout Standard
+
+\backslash 
+item Field Test materials + methods
+\layout Standard
+
+\backslash 
+item Focus: Test Materials + Train Trainers
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<4>{%Analyze
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item Analyze and update RIMMP
+\layout Standard
+
+\backslash 
+item Integrate performance measurement
+\layout Standard
+
+\backslash 
+item Focus: Make RIMMP Comprehensive Pkg.
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<5>{%Disseminate
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item RIMMP on MHU's
+\layout Standard
+
+\backslash 
+item Intro+Review on MHU InfoKiosk
+\layout Standard
+
+\backslash 
+item Focus: Introduce RIMMP
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<6>{%Rollout
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item Publicity for program
+\layout Standard
+
+\backslash 
+item Publicity Materials for trainers in field
+\layout Standard
+
+\backslash 
+item Focus: Deploy + start measurement
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<7>{%Review
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item Review feedback and fine tune RIMMP
+\layout Standard
+
+\backslash 
+item Review with participating NGOs
+\layout Standard
+
+\backslash 
+item Focus: Report + optimize
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+only<8>{%Motivate
+\layout Standard
+
+\backslash 
+begin{itemize}
+\layout Standard
+
+\backslash 
+item Award for best delivery
+\layout Standard
+
+\backslash 
+item Annual Award for IMR/MMR reduction
+\layout Standard
+
+\backslash 
+item Focus: Sustain+motivate
+\layout Standard
+
+\backslash 
+end{itemize}}
+\layout Standard
+
+\backslash 
+end{alertblock}
+\layout Standard
+
+\backslash 
+end{overprint}
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Section
+
+Performance
+\layout BeginFrame
+
+Measuring and Supporting Performance
+\layout Standard
+
+
+\begin_inset Note
+collapsed true
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+ 
+\backslash 
+definecolor{pink}{rgb}{1,0.75,0.8}
+\layout Standard
+
+\backslash 
+renewcommand
+\backslash 
+psedge{
+\backslash 
+nccurve}
+\layout Standard
+
+\backslash 
+renewcommand{
+\backslash 
+Female}[2][]{{
+\backslash 
+psset{linecolor=pink}
+\backslash 
+TR[#1]{
+\backslash 
+emph{#2}}}}
+\layout Standard
+
+\backslash 
+newcommand{
+\backslash 
+Male}[2][]{{
+\backslash 
+psset{linecolor=blue}
+\backslash 
+TR[#1]{#2}}}
+\layout Standard
+
+\backslash 
+psset{nodesep=2pt,AngleA=90,AngleB=-90}
+\layout Standard
+
+\backslash 
+pstree[treemode=U]{
+\backslash 
+Female{{Matilde}}}{
+\layout Standard
+
+\backslash 
+pstree{
+\backslash 
+Male{Sebastian}}
+\layout Standard
+
+\backslash 
+pstree{
+\backslash 
+Female{Leonor}}
+\layout Standard
+}
+\layout Standard
+
+\layout Standard
+
+\layout Standard
+
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Note
+collapsed true
+
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+pstree[nodesep=2pt,levelsep=20pt]{
+\backslash 
+TR{grandfather}}
+\layout Standard
+{
+\backslash 
+pstree{
+\backslash 
+TR{uncle}}{
+\backslash 
+TR{cousin}}
+\layout Standard
+
+\backslash 
+pstree{
+\backslash 
+TR{father}}
+\layout Standard
+{
+\backslash 
+pstree{
+\backslash 
+TR{brother}}{
+\backslash 
+TR{nephew}}
+\layout Standard
+
+\backslash 
+pstree{
+\backslash 
+TR{me}}
+\layout Standard
+{
+\backslash 
+pstree{
+\backslash 
+TR{son}}{
+\backslash 
+TR{grandson}}
+\layout Standard
+}
+\layout Standard
+}
+\layout Standard
+}
+\layout Standard
+
+\layout Standard
+
+\layout Standard
+
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Minipage
+position 0
+inner_position 0
+height "0pt"
+width "30col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{block}<1->{Stating}
+\layout Standard
+Defined Protocols
+\layout Standard
+
+\backslash 
+end{block}
+\end_inset 
+
+
+\end_inset 
+
+
+\hfill 
+
+\begin_inset Minipage
+position 0
+inner_position 0
+height "0pt"
+width "65col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{alertblock}<1->{The Provision}
+\layout Standard
+1. Documented statement - Level/Description
+\layout Standard
+2. Partnership - Developing/Revising
+\layout Standard
+3. Focus - Supporting Performance
+\layout Standard
+
+\layout Standard
+
+\backslash 
+end{alertblock}
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0pt"
+width "30col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{block}<2->{Monitoring}
+\layout Standard
+Automating Data Collection
+\layout Standard
+
+\backslash 
+end{block}
+\end_inset 
+
+
+\end_inset 
+
+
+\hfill 
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0pt"
+width "65col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{alertblock}<2->{Mechanisms}
+\layout Standard
+1. Wireless remote for multi-choice response
+\layout Standard
+2. Instant feedback of outcome
+\layout Standard
+3. Responses archived for analysis
+\layout Standard
+
+\backslash 
+end{alertblock}
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Minipage
+position 2
+inner_position 0
+height "0pt"
+width "30col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{block}<3->{Reviewing}
+\layout Standard
+Feedback - short, medium 
+\backslash 
+& Long term
+\layout Standard
+
+\backslash 
+end{block}
+\end_inset 
+
+
+\end_inset 
+
+
+\hfill 
+
+\begin_inset Minipage
+position 2
+inner_position 0
+height "0pt"
+width "65col%"
+collapsed false
+
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+begin{alertblock}<3->{Outcomes}
+\layout Standard
+1. Short - individual behaviour modulation
+\layout Standard
+2. Medium - refining materials and hardware
+\layout Standard
+3. Long - refining strategy and delivery methods
+\layout Standard
+
+\backslash 
+end{alertblock}
+\end_inset 
+
+
+\end_inset 
+
+
+\layout EndFrame
+
+\the_end

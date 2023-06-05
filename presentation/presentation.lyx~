@@ -1,0 +1,999 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Warsaw}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style swiss
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ce fichier est un exemple d'exposé:
+\end_layout
+
+\begin_layout Itemize
+pour des conférences, 
+\end_layout
+
+\begin_layout Itemize
+d'une durée approximative de 20 minutes, 
+\end_layout
+
+\begin_layout Itemize
+avec un style ornemental.
+\end_layout
+
+\begin_layout Plain Layout
+Pour afficher les explications, ouvrir les notes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Ordonnancement des workflows scientifiques 
+\end_layout
+
+\begin_layout Subtitle
+sur le cloud avec optimisation de l'énergie
+\end_layout
+
+\begin_layout Author
+C.Houcine Abdelkader 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ T.Abdelghani Chabane
+\end_layout
+
+\begin_layout Institute
+Département  d'Informatique
+\begin_inset Newline newline
+\end_inset
+
+Université des sciences et de la technologie d’Oran - Mohamed Boudiaf
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+includegraphics[height=0.5cm]{institution-logo-filename}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+À supprimer si vous ne voulez pas que la table des matières apparaisse au
+ début de chaque sous-section :
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Lignes directrices}   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Vous pouvez, si vous le souhaitez ajouter l'option [pausesections]
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Si vous souhaitez recouvrir vos transparents un à un, utilisez la commande
+ suivante (pour plus d'info, voir la page 74 du manuel d'utilisation de
+ Beamer (version 3.06) par Till Tantau) :
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sommaire
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Structurer l'exposé est une tâche difficile et la structure suivante pourrait
+ ne pas convenir.
+ Voici quelques règles à appliquer pour cet exemple ci :
+\end_layout
+
+\begin_layout Itemize
+avoir exactement deux ou trois sections (autre que le sommaire); 
+\end_layout
+
+\begin_layout Itemize
+tout au plus trois sous-sections par section; 
+\end_layout
+
+\begin_layout Itemize
+parler approximativement entre 30 secondes et 2 minutes par transparent.
+ Il  devrait donc y avoir entre 15 et 30 transparents, pour tout dire;
+\end_layout
+
+\begin_layout Itemize
+le public d'une conférence connaîtra probablement peu de chose sur le sujet
+  que vous serez en train de traiter.
+ Donc, *simplifier*
+\begin_inset space ~
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Itemize
+dans un exposé de 20 minutes, garder à l'esprit les idées principales est
+ largement  suffisant pour votre assistance.
+ Laissez tomber certains détails, même s'ils vous  semblent nécessaires;
+ 
+\end_layout
+
+\begin_layout Itemize
+si un détail qui est vital pour une preuve/mise en oeuvre est omis,  le
+ dire simplement une fois.
+ Ce sera suffisant pour l'auditoire.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Le Cloud Computing
+\end_layout
+
+\begin_layout Subsection
+Définition
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Définition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Définition du Cloud Computing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+
+\shape italic
+\lang english
+Cloud computing is a model for enabling ubiquitous, convenient, on-demand
+ network access to a shared pool of configurable computing resources (e.g.,
+ networks, servers, storage, applications and services) that can be rapidly
+ provisioned and released with minimal management effort or service provider
+ interaction
+\shape default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NIST_definition"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modèles de déploiement
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modèles de déploiement 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Il existe 5 modèles de déploiement de Cloud Computing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NIST_definition"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vmware"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+Cloud privé.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+Cloud communautaire.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+Cloud public.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+4-
+\end_layout
+
+\end_inset
+
+Cloud hybride.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+5-
+\end_layout
+
+\end_inset
+
+Multi-Cloud Computing.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modèles de services
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modèles de services 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/drancy/Downloads/S4/PFE/8.Memoire/memoire/memoire/images/cloud_services_model_graph-1024x465.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Les modèles des services Cloud 
+\begin_inset CommandInset href
+LatexCommand href
+name "quisted.net"
+target "https://www.quisted.net/index.php/2018/08/30/dc-cloud-computing"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Nos résultats/contribution
+\end_layout
+
+\begin_layout Subsection
+Travaux antérieurs
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Faites des titres qui informent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bloc sans titre
+\end_layout
+
+\begin_layout Itemize
+Affiché sur tous les transparents
+\end_layout
+
+\end_deeper
+\begin_layout ExampleBlock
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Some Example Block Title
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $e^{i\pi}=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $e^{i\pi/2}=i$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Faites des titres qui informent 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+Sur le premier transparent 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+Sur le second transparent
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Principaux résultats
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Faites des titres qui informent 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+Sur le premier transparent
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Corollary
+Sur le second transparent
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Faites des titres qui informent 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+Dans la colonne de gauche
+\end_layout
+
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+Dans la colonne de droite
+\begin_inset Newline newline
+\end_inset
+
+Nouvelle ligne
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Idées de base pour la preuve/l'implantation
+\end_layout
+
+\begin_layout Section*
+Conclusion
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\color cyan
+Le 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\color cyan
+premier message principal
+\end_layout
+
+\end_inset
+
+ de l'exposé en une ligne ou    deux.
+\end_layout
+
+\begin_layout Itemize
+
+\color cyan
+Le 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\color cyan
+deuxième message principal
+\end_layout
+
+\end_inset
+
+ de l'exposé en une ligne ou deux.
+\end_layout
+
+\begin_layout Itemize
+
+\color cyan
+Peut-être un 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\color cyan
+troisième message
+\end_layout
+
+\end_inset
+
+, mais pas plus.
+\end_layout
+
+\begin_layout Standard
+
+\color cyan
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+  Les perspectives sont toujours facultatives.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color cyan
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\color cyan
+Perspectives
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\color cyan
+Problème non résolu
+\end_layout
+
+\begin_layout Itemize
+
+\color cyan
+Autre problème non résolu
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Références
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "C:/Users/drancy/Downloads/S4/PFE/8.Memoire/memoire/memoire/bibliographie"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\end_body
+\end_document

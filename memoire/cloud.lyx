@@ -258,7 +258,7 @@ Measured service
 Services must be priced on a short term basis (e.g., by the hour), allowing
  users to release (and not pay for) resources as soon as they are not needed.
  For these reasons, clouds must implement features to allow efficient trading
- of service such as pricing, accounting and billing.
+ of services such as pricing, accounting and billing.
  
 \end_layout
 
@@ -304,6 +304,107 @@ Customizable: resources rented from the cloud must be highly customizable.
 \begin_layout Enumerate
 Device and location independence which means no maintenance is required.
  
+\end_layout
+
+\begin_layout Section
+Deployment Models
+\end_layout
+
+\begin_layout Standard
+There are 5 deployment models of Cloud Computing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NIST_definition"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vmware"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Subsection
+Private cloud
+\end_layout
+
+\begin_layout Standard
+The cloud infrastructure is provisioned for exclusive use by a single organizati
+on comprising multiple consumers (e.g., business units).
+ It may be owned, managed and operated by the organization, a third party,
+ or some combination of them and it may exist on or off premises.
+\end_layout
+
+\begin_layout Subsection
+Community cloud
+\end_layout
+
+\begin_layout Standard
+The cloud infrastructure is provisioned for exclusive use by a specific
+ community of consumers from organizations that have shared concerns (e.g.,
+ mission, security requirements, policy and compliance considerations).
+ It may be owned, managed and operated by one or more of the organizations
+ in the community, a third party, or some combination of them and it may
+ exist on or off premises.
+\end_layout
+
+\begin_layout Subsection
+Public cloud
+\end_layout
+
+\begin_layout Standard
+The cloud infrastructure is provisioned for open use by the general public.
+ It may be owned, managed and operated by a business, academic, or government
+ organization, or some combination of them.
+ It exists on the premises of the cloud provider.
+\end_layout
+
+\begin_layout Subsection
+Hybrid cloud
+\end_layout
+
+\begin_layout Standard
+The cloud infrastructure is a composition of two or more distinct cloud
+ infrastructures (private, community, or public) that remain unique entities,
+ but are bound together by standardized or proprietary technology that enables
+ data and application portability (e.g., cloud bursting for load balancing
+ between clouds).
+ 
+\end_layout
+
+\begin_layout Subsection
+Multi-Cloud Computing
+\end_layout
+
+\begin_layout Standard
+Multi-Cloud = Any Combination of Native Public Clouds and Private Clouds
+\end_layout
+
+\begin_layout Standard
+Some companies can’t use a single public cloud.
+ Their developers may like Google Cloud, while IT operates in Azure both
+ on-premise and in the cloud.
+ Meanwhile, a startup they just acquired runs their killer app in Amazon
+ Web Services (AWS).
+\end_layout
+
+\begin_layout Standard
+This is the multi-cloud model.
+ It’s the ultimate flexibility to choose the cloud that best fits the applicatio
+n or business need.
+ It’s no wonder organizations overwhelming go the multi-cloud route, often
+ with the inclusion of a hybrid cloud.
+\end_layout
+
+\begin_layout Standard
+The main advantage of this model compared to the public model is avoiding
+ vendor lock-in which will be defined later.
 \end_layout
 
 \begin_layout Section
@@ -411,107 +512,6 @@ literal "false"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Deployment Models
-\end_layout
-
-\begin_layout Standard
-There are 5 deployment models of Cloud Computing
-\begin_inset CommandInset citation
-LatexCommand cite
-key "NIST_definition"
-literal "false"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "vmware"
-literal "false"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Subsection
-Private cloud
-\end_layout
-
-\begin_layout Standard
-The cloud infrastructure is provisioned for exclusive use by a single organizati
-on comprising multiple consumers (e.g., business units).
- It may be owned, managed and operated by the organization, a third party,
- or some combination of them and it may exist on or off premises.
-\end_layout
-
-\begin_layout Subsection
-Community cloud
-\end_layout
-
-\begin_layout Standard
-The cloud infrastructure is provisioned for exclusive use by a specific
- community of consumers from organizations that have shared concerns (e.g.,
- mission, security requirements, policy and compliance considerations).
- It may be owned, managed and operated by one or more of the organizations
- in the community, a third party, or some combination of them and it may
- exist on or off premises.
-\end_layout
-
-\begin_layout Subsection
-Public cloud
-\end_layout
-
-\begin_layout Standard
-The cloud infrastructure is provisioned for open use by the general public.
- It may be owned, managed and operated by a business, academic, or government
- organization, or some combination of them.
- It exists on the premises of the cloud provider.
-\end_layout
-
-\begin_layout Subsection
-Hybrid cloud
-\end_layout
-
-\begin_layout Standard
-The cloud infrastructure is a composition of two or more distinct cloud
- infrastructures (private, community, or public) that remain unique entities,
- but are bound together by standardized or proprietary technology that enables
- data and application portability (e.g., cloud bursting for load balancing
- between clouds).
- 
-\end_layout
-
-\begin_layout Subsection
-Multi-Cloud Computing
-\end_layout
-
-\begin_layout Standard
-Multi-Cloud = Any Combination of Native Public Clouds and Private Clouds
-\end_layout
-
-\begin_layout Standard
-Some companies can’t use a single public cloud.
- Their developers may like Google Cloud, while IT operates in Azure both
- on-premise and in the cloud.
- Meanwhile, a startup they just acquired runs their killer app in Amazon
- Web Services (AWS).
-\end_layout
-
-\begin_layout Standard
-This is the multi-cloud model.
- It’s the ultimate flexibility to choose the cloud that best fits the applicatio
-n or business need.
- It’s no wonder organizations overwhelming go the multi-cloud route, often
- with the inclusion of a hybrid cloud.
-\end_layout
-
-\begin_layout Standard
-The main advantage of this model compared to the public model is avoiding
- vendor lock-in which will be defined later.
 \end_layout
 
 \begin_layout Section

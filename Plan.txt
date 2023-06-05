@@ -1,4 +1,4 @@
-Totale:		16/26
+Totale:		19/26
 
 Vendredi	10/10
 	- Chapitre 3:
@@ -28,7 +28,7 @@ Samedi		 4/8
 	- Choosing another algorithm to compare with.
 	- Compléter le chapitre5 de la simulation.	-	-	-	-	-	-	-	OK
 
-Dimanche	 4/8
+Dimanche	 5/8
 	- Chapitre3 Fixer l'affichage du tableau comparatif	-	-	-	-	-	-	OK
 	- Vérifier le plagiat.	-	-	-	-	-	-	-	-	-	-	OK
 	- Faire la conculsion générale.	-	-	-	-	-	-	-	-	-	OK

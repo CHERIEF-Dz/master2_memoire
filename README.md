@@ -1,8 +1,8 @@
 # master2_memoire
 
-Totale:		 5/10
+Totale:		 0/7
 
-Samedi		 3/5
+Samedi		 0/4
 	Simulation:
 		- Métrique
 			. Nombre migrations			x1
@@ -11,9 +11,7 @@ Samedi		 3/5
 			. Put VM on save mood.			x2
 	- Choosing another algorithm to compare with.
 
-Dimanche	 2/5
-	- Envoyer la 1ère version le dimanche.
-
+Dimanche	 0/3
 	- Reading all algoirthms
 	Présentation:
 		- Faire un plan de présentation.(beamer)
