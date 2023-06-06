@@ -464,8 +464,7 @@ name "fig:Set-URL-to"
 \series bold
 Run an Example:
 \series default
- Run an example i.
- e.
+ Run an example i.e.
  org.
  workflowsim.
  examples.
@@ -576,7 +575,11 @@ It supports only simple workflow techniques and so developers cannot use
 \end_layout
 
 \begin_layout Section
-Workflows 
+Simulation parameters
+\end_layout
+
+\begin_layout Subsection
+Workflow configuration
 \end_layout
 
 \begin_layout Standard
@@ -668,8 +671,8 @@ literal "false"
 
 \end_layout
 
-\begin_layout Section
-Simulation parameter
+\begin_layout Subsection
+Cloud parameters
 \end_layout
 
 \begin_layout Standard
@@ -1062,7 +1065,7 @@ name "tab:VM-types-and"
 \end_layout
 
 \begin_layout Section
-Experimentations
+Experimentation
 \end_layout
 
 \begin_layout Standard

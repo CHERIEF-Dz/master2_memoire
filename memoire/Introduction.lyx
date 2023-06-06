@@ -95,7 +95,7 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter*
-General introduction
+General Introduction
 \end_layout
 
 \begin_layout Standard
@@ -106,7 +106,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{chapter}{General introduction}
+addcontentsline{toc}{chapter}{General Introduction}
 \end_layout
 
 \end_inset
@@ -115,6 +115,8 @@ addcontentsline{toc}{chapter}{General introduction}
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Cloud computing is a distributed heterogeneous computing model providing
  many services through the Internet without the violation of Service level
  agreement (SLA).
@@ -135,6 +137,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\size small
 In addition, the advent of Cloud computing has another advantage over the
  massive spread of scientific work.
  Scientific workflow refers to a series of computations that enable data
@@ -153,6 +157,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\size small
 The energy consumption of Cloud data centers is an important challenge.
  Energy consumption is increasing day by day due to a non-energy-aware strategy
  in resource management.
@@ -169,6 +175,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\size small
 In general, workflow application-oriented energy-aware scheduling in Clouds
  involves mapping tasks to resources, arranging tasks’ execution order and
  assigning appropriate task execution time, such as optimizing energy consumptio
@@ -186,6 +194,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Our objective consists of developing a tool for scheduling workflows on
  the Cloud using the technique of multiple partitioning of scientific workflows
  for multi-criteria optimization of planning execution while reducing the
@@ -193,14 +203,14 @@ Our objective consists of developing a tool for scheduling workflows on
 \end_layout
 
 \begin_layout Standard
+
+\size small
 The structure of this thesis is as follows: In Chapter 1, we provide an
  overview of the Cloud computing infrastructure that we use for our project.
  In Chapter 2, we describe the workflow technology and the scientific workflow.
  In Chapter 3, we formulate the problem of scheduling the scientific workflows
  with energy optimization as our main criterion.
- In Chapter 4, we propose and design our novel approach to solving the problem:
- MOCS-OViC(Multi-Objective Cloud Scheduler with Optimized Virtual Machines
- Consolidation for Scientific Workflows).
+ In Chapter 4, we propose and design our novel approach to solving the problem.
  In Chapter 5, we implement, simulate and evaluate our approach and discuss
  the results and findings.
 \end_layout

@@ -92,17 +92,267 @@ Workflow et workflow scientifique
 Définition du workflow
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Définition du workflow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+
+\shape italic
+\lang english
+Workflow is the sequence of tasks, steps and decisions that need to be followed
+ to complete a specific process.
+ It can be thought of as a set of instructions that describe how a process
+ should be performed, including the order in which tasks are to be completed,
+ who is responsible for performing each task and what should happen next
+ based on the outcome of each task
+\shape default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WfMC_glossary"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 Définition des workflow scientifiques
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Définition des workflow scientifiques
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Les flux de travail scientifiques sont des applications gourmandes en données
+ représentant des sources de données distribuées et des calculs complexes
+ dans divers domaines, à savoir l’astronomie, les sciences de l’ingénieur
+ et la bioinformatique.Dans les environnements distribués, divers capteurs
+ et processus expérimentaux génèrent un grand volume de données qui doivent
+ être collectées et traitées dans des délais spécifiques
+\begin_inset CommandInset citation
+LatexCommand cite
+key "5"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 Avantages des workflow pour la science
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Avantages des workflow pour la science
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lifecycle"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+Le partage des connaissances en étant disponibles en tant que services pour
+ les scientifiques collaborateurs.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+La prise en charge de l'analyse communautaire des résultats.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+Le traitement d’énormes quantités de données.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+4-
+\end_layout
+
+\end_inset
+
+Les workflow sont capables de s’exécuter dans des environnements distribués.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+5-
+\end_layout
+
+\end_inset
+
+L’automatisation des étapes lors de la conception et de l’exécution du workflow
+ permet aux scientifiques de se concentrer sur la résolution de leurs principaux
+ problèmes scientifiques.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+6-
+\end_layout
+
+\end_inset
+
+Le pouvoir d'effectuer des simulations scientifiques de manière parallèle
+ et automatisée.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 Cycle de vie des workflow scientifiques
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Cycle de vie des workflow scientifiques
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/scientific_workflow_lifecycle.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cycle de vie des workflow scientifiques
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lifecycle"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

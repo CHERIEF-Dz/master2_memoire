@@ -1,6 +1,6 @@
 # master2_memoire
 
-Totale:		 0/7
+Totale:		 0/6
 
 Samedi		 0/4
 	Simulation:
@@ -11,8 +11,7 @@ Samedi		 0/4
 			. Put VM on save mood.			x2
 	- Choosing another algorithm to compare with.
 
-Dimanche	 0/3
+Dimanche	 0/2
 	- Reading all algoirthms
 	Présentation:
-		- Faire un plan de présentation.(beamer)
 		- Faire la présentation.

@@ -113,13 +113,25 @@ addcontentsline{toc}{chapter}{General conculsion}
 \end_layout
 
 \begin_layout Standard
-We propose our novel workflow scheduling algorithm that is aimed at managing
- cloud resources to achieve this goal and meet the user’s needs and the
- cloud provider’s QoS.
- We evaluate our algorithm by running three experiments and comparing the
- results.
+Many works in the literature investigate the problem of scheduling scientific
+ workflows on cloud platforms.
+ In this work, the problem of scheduling scientific workflows in cloud data
+ centers with optimization of cost, makespan and energy is investigated.
+ This work is based on the EViMA algorithm and we propose a distributed
+ approach to an energy-efficient dynamic VM management.
+ Our approach maps tasks to VMs and then determines which VMs to migrate
+ from the source PM, and when.
+ Finally, the destination PM is selected to place the VM on it.
+\end_layout
+
+\begin_layout Standard
+We propose our novel workflow scheduling approach to managing cloud resources
+ with respect of the user’s needs and the cloud provider’s QoS.
+ We evaluate our algorithm by running experiments and comparing the results.
  We use five real-world scientific workflows with different sizes of tasks:
  small, medium, large and extra-large in the simulation process.
+ The results are satisfactory when the workload is small or medium, but
+ its performance degrades when the workload is large or extra large.
 \end_layout
 
 \begin_layout Standard

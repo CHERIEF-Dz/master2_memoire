@@ -17,7 +17,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Définir les marges
-\usepackage[top=2.75cm,bottom=2.75cm,right=2.75cm,left=3cm]{geometry}% Marges de pages
+\usepackage[top=2.75cm,bottom=2.75cm,right=2.75cm,left=2.75cm]{geometry}% Marges de pages
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}% Clear all headers
@@ -31,7 +31,7 @@
 %%%%%% Ajouter une barre au pied + nom du département+ numérotation
 
 \renewcommand{\footrulewidth}{1pt}
-\fancyfoot[L]{U.S.T.O-M.B/Dépt. Informatique}
+\fancyfoot[L]{CHERIEF Houcine Abdelkader and TOUHAMI Abdelghani Chabane}
 \fancyfoot[R]{\thepage}
 \addtocounter{page}{0}
 
@@ -260,16 +260,6 @@ filename "Conclusion.lyx"
 LatexCommand bibtex
 bibfiles "bibliographie"
 options "bibtotoc,plain"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Résumé.lyx"
 
 \end_inset
 

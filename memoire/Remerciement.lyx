@@ -13,7 +13,7 @@ tabs-within-sections
 eqs-within-sections
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding utf8
 \fontencoding global
@@ -75,7 +75,7 @@ eqs-within-sections
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style swiss
+\quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -90,8 +90,6 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter*
-
-\lang english
 Acknowledgment
 \end_layout
 
@@ -100,7 +98,6 @@ Acknowledgment
 
 \series bold
 \shape italic
-\lang english
 This dissertation would not have been possible without the valuable help
  of several people whom I wish to thank here.
  First of all, we would like to acknowledge God for His grace and guidance
@@ -116,12 +113,11 @@ This dissertation would not have been possible without the valuable help
 
 \series bold
 \shape italic
-\lang english
-We would like to express our deep gratitude to our dissertation supervisor,
- Madame.
- BENDOUKHA Hayet, for her guidance, advice and support throughout this work.
+We would like to express our deep gratitude to our dissertation supervisor
+ Mrs.
+ BENDOUKHA Hayat for her guidance, advice and support throughout this work.
  Her insightful comments and constructive criticism helped us improve the
- quality of my dissertation.
+ quality of our dissertation.
  We are grateful to her for her encouragement and trust.
 \end_layout
 
@@ -130,13 +126,11 @@ We would like to express our deep gratitude to our dissertation supervisor,
 
 \series bold
 \shape italic
-\lang english
-We would like to thank the members of the jury, Mr.
- GUERID Hicham and Mr.
- BELAID Mohamed Said and Mme SI LARBI Samia, for their careful reading of
- our dissertation and for their relevant questions and remarks during the
- defense.
- We appreciate their interest in my research topic and their constructive
+We would like to thank the members of the jury Mr.
+ GUERID Hachem and Mr.
+ BELAID Mohamed Said and Mrs.
+ SI LARBI Samia for their careful reading of our dissertation.
+ We appreciate their interest in our research work and their constructive
  feedback.
 \end_layout
 

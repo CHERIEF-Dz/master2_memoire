@@ -265,8 +265,6 @@ Workflows are compositions of tasks (also referred to as activities) by
  and operating systems.
  It is applied in a very wide range of applications where integration of
  heterogeneous systems is a must
-\color brown
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lifecycle"
@@ -274,8 +272,6 @@ literal "false"
 
 \end_inset
 
-
-\color inherit
 .
 \end_layout
 

@@ -1,1 +1,1 @@
-MOCS-OViC:	Multi-Objective Cloud Scheduler with Optimized Virtual Machies Consolidaton  for Scientific Workflows
+MOCS-OViC:	Multi-Objective Cloud Scheduler with Optimized Virtual Machines Consolidaton  for Scientific Workflows

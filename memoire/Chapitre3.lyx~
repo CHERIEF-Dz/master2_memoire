@@ -93,7 +93,7 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter
-Scheduling the scientific workflow on a cloud platform
+Scientific Workflow Scheduling on Clouds
 \end_layout
 
 \begin_layout Standard
@@ -409,6 +409,14 @@ Scheduling algorithms considering reliability as part of their objectives
 
 \begin_layout Subsubsection
 Security Awareness
+\end_layout
+
+\begin_layout Standard
+The objective of security awareness in scheduling of workflows is to guarantee
+ privacy and security of workflow applications.
+ A three-level data privacy and security model integrating hybrid encryption
+ is devised to effectively reduce monetary cost when deploying a workflow
+ in a hybrid cloud under the deadline and privacy constraints.
 \end_layout
 
 \begin_layout Section
@@ -1669,36 +1677,10 @@ name "subsec:migration_energy"
 
 \begin_layout Standard
 The consumed energy is estimated as a function of memory content size as
- energy is proportional to 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-R
+ energy is proportional to R
 \begin_inset Formula $_{vm}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 (VM memory content size).
  So, the energy consumed during the process of VM migration can be expressed
  as:
@@ -2928,8 +2910,6 @@ We will study this algorithm in more detail in the next chapter.
 \end_layout
 
 \begin_layout Subsection
-
-\color brown
 Comparison between workflow scheduling approaches
 \end_layout
 

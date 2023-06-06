@@ -85,11 +85,11 @@
 \begin_body
 
 \begin_layout Section
-Le Cloud Computing
+Workflow et workflow scientifique
 \end_layout
 
 \begin_layout Subsection*
-Définition
+Définition du workflow
 \end_layout
 
 \begin_layout Frame
@@ -97,7 +97,7 @@ Définition
 status open
 
 \begin_layout Plain Layout
-Définition du Cloud Computing
+Définition du workflow
 \end_layout
 
 \end_inset
@@ -110,16 +110,17 @@ Définition du Cloud Computing
 
 \shape italic
 \lang english
-Cloud computing is a model for enabling ubiquitous, convenient, on-demand
- network access to a shared pool of configurable computing resources (e.g.,
- networks, servers, storage, applications and services) that can be rapidly
- provisioned and released with minimal management effort or service provider
- interaction
+Workflow is the sequence of tasks, steps and decisions that need to be followed
+ to complete a specific process.
+ It can be thought of as a set of instructions that describe how a process
+ should be performed, including the order in which tasks are to be completed,
+ who is responsible for performing each task and what should happen next
+ based on the outcome of each task
 \shape default
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "NIST_definition"
+key "WfMC_glossary"
 literal "false"
 
 \end_inset
@@ -128,15 +129,8 @@ literal "false"
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
-Modèles de déploiement
+Définition des workflow scientifiques
 \end_layout
 
 \begin_layout Frame
@@ -144,7 +138,7 @@ Modèles de déploiement
 status open
 
 \begin_layout Plain Layout
-Modèles de déploiement
+Définition des workflow scientifiques
 \end_layout
 
 \end_inset
@@ -153,27 +147,53 @@ Modèles de déploiement
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-Il existe 5 modèles de déploiement de Cloud Computing
+\begin_layout Definition
+Les flux de travail scientifiques sont des applications gourmandes en données
+ représentant des sources de données distribuées et des calculs complexes
+ dans divers domaines, à savoir l’astronomie, les sciences de l’ingénieur
+ et la bioinformatique.Dans les environnements distribués, divers capteurs
+ et processus expérimentaux génèrent un grand volume de données qui doivent
+ être collectées et traitées dans des délais spécifiques
 \begin_inset CommandInset citation
 LatexCommand cite
-key "NIST_definition"
+key "5"
 literal "false"
 
 \end_inset
 
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "vmware"
-literal "false"
-
-\end_inset
-
-:
+.
 \end_layout
 
+\end_deeper
+\begin_layout Subsection*
+Avantages des workflow pour la science
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Avantages des workflow pour la science
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lifecycle"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
+
+\size small
 \begin_inset Argument item:2
 status open
 
@@ -184,10 +204,13 @@ status open
 
 \end_inset
 
-Cloud privé.
+Ils contribuent au partage des connaissances en étant disponibles en tant
+ que services pour les scientifiques collaborateurs.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 \begin_inset Argument item:2
 status open
 
@@ -198,10 +221,13 @@ status open
 
 \end_inset
 
-Cloud communautaire.
+À l’aide de workflow, une analyse communautaire des résultats est prise
+ en charge.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 \begin_inset Argument item:2
 status open
 
@@ -212,10 +238,12 @@ status open
 
 \end_inset
 
-Cloud public.
+Les workflow sont capables de traiter d’énormes quantités de données.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 \begin_inset Argument item:2
 status open
 
@@ -226,10 +254,12 @@ status open
 
 \end_inset
 
-Cloud hybride.
+Les workflow sont capables de s’exécuter dans des environnements distribués.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 \begin_inset Argument item:2
 status open
 
@@ -240,23 +270,31 @@ status open
 
 \end_inset
 
-Multi-Cloud Computing.
+L’automatisation des étapes lors de la conception et de l’exécution du workflow
+ permet aux scientifiques de se concentrer sur la résolution de leurs principaux
+ problèmes scientifiques.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+6-
+\end_layout
+
+\end_inset
+
+Les workflow peuvent être utilisés pour effectuer des simulations scientifiques
+ de manière parallèle et automatisée.
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
-Modèles de services
+Cycle de vie des workflow scientifiques
 \end_layout
 
 \begin_layout Frame
@@ -264,7 +302,7 @@ Modèles de services
 status open
 
 \begin_layout Plain Layout
-Modèles de services
+Cycle de vie des workflow scientifiques
 \end_layout
 
 \end_inset
@@ -283,8 +321,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/drancy/Downloads/S4/PFE/8.Memoire/memoire/memoire/images/cloud_services_model_graph-1024x465.jpg
-	scale 40
+	filename images/scientific_workflow_lifecycle.png
 
 \end_inset
 
@@ -296,11 +333,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Les modèles des services Cloud 
-\begin_inset CommandInset href
-LatexCommand href
-name "quisted.net"
-target "https://www.quisted.net/index.php/2018/08/30/dc-cloud-computing"
+Cycle de vie des workflow scientifiques
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lifecycle"
 literal "false"
 
 \end_inset

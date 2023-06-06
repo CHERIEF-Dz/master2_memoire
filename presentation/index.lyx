@@ -156,7 +156,7 @@ status open
 \backslash
 logo{
 \backslash
-includegraphics[height=0.5cm]{institution-logo-filename}}
+includegraphics[height=0.5cm]{logo-usto}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -397,6 +397,14 @@ Conclusion
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\color cyan
+this section is empty
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
