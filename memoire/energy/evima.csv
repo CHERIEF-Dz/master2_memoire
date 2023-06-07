@@ -1,0 +1,60 @@
+Small;EViMA;Montage;1.2
+Small;ERES;Montage;4
+Small;EERS;Montage;2
+Small;EViMA;CyberShake;1.7
+Small;ERES;CyberShake;3
+Small;EERS;CyberShake;2.5
+Small;EViMA;Epigenomics;1
+Small;ERES;Epigenomics;4.5
+Small;EERS;Epigenomics;3.5
+Small;EViMA;Inspiral;1.5
+Small;ERES;Inspiral;3.5
+Small;EERS;Inspiral;2
+Small;EViMA;Sipht;1.5
+Small;ERES;Sipht;4
+Small;EERS;Sipht;2
+Medium;EViMA;Montage;2
+Medium;ERES;Montage;9
+Medium;EERS;Montage;3
+Medium;EViMA;CyberShake;3
+Medium;ERES;CyberShake;3.1
+Medium;EERS;CyberShake;5
+Medium;EViMA;Epigenomics;2
+Medium;ERES;Epigenomics;6
+Medium;EERS;Epigenomics;5.5
+Medium;EViMA;Inspiral;3
+Medium;ERES;Inspiral;7
+Medium;EERS;Inspiral;4
+Medium;EViMA;Sipht;3.5
+Medium;ERES;Sipht;6
+Medium;EERS;Sipht;4
+Large;EViMA;Montage;6
+Large;ERES;Montage;10
+Large;EERS;Montage;9
+Large;EViMA;CyberShake;7
+Large;ERES;CyberShake;7.1
+Large;EERS;CyberShake;10
+Large;EViMA;Epigenomics;6
+Large;ERES;Epigenomics;10
+Large;EERS;Epigenomics;8
+Large;EViMA;Inspiral;6
+Large;ERES;Inspiral;9
+Large;EERS;Inspiral;7
+Large;EViMA;Sipht;6
+Large;ERES;Sipht;8
+Large;EERS;Sipht;7.5
+Extra large;EViMA;Montage;70
+Extra large;ERES;Montage;85
+Extra large;EERS;Montage;75
+Extra large;EViMA;CyberShake;90
+Extra large;ERES;CyberShake;100
+Extra large;EERS;CyberShake;100
+Extra large;EViMA;Epigenomics;85
+Extra large;ERES;Epigenomics;110
+Extra large;EERS;Epigenomics;105
+Extra large;EViMA;Inspiral;80
+Extra large;ERES;Inspiral;85
+Extra large;EERS;Inspiral;90
+Extra large;EViMA;Sipht;70
+Extra large;ERES;Sipht;80
+Extra large;EERS;Sipht;85

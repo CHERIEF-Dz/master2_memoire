@@ -1,0 +1,60 @@
+Small;EViMA;Montage;182;2400
+Small;JIT_C;Montage;100;2500
+Small;SJFLJF;Montage;150;2500
+Small;EViMA;CyberShake;1075;20000
+Small;JIT_C;CyberShake;500;21000
+Small;SJFLJF;CyberShake;750;21000
+Small;EViMA;Epigenomics;4500;50000
+Small;JIT_C;Epigenomics;7000;70000
+Small;SJFLJF;Epigenomics;6000;75000
+Small;EViMA;Inspiral;2000;12000
+Small;JIT_C;Inspiral;4000;28000
+Small;SJFLJF;Inspiral;2500;27000
+Small;EViMA;Sipht;3000;10000
+Small;JIT_C;Sipht;5000;29000
+Small;SJFLJF;Sipht;7000;29500
+Medium;EViMA;Montage;278;4000
+Medium;JIT_C;Montage;300;4000
+Medium;SJFLJF;Montage;350;5000
+Medium;EViMA;CyberShake;1000;40000
+Medium;JIT_C;CyberShake;1100;41000
+Medium;SJFLJF;CyberShake;1000;41000
+Medium;EViMA;Epigenomics;8500;110000
+Medium;JIT_C;Epigenomics;9000;165000
+Medium;SJFLJF;Epigenomics;8700;163000
+Medium;EViMA;Inspiral;5000;39000
+Medium;JIT_C;Inspiral;4000;45000
+Medium;SJFLJF;Inspiral;4200;40000
+Medium;EViMA;Sipht;7000;39000
+Medium;JIT_C;Sipht;7000;42000
+Medium;SJFLJF;Sipht;8000;65000
+Large;EViMA;Montage;108;700
+Large;JIT_C;Montage;200;700
+Large;SJFLJF;Montage;150;700
+Large;EViMA;CyberShake;1500;10000
+Large;JIT_C;CyberShake;2000;10000
+Large;SJFLJF;CyberShake;1800;10000
+Large;EViMA;Epigenomics;12000;1200000
+Large;JIT_C;Epigenomics;14000;1800000
+Large;SJFLJF;Epigenomics;13000;1650000
+Large;EViMA;Inspiral;6500;10000
+Large;JIT_C;Inspiral;7000;12000
+Large;SJFLJF;Inspiral;6500;11000
+Large;EViMA;Sipht;8000;5000
+Large;JIT_C;Sipht;8100;6000
+Large;SJFLJF;Sipht;8500;6000
+Extra large;EViMA;Montage;108;4400
+Extra large;JIT_C;Montage;200;5000
+Extra large;SJFLJF;Montage;150;5000
+Extra large;EViMA;CyberShake;1500;200000
+Extra large;JIT_C;CyberShake;2000;210000
+Extra large;SJFLJF;CyberShake;1800;210000
+Extra large;EViMA;Epigenomics;240000;3200000
+Extra large;JIT_C;Epigenomics;300000;3750000
+Extra large;SJFLJF;Epigenomics;350000;4500000
+Extra large;EViMA;Inspiral;50000;600000
+Extra large;JIT_C;Inspiral;60000;1000000
+Extra large;SJFLJF;Inspiral;65000;750000
+Extra large;EViMA;Sipht;40000;500000
+Extra large;JIT_C;Sipht;50000;600000
+Extra large;SJFLJF;Sipht;45000;700000
