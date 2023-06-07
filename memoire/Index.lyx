@@ -17,7 +17,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Définir les marges
-\usepackage[top=2.75cm,bottom=2.75cm,right=2.75cm,left=2.75cm]{geometry}% Marges de pages
+\usepackage[top=2.5cm,bottom=2.5cm,right=2.5cm,left=2.5cm]{geometry}% Marges de pages
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}% Clear all headers

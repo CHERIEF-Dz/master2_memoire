@@ -134,12 +134,14 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
 In this chapter we will present the simulation tool, workflows used, experiments
  parameters, performance metrics and outcomes of the measurement will be
  presented.
+ 
 \end_layout
 
 \begin_layout Section
@@ -161,6 +163,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -173,6 +176,7 @@ WorkflowSim was introduced for modeling Scientific Workflows in a cloud
  Workflows in heterogeneous distributed systems show different levels of
  overheads that are explained based on computational operations and miscellaneou
 s works.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -180,6 +184,7 @@ Most simulators such as CloudSim do not consider fine granularity simulations
  of workflows and task clustering.
  Task clustering reduces the number of jobs to be executed and so execution
  overhead is decreased.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -195,6 +200,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -217,27 +223,33 @@ noprefix "false"
 
 \begin_layout Enumerate
 Workflow Mapper that maps abstract workflows to concrete workflows.
+ 
 \end_layout
 
 \begin_layout Enumerate
 Workflow Engine that controls the data dependencies.
+ 
 \end_layout
 
 \begin_layout Enumerate
 Workflow Scheduler assigns jobs to resources.
+ 
 \end_layout
 
 \begin_layout Enumerate
 Clustering Engine that groups small tasks into a large jobs.
+ 
 \end_layout
 
 \begin_layout Enumerate
 Failure Generator that injects task failures for each execution site.
+ 
 \end_layout
 
 \begin_layout Enumerate
 Failure Monitor that stores the failure information such as resource id
  and task id.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -290,7 +302,7 @@ Downloading and Installing WorkflowSim with Eclipse without GitHub
 \end_layout
 
 \begin_layout Standard
-To make the first WorkflowSim project, follow this steps
+To make the first WorkflowSim project, follow these steps
 \begin_inset CommandInset citation
 LatexCommand cite
 key "GitHub_WorkflowSim_repo"
@@ -335,11 +347,13 @@ Check out your source codes:
 \begin_layout Enumerate
 create a new Java project called 'WorkflowSim' (it doesn't have to be 'WorkflowS
 im').
+ 
 \end_layout
 
 \begin_layout Enumerate
 Right-click your project and choose 'Import'.
- Click 'General'->' Projects from Folder or Archive'.(see Figure 
+ Click 'General'->' Projects from Folder or Archive'.
+ (see Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Import-a-project"
@@ -391,8 +405,8 @@ name "fig:Import-a-project"
 \end_layout
 
 \begin_layout Enumerate
-Set the URL to be your extracted folder (wait until Finish button will be
- enabled as in Figure 
+Set the URL to be your extracted folder (wait until the Finish button will
+ be enabled as in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Set-URL-to"
@@ -402,7 +416,8 @@ noprefix "false"
 
 \end_inset
 
-) .
+).
+ 
 \begin_inset Float figure
 wide false
 sideways false
@@ -449,23 +464,34 @@ name "fig:Set-URL-to"
 \series bold
 Run an Example:
 \series default
- Run an example i.e.
- org.workflowsim.examples.WorkflowSimBasicExample1.java.
+ Run an example i.
+ e.
+ org.
+ workflowsim.
+ examples.
+ WorkflowSimBasicExample1.
+ java.
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Open WorkflowSimBasicExample1.java
+Open WorkflowSimBasicExample1.
+ java
 \end_layout
 
 \begin_layout Enumerate
-replace the String daxPath = "/Users/chenweiwei/Work/WorkflowSim-1.0/config/dax/M
-ontage_100.xml"; with your real physical file path.
+replace the String daxPath = "/Users/chenweiwei/Work/WorkflowSim-1.
+ 0/config/dax/Montage_100.
+ xml"; with your real physical file path.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Right-click on WorkflowSimBasicExample1.java and choose 'Run File'.
+Right-click on WorkflowSimBasicExample1.
+ java and choose 'Run File'.
  You should be able to see some output.
+ 
 \end_layout
 
 \end_deeper
@@ -488,23 +514,29 @@ literal "false"
 \begin_layout Enumerate
 It supports a stack of workflow parser and workflow engine delay to workflow
  optimization techniques with better accuracy are implemented.
+ 
 \end_layout
 
 \begin_layout Enumerate
 It implements several workflow-scheduling methods such as HEFT, Min-Min
  and Max-Min and so developers can compare their algorithms with them in
  a simple way.
+ 
 \end_layout
 
 \begin_layout Enumerate
 It considers task clustering and layered overhead in the workflow simulation.
  Therefore, developer scan and test various strategies based on a real trace
  of overheads.
+ 
 \end_layout
 
 \begin_layout Enumerate
-It models failures for two layers (i.e., task/job) by an interface and hence
- developers can design fault-tolerant techniques.
+It models failures for two layers (i.
+ e.
+ , task/job) by an interface and hence developers can design fault-tolerant
+ techniques.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -527,6 +559,7 @@ literal "false"
 It includes limited types of failures.
  Therefore, developers cannot simulate the situation when a task is not
  successfully sent due to network problems or workflow scheduler issues.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -534,20 +567,32 @@ It does not consider the performance characteristic of file I/O.
  Therefore, developers cannot obtain suitable simulations for data-intensive
  applications since these applications involve reading or writing huge data
  files.
+ 
 \end_layout
 
 \begin_layout Enumerate
 It supports only simple workflow techniques and so developers cannot use
  other important approaches like workflow partitioning in their implementations.
+ 
 \end_layout
 
 \begin_layout Section
-Workflows 
+Simulation parameters
+\end_layout
+
+\begin_layout Standard
+We have set up many parameters for the simulation process.
+ 
+\end_layout
+
+\begin_layout Subsection
+Workflow configuration
 \end_layout
 
 \begin_layout Standard
 We use five different types of benchmark workflows (Montage, Cybershake,
  LIGO, Epigenomics and Sipht) available on the Pegasus website.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -571,6 +616,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -585,6 +631,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -631,8 +678,8 @@ literal "false"
 
 \end_layout
 
-\begin_layout Section
-Simulation parameter
+\begin_layout Subsection
+Cloud parameters
 \end_layout
 
 \begin_layout Standard
@@ -641,15 +688,18 @@ The inputs to the simulation environment are as follows:
 
 \begin_layout Itemize
 The average bandwidth between resources is 20 MBps.
+ 
 \end_layout
 
 \begin_layout Itemize
 The processing matrix for each VM is measured in Million Instruction Per
  Second (MIPS).
+ 
 \end_layout
 
 \begin_layout Itemize
 The task lengths are set in Million Instruction (MI).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -666,6 +716,7 @@ In this work, we assumed that there are only three types of VMs (VM
 \end_inset
 
 ).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -693,6 +744,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -771,7 +823,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.0
+1.
+ 0
 \end_layout
 
 \end_inset
@@ -780,7 +833,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.12
+0.
+ 12
 \end_layout
 
 \end_inset
@@ -809,7 +863,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.5
+1.
+ 5
 \end_layout
 
 \end_inset
@@ -818,7 +873,8 @@ LEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.195
+0.
+ 195
 \end_layout
 
 \end_inset
@@ -847,7 +903,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.0
+2.
+ 0
 \end_layout
 
 \end_inset
@@ -856,7 +913,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.28
+0.
+ 28
 \end_layout
 
 \end_inset
@@ -885,7 +943,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.5
+2.
+ 5
 \end_layout
 
 \end_inset
@@ -894,7 +953,8 @@ MEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.375
+0.
+ 375
 \end_layout
 
 \end_inset
@@ -923,7 +983,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.0
+3.
+ 0
 \end_layout
 
 \end_inset
@@ -932,7 +993,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.48
+0.
+ 48
 \end_layout
 
 \end_inset
@@ -961,7 +1023,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.5
+3.
+ 5
 \end_layout
 
 \end_inset
@@ -970,7 +1033,8 @@ HEC
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.595
+0.
+ 595
 \end_layout
 
 \end_inset
@@ -1008,7 +1072,7 @@ name "tab:VM-types-and"
 \end_layout
 
 \begin_layout Section
-Experimentations
+Experimentation
 \end_layout
 
 \begin_layout Standard
@@ -1016,733 +1080,720 @@ In order to evaluate the performance of the solutions generated by the proposed
  algorithm and the benchmark algorithms, we conducted many experiments.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/montage_cout.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cost results of Montage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+Evaluation based on energy consumption
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/montage_makespan.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Makespan results of Montage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Energy consumption refers to the total amount of energy consumed in a data
+ center to schedule a workflow task.
+ We compared the results of our approach with 3 different algorithms EViMA,
+ ERES and EERS.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/montage_energy.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energy results of Montage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/inspiral_cost.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cost results of Inspiral
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/inspiral_makespan.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Makespan results of Inspiral
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/inspiral_energy.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energy results of Inspiral
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/cybershake_cost.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cost results of CyberShake
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/cybershake_makespan.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Makespan results of CyberShake
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/cybershake_energy.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energy results of CyberShake
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/sipht_cost.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cost results of Sipht
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/sipht_makespan.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Makespan results of Sipht
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/sipht_energy.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energy results of Sipht
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/epigenomics_cost.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cost results of Epigenomics
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/epigenomics_makespan.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Makespan results of Epigenomics
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/epigenomics_energy.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energy results of Epigenomics
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/tous_small_cost.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cost results for small workload
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Cost-results-all"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/tous_small_makespan.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Makespan results for small workload
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Makespan-results-all"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/tous_small_energy.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energy results for small workload
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Energy-results-all"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/results/tous_large_makespan.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cost results for small worklaod
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-
-\color brown
-Comparison and discussion of the results
-\end_layout
-
-\begin_layout Standard
-From these experiments, we have these remarks:
-\end_layout
-
-\begin_layout Itemize
-
-\color brown
-Cost of execution for Montage and Epigenomics It is noted that Medium is
- worst than Large (and extra-large for Montage).
-\end_layout
-
-\begin_layout Itemize
-
-\color brown
-For Montage and Inspiral all of results are close.
-\end_layout
-
-\begin_layout Itemize
-The energy consumed is the same for all workflows except for Sipht
-\end_layout
-
-\begin_layout Itemize
-
-\color brown
-For CyberShake in Medium workload our algorithm has better cost and makespan,
- but for the small, large and extra-large the performances are same.
-\end_layout
-
-\begin_layout Itemize
-For Sipht in Medium workload our algorithm is better in all metrics, but
- for the large and extra-large workfloads EViMA is better.
- This is because lot of migrations affect makespan and so, this affect also
- energy and cost.
-\end_layout
-
-\begin_layout Itemize
-For small (and sometimes medium) workloads of all workflows applications
- our algorithm is better compared to EViMA algorithm in all metrics (see
- Figure
+The results of the energy consumption metric are shown in Figs.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Cost-results-all"
+reference "fig:EnergyS"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-, Figure
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Makespan-results-all"
+reference "fig:EnergyM"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-,Figure
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Energy-results-all"
+reference "fig:EnergyL"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-), but for large and extra-large workloads the results are close.
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EnergyX"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ It is obvious that the proposed MOCS-OViC consumes less energy compared
+ to ERES and EERS algorithms at all times except in Montage Medium size
+ and Sipht in extra large size.
+\end_layout
+
+\begin_layout Standard
+MOCS-OViC can save more energy than EViMA when CyberShake and Inspiral are
+ executed for all workloads and for Extra large sized Epigenomics.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename energy/Small_energy.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Energy Consumption in Small Sized Workflows.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EnergyS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename energy/Medium_energy.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Energy Consumption in Medium Sized Workflows.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EnergyM"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename energy/Large_energy.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Energy Consumption in Large Sized Workflows.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EnergyL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename energy/Extra large_energy.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Energy Consumption in Extra Large Sized Workflows.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EnergyX"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Evaluation based on makespan
+\end_layout
+
+\begin_layout Standard
+Makespan is important because most cloud users want their tasks to be executed
+ on cloud resources at a specific time to prevent tasks from missing their
+ deadlines
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+.
+ The makespan incurred by the algorithms MOCS-OViC, EViMA, JIT-C and SJFLJF
+ are diverse (see Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MakespanS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MakespanM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MakespanL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MakespanX"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+It can be observed that our approach produces shorter schedules for CyberShake,
+ Epigenomics and Sipht in almost all sizes.
+ These 3 workflows are CPU-intensive applications so, MOCS-OViC balances
+ the loads between hosts better than other algorithms.
+\end_layout
+
+\begin_layout Standard
+MOCS-OViC generates the worst schedules when Montage and Inspiral are executed.
+ This is because Inspiral requires a lot of memory so virtual machine migrations
+ consume more time.
+ Montage is data-intensive, so our algorithm consumes a lot of time for
+ the transfer of data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename makespan/Small_makespan.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Makespan in Small Sized Workflows.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MakespanS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename makespan/Medium_makespan.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Makespan in Medium Sized Workflows.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MakespanM"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename makespan/Large_makespan.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Makespan in Large Sized Workflows.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MakespanL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename makespan/Extra large_makespan.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of Makespan in Extra Large Sized Workflows.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MakespanX"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Evaluation based on cost
+\end_layout
+
+\begin_layout Standard
+The execution cost of a workflow task is defined as the total payment that
+ a cloud user makes to the cloud provider on a pay-as-you-go basis to get
+ schedules generated on cloud resources
+\begin_inset CommandInset citation
+LatexCommand cite
+key "konjaang2022energy"
+literal "false"
+
+\end_inset
+
+.
+ The cost incurred by these algorithms MOCS-OViC, EViMA, JIT-C and SJFLJF
+ are diverse (see Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MakespanS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MakespanM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MakespanL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MakespanX"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+It can be observed that our approach produces shorter schedules for CyberShake,
+ Epigenomics and Sipht in almost all sizes.
+ This is because our algorithm generates better makespan so VM utilization
+ is less.
+\end_layout
+
+\begin_layout Standard
+MOCS-OViC generates the worst schedules when Montage and Inspiral are executed.
+ This is because MOCS-OViC is a non-data-aware algorithm.
+ As known Inspiral is a memory-intensive workflow and Montage is a data-intensiv
+e algorithm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cost/Small_cost.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Results of Execution Cost with Small Sized Workflows.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cost/Medium_cost.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Results of Execution Cost with Medium Sized Workflows.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cost/Large_cost.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Results of Execution Cost with Large Sized Workflows.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cost/Extra large_cost.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Results of Execution Cost with Extra Large Sized Workflows.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1756,6 +1807,14 @@ Using the WorkflowSim simulator, we have tested our novel workflow scheduling
  the proposed approach.
  We have simulated five real-world scientific workflows with different task
  sizes: small, medium, large and extra-large.
+ 
+\end_layout
+
+\begin_layout Standard
+We can conclude that our approach consumes less energy compared to ERES
+ and EERS algorithms and sometimes EViMA.
+ For cost and makespan, our algorithm MOCS-OViC generates the best solutions
+ for CPU-intensive workflows.
 \end_layout
 
 \end_body

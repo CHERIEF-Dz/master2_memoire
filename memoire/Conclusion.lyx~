@@ -93,8 +93,6 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter*
-
-\color brown
 General conclusion
 \end_layout
 
@@ -132,8 +130,7 @@ We propose our novel workflow scheduling approach to managing cloud resources
  We evaluate our algorithm by running experiments and comparing the results.
  We use five real-world scientific workflows with different sizes of tasks:
  small, medium, large and extra-large in the simulation process.
- The results are satisfactory when the workload is small or medium, but
- its performance degrades when the workload is large or extra large.
+ The results are satisfactory when the applications are CPU-intensive workflows.
 \end_layout
 
 \begin_layout Standard
