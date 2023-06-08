@@ -93,7 +93,7 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter
-Approach and solution design
+Approach and Solution Design
 \end_layout
 
 \begin_layout Standard
@@ -140,18 +140,84 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-We will present in this chapter the EViMA algorithm which is used for improving
- resource management in the cloud data center to obtain the best task schedules
- that reduce energy consumption, execution makespan and cost without violating
- deadline constraints.
- Then will introduce the VM placement and VM consolidation problem and its
- 4 sub-problems.
- Finally, we will present the objectives, the concept of our approach and
- also its description and explication.
+We present, in this chapter, our approach for improving resource management
+ in the cloud data centers to obtain the best task schedules that reduce
+ 
+\shape italic
+energy
+\shape default
+ consumption, execution 
+\shape italic
+makespan
+\shape default
+ and 
+\shape italic
+cost 
+\shape default
+without violating deadline constraints.
+ Our approach is based on EViMA Algorithm for optimizing cost and makespan.
+ It applies VM placement and VM consolidation policies in order to reduce
+ energy consumption.
 \end_layout
 
 \begin_layout Section
-Based algorithm EViMA
+Proposed Approach: Objectives and Description
+\end_layout
+
+\begin_layout Standard
+The objective of our project is to provide a workflow scheduling mechanism
+ in Cloud Computing.
+ We propose an approach that consists of managing the available resources
+ within a Cloud Computing system in the most efficient way possible and
+ properly assigning tasks to virtual machines in order to minimize cost,
+ makespan and doing VM placement and consolidation for optimizing energy
+ without violating the deadline constraints established for each task by
+ the user, in order to satisfy QoS.
+\end_layout
+
+\begin_layout Standard
+Our approach considers the following metrics and constraints:
+\end_layout
+
+\begin_layout Itemize
+Energy consumption
+\end_layout
+
+\begin_layout Itemize
+Cost
+\end_layout
+
+\begin_layout Itemize
+Maskespan
+\end_layout
+
+\begin_layout Standard
+Our proposed approach for scientific workflows scheduling on Clouds considers
+ partitioning workflow and grouping tasks in the same partition as just
+ one task.
+ This may reduce the scheduling time.
+\end_layout
+
+\begin_layout Standard
+Our approach consists on proposing a new algorithm that considers two main
+ steps for scientific workflow scheduling on the cloud:
+\end_layout
+
+\begin_layout Itemize
+First, we start by the mapping step to assign tasks to proper virtual machines.
+ For this step, we apply the EViMA algorithm.
+\end_layout
+
+\begin_layout Itemize
+Then, we address energy consumption issues.
+ We believe whether the Physical Machine (PM) is under-loaded or overloaded,
+ it consumes more energy.
+ In order to avoid this problem, we suggest to apply some of virtual machine
+ migration strategies and policies during the execution step.
+\end_layout
+
+\begin_layout Section
+Mapping Workflows On Virtual Machines
 \end_layout
 
 \begin_layout Standard
@@ -578,7 +644,7 @@ end{algorithmic}
 \end_layout
 
 \begin_layout Subsection
-Highly critical task selection algorithm (HiCTSA)
+Highly Critical Task Selection Algorithm (HiCTSA)
 \end_layout
 
 \begin_layout Standard
@@ -673,7 +739,7 @@ name "algorithm2_HiCTSA"
 \end_layout
 
 \begin_layout Subsection
-Low critical task selection algorithm (LoCTSA)
+Low Critical Task Selection Algorithm (LoCTSA)
 \end_layout
 
 \begin_layout Standard
@@ -763,7 +829,7 @@ name "algorithm3_LoCTSA"
 \end_layout
 
 \begin_layout Subsection
-VM power regulating algorithm (VM-PRA)
+VM Power Regulating Algorithm (VM-PRA)
 \end_layout
 
 \begin_layout Standard
@@ -857,7 +923,7 @@ name "algorithm4_VM_PRA"
 \end_layout
 
 \begin_layout Subsection
-Slack time harvesting method (STiHaM)
+Slack Time Harvesting Method (STiHaM)
 \end_layout
 
 \begin_layout Standard
@@ -964,11 +1030,11 @@ name "algorithm5_STiHaM"
 \end_layout
 
 \begin_layout Section
-VM placement & VM consolidation
+VMs Placement & Consolidation On PMs
 \end_layout
 
 \begin_layout Standard
-Information and communications technology equipment (ICT) and cooling equipment
+Information and Communications Technology equipment (ICT) and cooling equipment
  consume most of the energy in the data centers.
  The server is the most critical ICT equipment.
  In most cases, the average CPU utilization rate of the server is only 15%
@@ -1003,6 +1069,66 @@ literal "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+After the lecture and the study of experiments, results and test performance
+ of policies presented in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Al_Dulaimy2018type"
+literal "false"
+
+\end_inset
+
+, we believe that the best policies are:
+\end_layout
+
+\begin_layout Itemize
+Boxplot: for both 
+\series bold
+host overload and under-load detection 
+\series default
+where PM utilization is calculated as in Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:PM_utilization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+MECM for 
+\series bold
+VM selection
+\series default
+ where migration energy is calculated in Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:migration_energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+For 
+\series bold
+VM placement
+\series default
+ our algorithm is based on the greedy algorithm concept which sorts the
+ containers in decreasing order based on their capacity before performing
+ the packing process.
+ Then, it picks one by one PM to pack the VMs on it based on KP.
 \end_layout
 
 \begin_layout Paragraph
@@ -1262,133 +1388,22 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-Proposed approach
+MOCS-OViC: Scientific Workflow Scheduling On The Cloud
 \end_layout
 
 \begin_layout Standard
-The objective of our project is to provide a workflow scheduling mechanism
- in Cloud Computing.
- We propose an approach that consists of managing the available resources
- within a Cloud Computing system in the most efficient way possible and
- properly assigning tasks to virtual machines in order to minimize cost,
- makespan and doing VM placement and consolidation for optimizing energy
- without violating the deadline constraints established for each task by
- the user, in order to satisfy QoS.
-\end_layout
-
-\begin_layout Subsection
-Objectives
-\end_layout
-
-\begin_layout Standard
-Our approach considers the following metrics and constraints:
-\end_layout
-
-\begin_layout Itemize
-Energy consumption
-\end_layout
-
-\begin_layout Itemize
-Cost
-\end_layout
-
-\begin_layout Itemize
-Maskespan
-\end_layout
-
-\begin_layout Subsection
-Principle and description
-\end_layout
-
-\begin_layout Standard
-Our proposed approach is as follows:
-\end_layout
-
-\begin_layout Itemize
-We suggest partitioning workflow and grouping tasks in the same partition
- as just one task, this can reduce the scheduling time.
-\end_layout
-
-\begin_layout Itemize
-We suggest starting the EViMA algorithm first to assign proper tasks to
- virtual machines.
-\end_layout
-
-\begin_layout Itemize
-We think that when the PM is under-loaded or overloaded, it will consume
- more energy this is why we think that if we apply during the execution
- some of the virtual machine migration strategies and policies as in this
- article
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Al_Dulaimy2018type"
-literal "false"
-
-\end_inset
-
-, may be we will avoid this problem and so reducing energy consumed by hosts.
- After seeing the results of experiments and test performance
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Al_Dulaimy2018type"
-literal "false"
-
-\end_inset
-
-, so we decide to apply the best policies which are:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Boxplot: for both 
-\series bold
-host overload and under-load detection 
-\series default
-where PM utilization is calculated as in Definition 
+In the following we present the summary of our approach in for of Algorithm
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "subsec:PM_utilization"
+reference "alg:MOCS-OViC"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Itemize
-MECM for 
-\series bold
-VM selection
-\series default
- where migration energy is calculated in Definition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:migration_energy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-For 
-\series bold
-VM placement
-\series default
- our algorithm is based on the greedy algorithm concept which sorts the
- containers in decreasing order based on their capacity before performing
- the packing process.
- Then, it picks one by one PM to pack the VMs on it based on KP.
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-Steps of our approach
+ named MOCS-OViC (Multi-Objective Cloud Scheduler with Optimized Virtual
+ Machines Consolidation for Scientific Workflows).
 \end_layout
 
 \begin_layout Standard
@@ -1402,7 +1417,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Our approach
+MOCS-OViC
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:MOCS-OViC"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1666,7 +1688,7 @@ noprefix "false"
 
 \end_inset
 
-) and are overloaded if they are great than 4
+) and are overloaded if they are more than 4
 \begin_inset Formula $^{th}$
 \end_inset
 
@@ -1693,8 +1715,7 @@ Pass to the next PM.
 
 \begin_layout Standard
 Finally, we map the selected VMs to suitable physical machines to do a VM
- consolidation, which will allow us then to switch off the PMs which are
- not used.
+ consolidation, which enables switching off the not used PMs.
 \end_layout
 
 \begin_layout Section
@@ -1708,8 +1729,8 @@ This chapter was devoted to presenting our approach MOCS-OViC(Multi-Objective
 \end_layout
 
 \begin_layout Standard
-So in the next chapter, we will present our experiment and simulation in
- order to evaluate the performance of the solutions generated by the proposed
+In the next chapter, we will present our experiment and simulation in order
+ to evaluate the performance of the solutions generated by the proposed
  algorithm.
 \end_layout
 

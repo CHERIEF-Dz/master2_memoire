@@ -331,7 +331,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-Private cloud
+Private Cloud
 \end_layout
 
 \begin_layout Standard
@@ -342,7 +342,7 @@ on comprising multiple consumers (e.g., business units).
 \end_layout
 
 \begin_layout Subsection
-Community cloud
+Community Cloud
 \end_layout
 
 \begin_layout Standard
@@ -355,7 +355,7 @@ The cloud infrastructure is provisioned for exclusive use by a specific
 \end_layout
 
 \begin_layout Subsection
-Public cloud
+Public Cloud
 \end_layout
 
 \begin_layout Standard
@@ -366,7 +366,7 @@ The cloud infrastructure is provisioned for open use by the general public.
 \end_layout
 
 \begin_layout Subsection
-Hybrid cloud
+Hybrid Cloud
 \end_layout
 
 \begin_layout Standard
@@ -515,7 +515,7 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-Benefits of cloud computing
+Benefits of Cloud Computing
 \end_layout
 
 \begin_layout Standard
@@ -683,7 +683,7 @@ Security
 \end_layout
 
 \begin_layout Section
-Cloud Computing's obstacles
+Cloud Computing's Obstacles
 \end_layout
 
 \begin_layout Standard

@@ -93,7 +93,7 @@ eqs-within-sections
 \begin_body
 
 \begin_layout Chapter*
-General conclusion
+General Conclusion
 \end_layout
 
 \begin_layout Standard
@@ -104,7 +104,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{chapter}{General conculsion} 
+addcontentsline{toc}{chapter}{General Conculsion} 
 \end_layout
 
 \end_inset
@@ -113,21 +113,25 @@ addcontentsline{toc}{chapter}{General conculsion}
 \end_layout
 
 \begin_layout Standard
-Many works in the literature investigate the problem of scheduling scientific
- workflows on cloud platforms.
+Many research works, in literature, investigate the problem of scheduling
+ scientific workflows on cloud platforms.
  In this work, the problem of scheduling scientific workflows in cloud data
  centers with optimization of cost, makespan and energy is investigated.
  This work is based on the EViMA algorithm and we propose a distributed
  approach to an energy-efficient dynamic VM management.
  Our approach maps tasks to VMs and then determines which VMs to migrate
- from the source PM, and when.
+ from the source PM and when.
  Finally, the destination PM is selected to place the VM on it.
 \end_layout
 
 \begin_layout Standard
-We propose our novel workflow scheduling approach to managing cloud resources
+We propose our novel workflow scheduling approach for managing cloud resources
  with respect of the user’s needs and the cloud provider’s QoS.
- We evaluate our algorithm by running experiments and comparing the results.
+ We presented our algorithm named MOCS-OViC based on EVIMA for mapping tasks
+ to virtual machines and uses some VM placement and consolidation policies
+ to optimize energy consumption.
+ We evaluated our algorithm by running experiments and comparing the results
+ with some existing algorithms.
  We use five real-world scientific workflows with different sizes of tasks:
  small, medium, large and extra-large in the simulation process.
  The results are satisfactory when the executed applications are CPU-intensive

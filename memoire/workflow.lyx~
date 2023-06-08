@@ -121,7 +121,15 @@ Introduction
 \begin_layout Standard
 Workflows are a systematic way for describing and executing a series of
  computational and data manipulation steps, or tasks, in a specific application
- domain.
+ domain
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BENDOUKHA,coursBendoukha"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -132,7 +140,7 @@ In this chapter, we present workflow and the Workflow Management System
 \end_layout
 
 \begin_layout Section
-Workflow definition
+Workflow Definition
 \end_layout
 
 \begin_layout Standard
@@ -249,7 +257,7 @@ A WfMS can be used to automate a wide range of business processes, such
 \end_layout
 
 \begin_layout Subsection
-Workflow engine architecture
+Workflow Engine Architecture
 \end_layout
 
 \begin_layout Standard
@@ -265,8 +273,6 @@ Workflows are compositions of tasks (also referred to as activities) by
  and operating systems.
  It is applied in a very wide range of applications where integration of
  heterogeneous systems is a must
-\color brown
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lifecycle"
@@ -274,8 +280,6 @@ literal "false"
 
 \end_inset
 
-
-\color inherit
 .
 \end_layout
 
@@ -420,7 +424,7 @@ The 5
 \end_layout
 
 \begin_layout Section
-Scientific workflow
+Scientific Workflow
 \end_layout
 
 \begin_layout Standard
@@ -469,7 +473,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-Scientific workflow's life cycle
+Scientific Workflow's Life Cycle
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lifecycle"
@@ -590,7 +594,7 @@ After the execution, a scientist can analyze the computed results and may
 \end_layout
 
 \begin_layout Subsection
-Benefits of workflow for the science
+Benefits Of Workflow For The Science
 \end_layout
 
 \begin_layout Standard
@@ -636,7 +640,7 @@ workflows can be utilized to conduct scientific simulations in a parallel
 \end_layout
 
 \begin_layout Subsection
-Business VS scientific workflows
+Business VS Scientific Workflows
 \end_layout
 
 \begin_layout Standard
@@ -675,7 +679,7 @@ Business workflows depend on certain resources including application programs,
 \end_layout
 
 \begin_layout Section
-Main Requirements on scientific WfMS
+Main Requirements On Scientific WfMS
 \end_layout
 
 \begin_layout Standard
