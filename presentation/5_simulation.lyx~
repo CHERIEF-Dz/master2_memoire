@@ -157,7 +157,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Les Workflows utilisés [
+Les Workflows utilisés 
 \begin_inset CommandInset href
 LatexCommand href
 name "confluence.pegasus.isi.edu"
@@ -166,7 +166,7 @@ literal "false"
 
 \end_inset
 
-]
+
 \end_layout
 
 \end_inset

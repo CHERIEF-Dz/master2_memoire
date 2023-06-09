@@ -2,19 +2,19 @@ Totale:		20/26
 
 Vendredi	10/10
 	- Chapitre 3:
-		- Ajouter l'année à tous les algorithmes							OK
-		- Régler les paramètres pour le tableau								OK
-		- Il ne faut pas qu'il y a un espaces entre les titres.						OK
-		- Faire une petite lecture sur le tableau							OK
-		- Ajouter les définitions des equations que j'ai utilisé					OK
-		- Il faut citer tous les algorithmes.								OK
+		- Ajouter l'année à tous les algorithmes-	-	-	-	-	-	-	OK
+		- Régler les paramètres pour le tableau		-	-	-	-	-	-	OK
+		- Il ne faut pas qu'il y a un espaces entre les titres.	-	-	-	-	-	OK
+		- Faire une petite lecture sur le tableau	-	-	-	-	-	-	OK
+		- Ajouter les définitions des equations que j'ai utilisé	-	-	-	-	OK
+		- Il faut citer tous les algorithmes.	-	-	-	-	-	-	-	OK
 	- Chapitre 4:
 		- Il ne faut pas donner une grande importance au EViMA.		-	-	-	-	OK
 		- Il ne faut pas qu'il y a un espaces entre les titres.		-	-	-	-	OK
 		- MàJ de notre algorithme et sa description	-	-	-	-	-	-	OK
 		- Supprimer les autres algorithmes qui sont inutiles.	-	-	-	-	-	OK
 
-Samedi		 4/8
+Samedi		 5/8
 	- Naming our Algorithm	-	-	-	-	-	-	-	-	-	-	OK
 	Simulation:
 		- Métrique
@@ -25,7 +25,7 @@ Samedi		 4/8
 			. Put VM on save mood.			x2
 		- Our EViMA
 			. Put all unused PM in save mood.	x1	-	-	-	-	-	OK
-	- Choosing another algorithm to compare with.
+	- Choosing another algorithm to compare with.	-	-	-	-	-	-	-	OK
 	- Compléter le chapitre5 de la simulation.	-	-	-	-	-	-	-	OK
 
 Dimanche	 6/8

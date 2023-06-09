@@ -85,11 +85,11 @@
 \begin_body
 
 \begin_layout Section
-Workflow et workflow scientifique
+Workflow & Workflow Scientifique
 \end_layout
 
 \begin_layout Subsection*
-Définition du workflow
+Définition Du Workflow
 \end_layout
 
 \begin_layout Frame
@@ -97,7 +97,7 @@ Définition du workflow
 status open
 
 \begin_layout Plain Layout
-Définition du workflow
+Définition Du Workflow
 \end_layout
 
 \end_inset
@@ -107,17 +107,12 @@ Définition du workflow
 
 \begin_deeper
 \begin_layout Definition
-
-\shape italic
-\lang english
-Workflow is the sequence of tasks, steps and decisions that need to be followed
- to complete a specific process.
- It can be thought of as a set of instructions that describe how a process
- should be performed, including the order in which tasks are to be completed,
- who is responsible for performing each task and what should happen next
- based on the outcome of each task
-\shape default
-
+Le workflow est la séquence de tâches, d’étapes et de décisions qui doivent
+ être suivies pour mener à bien un processus spécifique.
+ On peut le considérer comme un ensemble d’instructions qui décrivent comment
+ un processus doit être effectué, y compris l’ordre dans lequel les tâches
+ doivent être effectuées, qui est responsable de l’exécution de chaque tâche
+ et ce qui doit se passer ensuite en fonction du résultat de chaque tâche
 \begin_inset CommandInset citation
 LatexCommand cite
 key "WfMC_glossary"
@@ -130,7 +125,7 @@ literal "false"
 
 \end_deeper
 \begin_layout Subsection*
-Définition des workflow scientifiques
+Définition Des Workflow Scientifiques
 \end_layout
 
 \begin_layout Frame
@@ -138,7 +133,7 @@ Définition des workflow scientifiques
 status open
 
 \begin_layout Plain Layout
-Définition des workflow scientifiques
+Définition Des Workflow Scientifiques
 \end_layout
 
 \end_inset
@@ -148,7 +143,7 @@ Définition des workflow scientifiques
 
 \begin_deeper
 \begin_layout Definition
-Les flux de travail scientifiques sont des applications gourmandes en données
+Les workflows scientifiques sont des applications gourmandes en données
  représentant des sources de données distribuées et des calculs complexes
  dans divers domaines, à savoir l’astronomie, les sciences de l’ingénieur
  et la bioinformatique.Dans les environnements distribués, divers capteurs
@@ -166,7 +161,7 @@ literal "false"
 
 \end_deeper
 \begin_layout Subsection*
-Avantages des workflow pour la science
+Avantages Des Workflow Pour La Science
 \end_layout
 
 \begin_layout Frame
@@ -174,7 +169,7 @@ Avantages des workflow pour la science
 status open
 
 \begin_layout Plain Layout
-Avantages des workflow pour la science
+Avantages Des Workflow Pour La Science
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lifecycle"
@@ -204,8 +199,8 @@ status open
 
 \end_inset
 
-Ils contribuent au partage des connaissances en étant disponibles en tant
- que services pour les scientifiques collaborateurs.
+Le partage des connaissances en étant disponibles en tant que services pour
+ les scientifiques collaborateurs.
 \end_layout
 
 \begin_layout Itemize
@@ -221,8 +216,7 @@ status open
 
 \end_inset
 
-À l’aide de workflow, une analyse communautaire des résultats est prise
- en charge.
+La prise en charge de l'analyse communautaire des résultats.
 \end_layout
 
 \begin_layout Itemize
@@ -238,7 +232,7 @@ status open
 
 \end_inset
 
-Les workflow sont capables de traiter d’énormes quantités de données.
+Le traitement d’énormes quantités de données.
 \end_layout
 
 \begin_layout Itemize
@@ -288,13 +282,13 @@ status open
 
 \end_inset
 
-Les workflow peuvent être utilisés pour effectuer des simulations scientifiques
- de manière parallèle et automatisée.
+Le pouvoir d'effectuer des simulations scientifiques de manière parallèle
+ et automatisée.
 \end_layout
 
 \end_deeper
 \begin_layout Subsection*
-Cycle de vie des workflow scientifiques
+Cycle De Vie Des Workflow Scientifiques
 \end_layout
 
 \begin_layout Frame
@@ -302,7 +296,15 @@ Cycle de vie des workflow scientifiques
 status open
 
 \begin_layout Plain Layout
-Cycle de vie des workflow scientifiques
+Cycle De Vie Des Workflow Scientifiques
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lifecycle"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

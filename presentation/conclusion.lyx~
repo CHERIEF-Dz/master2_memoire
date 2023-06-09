@@ -84,12 +84,8 @@
 
 \begin_body
 
-\begin_layout Section
-Cloud Computing
-\end_layout
-
-\begin_layout Subsection*
-Définition
+\begin_layout Section*
+Conclusion
 \end_layout
 
 \begin_layout Frame
@@ -97,7 +93,7 @@ Définition
 status open
 
 \begin_layout Plain Layout
-Définition Du Cloud Computing
+Conclusion
 \end_layout
 
 \end_inset
@@ -106,68 +102,6 @@ Définition Du Cloud Computing
 \end_layout
 
 \begin_deeper
-\begin_layout Definition
-Cloud Computing est un modèle pour permettre un omniprésent, commode, accès
- a la demande a un parc partage de ressources informatiques configurables
- (Réseaux, serveur, stockage, applications et services) qui peuvent être
- mis rapidement a disposition et libère avec une intervention et interaction
- minimale du fournisseur de services
-\begin_inset CommandInset citation
-LatexCommand cite
-key "NIST_definition"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Modèles De Déploiement
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Modèles De Déploiement
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Il existe 5 modèles de déploiement de Cloud Computing
-\begin_inset CommandInset citation
-LatexCommand cite
-key "NIST_definition"
-literal "false"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "vmware"
-literal "false"
-
-\end_inset
-
-:
-\end_layout
-
 \begin_layout Itemize
 \begin_inset Argument item:2
 status open
@@ -179,7 +113,8 @@ status open
 
 \end_inset
 
-Cloud privé.
+De nombreux travaux de recherche étudient le problème de la planification
+ des workflow scientifiques sur le Cloud.
 \end_layout
 
 \begin_layout Itemize
@@ -193,7 +128,8 @@ status open
 
 \end_inset
 
-Cloud communautaire.
+On a étudié dans ce travail le problème d'optimisation du coût, du makespan
+ et de l’énergie.
 \end_layout
 
 \begin_layout Itemize
@@ -207,42 +143,31 @@ status open
 
 \end_inset
 
-Cloud public.
+Nous proposons notre approche MOCS-OViC qui:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+se base sur EViMA pour mapper les tâches aux VMs.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-4-
+utilise certaines politiques de placement et de consolidation des VMs pour
+ optimiser la consommation d’énergie.
 \end_layout
 
-\end_inset
-
-Cloud hybride.
+\begin_deeper
+\begin_layout Itemize
+détermine ensuite quelles VMs à migrer depuis la source PM et quand.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-5-
-\end_layout
-
-\end_inset
-
-Multi-Cloud Computing.
+le PM de destination est sélectionné pour placer la VM sur celui-ci.
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-
-\end_layout
-
+\end_deeper
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -250,8 +175,71 @@ Multi-Cloud Computing.
 
 \end_layout
 
-\begin_layout Subsection*
-Modèles De Services
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+Nous avons évalué notre algorithme:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+en exécutant des expériences et en comparant les résultats avec certains
+ algorithmes existants.
+\end_layout
+
+\begin_layout Itemize
+en utilisant 5 workflow scientifiques de différents tailles.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Les résultats sont satisfaisants lorsque des workflow intensifs en CPU sont
+ exécutés.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+Le délai d’acquisition et de terminaison d’instance ne sont pas pris en
+ compte.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -259,7 +247,87 @@ Modèles De Services
 status open
 
 \begin_layout Plain Layout
-Modèles De Services
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Nous avons l’intention d’appliquer ce travail dans un environnement Fog
+ Computing:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+réduire la consommation d’énergie et les coûts opérationnels et l’impact
+ environnemental.
+\end_layout
+
+\begin_layout Itemize
+réduire du makespan pour améliorer QoS et l’expérience utilisateur des applicati
+ons Fog.
+\end_layout
+
+\begin_layout Itemize
+améliorer la fiabilité et la scalabilité et éviter la congestion du réseau.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{frame}[allowframebreaks]{Références}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+bibliographystyle{plain}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+bibliography{bibliographie}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Références
 \end_layout
 
 \end_inset
@@ -269,44 +337,13 @@ Modèles De Services
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
 
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename C:/Users/drancy/Downloads/S4/PFE/8.Memoire/memoire/memoire/images/cloud_services_model_graph-1024x465.jpg
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Les modèles des services Cloud 
-\begin_inset CommandInset href
-LatexCommand href
-name "quisted.net"
-target "https://www.quisted.net/index.php/2018/08/30/dc-cloud-computing"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\color cyan
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibliographie"
+options "plain"
 
 \end_inset
 

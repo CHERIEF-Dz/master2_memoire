@@ -114,11 +114,11 @@ Pour afficher les explications, ouvrir les notes.
 \end_layout
 
 \begin_layout Title
-Ordonnancement des workflows scientifiques 
+Ordonnancement Des Workflows Scientifiques 
 \end_layout
 
 \begin_layout Subtitle
-sur le cloud avec optimisation de l'énergie
+Sur Le Cloud Avec Optimisation De L'énergie
 \end_layout
 
 \begin_layout Author
@@ -144,28 +144,6 @@ Département  d'Informatique
 \end_inset
 
 Université des sciences et de la technologie d’Oran - Mohamed Boudiaf
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-logo{
-\backslash
-includegraphics[height=0.5cm]{logo-usto}}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -380,64 +358,15 @@ filename "5_simulation.lyx"
 
 \end_layout
 
-\begin_layout Section*
-Conclusion
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Conclusion
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\color cyan
-this section is empty
-\end_layout
-
-\end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Références
-\end_layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "conclusion.lyx"
 
 \end_inset
 
 
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintCited"
-bibfiles "C:/Users/drancy/Downloads/S4/PFE/8.Memoire/memoire/memoire/bibliographie"
-options "plain"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \end_body
 \end_document

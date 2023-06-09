@@ -85,7 +85,11 @@
 \begin_body
 
 \begin_layout Section
-Conception de l’approche
+Conception De Notre Approche
+\end_layout
+
+\begin_layout Subsection
+Notre approche
 \end_layout
 
 \begin_layout Subsection
@@ -94,10 +98,6 @@ EViMA
 
 \begin_layout Subsection
 VM placement & VM consolidation
-\end_layout
-
-\begin_layout Subsection
-Notre approche
 \end_layout
 
 \end_body

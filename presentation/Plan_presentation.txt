@@ -1,0 +1,20 @@
+Totale								 0/13
+
+	Ordonnancement des workflow scientifiques sur le cloud	 0/7	
+		- Ordonnancement des workflow scientifiques	-	-	-	-	-	-
+		- Objectives ordonnancement	-	-	-	-	-	-	-	-	
+		- Modélisation
+			- Représentation de workflow	-	-	-	-	-	-	-	
+			- Datacenter	-	-	-	-	-	-	-	-	-
+			- Allocation des machines virtuelles (VM)	-	-	-	-	-
+			- Formulation du problème d'optimisation multi-objectives	-	-	-
+		- État de l'art		-	-	-	-	-	-	-	-	-	
+	Notre approche						 0/3
+		- EViMA	-	-	-	-	-	-	-	-	-	-	-	
+		- VM placement & VM consolidation	-	-	-	-	-	-	-	
+		- Notre approche	-	-	-	-	-	-	-	-	-
+	Implémentation, simulation et discussion des résultats	 0/2
+		- Expérimentation	-	-	-	-	-	-	-	-	-
+		- Discussion des résultats	-	-	-	-	-	-	-	-
+	Conclusion						 0/1
+		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	

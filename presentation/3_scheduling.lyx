@@ -85,15 +85,15 @@
 \begin_body
 
 \begin_layout Section
-Ordonnancement des workflow scientifiques sur le cloud
+Ordonnancement Des Workflow Scientifiques Sur Cloud
 \end_layout
 
 \begin_layout Subsection
-Ordonnancement des workflow scientifiques
+Ordonnancement Des Workflow Scientifiques
 \end_layout
 
 \begin_layout Subsection
-Objectives ordonnancement
+Objectives Ordonnancement
 \end_layout
 
 \begin_layout Subsection
@@ -101,7 +101,7 @@ Modélisation
 \end_layout
 
 \begin_layout Subsubsection
-Représentation de workflow
+Représentation De Workflow
 \end_layout
 
 \begin_layout Subsubsection
@@ -109,11 +109,11 @@ Datacenter
 \end_layout
 
 \begin_layout Subsubsection
-Allocation des machines virtuelles (VM)
+Allocation Des Machines Virtuelles (VM)
 \end_layout
 
 \begin_layout Subsubsection
-Formulation du problème d'optimisation multi-objectives
+Formulation Du Problème D'optimisation Multi-objectives
 \end_layout
 
 \begin_layout Subsection

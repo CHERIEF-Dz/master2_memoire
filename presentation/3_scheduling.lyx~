@@ -85,107 +85,39 @@
 \begin_body
 
 \begin_layout Section
-Implémentation, Simulation & Discussion
+Ordonnancement Des Workflow Scientifiques Sur Cloud
 \end_layout
 
-\begin_layout Subsection*
-WorkflowSim
+\begin_layout Subsection
+Ordonnancement Des Workflow Scientifiques
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-WorkflowSim
+\begin_layout Subsection
+Objectives Ordonnancement
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+Modélisation
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Graphics
-	filename images/logo_workflowsim.png
-	scale 50
-
-\end_inset
-
-
+\begin_layout Subsubsection
+Représentation de workflow
 \end_layout
 
-\end_deeper
-\begin_layout Subsection*
-Applications Workflow
+\begin_layout Subsubsection
+Datacenter
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Applications Workflow
+\begin_layout Subsubsection
+Allocation des machines virtuelles (VM)
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsubsection
+Formulation du problème d'optimisation multi-objectives
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../memoire/images/workflows_compressed - Copie.jpg
-	scale 35
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Les Workflows utilisés [
-\begin_inset CommandInset href
-LatexCommand href
-name "confluence.pegasus.isi.edu"
-target "https://confluence.pegasus.isi.edu/display/pegasus/Deprecated%20Workflow%20Generator"
-literal "false"
-
-\end_inset
-
-]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Subsection*
-Expérimentation
-\end_layout
-
-\begin_layout Subsection*
-Discussion Des Résultats
+\begin_layout Subsection
+État de l'art
 \end_layout
 
 \end_body
