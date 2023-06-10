@@ -263,7 +263,11 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/MOCS_OViC.png
+<<<<<<< HEAD
 	scale 37
+=======
+	scale 45
+>>>>>>> 8ade8bd6dd6fd624bef36c6965ef35541bf1fd1d
 
 \end_inset
 

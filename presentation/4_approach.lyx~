@@ -227,7 +227,12 @@ Mappage Des Tâches Sur Les Machines Virtuelles
 \end_layout
 
 \begin_layout Subsection
+<<<<<<< HEAD
 L'emplacement Et La Consolidation Des VMs Sur Les PMs
+=======
+L'emplacement Et La Consolidation Ces Machines Virtuelles Sur Les Machines
+ Physiques
+>>>>>>> 8ade8bd6dd6fd624bef36c6965ef35541bf1fd1d
 \end_layout
 
 \begin_layout Subsection*
@@ -263,7 +268,11 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/MOCS_OViC.png
+<<<<<<< HEAD
 	scale 40
+=======
+	scale 45
+>>>>>>> 8ade8bd6dd6fd624bef36c6965ef35541bf1fd1d
 
 \end_inset
 
