@@ -38,3 +38,4 @@ Dimanche	 6/8
 	Présentation:
 		- Faire un plan de présentation.(beamer)-	-	-	-	-	-	-	OK
 		- Faire la présentation.
+	- Envoyer la dernière version de le mémoire

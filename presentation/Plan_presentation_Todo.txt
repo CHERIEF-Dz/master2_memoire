@@ -1,4 +1,4 @@
-Totale								13/26
+Totale								15/26
 	Page de garde : Il faut ajouter les noms de l'encadreur et du jury	-	-	-	-	OK
 	Sommaire	-	-	-	-	-	-	-	-	-	-	-	OK
 	Cloud Computing						 3/3
@@ -23,11 +23,11 @@ Totale								13/26
 		- EViMA	-	-	-	-	-	-	-	-	-	-	-	
 		- VM placement & VM consolidation	-	-	-	-	-	-	-	
 		- Notre approche	-	-	-	-	-	-	-	-	-
-	Implémentation, simulation et discussion des résultats	 2/4
+	Implémentation, simulation et discussion des résultats	 4/4
 		- WorkflowSim	-	-	-	-	-	-	-	-	-	-	OK
 		- Applications workflow	-	-	-	-	-	-	-	-	-	OK
-		- Expérimentation	-	-	-	-	-	-	-	-	-
-		- Discussion des résultats	-	-	-	-	-	-	-	-
+		- Expérimentation	-	-	-	-	-	-	-	-	-	OK
+		- Discussion des résultats	-	-	-	-	-	-	-	-	OK
 	Conclusion						 2/3
 		- Conclusion	-	-	-	-	-	-	-	-	-	-	OK
 		- Références	-	-	-	-	-	-	-	-	-	-	OK

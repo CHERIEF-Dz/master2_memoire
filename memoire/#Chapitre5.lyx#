@@ -1635,15 +1635,17 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-It can be observed that our approach produces shorter schedules for CyberShake,
- Epigenomics and Sipht in almost all sizes.
+It can be observed that our approach produces less expensive solutions for
+ CyberShake, Epigenomics and Sipht in almost all sizes.
  This is because our algorithm generates better makespan so VM utilization
  is less.
 \end_layout
 
 \begin_layout Standard
-MOCS-OViC generates the worst schedules when Montage and Inspiral are executed.
- This is because MOCS-OViC is a non-data-aware algorithm.
+MOCS-OViC generates the worst solution in cost when Montage and Inspiral
+ are executed.
+ This is because MOCS-OViC is a non-data-aware algorithm and it generates
+ long makespan so VM utilization is more.
  As known Inspiral is a memory-intensive workflow and Montage is a data-intensiv
 e algorithm.
 \end_layout

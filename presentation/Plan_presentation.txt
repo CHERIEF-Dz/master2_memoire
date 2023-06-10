@@ -1,4 +1,4 @@
-Totale								 0/13
+Totale								 0/11
 
 	Ordonnancement des workflow scientifiques sur le cloud	 0/7	
 		- Ordonnancement des workflow scientifiques	-	-	-	-	-	-
@@ -13,8 +13,5 @@ Totale								 0/13
 		- EViMA	-	-	-	-	-	-	-	-	-	-	-	
 		- VM placement & VM consolidation	-	-	-	-	-	-	-	
 		- Notre approche	-	-	-	-	-	-	-	-	-
-	Implémentation, simulation et discussion des résultats	 0/2
-		- Expérimentation	-	-	-	-	-	-	-	-	-
-		- Discussion des résultats	-	-	-	-	-	-	-	-
 	Conclusion						 0/1
 		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	

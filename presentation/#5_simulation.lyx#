@@ -388,7 +388,7 @@ La consommation dans les workflows de très grande taille
 status open
 
 \begin_layout Plain Layout
-Comparaison
+Discussion
 \end_layout
 
 \end_inset
@@ -440,52 +440,6 @@ La comparaison de la consommation de l'énergie
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Discussion
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-1-
-\end_layout
-
-\end_inset
-
-Notre approche MOCS-OViC consomme moins d’énergie que les algorithmes ERES
- et EERS à tout moment sauf en 2 cas.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-2-
-\end_layout
-
-\end_inset
-
-MOCS-OViC peut économiser plus d’énergie que EViMA lorsque CyberShake et
- Inspiral sont exécutés pour toutes tailles et pour Epigenomics de très
- grande taille.
-\end_layout
-
-\end_deeper
 \begin_layout Subsection*
 Évaluation De Makespan
 \end_layout
@@ -723,7 +677,7 @@ Le Makespan dans les workflows de très grande taille
 status open
 
 \begin_layout Plain Layout
-Comparaison
+Discussion
 \end_layout
 
 \end_inset
@@ -775,58 +729,8 @@ La comparaison du Makespan
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Discussion
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-1-
-\end_layout
-
-\end_inset
-
-Notre approche produit des plans d'exécution les plus courts pour CyberShake,
- Epigenomics et Sipht dans presque toutes les tailles parce que ces 3 workflows
- sont des applications gourmandes en CPU et notre algorithme MOCS-OViC équilibre
- les charges entre les hôtes mieux que les autres algorithmes.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-2-
-\end_layout
-
-\end_inset
-
-MOCS-OViC génère les pires plannings lorsque Montage et Inspiral sont exécutés.
- En effet, Inspiral nécessite beaucoup de mémoire, donc les migrations de
- machines virtuelles prennent plus de temps.
- Le montage est gourmand en transfert des données, notre algorithme ne considère
- pas le temps de transfert dans la génération des plans d'exécutions.
-\end_layout
-
-\end_deeper
 \begin_layout Subsection*
-Évaluation Du Coût
+Évaluation Du Cout
 \end_layout
 
 \begin_layout Frame
@@ -865,7 +769,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le coût de l'exécution des workflow de petite taille
+Le cout de l'exécution des workflow de petite taille
 \end_layout
 
 \end_inset
@@ -922,7 +826,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le coût de l'exécution des workflow de taille moyenne
+Le cout de l'exécution des workflow de taille moyenne
 \end_layout
 
 \end_inset
@@ -979,7 +883,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le coût de l'exécution des workflow de taille large
+Le cout de l'exécution des workflow de taille large
 \end_layout
 
 \end_inset
@@ -1036,64 +940,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le coût de l'exécution des workflows de très grande taille
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Comparaison
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename cost/all.jpg
-	scale 22
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-La comparaison des coûts de tous les algorithmes
+Le cout de l'exécution des workflows de très grande taille
 \end_layout
 
 \end_inset
@@ -1128,6 +975,67 @@ Discussion
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cost/all.jpg
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+La comparaison des couts de tous les algorithmes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Conclusion
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Argument item:2
 status open
@@ -1139,12 +1047,22 @@ status open
 
 \end_inset
 
-MOCS-OViC produit des plus courts pour CyberShake, Epigenomics et Sipht
- dans presque toutes les tailles.
- En effet, notre algorithme génère une meilleure durée de fabrication, de
- sorte que l’utilisation des machines virtuelles est moindre.
+Pour la consommation de l'énergie
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Notre approche MOCS-OViC consomme moins d’énergie que les algorithmes ERES
+ et EERS à tout moment sauf en 2 cas.
+\end_layout
+
+\begin_layout Itemize
+MOCS-OViC peut économiser plus d’énergie que EViMA lorsque CyberShake et
+ Inspiral sont exécutés pour toutes tailles et pour Epigenomics de très
+ grande taille.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 \begin_inset Argument item:2
 status open
@@ -1156,12 +1074,56 @@ status open
 
 \end_inset
 
+Pour le makespan
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Notre approche produit des plans d'exécution les plus courts pour CyberShake,
+ Epigenomics et Sipht dans presque toutes les tailles parce que ces 3 workflows
+ sont des applications gourmandes en CPU et notre algorithme MOCS-OViC équilibre
+ les charges entre les hôtes mieux que les autres algorithmes.
+\end_layout
+
+\begin_layout Itemize
 MOCS-OViC génère les pires plannings lorsque Montage et Inspiral sont exécutés.
- MOCS-OViC est un algorithme qui ne prend pas en charge les données.
+ En effet, Inspiral nécessite beaucoup de mémoire, donc les migrations de
+ machines virtuelles prennent plus de temps.
+ Le montage est gourmand en transfert des données, notre algorithme ne considère
+ pas le temps de transfert dans la génération des planinings.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+Pour le cout:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+MOCS-OViC produit des  plus courts pour CyberShake, Epigenomics et Sipht
+ dans presque toutes les tailles.
+ En effet, notre algorithme génère une meilleure durée de fabrication, de
+ sorte que l’utilisation des machines virtuelles est moindre.
+\end_layout
+
+\begin_layout Itemize
+MOCS-OViC génère les pires plannings lorsque Montage et Inspiral sont exécutés.
+ En effet, MOCS-OViC est un algorithme qui ne prend pas en charge les données.
  Comme on le sait, Inspiral est un flux de travail gourmand en mémoire et
  Montage est un algorithme gourmand en données.
 \end_layout
 
+\end_deeper
 \end_deeper
 \end_body
 \end_document
