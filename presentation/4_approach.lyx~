@@ -88,17 +88,197 @@
 Conception De Notre Approche
 \end_layout
 
+\begin_layout Subsection*
+Notre Approche
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objectives
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+Notre algorithme considère les métriques suivantes:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Consommation de l'énergie
+\end_layout
+
+\begin_layout Itemize
+Coût
+\end_layout
+
+\begin_layout Itemize
+Maskespan
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+Notre algorithme considère les contraintes suivantes:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Deadline
+\end_layout
+
+\begin_layout Itemize
+Les dépendances entre les tâches
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Notre approche consiste à proposer un nouvel algorithme MOCS-OViC (Multi-Objecti
+ve Cloud Scheduler with Optimized Virtual Machines Consolidation for Scientific
+ Workflows) qui considère deux étapes principales pour la planification
+ des workflows scientifiques sur le cloud :
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+L’étape de mappage pour affecter des tâches aux machines virtuelles (VM)
+ appropriées.
+ Pour cette étape, nous appliquons l’algorithme EViMA.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+Nous abordons les questions de consommation d’énergie.
+ Nous pensons que si la machine physique (PM) est sous-chargée ou surchargée,
+ elle consomme plus d’énergie.
+ Afin d’éviter ce problème, nous appliquons certaines stratégies de migration
+ de VM au cours de l’étape d’exécution.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
-EViMA
+Mappage Des Tâches Sur Les Machines Virtuelles
 \end_layout
 
 \begin_layout Subsection
-VM placement & VM consolidation
+L'emplacement Et La Consolidation Des VMs Sur Les PMs
 \end_layout
 
-\begin_layout Subsection
-Notre approche
+\begin_layout Subsection*
+MOCS-OViC
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+MOCS-OViC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/MOCS_OViC.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
