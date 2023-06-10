@@ -1,22 +1,19 @@
-Totale								19/26
+Totale								20/23
 	Page de garde : Il faut ajouter les noms de l'encadreur et du jury	-	-	-	-	OK
 	Sommaire	-	-	-	-	-	-	-	-	-	-	-	OK
 	Cloud Computing						 3/3
 		- Définition:	Traduction de la définition en français	-	-	-	-	-	OK
 		- Modèle de déploiement.	-	-	-	-	-	-	-	-	OK
 		- Modèle de services.	-	-	-	-	-	-	-	-	-	OK
-	Workflow et Workflow Scientifique			 4/4
+	Workflow et Workflow Scientifique			 3/3
 		- Définition du workflow	-	-	-	-	-	-	-	-	OK
 		- Définition des workflow scientifiques	-	-	-	-	-	-	-	OK
-		- Avantages des workflow pour la science	-	-	-	-	-	-	OK
 		- Cycle de vie des workflow scientifiques	-	-	-	-	-	-	OK
-	Ordonnancement des workflow scientifiques sur le cloud	 0/7	
-		- Ordonnancement des workflow scientifiques	-	-	-	-	-	-
+	Ordonnancement des workflow scientifiques sur le cloud	 2/5	
+		- Ordonnancement des workflow scientifiques	-	-	-	-	-	-	OK
 		- Modélisation
 			- Représentation de workflow	-	-	-	-	-	-	-	
-			- Datacenter	-	-	-	-	-	-	-	-	-
-			- Allocation des machines virtuelles (VM)	-	-	-	-	-
-			- Formulation du problème d'optimisation multi-objectives	-	-	-
+			- Allocation des machines virtuelles (VM)	-	-	-	-	-	OK
 		- État de l'art		-	-	-	-	-	-	-	-	-	
 		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	
 	Notre approche						 4/4

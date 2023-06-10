@@ -1051,11 +1051,6 @@ and
  
 \end_layout
 
-\begin_layout Standard
-T_{entry} and T_{exit} is a task without any predecessors and a task without
- any successors, respectively.
-\end_layout
-
 \begin_layout Subsection
 Cloud Datacenter Model
 \begin_inset CommandInset citation
@@ -5369,7 +5364,7 @@ Most of optimization goals involve metrics such as execution time/makespan
 
 \begin_layout Itemize
 Most works use DVFS as a mechanism for controlling the power/energy of computing
- devices, just one combines DVFS and DPM (including turning off machines).
+ devices, just one combines DVFS and DPM (including turning of machines).
 \end_layout
 
 \begin_layout Section

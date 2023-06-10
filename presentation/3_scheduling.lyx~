@@ -88,34 +88,302 @@
 Ordonnancement Des Workflow Scientifiques Sur Cloud
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Ordonnancement Des Workflow Scientifiques
 \end_layout
 
-\begin_layout Subsection
-Objectives Ordonnancement
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ordonnancement Des Workflow Scientifiques
 \end_layout
 
-\begin_layout Subsection
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+La planification des tâches du workfow scientifique est extrêmement importante.
+\end_layout
+
+\begin_layout Itemize
+Les algorithmes de planification sont fondés sur des politiques appropriées
+ pour déployer le workflow scientifique aux machines virtuelles.
+\end_layout
+
+\begin_layout Itemize
+Étant donné que les nœuds physiques sont hétérogènes et que leur état d’exécutio
+n change de façon dynamique au fil du temps, et que les ressources système
+ requises par les utilisateurs et les types de demandes d’utilisateurs sont
+ différents.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ordonnancement Des Workflow Scientifiques
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Une mauvaise planification peut entraîner:
+\end_layout
+
+\begin_layout Itemize
+une baisse des performances du système
+\end_layout
+
+\begin_layout Itemize
+une longue période de rétroaction des demandes
+\end_layout
+
+\begin_layout Itemize
+une baisse de la satisfaction des utilisateurs
+\end_layout
+
+\begin_layout Standard
+Donc l’objectif est:
+\end_layout
+
+\begin_layout Itemize
+optimiser l’allocation des ressources
+\end_layout
+
+\begin_layout Itemize
+minimiser le temps d'exécution
+\end_layout
+
+\begin_layout Itemize
+minimiser les coûts d’exploitation
+\end_layout
+
+\begin_layout Itemize
+maximiser la satisfaction des utilisateurs
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection*
 Modélisation
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection*
 Représentation De Workflow
 \end_layout
 
-\begin_layout Subsubsection
-Datacenter
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Représentation De Workflow
 \end_layout
 
-\begin_layout Subsubsection
-Allocation Des Machines Virtuelles (VM)
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsubsection
-Formulation Du Problème D'optimisation Multi-objectives
+\begin_deeper
+\begin_layout Itemize
+Les applications sont définies par des graphes acycliques dirigés (DAG).
+ Un workflow comprend un ensemble de tâches interdépendantes qui sont liées
+ entre elles par des données ou des dépendances fonctionnelles
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
+\begin_layout Itemize
+Nous considérons le workflow W comme un graphique G = (T, D), où T = { T
+\begin_inset Formula $_{0}$
+\end_inset
+
+, T
+\begin_inset Formula $_{1}$
+\end_inset
+
+, …, T
+\begin_inset Formula $_{n}$
+\end_inset
+
+} indique n tâches et indique les dépendances de flux de données entre elles.
+ La dépendance (T
+\begin_inset Formula $_{i}$
+\end_inset
+
+, T
+\begin_inset Formula $_{j}$
+\end_inset
+
+) signifie que la tâche T
+\begin_inset Formula $_{i}$
+\end_inset
+
+ est un prédécesseur immédiat de la tâche T
+\begin_inset Formula $_{j}$
+\end_inset
+
+ et que la tâche T
+\begin_inset Formula $_{j}$
+\end_inset
+
+ est un successeur immédiat de la tâche T
+\begin_inset Formula $_{i}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Représentation De Workflow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/CyberShake.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CyberShake [
+\begin_inset CommandInset href
+LatexCommand href
+name "confluence.pegasus.isi.edu"
+target "https://confluence.pegasus.isi.edu/display/pegasus/Deprecated%20Workflow%20Generator"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Subsubsection*
+Allocation Des Machines Virtuelles
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Allocation Des Machines Virtuelles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+Types de VM
+\shape default
+ 
+\begin_inset Formula $\begin{cases}
+𝑉𝑀_{𝐻𝐸𝐶} & (𝐻𝐸𝐶_{1}),(𝐻𝐸𝐶_{2}),(𝐻𝐸𝐶_{3})........𝐻𝐸𝐶_{𝑘}\\
+𝑉𝑀_{𝑀𝐸𝐶} & (𝑀𝐸𝐶_{1}),(𝑀𝐸𝐶_{2}),(𝑀𝐸𝐶_{3})......𝑀𝐸𝐶𝑘\\
+𝑉𝑀_{𝐿𝐸𝐶} & (𝐿𝐸𝐶_{1}),(𝐿𝐸𝐶_{2}),(𝐿𝐸𝐶_{3})..........𝐿𝐸𝐶_{𝑘}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Groupes des tâches
+\shape default
+ 
+\begin_inset Formula $\begin{cases}
+𝐻𝐶𝑇 & (𝐻𝐶𝑇1),(𝐻𝐶𝑇2),(𝐻𝐶𝑇3)........𝐻𝐶𝑇𝑛\\
+𝑀𝐶𝑇 & (𝑀𝐶𝑇1),(𝑀𝐶𝑇2),(𝑀𝐶𝑇3)......𝑀𝐶𝑇𝑛\\
+𝐿𝐶𝑇 & (𝐿𝐶𝑇1),(𝐿𝐶𝑇2),(𝐿𝐶𝑇3)...........𝐿𝐶𝑇𝑛
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 État de l'art
 \end_layout

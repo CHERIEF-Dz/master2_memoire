@@ -1051,6 +1051,19 @@ and
  
 \end_layout
 
+\begin_layout Standard
+T
+\begin_inset Formula $_{entry}$
+\end_inset
+
+ and T
+\begin_inset Formula $_{exit}$
+\end_inset
+
+ are tasks without any predecessors and a task without any successors, respectiv
+ely.
+\end_layout
+
 \begin_layout Subsection
 Cloud Datacenter Model
 \begin_inset CommandInset citation
@@ -1540,7 +1553,7 @@ VM_{vm}^{Migtime}=(C_{vm}+R_{vm})/BW
 \end_layout
 
 \begin_layout Standard
-Where:
+Where
 \end_layout
 
 \begin_layout Itemize

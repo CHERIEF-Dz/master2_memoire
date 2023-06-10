@@ -208,9 +208,12 @@ Représentation De Workflow
 
 \begin_deeper
 \begin_layout Itemize
-Les applications sont définies par des graphes acycliques dirigés (DAG).
- Un workflow comprend un ensemble de tâches interdépendantes qui sont liées
- entre elles par des données ou des dépendances fonctionnelles
+
+\lang english
+In the workflow scheduling problem, applications are defined by the directed
+ acyclic graphs (DAGs).
+ A workflow includes a set of interdependent tasks that are bounded together
+ through data or functional dependencies
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cloud_computing_simulators"
@@ -222,7 +225,9 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Nous considérons le workflow W comme un graphique G = (T, D), où T = { T
+
+\lang english
+We consider workflow W as a graph G = (T, D), where T = { T
 \begin_inset Formula $_{0}$
 \end_inset
 
@@ -234,8 +239,8 @@ Nous considérons le workflow W comme un graphique G = (T, D), où T = { T
 \begin_inset Formula $_{n}$
 \end_inset
 
-} indique n tâches et indique les dépendances de flux de données entre elles.
- La dépendance (T
+} indicates n tasks and shows the data flow dependencies among them.
+ The data-flow dependency ( T
 \begin_inset Formula $_{i}$
 \end_inset
 
@@ -243,86 +248,55 @@ Nous considérons le workflow W comme un graphique G = (T, D), où T = { T
 \begin_inset Formula $_{j}$
 \end_inset
 
-) signifie que la tâche T
+ ) means that task T
 \begin_inset Formula $_{i}$
 \end_inset
 
- est un prédécesseur immédiat de la tâche T
+ is an immediate predecessor of task T
 \begin_inset Formula $_{j}$
 \end_inset
 
- et que la tâche T
+ and task T
 \begin_inset Formula $_{j}$
 \end_inset
 
- est un successeur immédiat de la tâche T
+ is an immediate successor of task T
 \begin_inset Formula $_{i}$
 \end_inset
 
 .
 \end_layout
 
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
+\begin_layout Itemize
+Les applications sont définies par des graphes acycliques dirigés (DAG).
+ Un flux de travail comprend un ensemble de tâches interdépendantes qui
+ sont liées entre elles par des données ou des dépendances fonctionnelles
+\lang english
 
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Représentation De Workflow
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/CyberShake.jpg
-	scale 75
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CyberShake [
-\begin_inset CommandInset href
-LatexCommand href
-name "confluence.pegasus.isi.edu"
-target "https://confluence.pegasus.isi.edu/display/pegasus/Deprecated%20Workflow%20Generator"
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cloud_computing_simulators"
 literal "false"
 
 \end_inset
 
-]
+
+\lang french
+.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Nous considérons le flux de travail W comme un graphique G = (T, D), où
+ T = { T_{0}, T_{1}, … , T_{n}} indique n tâches et indique les dépendances
+ de flux de données entre elles.
+ La dépendance au flux de données ( T_{i}, T_{j} ) signifie que la tâcheT_{i}
+ est un prédécesseur immédiat de la tâche T_{j} et que la tâche T_{j} est
+ un successeur immédiat de la tâcheT_{i}.
 \end_layout
+
+\begin_layout Itemize
+\begin_inset Graphics
+	filename images/CyberShake.jpg
 
 \end_inset
 
@@ -330,10 +304,6 @@ literal "false"
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-
-\end_layout
-
 \begin_layout Subsubsection*
 Allocation Des Machines Virtuelles
 \end_layout
