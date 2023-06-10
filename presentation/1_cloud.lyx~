@@ -108,7 +108,7 @@ Définition Du Cloud Computing
 \begin_deeper
 \begin_layout Definition
 Cloud Computing est un modèle pour permettre un omniprésent, commode, accès
- a la demande a un parc partage de ressources informatiques configurables
+ à la demande a un parc partagé de ressources informatiques configurables
  (Réseaux, serveur, stockage, applications et services) qui peuvent être
  mis rapidement a disposition et libère avec une intervention et interaction
  minimale du fournisseur de services
@@ -123,10 +123,6 @@ literal "false"
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Subsection*
 Modèles De Déploiement
 \end_layout
@@ -204,7 +200,7 @@ status open
 
 \end_inset
 
-Cloud public.
+Cloud publique.
 \end_layout
 
 \begin_layout Itemize

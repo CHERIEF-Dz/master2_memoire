@@ -109,7 +109,7 @@ Définition Du Workflow
 \begin_layout Definition
 Le workflow est la séquence de tâches, d’étapes et de décisions qui doivent
  être suivies pour mener à bien un processus spécifique.
- On peut le considérer comme un ensemble d’instructions qui décrivent comment
+ On peut le considérer comme un ensemble d’instructions qui décrit comment
  un processus doit être effectué, y compris l’ordre dans lequel les tâches
  doivent être effectuées, qui est responsable de l’exécution de chaque tâche
  et ce qui doit se passer ensuite en fonction du résultat de chaque tâche
@@ -145,10 +145,10 @@ Définition Des Workflow Scientifiques
 \begin_layout Definition
 Les workflows scientifiques sont des applications gourmandes en données
  représentant des sources de données distribuées et des calculs complexes
- dans divers domaines, à savoir l’astronomie, les sciences de l’ingénieur
- et la bioinformatique.Dans les environnements distribués, divers capteurs
- et processus expérimentaux génèrent un grand volume de données qui doivent
- être collectées et traitées dans des délais spécifiques
+ dans divers domaines, à savoir l’astronomie, la bio-informatique...
+ Dans les environnements distribués, divers capteurs et processus expérimentaux
+ génèrent un grand volume de données qui doivent être collectées et traitées
+ dans des délais spécifiques
 \begin_inset CommandInset citation
 LatexCommand cite
 key "5"
@@ -161,7 +161,7 @@ literal "false"
 
 \end_deeper
 \begin_layout Subsection*
-Avantages Des Workflow Pour La Science
+Cycle De Vie Des Workflows Scientifiques
 \end_layout
 
 \begin_layout Frame
@@ -169,134 +169,7 @@ Avantages Des Workflow Pour La Science
 status open
 
 \begin_layout Plain Layout
-Avantages Des Workflow Pour La Science
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lifecycle"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\size small
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-1-
-\end_layout
-
-\end_inset
-
-Le partage des connaissances en étant disponibles en tant que services pour
- les scientifiques collaborateurs.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-2-
-\end_layout
-
-\end_inset
-
-La prise en charge de l'analyse communautaire des résultats.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-3-
-\end_layout
-
-\end_inset
-
-Le traitement d’énormes quantités de données.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-4-
-\end_layout
-
-\end_inset
-
-Les workflow sont capables de s’exécuter dans des environnements distribués.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-5-
-\end_layout
-
-\end_inset
-
-L’automatisation des étapes lors de la conception et de l’exécution du workflow
- permet aux scientifiques de se concentrer sur la résolution de leurs principaux
- problèmes scientifiques.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-6-
-\end_layout
-
-\end_inset
-
-Le pouvoir d'effectuer des simulations scientifiques de manière parallèle
- et automatisée.
-\end_layout
-
-\end_deeper
-\begin_layout Subsection*
-Cycle De Vie Des Workflow Scientifiques
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Cycle De Vie Des Workflow Scientifiques
+Cycle De Vie Des Workflows Scientifiques
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lifecycle"

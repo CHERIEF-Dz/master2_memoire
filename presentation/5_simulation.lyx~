@@ -454,13 +454,12 @@ Discussion
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-\begin_inset Argument item:2
+\begin_layout Block
+\begin_inset Argument 2
 status open
 
 \begin_layout Plain Layout
-
-1-
+Avantage
 \end_layout
 
 \end_inset
@@ -469,13 +468,12 @@ Notre approche MOCS-OViC consomme moins d’énergie que les algorithmes ERES
  et EERS à tout moment sauf en 2 cas.
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Argument item:2
+\begin_layout AlertBlock
+\begin_inset Argument 2
 status open
 
 \begin_layout Plain Layout
-
-2-
+Inconvénient
 \end_layout
 
 \end_inset
@@ -801,8 +799,8 @@ Avantage
 
 Notre approche produit des plans d'exécution les plus courts pour CyberShake,
  Epigenomics et Sipht dans presque toutes les tailles parce que ces 3 workflows
- sont des applications gourmandes en CPU et notre algorithme MOCS-OViC équilibre
- les charges entre les hôtes mieux que les autres algorithmes.
+ sont des applications gourmandes en CPU et MOCS-OViC équilibre bien les
+ charges entre les hôtes.
 \end_layout
 
 \begin_layout AlertBlock
@@ -817,8 +815,8 @@ Inconvénient
 
 MOCS-OViC génère les pires plannings lorsque Montage et Inspiral sont exécutés.
  En effet, Inspiral nécessite beaucoup de mémoire, donc les migrations de
- machines virtuelles prennent plus de temps.
- Le montage est gourmand en transfert des données, notre algorithme ne considère
+ VMs prennent plus de temps.
+ Le montage est gourmand en transfert des données, MOCS-OViC ne considère
  pas le temps de transfert dans la génération des plans d'exécutions.
 \end_layout
 
@@ -1136,10 +1134,14 @@ Avantages
 
 \end_inset
 
-MOCS-OViC produit des plus courts pour CyberShake, Epigenomics et Sipht
- dans presque toutes les tailles.
- En effet, notre algorithme génère une meilleure durée de fabrication, de
- sorte que l’utilisation des machines virtuelles est moindre.
+Notre approche produit des solutions moins coûteuses pour CyberShake, Epigenomic
+s et Sipht dans presque toutes les tailles.
+ En effet, notre algorithme génère une meilleure durée ordonnancement, de
+ sorte que l
+\end_layout
+
+\begin_layout Block
+le temps d’utilisation des machines virtuelles est moins.
 \end_layout
 
 \begin_layout AlertBlock
@@ -1152,10 +1154,11 @@ Inconvénient
 
 \end_inset
 
-MOCS-OViC génère les pires plannings lorsque Montage et Inspiral sont exécutés.
- MOCS-OViC est un algorithme qui ne prend pas en charge les données.
- Comme on le sait, Inspiral est un flux de travail gourmand en mémoire et
- Montage est un algorithme gourmand en données.
+MOCS-OViC génère les pire solutions en termes de coût lorsque Montage et
+ Inspiral sont exécutés.
+ En effet, MOCS-OViC est un algorithme non sensible aux données et il génère
+ un grand makespan, de sorte que l’utilisation des machines virtuelles est
+ plus importante.
 \end_layout
 
 \end_deeper

@@ -150,11 +150,11 @@ Notre algorithme considère les contraintes suivantes:
 
 \begin_deeper
 \begin_layout Itemize
-Deadline
+Les dépendances entre les tâches
 \end_layout
 
 \begin_layout Itemize
-Les dépendances entre les tâches
+Délai
 \end_layout
 
 \end_deeper
@@ -183,8 +183,7 @@ Description
 \begin_layout Standard
 Notre approche consiste à proposer un nouvel algorithme MOCS-OViC (Multi-Objecti
 ve Cloud Scheduler with Optimized Virtual Machines Consolidation for Scientific
- Workflows) qui considère deux étapes principales pour la planification
- des workflows scientifiques sur le cloud :
+ Workflows) qui considère deux étapes principales pour la planification:
 \end_layout
 
 \begin_layout Enumerate
@@ -198,8 +197,7 @@ status open
 
 \end_inset
 
-L’étape de mappage pour affecter des tâches aux machines virtuelles (VM)
- appropriées.
+affecter des tâches aux machines virtuelles (VM) appropriées.
  Pour cette étape, nous appliquons l’algorithme EViMA.
 \end_layout
 
@@ -214,22 +212,150 @@ status open
 
 \end_inset
 
-Nous abordons les questions de consommation d’énergie.
- Nous pensons que si la machine physique (PM) est sous-chargée ou surchargée,
- elle consomme plus d’énergie.
- Afin d’éviter ce problème, nous appliquons certaines stratégies de migration
- de VM au cours de l’étape d’exécution.
+appliquer certaines stratégies de migration de VM au cours de l’étape d’exécutio
+n, pour éviter le problème des machines physiques (PMs) sous-chargées ou
+ surchargées qui consomment plus d’énergie.
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
-Mappage Des Tâches Sur Les Machines Virtuelles
+\begin_layout Subsection*
+Affectation Des Tâches Aux Machines Virtuelles
 \end_layout
 
-\begin_layout Subsection
-L'emplacement Et La Consolidation Des VMs Sur Les PMs
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algorithme EViMA
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/EViMA.png
+	scale 43
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+L'emplacement Et La Consolidation Des Machines Virtuelles
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+L'emplacement Et La Consolidation Des Machines Virtuelles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Il y a 4 sous problèmes:
+\end_layout
+
+\begin_layout Itemize
+Détection des hôtes sous-chargés: 
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\color blue
+boxplot
+\end_layout
+
+\begin_layout Itemize
+Détection des hôtes surchargés: 
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+
+\color blue
+boxplot
+\end_layout
+
+\begin_layout Itemize
+Sélectionner une machine virtuelle:
+\color blue
+ 
+\color inherit
+
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+
+\color blue
+\lang english
+Minimum Energy Cost Migration (MECM).
+\end_layout
+
+\begin_layout Itemize
+Sélectionner un hôte de destination: 
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+4-
+\end_layout
+
+\end_inset
+
+
+\color blue
+algorithme glouton
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 MOCS-OViC
 \end_layout
@@ -263,11 +389,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/MOCS_OViC.png
-<<<<<<< HEAD
 	scale 37
-=======
-	scale 45
->>>>>>> 8ade8bd6dd6fd624bef36c6965ef35541bf1fd1d
 
 \end_inset
 

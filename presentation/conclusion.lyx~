@@ -113,8 +113,8 @@ status open
 
 \end_inset
 
-De nombreux travaux de recherche étudient le problème de la planification
- des workflow scientifiques sur le Cloud.
+Nombreux travaux de recherche étudient le problème de la planification des
+ workflows scientifiques sur le Cloud.
 \end_layout
 
 \begin_layout Itemize
@@ -148,20 +148,20 @@ Nous proposons notre approche MOCS-OViC qui:
 
 \begin_deeper
 \begin_layout Itemize
-se base sur EViMA pour mapper les tâches aux VMs.
+se base sur EViMA pour affecter les tâches aux VMs.
 \end_layout
 
 \begin_layout Itemize
 utilise certaines politiques de placement et de consolidation des VMs pour
- optimiser la consommation d’énergie.
+ optimiser la consommation d’énergie:
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-détermine ensuite quelles VMs à migrer depuis la source PM et quand.
+\begin_layout Enumerate
+détermine quelles VMs à migrer depuis la source PM et quand.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 le PM de destination est sélectionné pour placer la VM sur celui-ci.
 \end_layout
 
@@ -210,11 +210,21 @@ en exécutant des expériences et en comparant les résultats avec certains
 \end_layout
 
 \begin_layout Itemize
-en utilisant 5 workflow scientifiques de différents tailles.
+en utilisant 5 workflows scientifiques de différents tailles.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
 Les résultats sont satisfaisants lorsque des workflow intensifs en CPU sont
  exécutés.
 \end_layout
@@ -225,7 +235,7 @@ status open
 
 \begin_layout Plain Layout
 
-2-
+3-
 \end_layout
 
 \end_inset

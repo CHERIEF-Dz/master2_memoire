@@ -1,4 +1,4 @@
-Totale								17/27
+Totale								19/26
 	Page de garde : Il faut ajouter les noms de l'encadreur et du jury	-	-	-	-	OK
 	Sommaire	-	-	-	-	-	-	-	-	-	-	-	OK
 	Cloud Computing						 3/3
@@ -12,24 +12,23 @@ Totale								17/27
 		- Cycle de vie des workflow scientifiques	-	-	-	-	-	-	OK
 	Ordonnancement des workflow scientifiques sur le cloud	 0/7	
 		- Ordonnancement des workflow scientifiques	-	-	-	-	-	-
-		- Objectives ordonnancement	-	-	-	-	-	-	-	-	
 		- Modélisation
 			- Représentation de workflow	-	-	-	-	-	-	-	
 			- Datacenter	-	-	-	-	-	-	-	-	-
 			- Allocation des machines virtuelles (VM)	-	-	-	-	-
 			- Formulation du problème d'optimisation multi-objectives	-	-	-
 		- État de l'art		-	-	-	-	-	-	-	-	-	
-	Notre approche						 2/4
+		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	
+	Notre approche						 4/4
 		- Objectives et Description	-	-	-	-	-	-	-	-	OK
-		- EViMA	-	-	-	-	-	-	-	-	-	-	-	
-		- VM placement & VM consolidation	-	-	-	-	-	-	-	
+		- EViMA	-	-	-	-	-	-	-	-	-	-	-	OK
+		- VM placement & VM consolidation	-	-	-	-	-	-	-	OK
 		- MOCS-OViC	-	-	-	-	-	-	-	-	-	-	OK
 	Implémentation, simulation et discussion des résultats	 4/4
 		- WorkflowSim	-	-	-	-	-	-	-	-	-	-	OK
 		- Applications workflow	-	-	-	-	-	-	-	-	-	OK
 		- Expérimentation	-	-	-	-	-	-	-	-	-	OK
 		- Discussion des résultats	-	-	-	-	-	-	-	-	OK
-	Conclusion						 2/3
+	Conclusion						 2/2
 		- Conclusion	-	-	-	-	-	-	-	-	-	-	OK
 		- Références	-	-	-	-	-	-	-	-	-	-	OK
-		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	
