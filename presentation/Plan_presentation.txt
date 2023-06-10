@@ -1,4 +1,4 @@
-Totale								 0/11
+Totale								 0/10
 
 	Ordonnancement des workflow scientifiques sur le cloud	 0/7	
 		- Ordonnancement des workflow scientifiques	-	-	-	-	-	-
@@ -9,9 +9,8 @@ Totale								 0/11
 			- Allocation des machines virtuelles (VM)	-	-	-	-	-
 			- Formulation du problème d'optimisation multi-objectives	-	-	-
 		- État de l'art		-	-	-	-	-	-	-	-	-	
-	Notre approche						 0/3
+	Notre approche						 0/2
 		- EViMA	-	-	-	-	-	-	-	-	-	-	-	
-		- VM placement & VM consolidation	-	-	-	-	-	-	-	
-		- Notre approche	-	-	-	-	-	-	-	-	-
+		- VM placement & VM consolidation	-	-	-	-	-	-	-
 	Conclusion						 0/1
 		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	

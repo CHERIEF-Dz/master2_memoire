@@ -191,6 +191,10 @@ Cost
 Maskespan
 \end_layout
 
+\begin_layout Itemize
+Deadline
+\end_layout
+
 \begin_layout Standard
 Our proposed approach for scientific workflows scheduling on Clouds considers
  partitioning workflow and grouping tasks in the same partition as just
@@ -1034,7 +1038,7 @@ VMs Placement & Consolidation On PMs
 \end_layout
 
 \begin_layout Standard
-Information and communications technology equipment (ICT) and cooling equipment
+Information and Communications Technology equipment (ICT) and cooling equipment
  consume most of the energy in the data centers.
  The server is the most critical ICT equipment.
  In most cases, the average CPU utilization rate of the server is only 15%

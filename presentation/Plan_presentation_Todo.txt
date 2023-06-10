@@ -1,4 +1,4 @@
-Totale								15/26
+Totale								17/27
 	Page de garde : Il faut ajouter les noms de l'encadreur et du jury	-	-	-	-	OK
 	Sommaire	-	-	-	-	-	-	-	-	-	-	-	OK
 	Cloud Computing						 3/3
@@ -19,10 +19,11 @@ Totale								15/26
 			- Allocation des machines virtuelles (VM)	-	-	-	-	-
 			- Formulation du problème d'optimisation multi-objectives	-	-	-
 		- État de l'art		-	-	-	-	-	-	-	-	-	
-	Notre approche						 0/3
+	Notre approche						 2/4
+		- Objectives et Description	-	-	-	-	-	-	-	-	OK
 		- EViMA	-	-	-	-	-	-	-	-	-	-	-	
 		- VM placement & VM consolidation	-	-	-	-	-	-	-	
-		- Notre approche	-	-	-	-	-	-	-	-	-
+		- MOCS-OViC	-	-	-	-	-	-	-	-	-	-	OK
 	Implémentation, simulation et discussion des résultats	 4/4
 		- WorkflowSim	-	-	-	-	-	-	-	-	-	-	OK
 		- Applications workflow	-	-	-	-	-	-	-	-	-	OK

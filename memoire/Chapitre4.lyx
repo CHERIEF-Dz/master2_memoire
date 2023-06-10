@@ -191,6 +191,10 @@ Cost
 Maskespan
 \end_layout
 
+\begin_layout Itemize
+Deadline
+\end_layout
+
 \begin_layout Standard
 Our proposed approach for scientific workflows scheduling on Clouds considers
  partitioning workflow and grouping tasks in the same partition as just
@@ -1486,7 +1490,7 @@ State Apply algorithm EViMA
 
 
 \backslash
-State Sort PMs based on PM utilisation
+State Sort $PMs$ based on capacity /availibility in descending order
 \end_layout
 
 \begin_layout Plain Layout
@@ -1514,13 +1518,6 @@ State Add all VMs that are in over-loaded PMs to $VM_{candidateList}$
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-State Sort $PMs$ based on capacity /availibility in descending order
 \end_layout
 
 \begin_layout Plain Layout

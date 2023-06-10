@@ -789,13 +789,12 @@ Discussion
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-\begin_inset Argument item:2
+\begin_layout Block
+\begin_inset Argument 2
 status open
 
 \begin_layout Plain Layout
-
-1-
+Avantage
 \end_layout
 
 \end_inset
@@ -806,13 +805,12 @@ Notre approche produit des plans d'exécution les plus courts pour CyberShake,
  les charges entre les hôtes mieux que les autres algorithmes.
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Argument item:2
+\begin_layout AlertBlock
+\begin_inset Argument 2
 status open
 
 \begin_layout Plain Layout
-
-2-
+Inconvénient
 \end_layout
 
 \end_inset
@@ -1128,13 +1126,12 @@ Discussion
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-\begin_inset Argument item:2
+\begin_layout Block
+\begin_inset Argument 2
 status open
 
 \begin_layout Plain Layout
-
-1-
+Avantages
 \end_layout
 
 \end_inset
@@ -1145,19 +1142,18 @@ MOCS-OViC produit des plus courts pour CyberShake, Epigenomics et Sipht
  sorte que l’utilisation des machines virtuelles est moindre.
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Argument item:2
+\begin_layout AlertBlock
+\begin_inset Argument 2
 status open
 
 \begin_layout Plain Layout
-
-2-
+Inconvénient
 \end_layout
 
 \end_inset
 
 MOCS-OViC génère les pires plannings lorsque Montage et Inspiral sont exécutés.
- En effet, MOCS-OViC est un algorithme qui ne prend pas en charge les données.
+ MOCS-OViC est un algorithme qui ne prend pas en charge les données.
  Comme on le sait, Inspiral est un flux de travail gourmand en mémoire et
  Montage est un algorithme gourmand en données.
 \end_layout
