@@ -1,7 +1,5 @@
-Totale								 0/3
+Totale								 0/2
 
-	Ordonnancement des workflow scientifiques sur le cloud	 0/3		
-		- Modélisation
-			- Représentation de workflow	-	-	-	-	-	-	-
+	Ordonnancement des workflow scientifiques sur le cloud	 0/2
 		- État de l'art		-	-	-	-	-	-	-	-	-
 		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	

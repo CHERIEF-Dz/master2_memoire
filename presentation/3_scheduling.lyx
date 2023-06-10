@@ -89,7 +89,7 @@ Ordonnancement Des Workflow Scientifiques Sur Cloud
 \end_layout
 
 \begin_layout Subsection*
-Ordonnancement Des Workflow Scientifiques
+Ordonnancements Des Workflow Scientifiques
 \end_layout
 
 \begin_layout Frame
@@ -97,7 +97,7 @@ Ordonnancement Des Workflow Scientifiques
 status open
 
 \begin_layout Plain Layout
-Ordonnancement Des Workflow Scientifiques
+Ordonnancements Des Workflow Scientifiques
 \end_layout
 
 \end_inset
@@ -119,7 +119,7 @@ Les algorithmes de planification sont fondés sur des politiques appropriées
 Étant donné que les nœuds physiques sont hétérogènes et que leur état d’exécutio
 n change de façon dynamique au fil du temps, et que les ressources système
  requises par les utilisateurs et les types de demandes d’utilisateurs sont
- différents.
+ différentes.
 \end_layout
 
 \end_deeper
@@ -189,7 +189,7 @@ maximiser la satisfaction des utilisateurs
 Modélisation
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Représentation De Workflow
 \end_layout
 

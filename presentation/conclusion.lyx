@@ -162,7 +162,7 @@ détermine quelles VMs à migrer depuis la source PM et quand.
 \end_layout
 
 \begin_layout Enumerate
-le PM de destination est sélectionné pour placer la VM sur celui-ci.
+le PM de destination est sélectionné pour placer la VM.
 \end_layout
 
 \end_deeper

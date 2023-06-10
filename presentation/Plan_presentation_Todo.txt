@@ -1,4 +1,4 @@
-Totale								20/23
+Totale								21/23
 	Page de garde : Il faut ajouter les noms de l'encadreur et du jury	-	-	-	-	OK
 	Sommaire	-	-	-	-	-	-	-	-	-	-	-	OK
 	Cloud Computing						 3/3
@@ -9,10 +9,10 @@ Totale								20/23
 		- Définition du workflow	-	-	-	-	-	-	-	-	OK
 		- Définition des workflow scientifiques	-	-	-	-	-	-	-	OK
 		- Cycle de vie des workflow scientifiques	-	-	-	-	-	-	OK
-	Ordonnancement des workflow scientifiques sur le cloud	 2/5	
+	Ordonnancement des workflow scientifiques sur le cloud	 3/5	
 		- Ordonnancement des workflow scientifiques	-	-	-	-	-	-	OK
 		- Modélisation
-			- Représentation de workflow	-	-	-	-	-	-	-	
+			- Représentation de workflow	-	-	-	-	-	-	-	OK
 			- Allocation des machines virtuelles (VM)	-	-	-	-	-	OK
 		- État de l'art		-	-	-	-	-	-	-	-	-	
 		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	

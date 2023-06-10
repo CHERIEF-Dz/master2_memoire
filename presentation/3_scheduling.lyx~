@@ -89,7 +89,7 @@ Ordonnancement Des Workflow Scientifiques Sur Cloud
 \end_layout
 
 \begin_layout Subsection*
-Ordonnancement Des Workflow Scientifiques
+Ordonnancements Des Workflow Scientifiques
 \end_layout
 
 \begin_layout Frame
@@ -97,7 +97,7 @@ Ordonnancement Des Workflow Scientifiques
 status open
 
 \begin_layout Plain Layout
-Ordonnancement Des Workflow Scientifiques
+Ordonnancements Des Workflow Scientifiques
 \end_layout
 
 \end_inset
@@ -189,7 +189,7 @@ maximiser la satisfaction des utilisateurs
 Modélisation
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Représentation De Workflow
 \end_layout
 
@@ -296,6 +296,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/CyberShake.jpg
+	scale 75
 
 \end_inset
 
