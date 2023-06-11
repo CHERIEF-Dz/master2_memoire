@@ -107,12 +107,42 @@ Définition Du Workflow
 
 \begin_deeper
 \begin_layout Definition
-Le workflow est la séquence de tâches, d’étapes et de décisions qui doivent
- être suivies pour mener à bien un processus spécifique.
+Le 
+\series bold
+workflow
+\series default
+ est la séquence de 
+\series bold
+tâches
+\series default
+, d’
+\series bold
+étapes
+\series default
+ et de 
+\series bold
+décisions
+\series default
+ qui doivent être suivies pour mener à bien un processus spécifique.
  On peut le considérer comme un ensemble d’instructions qui décrit comment
- un processus doit être effectué, y compris l’ordre dans lequel les tâches
- doivent être effectuées, qui est responsable de l’exécution de chaque tâche
- et ce qui doit se passer ensuite en fonction du résultat de chaque tâche
+ un 
+\series bold
+processus
+\series default
+ doit être effectué, y compris l’
+\series bold
+ordre
+\series default
+ dans lequel les tâches doivent être effectuées, qui est responsable de
+ l’
+\series bold
+exécution
+\series default
+ de chaque tâche et ce qui doit se passer ensuite en fonction du 
+\series bold
+résultat
+\series default
+ de chaque tâche
 \begin_inset CommandInset citation
 LatexCommand cite
 key "WfMC_glossary"
@@ -143,12 +173,37 @@ Définition Des Workflow Scientifiques
 
 \begin_deeper
 \begin_layout Definition
-Les workflows scientifiques sont des applications gourmandes en données
- représentant des sources de données distribuées et des calculs complexes
+Les 
+\series bold
+workflows scientifiques
+\series default
+ sont des applications 
+\series bold
+gourmandes en données
+\series default
+ représentant des sources de données distribuées et des
+\series bold
+ calculs complexes
+\series default
  dans divers domaines, à savoir l’astronomie, la bio-informatique...
  Dans les environnements distribués, divers capteurs et processus expérimentaux
- génèrent un grand volume de données qui doivent être collectées et traitées
- dans des délais spécifiques
+ génèrent un 
+\series bold
+grand volume de données
+\series default
+ qui 
+\bar under
+doivent
+\bar default
+ être collectées et 
+\series bold
+traitées
+\series default
+ dans des 
+\series bold
+délais
+\series default
+ spécifiques
 \begin_inset CommandInset citation
 LatexCommand cite
 key "5"
@@ -200,7 +255,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cycle de vie des workflow scientifiques
+
+\series bold
+Cycle
+\series default
+ de vie des 
+\series bold
+workflow scientifiques
+\series default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lifecycle"

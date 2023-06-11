@@ -97,7 +97,7 @@ Ordonnancements Des Workflow Scientifiques
 status open
 
 \begin_layout Plain Layout
-Ordonnancements Des Workflow Scientifiques
+Pourquoi la planification?
 \end_layout
 
 \end_inset
@@ -107,19 +107,59 @@ Ordonnancements Des Workflow Scientifiques
 
 \begin_deeper
 \begin_layout Itemize
-La planification des tâches du workfow scientifique est extrêmement importante.
+La 
+\series bold
+planification
+\series default
+ des tâches du workfow scientifique est extrêmement 
+\series bold
+importante
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
-Les algorithmes de planification sont fondés sur des politiques appropriées
- pour déployer le workflow scientifique aux machines virtuelles.
+Les algorithmes de 
+\series bold
+planification
+\series default
+ sont fondés sur des 
+\series bold
+politiques
+\series default
+ appropriées pour 
+\series bold
+déployer
+\series default
+ le workflow scientifique aux 
+\series bold
+machines virtuelles
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
-Étant donné que les nœuds physiques sont hétérogènes et que leur état d’exécutio
-n change de façon dynamique au fil du temps, et que les ressources système
- requises par les utilisateurs et les types de demandes d’utilisateurs sont
- différentes.
+Étant donné que les nœuds physiques sont 
+\series bold
+hétérogènes
+\series default
+ et que leur état d’exécution change de façon 
+\series bold
+dynamique
+\series default
+ au fil du temps, et que les 
+\series bold
+ressources
+\series default
+ système requises par les utilisateurs et les types de 
+\series bold
+demandes
+\series default
+ d’utilisateurs sont 
+\series bold
+différentes
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -135,7 +175,7 @@ n change de façon dynamique au fil du temps, et que les ressources système
 status open
 
 \begin_layout Plain Layout
-Ordonnancement Des Workflow Scientifiques
+Pourquoi la planification?
 \end_layout
 
 \end_inset
@@ -145,46 +185,94 @@ Ordonnancement Des Workflow Scientifiques
 
 \begin_deeper
 \begin_layout Standard
-Une mauvaise planification peut entraîner:
+Une 
+\series bold
+mauvaise
+\series default
+ planification peut entraîner:
 \end_layout
 
 \begin_layout Itemize
-une baisse des performances du système
+une 
+\series bold
+baisse des performances
+\series default
+ du système
 \end_layout
 
 \begin_layout Itemize
-une longue période de rétroaction des demandes
+une 
+\series bold
+longue période
+\series default
+ de rétroaction des demandes
 \end_layout
 
 \begin_layout Itemize
-une baisse de la satisfaction des utilisateurs
-\end_layout
-
-\begin_layout Standard
-Donc l’objectif est:
-\end_layout
-
-\begin_layout Itemize
-optimiser l’allocation des ressources
-\end_layout
-
-\begin_layout Itemize
-minimiser le temps d'exécution
-\end_layout
-
-\begin_layout Itemize
-minimiser les coûts d’exploitation
-\end_layout
-
-\begin_layout Itemize
-maximiser la satisfaction des utilisateurs
+une 
+\series bold
+baisse de la satisfaction
+\series default
+ des utilisateurs
 \end_layout
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
 
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objectifs De La Planification
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Donc l’
+\series bold
+objectif
+\series default
+ est:
+\end_layout
+
+\begin_layout Itemize
+optimiser l’
+\series bold
+allocation des ressources
+\end_layout
+
+\begin_layout Itemize
+minimiser le 
+\series bold
+temps d'exécution
+\end_layout
+
+\begin_layout Itemize
+minimiser les 
+\series bold
+coûts d’exploitation
+\end_layout
+
+\begin_layout Itemize
+maximiser la 
+\series bold
+satisfaction
+\series default
+ des utilisateurs
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 Modélisation
 \end_layout
@@ -208,9 +296,28 @@ Représentation De Workflow
 
 \begin_deeper
 \begin_layout Itemize
-Les applications sont définies par des graphes acycliques dirigés (DAG).
- Un workflow comprend un ensemble de tâches interdépendantes qui sont liées
- entre elles par des données ou des dépendances fonctionnelles
+Les applications sont définies par des
+\series bold
+ graphes acycliques dirigés 
+\series default
+(DAG).
+ Un workflow comprend un ensemble de 
+\series bold
+tâches
+\series default
+ interdépendantes qui sont 
+\series bold
+liées
+\series default
+ entre elles par des 
+\series bold
+données
+\series default
+ ou des 
+\series bold
+dépendances fonctionnelles
+\series default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cloud_computing_simulators"
@@ -222,7 +329,15 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Nous considérons le workflow W comme un graphique G = (T, D), où T = { T
+Nous considérons le workflow comme un graphe G = (T, D)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+T
+\series default
+ = { T
 \begin_inset Formula $_{0}$
 \end_inset
 
@@ -234,8 +349,35 @@ Nous considérons le workflow W comme un graphique G = (T, D), où T = { T
 \begin_inset Formula $_{n}$
 \end_inset
 
-} indique n tâches et indique les dépendances de flux de données entre elles.
- La dépendance (T
+} indique 
+\series bold
+n
+\series default
+ 
+\series bold
+tâches
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+D
+\series default
+ indique les 
+\series bold
+dépendances
+\series default
+ de flux de données entre les tâches.
+\end_layout
+
+\begin_layout Itemize
+La 
+\series bold
+dépendance
+\series default
+ (T
 \begin_inset Formula $_{i}$
 \end_inset
 
@@ -249,14 +391,6 @@ Nous considérons le workflow W comme un graphique G = (T, D), où T = { T
 
  est un prédécesseur immédiat de la tâche T
 \begin_inset Formula $_{j}$
-\end_inset
-
- et que la tâche T
-\begin_inset Formula $_{j}$
-\end_inset
-
- est un successeur immédiat de la tâche T
-\begin_inset Formula $_{i}$
 \end_inset
 
 .
@@ -423,6 +557,7 @@ begin{frame}[allowframebreaks]{État de l'art}
 \begin_layout Plain Layout
 \align center
 
+\series bold
 \size footnotesize
 Algorithme
 \end_layout
@@ -435,6 +570,7 @@ Algorithme
 \begin_layout Plain Layout
 \align center
 
+\series bold
 \size footnotesize
 Année
 \end_layout
@@ -447,6 +583,7 @@ Année
 \begin_layout Plain Layout
 \align center
 
+\series bold
 \size footnotesize
 Paramètres
 \end_layout
@@ -459,6 +596,7 @@ Paramètres
 \begin_layout Plain Layout
 \align center
 
+\series bold
 \size footnotesize
 Système
 \end_layout
@@ -471,6 +609,7 @@ Système
 \begin_layout Plain Layout
 \align center
 
+\series bold
 \size footnotesize
 Mécanisme
 \end_layout
@@ -644,7 +783,7 @@ Pareto front
 \align center
 
 \size footnotesize
-HVX
+HVC
 \end_layout
 
 \end_inset
@@ -2729,7 +2868,18 @@ Après comparaison de ces approches, nous pouvons conclure que:
 \end_layout
 
 \begin_layout Itemize
-Il existe une variété de formulations de problèmes et de types d’algorithmes
+Il existe une 
+\series bold
+variété
+\series default
+ de 
+\series bold
+formulations de problèmes
+\series default
+ et de 
+\series bold
+types d’algorithmes
+\series default
  correspondants qui s’attaquent au problème de la planification du workflow
  pour le Cloud:
 \end_layout
@@ -2740,28 +2890,39 @@ l’apprentissage automatique (apprentissage supervisé)
 \end_layout
 
 \begin_layout Itemize
-la programmation dynamique
+la programmation 
+\series bold
+dynamique
 \end_layout
 
 \begin_layout Itemize
+la programmation 
+\series bold
+entière
+\end_layout
+
+\begin_layout Itemize
+programmation 
+\series bold
+par contrainte
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 fuzzy logic
 \end_layout
 
 \begin_layout Itemize
-la programmation entière
+algorithmes 
+\series bold
+aléatoires
 \end_layout
 
 \begin_layout Itemize
-algorithmes aléatoires
-\end_layout
-
-\begin_layout Itemize
-algorithmes évolutifs
-\end_layout
-
-\begin_layout Itemize
-programmation par contrainte et autres.
- 
+algorithmes 
+\series bold
+évolutifs
 \end_layout
 
 \end_deeper
@@ -2802,11 +2963,23 @@ status open
 
 \end_inset
 
-La plupart des objectifs d’optimisation impliquent des mesures telles que
- le temps d’exécution/makespan et l’énergie.
- Un nombre limité de travaux tient compte les performances, la fiabilité
- et la tolérance aux pannes.
- 
+La plupart des 
+\series bold
+objectifs d’optimisation
+\series default
+ impliquent des mesures telles que le
+\series bold
+ temps d’exécution
+\series default
+/
+\series bold
+makespan
+\series default
+ et l’
+\series bold
+énergie
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2820,9 +2993,54 @@ status open
 
 \end_inset
 
-La plupart des travaux utilisent le DVFS comme mécanisme de contrôle de
- la puissance/énergie des appareils informatiques, un seul combine le DVFS
- et le DPM.
+Un nombre limité de travaux tient compte les 
+\series bold
+performances
+\series default
+, la 
+\series bold
+fiabilité
+\series default
+ et la 
+\series bold
+tolérance aux pannes
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+3-
+\end_layout
+
+\end_inset
+
+La plupart des travaux utilisent le 
+\series bold
+DVFS
+\series default
+ comme mécanisme de contrôle de la 
+\series bold
+puissance
+\series default
+/
+\series bold
+énergie
+\series default
+ des hôtes, un seul algorithme combine le 
+\series bold
+DVFS
+\series default
+ et le 
+\series bold
+DPM
+\series default
+.
  
 \end_layout
 

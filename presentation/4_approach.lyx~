@@ -97,6 +97,83 @@ Notre Approche
 status open
 
 \begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Notre approche consiste à proposer un nouvel algorithme MOCS-OViC 
+\series bold
+(Multi-Objective Cloud Scheduler with Optimized Virtual Machines Consolidation
+ for Scientific Workflows)
+\series default
+ qui considère 2 étapes principales pour la planification:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\shape italic
+affecter des tâches aux machines virtuelles (VM) appropriées
+\shape default
+.
+ Pour cette étape, nous appliquons l’
+\color blue
+algorithme EViMA
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+
+2-
+\end_layout
+
+\end_inset
+
+
+\shape italic
+appliquer certaines 
+\color blue
+stratégies de migration
+\color inherit
+ de VM
+\shape default
+ au cours de l’étape d’exécution, pour éviter le problème des machines physiques
+ (PMs) sous-chargées ou surchargées qui consomment plus d’énergie.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Objectives
 \end_layout
 
@@ -117,19 +194,29 @@ status open
 
 \end_inset
 
-Notre algorithme considère les métriques suivantes:
+Notre algorithme considère les 
+\series bold
+métriques
+\series default
+ suivantes:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\series bold
 Consommation de l'énergie
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Coût
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Maskespan
 \end_layout
 
@@ -145,15 +232,23 @@ status open
 
 \end_inset
 
-Notre algorithme considère les contraintes suivantes:
+Notre algorithme considère les 
+\series bold
+contraintes
+\series default
+ suivantes:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\series bold
 Les dépendances entre les tâches
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Délai
 \end_layout
 
@@ -166,12 +261,16 @@ Délai
 
 \end_layout
 
+\begin_layout Subsection*
+MOCS-OViC
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-Description
+MOCS-OViC
 \end_layout
 
 \end_inset
@@ -181,40 +280,34 @@ Description
 
 \begin_deeper
 \begin_layout Standard
-Notre approche consiste à proposer un nouvel algorithme MOCS-OViC (Multi-Objecti
-ve Cloud Scheduler with Optimized Virtual Machines Consolidation for Scientific
- Workflows) qui considère deux étapes principales pour la planification:
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:2
+\align center
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
 
-1-
 \end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/MOCS_OViC.png
+	scale 37
 
 \end_inset
 
-affecter des tâches aux machines virtuelles (VM) appropriées.
- Pour cette étape, nous appliquons l’algorithme EViMA.
-\end_layout
 
-\begin_layout Enumerate
-\begin_inset Argument item:2
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
-2-
 \end_layout
 
 \end_inset
 
-appliquer certaines stratégies de migration de VM au cours de l’étape d’exécutio
-n, pour éviter le problème des machines physiques (PMs) sous-chargées ou
- surchargées qui consomment plus d’énergie.
+
 \end_layout
 
 \end_deeper
@@ -269,7 +362,7 @@ L'emplacement Et La Consolidation Des Machines Virtuelles
 status open
 
 \begin_layout Plain Layout
-L'emplacement Et La Consolidation Des Machines Virtuelles
+L'emplacement Et La Consolidation Des VMs
 \end_layout
 
 \end_inset
@@ -278,6 +371,14 @@ L'emplacement Et La Consolidation Des Machines Virtuelles
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Il y a
+\series bold
+ 4 sous problèmes
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
 Détection des hôtes sous-chargés: 
 \begin_inset Argument item:2
@@ -349,56 +450,6 @@ status open
 
 \color blue
 algorithme glouton
-\end_layout
-
-\end_deeper
-\begin_layout Subsection*
-MOCS-OViC
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-MOCS-OViC
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/MOCS_OViC.png
-	scale 37
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper

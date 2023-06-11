@@ -1,4 +1,4 @@
-Totale:		20/26
+Totale:		24/27
 
 Vendredi	10/10
 	- Chapitre 3:
@@ -28,14 +28,14 @@ Samedi		 5/8
 	- Choosing another algorithm to compare with.	-	-	-	-	-	-	-	OK
 	- Compléter le chapitre5 de la simulation.	-	-	-	-	-	-	-	OK
 
-Dimanche	 6/8
+Dimanche	 9/9
 	- Chapitre3 Fixer l'affichage du tableau comparatif	-	-	-	-	-	-	OK
 	- Vérifier le plagiat.	-	-	-	-	-	-	-	-	-	-	OK
 	- Faire la conculsion générale.	-	-	-	-	-	-	-	-	-	OK
 	- Verify chapter 3,4 and 5 using Grammerly.	-	-	-	-	-	-	-	OK
 	- Envoyer la 1ère version le dimanche.	-	-	-	-	-	-	-	-	OK
-	- Reading all algoirthms
+	- Reading all algoirthms	-	-	-	-	-	-	-	-	-	OK
 	Présentation:
 		- Faire un plan de présentation.(beamer)-	-	-	-	-	-	-	OK
-		- Faire la présentation.
-	- Envoyer la dernière version de le mémoire
+		- Faire la présentation.	-	-	-	-	-	-	-	-	OK
+	- Envoyer la dernière version de le mémoire	-	-	-	-	-	-	-	OK

@@ -1,6 +1,6 @@
 # master2_memoire
 
-Totale:		 0/6
+Totale:		 0/3
 
 Samedi		 0/3
 	Simulation:
@@ -9,9 +9,3 @@ Samedi		 0/3
 		- EViMA
 			. Deploy Vm.				x1
 			. Put VM on save mood.			x2
-
-Dimanche	 0/3
-	- Reading all algoirthms
-	- Verifiying the comparision lecture
-	Présentation:
-		- Faire la présentation.

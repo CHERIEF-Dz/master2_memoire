@@ -191,7 +191,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-La consommation d’énergie dans les workflow de petite taille
+La 
+\series bold
+consommation d’énergie
+\series default
+ dans les workflow de 
+\series bold
+petite
+\series default
+ taille
 \end_layout
 
 \end_inset
@@ -248,7 +256,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-La consommation d’énergie dans les workflow de taille moyenne
+L'
+\series bold
+énergie
+\series default
+ dans les workflow de taille 
+\series bold
+moyenne
 \end_layout
 
 \end_inset
@@ -305,7 +319,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-La consommation d’énergie dans les workflow de grande taille
+La 
+\series bold
+consommation d’énergie
+\series default
+ dans les workflow de 
+\series bold
+grande
+\series default
+ taille
 \end_layout
 
 \end_inset
@@ -362,7 +384,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-La consommation dans les workflows de très grande taille
+La 
+\series bold
+consommation
+\series default
+ dans les workflows de 
+\series bold
+très grande 
+\series default
+taille
 \end_layout
 
 \end_inset
@@ -388,7 +418,7 @@ La consommation dans les workflows de très grande taille
 status open
 
 \begin_layout Plain Layout
-Comparaison
+Discussion
 \end_layout
 
 \end_inset
@@ -445,7 +475,7 @@ La comparaison de la consommation de l'énergie
 status open
 
 \begin_layout Plain Layout
-Discussion
+Interprétation
 \end_layout
 
 \end_inset
@@ -464,8 +494,23 @@ Avantage
 
 \end_inset
 
-Notre approche MOCS-OViC consomme moins d’énergie que les algorithmes ERES
- et EERS à tout moment sauf en 2 cas.
+Notre approche 
+\series bold
+MOCS-OViC
+\series default
+ consomme 
+\color blue
+moins d’énergie
+\color inherit
+ que les algorithmes 
+\series bold
+ERES
+\series default
+ et 
+\series bold
+EERS
+\series default
+ à tout moment sauf en 2 cas.
 \end_layout
 
 \begin_layout AlertBlock
@@ -473,14 +518,21 @@ Notre approche MOCS-OViC consomme moins d’énergie que les algorithmes ERES
 status open
 
 \begin_layout Plain Layout
-Inconvénient
+Avantage
 \end_layout
 
 \end_inset
 
-MOCS-OViC peut économiser plus d’énergie que EViMA lorsque CyberShake et
- Inspiral sont exécutés pour toutes tailles et pour Epigenomics de très
- grande taille.
+
+\series bold
+MOCS-OViC
+\series default
+ peut 
+\color blue
+économiser plus d’énergie
+\color inherit
+ que EViMA lorsque CyberShake et Inspiral sont exécutés pour toutes tailles
+ et pour Epigenomics de très grande taille.
 \end_layout
 
 \end_deeper
@@ -524,7 +576,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le Makespan dans les workflow de petite taille
+Le 
+\series bold
+Makespan
+\series default
+ dans les workflow de 
+\series bold
+petite
+\series default
+ taille
 \end_layout
 
 \end_inset
@@ -581,7 +641,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le Makespan dans les workflow de taille moyenne
+Le 
+\series bold
+Makespan
+\series default
+ dans les workflow de taille 
+\series bold
+moyenne
 \end_layout
 
 \end_inset
@@ -638,7 +704,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le Makespan dans les workflow de grande taille
+Le 
+\series bold
+Makespan
+\series default
+ dans les workflow de 
+\series bold
+grande
+\series default
+ taille
 \end_layout
 
 \end_inset
@@ -695,7 +769,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le Makespan dans les workflows de très grande taille
+Le 
+\series bold
+Makespan
+\series default
+ dans les workflows de 
+\series bold
+très grande
+\series default
+ taille
 \end_layout
 
 \end_inset
@@ -721,7 +803,7 @@ Le Makespan dans les workflows de très grande taille
 status open
 
 \begin_layout Plain Layout
-Comparaison
+Discussion
 \end_layout
 
 \end_inset
@@ -778,7 +860,7 @@ La comparaison du Makespan
 status open
 
 \begin_layout Plain Layout
-Discussion
+Interprétation
 \end_layout
 
 \end_inset
@@ -797,10 +879,40 @@ Avantage
 
 \end_inset
 
-Notre approche produit des plans d'exécution les plus courts pour CyberShake,
- Epigenomics et Sipht dans presque toutes les tailles parce que ces 3 workflows
- sont des applications gourmandes en CPU et MOCS-OViC équilibre bien les
- charges entre les hôtes.
+
+\series bold
+Notre approche
+\series default
+ produit des plans d'exécution les 
+\color blue
+plus courts
+\color inherit
+ pour 
+\shape italic
+CyberShake
+\shape default
+, 
+\shape italic
+Epigenomics
+\shape default
+ et 
+\shape italic
+Sipht
+\shape default
+ dans presque toutes les tailles parce que ces 3 workflows sont des applications
+ 
+\series bold
+gourmandes en CPU 
+\series default
+et MOCS-OViC 
+\series bold
+équilibre
+\series default
+ bien
+\series bold
+ les charges
+\series default
+ entre les hôtes.
 \end_layout
 
 \begin_layout AlertBlock
@@ -813,11 +925,52 @@ Inconvénient
 
 \end_inset
 
-MOCS-OViC génère les pires plannings lorsque Montage et Inspiral sont exécutés.
- En effet, Inspiral nécessite beaucoup de mémoire, donc les migrations de
- VMs prennent plus de temps.
- Le montage est gourmand en transfert des données, MOCS-OViC ne considère
- pas le temps de transfert dans la génération des plans d'exécutions.
+
+\series bold
+MOCS-OViC
+\series default
+ génère les
+\color blue
+ pires plannings
+\color brown
+ 
+\color inherit
+lorsque 
+\shape italic
+Montage
+\shape default
+ et 
+\shape italic
+Inspiral
+\shape default
+ sont exécutés.
+ En effet, 
+\shape italic
+Inspiral
+\shape default
+ nécessite 
+\series bold
+beaucoup de mémoire
+\series default
+, donc les 
+\series bold
+migrations de VMs
+\series default
+ prennent
+\color blue
+ plus de temps
+\color inherit
+.
+ Le 
+\shape italic
+Montage
+\shape default
+ est
+\color blue
+ gourmand en transfert des données
+\color inherit
+, MOCS-OViC ne considère pas le temps de transfert dans la génération des
+ plans d'exécutions.
 \end_layout
 
 \end_deeper
@@ -861,7 +1014,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le coût de l'exécution des workflow de petite taille
+Le 
+\series bold
+coût de l'exécution
+\series default
+ des workflow de 
+\series bold
+petite
+\series default
+ taille
 \end_layout
 
 \end_inset
@@ -918,7 +1079,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le coût de l'exécution des workflow de taille moyenne
+Le 
+\series bold
+coût de l'exécution
+\series default
+ des workflow de taille 
+\series bold
+moyenne
 \end_layout
 
 \end_inset
@@ -975,7 +1142,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le coût de l'exécution des workflow de grande taille
+Le 
+\series bold
+coût de l'exécution
+\series default
+ des workflow de 
+\series bold
+grande
+\series default
+ taille
 \end_layout
 
 \end_inset
@@ -1032,64 +1207,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le coût de l'exécution des workflows de très grande taille
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Comparaison
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename cost/all.jpg
-	scale 22
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-La comparaison des coûts de tous les algorithmes
+Le 
+\series bold
+coût de l'exécution 
+\series default
+des workflows de 
+\series bold
+très grande
+\series default
+ taille
 \end_layout
 
 \end_inset
@@ -1124,6 +1250,71 @@ Discussion
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cost/all.jpg
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Les résultats des 
+\series bold
+coûts
+\series default
+ de 
+\series bold
+tous
+\series default
+ les algorithmes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interprétation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Block
 \begin_inset Argument 2
 status open
@@ -1134,14 +1325,40 @@ Avantages
 
 \end_inset
 
-Notre approche produit des solutions moins coûteuses pour CyberShake, Epigenomic
-s et Sipht dans presque toutes les tailles.
- En effet, notre algorithme génère une meilleure durée ordonnancement, de
- sorte que l
-\end_layout
 
-\begin_layout Block
-le temps d’utilisation des machines virtuelles est moins.
+\series bold
+Notre approche 
+\series default
+produit des solutions
+\color blue
+ moins coûteuses 
+\color inherit
+pour 
+\shape italic
+CyberShake
+\shape default
+, 
+\shape italic
+Epigenomics
+\shape default
+ et 
+\shape italic
+Sipht
+\shape default
+ dans presque toutes les tailles.
+ En effet, notre algorithme génère une
+\color blue
+ meilleure durée
+\color inherit
+ ordonnancement, de sorte que le temps d’
+\series bold
+utilisation
+\series default
+ des machines virtuelles est 
+\series bold
+moins
+\series default
+.
 \end_layout
 
 \begin_layout AlertBlock
@@ -1154,11 +1371,48 @@ Inconvénient
 
 \end_inset
 
-MOCS-OViC génère les pire solutions en termes de coût lorsque Montage et
- Inspiral sont exécutés.
- En effet, MOCS-OViC est un algorithme non sensible aux données et il génère
- un grand makespan, de sorte que l’utilisation des machines virtuelles est
- plus importante.
+
+\series bold
+MOCS-OViC
+\series default
+ génère les
+\color blue
+ pire solutions 
+\color inherit
+en termes de 
+\series bold
+coût
+\series default
+ lorsque 
+\shape italic
+Montage
+\shape default
+ et 
+\shape italic
+Inspiral
+\shape default
+ sont exécutés.
+ En effet, 
+\series bold
+MOCS-OViC
+\series default
+ est un algorithme
+\color blue
+ non sensible aux données
+\color inherit
+ et il génère un grand 
+\series bold
+makespan
+\series default
+, de sorte que l’
+\series bold
+utilisation 
+\series default
+des machines virtuelles est 
+\series bold
+plus
+\series default
+ importante.
 \end_layout
 
 \end_deeper

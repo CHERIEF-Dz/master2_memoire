@@ -107,11 +107,36 @@ Définition Du Cloud Computing
 
 \begin_deeper
 \begin_layout Definition
-Cloud Computing est un modèle pour permettre un omniprésent, commode, accès
- à la demande à un parc partagé de ressources informatiques configurables
- (Réseaux, serveur, stockage, applications et services) qui peuvent être
- mis rapidement a disposition et libère avec une intervention et interaction
- minimale du fournisseur de services
+Cloud Computing est un 
+\series bold
+modèle
+\series default
+ pour permettre un 
+\series bold
+omniprésent
+\series default
+, 
+\series bold
+commode
+\series default
+, accès 
+\series bold
+à la demande
+\series default
+ à un parc 
+\series bold
+partagé
+\series default
+ de ressources informatiques configurables (Réseaux, serveur, stockage,
+ applications et services) qui peuvent être mis 
+\series bold
+rapidement
+\series default
+ a disposition et libère avec une intervention et 
+\series bold
+interaction minimale
+\series default
+ du fournisseur de services
 \begin_inset CommandInset citation
 LatexCommand cite
 key "NIST_definition,Guerid2022"
@@ -142,7 +167,11 @@ Modèles De Déploiement
 
 \begin_deeper
 \begin_layout Standard
-Il existe 5 modèles de déploiement de Cloud Computing
+Il existe 5 modèles de 
+\series bold
+déploiement
+\series default
+ de Cloud Computing
 \begin_inset CommandInset citation
 LatexCommand cite
 key "NIST_definition"
@@ -172,7 +201,11 @@ status open
 
 \end_inset
 
-Cloud privé.
+Cloud 
+\series bold
+privé
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -186,7 +219,11 @@ status open
 
 \end_inset
 
-Cloud communautaire.
+Cloud 
+\series bold
+communautaire
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -200,7 +237,11 @@ status open
 
 \end_inset
 
-Cloud publique.
+Cloud 
+\series bold
+publique
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -214,7 +255,11 @@ status open
 
 \end_inset
 
-Cloud hybride.
+Cloud 
+\series bold
+hybride
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -228,7 +273,11 @@ status open
 
 \end_inset
 
-Multi-Cloud Computing.
+
+\series bold
+Multi-Cloud
+\series default
+ Computing.
 \end_layout
 
 \end_deeper
@@ -277,7 +326,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Les modèles des services Cloud 
+Les modèles des services Cloud [
 \begin_inset CommandInset href
 LatexCommand href
 name "quisted.net"
@@ -286,7 +335,7 @@ literal "false"
 
 \end_inset
 
-
+]
 \end_layout
 
 \end_inset

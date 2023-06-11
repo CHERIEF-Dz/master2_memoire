@@ -1,4 +1,4 @@
-Totale								24/26
+Totale								26/26
 	Page de garde : Il faut ajouter les noms de l'encadreur et du jury	-	-	-	-	OK
 	Sommaire	-	-	-	-	-	-	-	-	-	-	-	OK
 	Ajouter les nombres au slides	-	-	-	-	-	-	-	-	-	OK
@@ -12,13 +12,13 @@ Totale								24/26
 		- Définition du workflow	-	-	-	-	-	-	-	-	OK
 		- Définition des workflow scientifiques	-	-	-	-	-	-	-	OK
 		- Cycle de vie des workflow scientifiques	-	-	-	-	-	-	OK
-	Ordonnancement des workflow scientifiques sur le cloud	 3/5	
+	Ordonnancement des workflow scientifiques sur le cloud	 5/5	
 		- Ordonnancement des workflow scientifiques	-	-	-	-	-	-	OK
 		- Modélisation
 			- Représentation de workflow	-	-	-	-	-	-	-	OK
 			- Allocation des machines virtuelles (VM)	-	-	-	-	-	OK
-		- État de l'art		-	-	-	-	-	-	-	-	-	
-		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	
+		- État de l'art		-	-	-	-	-	-	-	-	-	OK
+		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	OK
 	Notre approche						 4/4
 		- Objectives et Description	-	-	-	-	-	-	-	-	OK
 		- EViMA	-	-	-	-	-	-	-	-	-	-	-	OK
