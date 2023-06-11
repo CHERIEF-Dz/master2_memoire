@@ -1,5 +1,3 @@
-Totale								 0/2
+Totale								 0/1
 
-	Ordonnancement des workflow scientifiques sur le cloud	 0/2
-		- État de l'art		-	-	-	-	-	-	-	-	-
-		- Vérifier avec Grammarly.	-	-	-	-	-	-	-	-	
+	Modifier la partie de notre approche , les mots clés	-	-	-	-	-	-

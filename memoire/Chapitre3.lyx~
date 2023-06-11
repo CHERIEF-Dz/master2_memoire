@@ -135,12 +135,14 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
 In this chapter, we will introduce the scientific workflow scheduling problem,
  firstly, we model it, then we list some related works that optimize the
  energy consumption and we finish this chapter with a comparative table.
+ 
 \end_layout
 
 \begin_layout Section
@@ -160,6 +162,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -190,6 +193,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -219,6 +223,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -235,6 +240,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -283,6 +289,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -316,6 +323,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -341,10 +349,12 @@ Cost
 \begin_layout Standard
 The minimization of the execution cost or the respect of user-defined budget:
  for the user, reducing execution cost is of capital importance.
- Users sometimes have a cap on the amount of money spent on resources (i.e.
+ Users sometimes have a cap on the amount of money spent on resources (i.
+ e.
  budget).
  Minimizing execution costs and taking into account user-defined budgets
  in a scheduling strategy is crucial.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -358,6 +368,7 @@ The minimization of the execution time or the respect of user-defined deadline
  Therefore, scheduling strategies must strive to reduce the makespan while
  mapping workflow tasks on cloud resources and be aware of the user-defined
  deadline.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -367,6 +378,7 @@ Workload Maximization
 \begin_layout Standard
 The maximization of the workload aims at maximizing the amount of work done,
  that is, the number of workflows executed.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -380,6 +392,7 @@ Idle time slots in provisioned VMs are deemed as a waste of money as they
  Minimizing idle time slots and maximizing the utilization of resources
  helps reduce execution costs as well as energy consumption, engraving profit
  to providers.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -394,6 +407,7 @@ The current industries, organizations and governments are really concerned
  Energy-efficient scheduling on the servers is one of the challenging problems
  in a dynamic environment such as the cloud domain for reducing energy consumpti
 on.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -405,6 +419,7 @@ Scheduling algorithms considering reliability as part of their objectives
  must put mechanisms in place to ensure that the workflow execution is completed
  within the users’ QoS constraints even if resource or task failures occur.
  Or simply minimize possible failure during workflow execution.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -425,6 +440,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Section
@@ -446,6 +462,7 @@ noprefix "false"
 \end_inset
 
  provides a list of the terms and definitions used.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -845,6 +862,7 @@ Cost of Transferring the input files (F
 \end_inset
 
 ).
+ 
 \end_layout
 
 \end_inset
@@ -907,6 +925,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -948,6 +967,7 @@ We consider workflow W as a graph G = (T, D), where T = { T
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -973,6 +993,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1008,11 +1029,13 @@ T
 
  are tasks without any predecessors and a task without any successors, respectiv
 ely.
+ 
 \end_layout
 
 \begin_layout Itemize
 The degree of dependency of workflow tasks on wti can be calculated using
  this equation.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1036,6 +1059,7 @@ where
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1066,6 +1090,7 @@ literal "false"
 \begin_layout Standard
 The cloud datacenter is a network of computing resources that enables applicatio
 n and data sharing.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1099,7 +1124,10 @@ p
 \begin_inset Formula $_{3}$
 \end_inset
 
- ...p
+ .
+ .
+ .
+ p
 \begin_inset Formula $_{n}$
 \end_inset
 
@@ -1107,6 +1135,7 @@ p
  These PMs have different Processing capacities such as CPUs, memory, bandwidth,
  network I/O and the size of the storage which are measured in million instructi
 ons per second (MIPS).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1131,7 +1160,10 @@ k
 \begin_inset Formula $_{3}$
 \end_inset
 
-, ...vm
+, .
+ .
+ .
+ vm
 \begin_inset Formula $_{k}$
 \end_inset
 
@@ -1141,6 +1173,7 @@ k
 k
 \series default
  is capable of providing an infinite number of VMs for workflow tasks execution.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1167,6 +1200,7 @@ Reducing energy consumption in a cloud data center has recently become a
 
 \begin_layout Standard
 A VM allocation model has been proposed (see Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "VM_allocation_model"
@@ -1188,6 +1222,7 @@ noprefix "false"
  within certain deadlines.
  This challenge can be well managed if the scheduler is implemented with
  a well-defined resource management plan.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1303,6 +1338,7 @@ k
 
  is a group of virtual machines with lower processing speed (VMs with lower
  energy consumption).
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1317,7 +1353,8 @@ Each workflow contains several sets of workflow tasks representing (Wt1,
  .
  .
  .
- ., Wtn); 
+ .
+ , Wtn); 
 \series bold
 Wt
 \series default
@@ -1360,6 +1397,7 @@ Tasks grouping
  This group of tasks is less critical compared to HCT, but more critical
  than LCT.
  These tasks can be migrated to medium-speed VMs for execution.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1369,6 +1407,7 @@ Tasks grouping
  for scheduling.
  The LCTs can be allocated on lower power VMs (VMs with lower processing
  speed) because their expected finish time (EFT) is far from their deadline.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1381,6 +1420,7 @@ The EFT of workflow task
  k
 \series default
  can be calculated using this equation which represents the expected schedule.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1436,6 +1476,7 @@ Tasks with long deadlines are tasks that do not require higher priority.
  This is because such tasks are not close to their predefined deadlines
  and therefore can be assigned to resources after the higher priority tasks
  (shorter deadline tasks) have been scheduled.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1513,6 +1554,7 @@ noprefix "false"
 
  is idle.
  The idle VM is turned off or put into safe mode to save power.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1526,6 +1568,7 @@ The time cost of migrating a single VM can be expressed in terms of the
  It is important to stress that the RAM size is the main parameter that
  affects the VM migration time (and consequently RAM size affects the energy
  since energy is propositional with time).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1540,7 +1583,7 @@ VM_{vm}^{Migtime}=(C_{vm}+R_{vm})/BW
 \end_layout
 
 \begin_layout Standard
-Where
+Where:
 \end_layout
 
 \begin_layout Itemize
@@ -1565,6 +1608,7 @@ C
 \end_inset
 
 is the CPU content size in Bytes.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -1573,11 +1617,13 @@ R
 \end_inset
 
  is the RAM content size of this VM in Bytes.
+ 
 \end_layout
 
 \begin_layout Itemize
 BW is the available bandwidth, in Bytes/Seconds, between the source and
  destination PMs.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1625,6 +1671,7 @@ ion problem.
 , such as execution makespan or cost.
  Multi-objective optimization, on the other hand, focuses on optimizing
  two or more objectives.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1660,11 +1707,13 @@ We consider a workflow application as DAG.
  However, reducing energy consumption increases the execution cost of scientific
  workflow applications.
  This is because energy consumption and execution cost are conflicting metrics.
+ 
 \end_layout
 
 \begin_layout Standard
 Our goal is to reduce the energy consumption, makespan and execution cost
  of workflow tasks with dependency constraints.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1706,6 +1755,7 @@ The value of C
 \end_inset
 
  (VM CPU context size) is negligible, so it may not be considered.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1805,6 +1855,7 @@ U
 \end_inset
 
 (t): utilization of the PM at time t.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -1814,18 +1865,22 @@ The resources are:
 \begin_deeper
 \begin_layout Itemize
 Number of cores.
+ 
 \end_layout
 
 \begin_layout Itemize
 RAM.
+ 
 \end_layout
 
 \begin_layout Itemize
 Storage.
+ 
 \end_layout
 
 \begin_layout Itemize
 bandwidth.
+ 
 \end_layout
 
 \end_deeper
@@ -1855,6 +1910,7 @@ where,
 
 \begin_layout Itemize
 TC is the total cost.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -1875,6 +1931,7 @@ TrC is the cost of transferring the input files (F
 \end_inset
 
 ).
+ 
 \end_layout
 
 \begin_layout Section
@@ -1884,6 +1941,7 @@ Related Works
 \begin_layout Standard
 In the literature, there are many works that address the problem of Workflow
  Scheduling Problem using different methods.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1922,6 +1980,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -1952,6 +2011,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1972,6 +2032,7 @@ literal "false"
 
 .
  We list here some of the related works which optimize energy consumption.
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -1991,6 +2052,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2010,6 +2072,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2021,6 +2084,7 @@ The Parallel bi-objective hybrid genetic algorithm (PBHGA) is a parallel
  evolutionary algorithm for solving multi-objective optimization problems.
  It combines several optimization techniques including genetic algorithm
  (GA) and local search.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2029,6 +2093,7 @@ The algorithm works by using an initial population of random solutions.
  fitness is assessed using a fitness function.
  Then, individuals are selected for breeding using a rank-based or roulette
  selection operator.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2036,6 +2101,7 @@ Reproduction is done using genetic operators such as mutation and crossover.
  Mutation involves modifying a single gene of the individual while crossbreeding
  involves creating new individuals by combining the characteristics of two
  different parents.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2043,6 +2109,7 @@ The process of selection and reproduction is repeated for several generations
  until an optimal solution is found.
  During the whole optimization process, PBHGA maintains a population of
  solutions to efficiently explore the search space.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2050,6 +2117,7 @@ The parallel approach of the algorithm helps to speed up the optimization
  process by running multiple search tasks simultaneously on different processors.
  It also makes it possible to efficiently explore regions of the search
  space that would otherwise be difficult to reach.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2066,6 +2134,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2083,6 +2152,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subparagraph
@@ -2098,6 +2168,7 @@ uses a non-dominated sorting approach to assess the quality of population
  population of parent solutions.
  This parent population is used to generate a new population of child solutions
  by crossover and mutation.
+ 
 \end_layout
 
 \begin_layout Subparagraph
@@ -2110,6 +2181,7 @@ uses a grid approach to divide the search space into cells and each cell
  The solutions are then evaluated locally and the best individuals are selected
  to reproduce within the cell.
  Then, the solutions are exchanged between cells to avoid local convergence.
+ 
 \end_layout
 
 \begin_layout Subparagraph
@@ -2122,6 +2194,7 @@ uses quality indicators to assess the quality of solutions.
  to an approximation of the true Pareto front.
  The most distant solutions are selected for reproduction in order to favor
  the diversity of the population.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2132,6 +2205,7 @@ These algorithms all use an evolutionary approach to optimize multiple goals
  The algorithms then use crossover and mutation operators to generate a
  new population of candidate solutions.
  The process is repeated until solutions of sufficient quality are found.
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2152,6 +2226,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2172,6 +2247,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2197,6 +2273,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2210,6 +2287,7 @@ The MMF-DVFS (Multi-Objective Multi-Frequency Dynamic Voltage and Frequency
  It aims to simultaneously minimize power consumption and execution time
  of multiple tasks with quality of service (QoS) constraints such as timeliness
  and reliability.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2219,6 +2297,7 @@ The MMF-DVFS algorithm uses an approach based on multi-objective optimization
  The algorithm uses a technique called "Dynamic Voltage and Frequency Scaling"
  (DVFS) which allows the frequency and voltage of the processor to be dynamicall
 y adjusted according to performance and power consumption requirements.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2227,6 +2306,7 @@ The MMF-DVFS algorithm is also able to take into account QoS constraints
  The algorithm decomposes the global problem into several sub-problems for
  which it individually optimizes the objectives while keeping the other
  objectives at an acceptable level.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2242,6 +2322,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2253,6 +2334,7 @@ EASLA (Efficient Antlion Optimizer with a Small Local Attraction) is a metaheuri
 stic optimization algorithm inspired by the hunting behavior of antlions.
  The algorithm is used for solving various optimization problems, including
  function optimization and feature selection.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2261,6 +2343,7 @@ The Improved EASLA algorithm is an enhanced version of EASLA, which incorporates
  The key modifications include the incorporation of a mutation operator
  to explore the search space and the use of dynamic population size to adapt
  to the search problem.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2269,6 +2352,7 @@ The basic idea behind EASLA is to simulate the hunting behavior of antlions,
  prey.
  In EASLA, the antlion represents the best solution found so far and the
  ants represent potential solutions in the search space.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2278,6 +2362,7 @@ The algorithm starts by randomly generating a population of ants and placing
  into account both the distance to the antlion and the local attraction
  of the area.
  The antlion is then updated to the best solution found among the ants.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2286,6 +2371,7 @@ The Improved EASLA algorithm extends this basic framework by introducing
  can help to explore new regions of the search space.
  The population size is also dynamically adjusted during the search to balance
  exploration and exploitation.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2300,6 +2386,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2320,6 +2407,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2328,8 +2416,9 @@ EADAGS
 
 \begin_layout Standard
 Scheduling (EADAGS) on heterogeneous processors that can run on discrete
- operating voltages Such processors can scale down their voltages and slow
- down to reduce energy whenever they idle due to task dependencies.
+ operating voltages.
+ Such processors can scale down their voltages and slow down to reduce energy
+ whenever they idle due to task dependencies.
  EADAGS combines dynamic voltage scaling (DVS) with Decisive Path Scheduling
  (DPS) to achieve the twin objectives
 \begin_inset CommandInset citation
@@ -2340,6 +2429,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2359,6 +2449,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2382,6 +2473,7 @@ VHEST stands for Variable Hessian Estimation Search Technique.
  only accepts better solutions.
  EASA has been applied to various optimization problems, including parameter
  estimation, design optimization and clustering.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2396,6 +2488,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2408,6 +2501,7 @@ The Exponential Differencing Least Squares (EDLS) algorithm is a linear
  trends or time-varying growth rates.
  It is widely used in finance to model interest rates, exchange rates and
  asset prices.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2426,6 +2520,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2433,8 +2528,8 @@ LESA
 \end_layout
 
 \begin_layout Standard
-GACSM: (GACSM), to address task scheduling on heterogeneous multiprocessor
- systems using Dynamic Voltage and Frequency Scaling (DVFS)
+to address task scheduling on heterogeneous multiprocessor systems using
+ Dynamic Voltage and Frequency Scaling (DVFS)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "8974273"
@@ -2443,6 +2538,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2455,7 +2551,7 @@ cy with Non Duplication (EEND) Both algorithms, in contrast to their counterpart
 s in the literature, strive to make a balance across the energy consumption,
  the schedule length and the number of processors used.
  Synthetic benchmarks and real-world applications are used to evaluate the
- performance of our algorithms
+ performance of this algorithms
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ebaid2014"
@@ -2464,28 +2560,7 @@ literal "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Paragraph
-RSMECC
-\end_layout
-
-\begin_layout Standard
-The RSMECC (Reed-Solomon-MDPC Code-based Encryption and Compression) algorithm
- is a data encryption and compression algorithm that uses Reed-Solomon codes
- and MDPC (Moderate Density Parity-Check) codes.
- The algorithm begins by generating a public key and a private key for data
- encryption.
- The public key is shared with the sender of the data while the private
- key is kept by the receiver
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Hu2019"
-literal "false"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2519,6 +2594,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2562,6 +2638,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2574,10 +2651,9 @@ Algorithms-Energy-Aware Duplication (EAD) scheduling and Performance-Energy
  Existing duplication-based scheduling algorithms replicate all possible
  tasks to shorten schedule length without reducing energy consumption caused
  by duplication.
- Our algorithms, in contrast, strive to balance schedule lengths and energy
+ This algorithms, in contrast, strive to balance schedule lengths and energy
  savings by judiciously replicating predecessors of a task if the duplication
- can aid in performance without degrading energy efficiency.
- To illustrate the effectiveness of EAD and PEBD
+ can aid in performance without degrading energy efficiency
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zong2011"
@@ -2586,6 +2662,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2595,7 +2672,8 @@ WPEP
 \begin_layout Standard
 The Workflow performance evaluation platforms (WPEP) algorithm is not an
  optimization algorithm, but rather a method for evaluating the performance
- of workflows, i.e.
+ of workflows, i.
+ e.
  automated work processes in which tasks are executed sequentially or in
  parallel.
  The first step is to model the workflow, identifying the tasks, transitions
@@ -2608,6 +2686,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2628,6 +2707,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2648,6 +2728,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2669,6 +2750,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2690,6 +2772,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2697,7 +2780,7 @@ AVVMC
 \end_layout
 
 \begin_layout Standard
-the AVVMC VM consolidation scheme that focuses on the balanced Performance
+The AVVMC VM consolidation scheme that focuses on the balanced Performance
  of servers across different computing resources (CPU, memory and network
  I/O) with the goal of minimizing power consumption and resource wastage,
  adaptation and integration of the Ant Colony Optimization (ACO) meta-heuristic
@@ -2710,6 +2793,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2734,6 +2818,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2757,6 +2842,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2783,6 +2869,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2805,6 +2892,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2824,6 +2912,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2845,6 +2934,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2868,6 +2958,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2887,6 +2978,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -2906,10 +2998,12 @@ The authors proposed resource management and VM allocation model and incorporate
 d Idle “off” Busy “on” techniques that identify the status of all VMs.
  A slack time harvesting method is introduced and task selection method
  ensures the right task is allocated to the right VM.
+ 
 \end_layout
 
 \begin_layout Standard
 We will study this algorithm in more detail in the next chapter.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -3240,6 +3334,7 @@ DVFS
 Find several optimal solutions which are equivalent in terms of quality
  for different criteria.
  Explore the search space and help make informed decisions.
+ 
 \end_layout
 
 \end_inset
@@ -5256,6 +5351,7 @@ DVFS
 
 \begin_layout Plain Layout
 Efficient in performing VM allocation that shares workload evenly.
+ 
 \end_layout
 
 \end_inset
@@ -5350,9 +5446,10 @@ After comparison of these approaches, we can conclude that:
 \begin_layout Itemize
 There is a variety of problem formulations and corresponding algorithm types
  that tackle the problem of workflow energy-aware scheduling for Cloud computing
- environ- ment, including machine learning (with reinforcement and supervised
- learning), dy- namic programming, fuzzy logic, integer programming, randomized
- algorithms, evolu- tionary algorithms, constraint programming and others.
+ environment, including machine learning (supervised learning), dynamic
+ programming, fuzzy logic, integer programming, randomized algorithms, evolution
+ary algorithms, constraint programming and others.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -5360,11 +5457,13 @@ Most of optimization goals involve metrics such as execution time/makespan
  and energy.
  A limited number of works most consider costs, performance, reliability
  and fault tolerance.
+ 
 \end_layout
 
 \begin_layout Itemize
 Most works use DVFS as a mechanism for controlling the power/energy of computing
  devices, just one combines DVFS and DPM (including turning of machines).
+ 
 \end_layout
 
 \begin_layout Section
@@ -5383,10 +5482,12 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
 In the next chapter, we will suggest our proposed approach.
+ 
 \end_layout
 
 \end_body

@@ -11,7 +11,9 @@
 
 \setbeamercovered{transparent}
 % or whatever (possibly just delete it)
-\usepackage{algpseudocode}
+\addtobeamertemplate{footline}{
+	\insertframenumber / \inserttotalframenumber
+}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -123,7 +125,7 @@ Sur Le Cloud Avec Optimisation De L'énergie
 \end_layout
 
 \begin_layout Author
-C.Houcine Abdelkader 
+H.A.CHERIEF 
 \begin_inset ERT
 status collapsed
 
@@ -136,15 +138,27 @@ and
 
 \end_inset
 
- T.Abdelghani Chabane
+ A.C.TOUHAMI
 \end_layout
 
-\begin_layout Institute
-Département  d'Informatique
+\begin_layout Standard
+Devant les membres de jury
 \begin_inset Newline newline
 \end_inset
 
-Université des sciences et de la technologie d’Oran - Mohamed Boudiaf
+Président: GUERID Hachem
+\begin_inset Newline newline
+\end_inset
+
+Encadrant: BENDOUKHA Hayat
+\begin_inset Newline newline
+\end_inset
+
+Examinateur: BELAID Mohamed Said
+\begin_inset Newline newline
+\end_inset
+
+Invitee: SI LARBI Samia
 \end_layout
 
 \begin_layout Standard

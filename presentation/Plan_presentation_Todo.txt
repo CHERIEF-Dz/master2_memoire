@@ -1,8 +1,11 @@
-Totale								21/23
+Totale								24/26
 	Page de garde : Il faut ajouter les noms de l'encadreur et du jury	-	-	-	-	OK
 	Sommaire	-	-	-	-	-	-	-	-	-	-	-	OK
+	Ajouter les nombres au slides	-	-	-	-	-	-	-	-	-	OK
+	Modifier notre noms	-	-	-	-	-	-	-	-	-	-	OK
+	ajouter les membres des jury	-	-	-	-	-	-	-	-	-	OK
 	Cloud Computing						 3/3
-		- Définition:	Traduction de la définition en français	-	-	-	-	-	OK
+		- Définition:	-	-	-	-	-	-	-	-	-	-	OK
 		- Modèle de déploiement.	-	-	-	-	-	-	-	-	OK
 		- Modèle de services.	-	-	-	-	-	-	-	-	-	OK
 	Workflow et Workflow Scientifique			 3/3
